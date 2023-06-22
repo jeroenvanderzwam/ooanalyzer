@@ -28,7 +28,6 @@ import docking.action.ToolBarData;
 import ghidra.app.ExamplesPluginPackage;
 import ghidra.app.plugin.PluginCategoryNames;
 import ghidra.app.plugin.ProgramPlugin;
-import ghidra.dbg.gadp.protocol.Gadp.Address;
 import ghidra.framework.plugintool.*;
 import ghidra.framework.plugintool.util.PluginStatus;
 import ghidra.program.model.address.AddressSet;
@@ -42,6 +41,7 @@ import ghidra.util.graph.AbstractDependencyGraph;
 import ghidra.util.task.TaskMonitor;
 import resources.Icons;
 import ghidra.app.decompiler.DecompInterface;
+import ghidra.program.model.address.Address;
 
 /**
  * TODO: Provide class-level documentation that describes what this plugin does.
@@ -93,10 +93,12 @@ public class FactExporterPlugin extends ProgramPlugin {
 		try {
 			var graph = builder.getDependencyGraph(TaskMonitor.DUMMY);
 			var nodes = graph.getNodeMap();
-//			for (Entry<ghidra.program.model.address.Address, AbstractDependencyGraph<ghidra.program.model.address.Address>.DependencyNode> : nodes.entrySet())
-//			{
-//				
-//			}
+			for (var entry : nodes.entrySet()) 
+			{
+				var address = entry.getKey();
+				var node = entry.getValue();
+			}
+
 			var independentValues = graph.getAllIndependentValues();
 			var element = independentValues.toArray(new ghidra.program.model.address.Address[0])[0];
 			var function = program.getListing().getFunctionAt(element);
@@ -111,9 +113,9 @@ public class FactExporterPlugin extends ProgramPlugin {
 			e.printStackTrace();
 		}
 		
-		FollowFlow followFlow = new FollowFlow(program, new AddressSet(program, program.getMinAddress(), program.getMaxAddress()), null);
-		var iets = followFlow.getFlowToAddressSet(TaskMonitor.DUMMY);
-		var flow = followFlow.getFlowAddressSet(TaskMonitor.DUMMY);
+//		FollowFlow followFlow = new FollowFlow(program, new AddressSet(program, program.getMinAddress(), program.getMaxAddress()), null);
+//		var iets = followFlow.getFlowToAddressSet(TaskMonitor.DUMMY);
+//		var flow = followFlow.getFlowAddressSet(TaskMonitor.DUMMY);
 		
 		DecompInterface ifc = new DecompInterface();
 		ifc.openProgram(program);
