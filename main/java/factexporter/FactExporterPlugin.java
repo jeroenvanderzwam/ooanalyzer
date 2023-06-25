@@ -89,38 +89,10 @@ public class FactExporterPlugin extends ProgramPlugin {
 		// TODO Auto-generated method stub
 		super.programOpened(program);
 		
-		AcyclicCallGraphBuilder builder = new AcyclicCallGraphBuilder(program, true);
-		try {
-			var graph = builder.getDependencyGraph(TaskMonitor.DUMMY);
-			var nodes = graph.getNodeMap();
-			for (var entry : nodes.entrySet()) 
-			{
-				var address = entry.getKey();
-				var node = entry.getValue();
-			}
 
-			var independentValues = graph.getAllIndependentValues();
-			var element = independentValues.toArray(new ghidra.program.model.address.Address[0])[0];
-			var function = program.getListing().getFunctionAt(element);
-			var dependentElements = graph.getDependentValues(element);
-			if (graph.hasUnVisitedIndependentValues()) 
-			{
-				var unvisited = graph.getUnvisitedIndependentValues();
-			}
-			Msg.info(program, graph);
-		} catch (CancelledException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-//		FollowFlow followFlow = new FollowFlow(program, new AddressSet(program, program.getMinAddress(), program.getMaxAddress()), null);
-//		var iets = followFlow.getFlowToAddressSet(TaskMonitor.DUMMY);
-//		var flow = followFlow.getFlowAddressSet(TaskMonitor.DUMMY);
-		
-		DecompInterface ifc = new DecompInterface();
-		ifc.openProgram(program);
-		FunctionAnalyzer funcAnalazer = new FunctionAnalyzer();
-		funcAnalazer.findConstructors(program.getListing(), ifc);
+		FunctionAnalyzer funcAnalyzer = new FunctionAnalyzer(program);
+		funcAnalyzer.findReturnsSelf();
+		funcAnalyzer.findNoCallsBefore();
 		
 	}
 
