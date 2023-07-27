@@ -11,6 +11,9 @@ import ghidra.program.model.listing.Function;
 import ghidra.program.model.listing.FunctionManager;
 import ghidra.program.model.listing.Listing;
 import ghidra.program.model.listing.Program;
+import ghidra.program.model.pcode.HighParam;
+import ghidra.program.model.pcode.HighSymbol;
+import ghidra.program.model.pcode.HighVariable;
 import ghidra.program.model.pcode.PcodeOp;
 import ghidra.program.model.pcode.PcodeOpAST;
 import ghidra.program.model.symbol.Symbol;
@@ -36,20 +39,34 @@ public class FunctionAnalyzer {
 		var funcIter = _listing.getFunctions(true);
 		while(funcIter.hasNext()) {
 			var func = funcIter.next();
-			var funcName = func.getName();
 			var signature = func.getSignature();
 			var firstParameter = func.getParameter(0);
 			if (signature != null && firstParameter != null) {
-				var firstParameterName = firstParameter.getName();
-				var genericCallingConvention = signature.getGenericCallingConvention();
+//				var genericCallingConvention = signature.getGenericCallingConvention();
+//
+//				if (genericCallingConvention.equals(GenericCallingConvention.thiscall)) {
+				var decompiledFunction = _decompInterface.decompileFunction(func, 0, null);
 
-				if (firstParameterName.equals("this") && genericCallingConvention.equals(GenericCallingConvention.thiscall)) {
-					var decompiledFunction = _decompInterface.decompileFunction(func, 0, null);
-					var cCode = decompiledFunction.getCCodeMarkup();
-					if (cCode.toString().endsWith("this;}")) {
-						Msg.info(this, String.format("returnsSelf(%s)", funcName));
-					}
+				var highFunction = decompiledFunction.getHighFunction();
+				var localSymbolMap = highFunction.getLocalSymbolMap();
+				var symbols = localSymbolMap.getSymbols();
+				HighSymbol returnSymbol = null;
+				while (symbols.hasNext()) 
+				{
+					returnSymbol = symbols.next();
 				}
+				var funcPrototype = highFunction.getFunctionPrototype();
+
+				var firstParamaterSymbol = funcPrototype.getParam(0);
+				
+//				&& firstParamaterSymbol.isThisPointer() 
+//				&& returnSymbol.isThisPointer()
+//				&& !funcPrototype.hasNoReturn()
+				if (returnSymbol.equals(firstParamaterSymbol) )
+				{
+					Msg.info(this, String.format("returnsSelf(%s)", func.getEntryPoint()));
+				}
+//				}
 				
 			}
 		}

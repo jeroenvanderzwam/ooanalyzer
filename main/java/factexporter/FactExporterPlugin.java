@@ -92,7 +92,7 @@ public class FactExporterPlugin extends ProgramPlugin {
 
 		FunctionAnalyzer funcAnalyzer = new FunctionAnalyzer(program);
 		funcAnalyzer.findReturnsSelf();
-		funcAnalyzer.findNoCallsBefore();
+		//funcAnalyzer.findNoCallsBefore();
 		
 	}
 
