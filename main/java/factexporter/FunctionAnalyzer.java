@@ -42,9 +42,6 @@ public class FunctionAnalyzer {
 			var signature = func.getSignature();
 			var firstParameter = func.getParameter(0);
 			if (signature != null && firstParameter != null) {
-//				var genericCallingConvention = signature.getGenericCallingConvention();
-//
-//				if (genericCallingConvention.equals(GenericCallingConvention.thiscall)) {
 				var decompiledFunction = _decompInterface.decompileFunction(func, 0, null);
 
 				var highFunction = decompiledFunction.getHighFunction();
@@ -65,9 +62,7 @@ public class FunctionAnalyzer {
 				if (returnSymbol.equals(firstParamaterSymbol) )
 				{
 					Msg.info(this, String.format("returnsSelf(%s)", func.getEntryPoint()));
-				}
-//				}
-				
+				}				
 			}
 		}
 	}
