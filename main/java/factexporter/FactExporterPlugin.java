@@ -16,11 +16,7 @@
 package factexporter;
 
 import java.awt.BorderLayout;
-import java.util.Map;
-import java.util.Map.Entry;
-
 import javax.swing.*;
-
 import docking.ActionContext;
 import docking.ComponentProvider;
 import docking.action.DockingAction;
@@ -30,17 +26,13 @@ import ghidra.app.plugin.PluginCategoryNames;
 import ghidra.app.plugin.ProgramPlugin;
 import ghidra.framework.plugintool.*;
 import ghidra.framework.plugintool.util.PluginStatus;
-import ghidra.program.model.address.AddressSet;
-import ghidra.program.model.block.FollowFlow;
 import ghidra.program.model.listing.Program;
-import ghidra.program.model.util.AcyclicCallGraphBuilder;
+import ghidra.program.util.ProgramLocation;
+import ghidra.program.util.ProgramSelection;
 import ghidra.util.HelpLocation;
 import ghidra.util.Msg;
-import ghidra.util.exception.CancelledException;
-import ghidra.util.graph.AbstractDependencyGraph;
 import ghidra.util.task.TaskMonitor;
 import resources.Icons;
-import ghidra.app.decompiler.DecompInterface;
 import ghidra.program.model.address.Address;
 
 /**
@@ -76,6 +68,29 @@ public class FactExporterPlugin extends ProgramPlugin {
 		String anchorName = "HelpAnchor";
 		provider.setHelpLocation(new HelpLocation(topicName, anchorName));
 	}
+	
+	public Address getCurrentAddress() {
+		return currentLocation != null ? currentLocation.getAddress() : null;
+
+	}
+	
+	@Override 
+	protected void locationChanged(ProgramLocation loc) {
+		if (loc != null) {
+			FunctionAnalyzer funcAnalyzer = new FunctionAnalyzer(currentProgram, tool);
+			funcAnalyzer.findReturnsSelfSecondAttempt(loc.getAddress());
+		}
+		
+	}
+	
+	@Override
+	protected void highlightChanged(ProgramSelection hl) {
+	}
+	
+	@Override
+	protected void selectionChanged(ProgramSelection selection) {
+
+	}
 
 	@Override
 	public void init() {
@@ -88,12 +103,6 @@ public class FactExporterPlugin extends ProgramPlugin {
 	protected void programOpened(Program program) {
 		// TODO Auto-generated method stub
 		super.programOpened(program);
-		
-
-		FunctionAnalyzer funcAnalyzer = new FunctionAnalyzer(program);
-		funcAnalyzer.findReturnsSelf();
-		//funcAnalyzer.findNoCallsBefore();
-		
 	}
 
 	// TODO: If provider is desired, it is recommended to move it to its own file
