@@ -68,25 +68,25 @@ public class FactExporterPlugin extends ProgramPlugin {
 		String anchorName = "HelpAnchor";
 		provider.setHelpLocation(new HelpLocation(topicName, anchorName));
 	}
-	
+
 	public Address getCurrentAddress() {
 		return currentLocation != null ? currentLocation.getAddress() : null;
 
 	}
-	
-	@Override 
+
+	@Override
 	protected void locationChanged(ProgramLocation loc) {
-		if (loc != null) {
-			FunctionAnalyzer funcAnalyzer = new FunctionAnalyzer(currentProgram, tool);
-			funcAnalyzer.findReturnsSelfSecondAttempt(loc.getAddress());
-		}
-		
+		 if (loc != null) { 
+			 FunctionAnalyzer funcAnalyzer = new
+			 FunctionAnalyzer(currentProgram, tool);
+			 funcAnalyzer.findReturnsSelfSecondAttempt(loc.getAddress()); 
+		 }
 	}
-	
+
 	@Override
 	protected void highlightChanged(ProgramSelection hl) {
 	}
-	
+
 	@Override
 	protected void selectionChanged(ProgramSelection selection) {
 
@@ -98,7 +98,7 @@ public class FactExporterPlugin extends ProgramPlugin {
 
 		// TODO: Acquire services if necessary
 	}
-	
+
 	@Override
 	protected void programOpened(Program program) {
 		// TODO Auto-generated method stub

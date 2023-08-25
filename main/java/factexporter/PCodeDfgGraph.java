@@ -37,25 +37,29 @@ public class PCodeDfgGraph {
 		graph = new AttributedGraph("Data Flow Graph", graphType);
 	}
 	
-	public void checkIfReturnsSelf(VarnodeAST param) {
-
-		var vertex = vertices.get(param.getUniqueId());
-		for (var entry : returnVertices.entrySet()) {
-			AttributedVertex returnVertex = entry.getValue();
-			for (var edge : graph.outgoingEdgesOf(vertex)) {
-				var nextVertex = graph.getEdgeTarget(edge);
-				if (nextVertex.equals(returnVertex) ) {
-					
-				}
+	private boolean hasPathToReturn(AttributedVertex vertex, AttributedVertex possibleReturnVertex) {
+		List<AttributedVertex> frontier = new ArrayList<>();
+		frontier.add(vertex);
+		while (!frontier.isEmpty()) {
+			var nextVertex = frontier.remove(0);
+			if (nextVertex.equals(possibleReturnVertex)) {
+				return true;
 			}
-			var path = graph.getAllEdges(vertex, returnVertex);
-			if (!path.isEmpty()) {
-				Msg.info(this, String.format("Pad van %s naar %s", vertex.getId(), returnVertex.getId()));
+			for (var edge : graph.outgoingEdgesOf(nextVertex)) {
+				frontier.add(graph.getEdgeTarget(edge));
 			}
 		}
-		
-		if (vertex != null) {
-			
+		return false;
+	}
+	
+	
+	public void checkIfReturnsSelf(VarnodeAST param) {
+		var vertex = vertices.get(param.getUniqueId());
+		for (var entry : returnVertices.entrySet()) {
+			AttributedVertex possibleReturnVertex = entry.getValue();
+			if (hasPathToReturn(vertex, possibleReturnVertex)) {
+				Msg.info(this, String.format("Path found from %s --> %s", vertex, possibleReturnVertex));
+			}
 		}
 	}
 	
