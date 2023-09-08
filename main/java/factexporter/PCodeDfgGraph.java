@@ -29,7 +29,7 @@ public class PCodeDfgGraph {
 	private HashMap<Integer, AttributedVertex> vertices = new HashMap<>();
 	private HashMap<Integer, AttributedVertex> returnVertices = new HashMap<>();
 	
-	public PCodeDfgGraph(PluginTool tool, GraphDisplayBroker graphService, HighFunction highFunction) {
+	public PCodeDfgGraph(PluginTool tool,GraphDisplayBroker graphService, HighFunction highFunction) {
 		hfunction = highFunction;
 		this.graphService = graphService;
 		this.tool = tool;
@@ -37,28 +37,75 @@ public class PCodeDfgGraph {
 		graph = new AttributedGraph("Data Flow Graph", graphType);
 	}
 	
-	private boolean hasPathToReturn(AttributedVertex vertex, AttributedVertex possibleReturnVertex) {
-		List<AttributedVertex> frontier = new ArrayList<>();
-		frontier.add(vertex);
+	private List<AttributedVertex> hasPathToReturn(AttributedVertex vertex, AttributedVertex possibleReturnVertex) {
+		List<List<AttributedVertex>> frontier = new ArrayList<>();
+		frontier.add(new ArrayList<AttributedVertex>() {{ add(vertex); }});
 		while (!frontier.isEmpty()) {
-			var nextVertex = frontier.remove(0);
+			var nextVertexList = frontier.remove(0);
+			var nextVertex= nextVertexList.get(nextVertexList.size() - 1);
+			if (nextVertex == null) { continue; }
 			if (nextVertex.equals(possibleReturnVertex)) {
-				return true;
+				return nextVertexList;
 			}
 			for (var edge : graph.outgoingEdgesOf(nextVertex)) {
-				frontier.add(graph.getEdgeTarget(edge));
+				var newVertexList = new ArrayList<>(nextVertexList);
+				newVertexList.add(graph.getEdgeTarget(edge));
+				frontier.add(newVertexList);
 			}
 		}
-		return false;
+		return null;
+	}
+	
+	private ArrayList<String> allowedOperations = new ArrayList<String>() 
+	{{
+		add("STACK");
+		add("UNIQUE");
+		add("INDIRECT (CALL)");
+		add("COPY");
+		add("MULTIEQUAL");
+		add("VARIABLE");
+		add("RETURN");
+		add("PIECE");
+		add("CAST");
+	}}; // CALL, LOAD ram, PTRADD
+		
+	private ArrayList<String> registers = new ArrayList<String>() 
+	{{
+		add("ECX");
+		add("EAX");
+	}};
+	
+	public boolean pathHasOnlyAllowedOperations(List<AttributedVertex> path) 
+	{
+		for (var vertexOnPath : path) {
+			var name = vertexOnPath.getAttribute("Name");
+			if (name.contains(":")) {
+				name = name.split(":")[0];
+			}
+			if (name.contains("[")) {
+				name = name.split("\\[")[0];
+			}
+			if (!allowedOperations.contains(name.toUpperCase()) && !registers.contains(name.toUpperCase())) {
+				return false;
+			}
+		}
+		return true;
 	}
 	
 	
-	public void checkIfReturnsSelf(VarnodeAST param) {
+	public void checkIfReturnsSelf(VarnodeAST param) 
+	{
 		var vertex = vertices.get(param.getUniqueId());
 		for (var entry : returnVertices.entrySet()) {
 			AttributedVertex possibleReturnVertex = entry.getValue();
-			if (hasPathToReturn(vertex, possibleReturnVertex)) {
-				Msg.info(this, String.format("Path found from %s --> %s", vertex, possibleReturnVertex));
+			List<AttributedVertex> path = hasPathToReturn(vertex, possibleReturnVertex);
+			if (path != null) {
+				if (pathHasOnlyAllowedOperations(path) ) {
+					Msg.info(this, String.format("%s Allowed path found from %s --> %s",hfunction.getFunction().getName(), vertex, possibleReturnVertex));
+					Msg.info(this, path);
+					return;
+				}
+				
 			}
 		}
 	}
@@ -153,7 +200,6 @@ public class PCodeDfgGraph {
 		}
 		AttributedVertex vert = graph.addVertex(id, name);
 		vert.setVertexType(vertexType);
-
 		// if it is an input override the shape to be a triangle
 		if (vn.isInput()) {
 			vert.setAttribute(SHAPE_ATTRIBUTE, VertexShape.TRIANGLE_DOWN.getName());

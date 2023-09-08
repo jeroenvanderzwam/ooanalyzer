@@ -44,44 +44,65 @@ public class FunctionAnalyzer {
 		_listing = program.getListing();
 	}
 	
-	public void findReturnsSelfSecondAttempt(Address address) 
+	private ArrayList<String> notWorkingFunctions = new ArrayList<String>() 
+	{{
+		add("__FindPESection");
+		add("thunk_FUN_00411be0"); // to many vertices
+		add("_RTC_GetSrcLine");
+		add("FUN_00411be0");
+		add("@_RTC_AllocaHelper@12");
+		add("_getMemBlockDataString");
+		add("__RTC_UninitUse");
+		add("Unwind@00415a50");
+	}}; 
+	
+	public void findReturnsSelfSecondAttempt()
 	{
-		Function function = _listing.getFunctionContaining(address);
-		if (function == null) {
-			Msg.warn("GraphAST Error",
-					"No Function at current location");
-			return;
-		}
+		var funcIter = _listing.getFunctions(true);
+		while (funcIter.hasNext()) {	
+			Function function = funcIter.next();
+			if (function == null) {
+				Msg.warn("GraphAST Error",
+						"No Function at current location");
+				return;
+			}
 
-		if (!function.getName().equals("FUN_00411830")) {return;}
-		
-		GraphDisplayBroker graphDisplayBroker = _tool.getService(GraphDisplayBroker.class);
-		if (graphDisplayBroker == null) {
-			Msg.showError(this, _tool.getToolFrame(), "GraphAST Error",
-				"No graph display providers found: Please add a graph display provider to your tool");
-			return;
-		}
-		DecompileResults res = _decompInterface.decompileFunction(function, 30, null);
-		HighFunction high = res.getHighFunction();
-
-		FunctionPrototype funcPrototype = high.getFunctionPrototype();
-
-		HighSymbol firstParamaterSymbol = funcPrototype.getParam(0);
-		HighVariable variable = firstParamaterSymbol.getHighVariable();
-		VarnodeAST varNode = (VarnodeAST)variable.getRepresentative();
-
-		PCodeDfgGraph graph = new PCodeDfgGraph(_tool, graphDisplayBroker, high);
-		try {
-			graph.buildAndDisplayGraph(TaskMonitor.DUMMY);
-		//graph.buildGraph();
-			graph.checkIfReturnsSelf(varNode);
+			if (notWorkingFunctions.contains(function.getName())) {continue;}
+			GraphDisplayBroker graphDisplayBroker = _tool.getService(GraphDisplayBroker.class);
+			if (graphDisplayBroker == null) {
+				Msg.showError(this, _tool.getToolFrame(), "GraphAST Error",
+					"No graph display providers found: Please add a graph display provider to your tool");
+				return;
+			}
+			DecompileResults res = _decompInterface.decompileFunction(function, 30, null);
+			HighFunction high = res.getHighFunction();
+	
+			FunctionPrototype funcPrototype = high.getFunctionPrototype();
 			
-		} catch (GraphException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (CancelledException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//if (high.getFunction().getEntryPoint().toString().equals("00412540")) {
+				if (funcPrototype.getNumParams() > 0) {
+					HighSymbol firstParamaterSymbol = funcPrototype.getParam(0);
+
+					HighVariable variable = firstParamaterSymbol.getHighVariable();
+					VarnodeAST varNode = (VarnodeAST)variable.getRepresentative();
+			
+					PCodeDfgGraph graph = new PCodeDfgGraph(_tool, graphDisplayBroker, high);
+					graph.buildGraph();
+					graph.checkIfReturnsSelf(varNode);
+					
+//					try {
+//						graph.buildAndDisplayGraph(TaskMonitor.DUMMY);
+//					} catch (GraphException e) {
+//						// TODO Auto-generated catch block
+//						e.printStackTrace();
+//					} catch (CancelledException e) {
+//						// TODO Auto-generated catch block
+//						e.printStackTrace();
+//					}				
+
+				}
+			//}
+
 		}
 	}
 	

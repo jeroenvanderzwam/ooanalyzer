@@ -69,27 +69,23 @@ public class FactExporterPlugin extends ProgramPlugin {
 		provider.setHelpLocation(new HelpLocation(topicName, anchorName));
 	}
 
-	public Address getCurrentAddress() {
-		return currentLocation != null ? currentLocation.getAddress() : null;
-
-	}
-
 	@Override
 	protected void locationChanged(ProgramLocation loc) {
-		 if (loc != null) { 
-			 FunctionAnalyzer funcAnalyzer = new
-			 FunctionAnalyzer(currentProgram, tool);
-			 funcAnalyzer.findReturnsSelfSecondAttempt(loc.getAddress()); 
-		 }
+		 
 	}
 
 	@Override
 	protected void highlightChanged(ProgramSelection hl) {
+
+
 	}
 
 	@Override
 	protected void selectionChanged(ProgramSelection selection) {
-
+		if (selection != null) {
+			 FunctionAnalyzer funcAnalyzer = new FunctionAnalyzer(currentProgram, tool);
+			 funcAnalyzer.findReturnsSelfSecondAttempt(); // loc.getAddress()
+		}
 	}
 
 	@Override
