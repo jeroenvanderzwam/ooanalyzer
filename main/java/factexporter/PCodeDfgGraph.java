@@ -95,19 +95,25 @@ public class PCodeDfgGraph {
 	
 	public void checkIfReturnsSelf(VarnodeAST param) 
 	{
-		var vertex = vertices.get(param.getUniqueId());
-		for (var entry : returnVertices.entrySet()) {
-			AttributedVertex possibleReturnVertex = entry.getValue();
-			List<AttributedVertex> path = hasPathToReturn(vertex, possibleReturnVertex);
-			if (path != null) {
-				if (pathHasOnlyAllowedOperations(path) ) {
-					Msg.info(this, String.format("%s Allowed path found from %s --> %s",hfunction.getFunction().getName(), vertex, possibleReturnVertex));
-					Msg.info(this, path);
-					return;
+		if (graph.getVertexCount() < 1000) {
+			var vertex = vertices.get(param.getUniqueId());
+			for (var entry : returnVertices.entrySet()) {
+				AttributedVertex possibleReturnVertex = entry.getValue();
+				List<AttributedVertex> path = hasPathToReturn(vertex, possibleReturnVertex);
+				if (path != null) {
+					if (pathHasOnlyAllowedOperations(path) ) {
+						//Msg.info(this, String.format("%s Allowed path found from %s --> %s",hfunction.getFunction().getName(), vertex, possibleReturnVertex));
+						//Msg.info(this, path);
+						Msg.info(null, hfunction.getFunction().getName());
+						return;
+					}
+					
 				}
-				
 			}
+		} else {
+			Msg.info(null, String.format("Function %s had to many nodes", hfunction.getFunction().getName()));
 		}
+
 	}
 	
 	protected void buildAndDisplayGraph(TaskMonitor monitor)

@@ -47,13 +47,13 @@ public class FunctionAnalyzer {
 	private ArrayList<String> notWorkingFunctions = new ArrayList<String>() 
 	{{
 		add("__FindPESection");
-		add("thunk_FUN_00411be0"); // to many vertices
+		//add("thunk_FUN_00411be0"); // to many vertices
 		add("_RTC_GetSrcLine");
-		add("FUN_00411be0");
+		//add("FUN_00411be0");
 		add("@_RTC_AllocaHelper@12");
 		add("_getMemBlockDataString");
 		add("__RTC_UninitUse");
-		add("Unwind@00415a50");
+		//add("Unwind@00415a50");
 	}}; 
 	
 	public void findReturnsSelfSecondAttempt()
@@ -79,7 +79,7 @@ public class FunctionAnalyzer {
 	
 			FunctionPrototype funcPrototype = high.getFunctionPrototype();
 			
-			//if (high.getFunction().getEntryPoint().toString().equals("00412540")) {
+			//if (function.getName().equals("Unwind@00415a50")) {
 				if (funcPrototype.getNumParams() > 0) {
 					HighSymbol firstParamaterSymbol = funcPrototype.getParam(0);
 
@@ -99,7 +99,7 @@ public class FunctionAnalyzer {
 //						// TODO Auto-generated catch block
 //						e.printStackTrace();
 //					}				
-
+//					graph.checkIfReturnsSelf(varNode);
 				}
 			//}
 
