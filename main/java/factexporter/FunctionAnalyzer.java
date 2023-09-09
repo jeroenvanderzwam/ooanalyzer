@@ -77,7 +77,7 @@ public class FunctionAnalyzer {
 	
 			FunctionPrototype funcPrototype = high.getFunctionPrototype();
 			
-			//if (function.getName().equals("Unwind@00415a50")) {
+			if (!function.getName().toUpperCase().contains("THUNK")) {
 				if (funcPrototype.getNumParams() > 0) {
 					HighSymbol firstParamaterSymbol = funcPrototype.getParam(0);
 
@@ -99,7 +99,7 @@ public class FunctionAnalyzer {
 //					}				
 //					graph.checkIfReturnsSelf(varNode);
 				}
-			//}
+			}
 
 		}
 	}

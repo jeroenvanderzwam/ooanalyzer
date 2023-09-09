@@ -68,24 +68,26 @@ public class PCodeDfgGraph {
 		add("PIECE");
 		add("CAST");
 	}}; // CALL, LOAD ram, PTRADD
+	
+	private boolean operationIsAllowed(AttributedVertex vertex) {
+		var name = vertex.getAttribute("Name");
+		var vertexType = vertex.getAttribute("VertexType");
+		if (vertexType == "Register") {return true;}
 		
-	private ArrayList<String> registers = new ArrayList<String>() 
-	{{
-		add("ECX");
-		add("EAX");
-	}};
+		if (name.contains(":")) {
+			name = name.split(":")[0];
+		}
+		if (name.contains("[")) {
+			name = name.split("\\[")[0];
+		}
+		if (allowedOperations.contains(name.toUpperCase())) { return true; }
+		return false;
+	}
 	
 	public boolean pathHasOnlyAllowedOperations(List<AttributedVertex> path) 
 	{
 		for (var vertexOnPath : path) {
-			var name = vertexOnPath.getAttribute("Name");
-			if (name.contains(":")) {
-				name = name.split(":")[0];
-			}
-			if (name.contains("[")) {
-				name = name.split("\\[")[0];
-			}
-			if (!allowedOperations.contains(name.toUpperCase()) && !registers.contains(name.toUpperCase())) {
+			if (!operationIsAllowed(vertexOnPath)) {
 				return false;
 			}
 		}
@@ -102,7 +104,7 @@ public class PCodeDfgGraph {
 				List<AttributedVertex> path = hasPathToReturn(vertex, possibleReturnVertex);
 				if (path != null) {
 					if (pathHasOnlyAllowedOperations(path) ) {
-						Msg.info(null, hfunction.getFunction().getName());
+						Msg.info(null, String.format("%s:%s", hfunction.getFunction().getEntryPoint(), hfunction.getFunction().getName()));
 						return;
 					}
 					
