@@ -84,7 +84,7 @@ public class FactExporterPlugin extends ProgramPlugin {
 	protected void selectionChanged(ProgramSelection selection) {
 		if (selection != null) {
 			 FunctionAnalyzer funcAnalyzer = new FunctionAnalyzer(currentProgram, tool);
-			 funcAnalyzer.findReturnsSelfSecondAttempt(); // loc.getAddress()
+			 funcAnalyzer.findReturnsSelf(); // loc.getAddress()
 		}
 	}
 
