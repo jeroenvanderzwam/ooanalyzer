@@ -37,13 +37,14 @@ public class PCodeDfgGraph {
 		graph = new AttributedGraph("Data Flow Graph", graphType);
 	}
 	
-	private List<AttributedVertex> hasPathToReturn(AttributedVertex vertex, AttributedVertex possibleReturnVertex) {
+	private List<AttributedVertex> hasValidPathToReturn(AttributedVertex vertex, AttributedVertex possibleReturnVertex) {
 		List<List<AttributedVertex>> frontier = new ArrayList<>();
 		frontier.add(new ArrayList<AttributedVertex>() {{ add(vertex); }});
 		while (!frontier.isEmpty()) {
 			var nextVertexList = frontier.remove(0);
-			var nextVertex= nextVertexList.get(nextVertexList.size() - 1);
+			var nextVertex = nextVertexList.get(nextVertexList.size() - 1);
 			if (nextVertex == null) { continue; }
+			if (!operationIsAllowed(nextVertex)) { continue; }
 			if (nextVertex.equals(possibleReturnVertex)) {
 				return nextVertexList;
 			}
@@ -69,51 +70,41 @@ public class PCodeDfgGraph {
 		add("CAST");
 	}}; // CALL, LOAD ram, PTRADD
 	
-	private boolean operationIsAllowed(AttributedVertex vertex) {
-		var name = vertex.getAttribute("Name");
+	private boolean isRegister(AttributedVertex vertex) {
 		var vertexType = vertex.getAttribute("VertexType");
 		if (vertexType == "Register") {return true;}
-		
+		return false;
+	}
+	
+	private boolean isAllowedOperation(AttributedVertex vertex) {
+		var name = vertex.getAttribute("Name");
 		if (name.contains(":")) {
 			name = name.split(":")[0];
 		}
 		if (name.contains("[")) {
 			name = name.split("\\[")[0];
 		}
-		if (allowedOperations.contains(name.toUpperCase())) { return true; }
+		if (allowedOperations.contains(name.toUpperCase())) { return true;}
 		return false;
 	}
 	
-	public boolean pathHasOnlyAllowedOperations(List<AttributedVertex> path) 
-	{
-		for (var vertexOnPath : path) {
-			if (!operationIsAllowed(vertexOnPath)) {
-				return false;
-			}
-		}
-		return true;
+	private boolean operationIsAllowed(AttributedVertex vertex) {
+		if (isRegister(vertex)) {return true;}
+		if (isAllowedOperation(vertex)) {return true;}
+		return false;
 	}
-	
 	
 	public void checkIfReturnsSelf(VarnodeAST param) 
 	{
-		if (graph.getVertexCount() < 1000) {
-			var vertex = vertices.get(param.getUniqueId());
-			for (var entry : returnVertices.entrySet()) {
-				AttributedVertex possibleReturnVertex = entry.getValue();
-				List<AttributedVertex> path = hasPathToReturn(vertex, possibleReturnVertex);
-				if (path != null) {
-					if (pathHasOnlyAllowedOperations(path) ) {
-						Msg.info(null, String.format("%s:%s", hfunction.getFunction().getEntryPoint(), hfunction.getFunction().getName()));
-						return;
-					}
-					
-				}
+		var vertex = vertices.get(param.getUniqueId());
+		for (var entry : returnVertices.entrySet()) {
+			AttributedVertex possibleReturnVertex = entry.getValue();
+			List<AttributedVertex> path = hasValidPathToReturn(vertex, possibleReturnVertex);
+			if (path != null) {
+				Msg.out(String.format("%s", hfunction.getFunction().getEntryPoint()));
+				return;
 			}
-		} else {
-			Msg.info(null, String.format("Function %s had to many nodes", hfunction.getFunction().getEntryPoint()));
 		}
-
 	}
 	
 	protected void buildAndDisplayGraph(TaskMonitor monitor)
