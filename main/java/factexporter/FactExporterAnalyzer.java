@@ -33,7 +33,7 @@ public class FactExporterAnalyzer extends AbstractAnalyzer {
 
 		// TODO: Name the analyzer and give it a description.
 
-		super("My Analyzer", "Analyzer description goes here", AnalyzerType.BYTE_ANALYZER);
+		super("Fact exporter Analyzer", "Creates facts for OOAnalyzer", AnalyzerType.BYTE_ANALYZER);
 	}
 
 	@Override
@@ -41,7 +41,7 @@ public class FactExporterAnalyzer extends AbstractAnalyzer {
 
 		// TODO: Return true if analyzer should be enabled by default
 
-		return false;
+		return true;
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class FactExporterAnalyzer extends AbstractAnalyzer {
 		// TODO: Examine 'program' to determine of this analyzer should analyze it.  Return true
 		// if it can.
 
-		return false;
+		return true;
 	}
 
 	@Override
@@ -68,6 +68,10 @@ public class FactExporterAnalyzer extends AbstractAnalyzer {
 
 		// TODO: Perform analysis when things get added to the 'program'.  Return true if the
 		// analysis succeeded.
+		
+		 FunctionAnalyzer funcAnalyzer = new FunctionAnalyzer(program);
+		 funcAnalyzer.findReturnsSelf(); // loc.getAddress()
+
 
 		return false;
 	}

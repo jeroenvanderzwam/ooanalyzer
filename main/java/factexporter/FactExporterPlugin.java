@@ -19,21 +19,15 @@ import java.awt.BorderLayout;
 import javax.swing.*;
 import docking.ActionContext;
 import docking.ComponentProvider;
-import docking.action.DockingAction;
-import docking.action.ToolBarData;
+import docking.action.*;
 import ghidra.app.ExamplesPluginPackage;
-import ghidra.app.plugin.PluginCategoryNames;
-import ghidra.app.plugin.ProgramPlugin;
+import ghidra.app.plugin.*;
 import ghidra.framework.plugintool.*;
 import ghidra.framework.plugintool.util.PluginStatus;
 import ghidra.program.model.listing.Program;
-import ghidra.program.util.ProgramLocation;
-import ghidra.program.util.ProgramSelection;
-import ghidra.util.HelpLocation;
-import ghidra.util.Msg;
-import ghidra.util.task.TaskMonitor;
+import ghidra.program.util.*;
+import ghidra.util.*;
 import resources.Icons;
-import ghidra.program.model.address.Address;
 
 /**
  * TODO: Provide class-level documentation that describes what this plugin does.
@@ -82,10 +76,11 @@ public class FactExporterPlugin extends ProgramPlugin {
 
 	@Override
 	protected void selectionChanged(ProgramSelection selection) {
-		if (selection != null) {
-			 FunctionAnalyzer funcAnalyzer = new FunctionAnalyzer(currentProgram, tool);
-			 funcAnalyzer.findReturnsSelf(); // loc.getAddress()
-		}
+		/*
+		 * if (selection != null) { FunctionAnalyzer funcAnalyzer = new
+		 * FunctionAnalyzer(currentProgram, tool); funcAnalyzer.findReturnsSelf(); //
+		 * loc.getAddress() }
+		 */
 	}
 
 	@Override

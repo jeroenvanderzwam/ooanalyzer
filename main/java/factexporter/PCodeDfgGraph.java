@@ -4,10 +4,7 @@ import static ghidra.app.plugin.core.decompile.actions.PCodeDfgDisplayOptions.*;
 
 import java.util.*;
 
-import com.kenai.jffi.Array;
-
-import ghidra.app.plugin.core.decompile.actions.PCodeDfgDisplayOptions;
-import ghidra.app.plugin.core.decompile.actions.PCodeDfgGraphType;
+import ghidra.app.plugin.core.decompile.actions.*;
 import ghidra.app.services.GraphDisplayBroker;
 import ghidra.framework.plugintool.PluginTool;
 import ghidra.program.model.address.AddressSpace;
@@ -16,8 +13,7 @@ import ghidra.program.model.listing.Function;
 import ghidra.program.model.pcode.*;
 import ghidra.service.graph.*;
 import ghidra.util.Msg;
-import ghidra.util.exception.CancelledException;
-import ghidra.util.exception.GraphException;
+import ghidra.util.exception.*;
 import ghidra.util.task.TaskMonitor;
 
 public class PCodeDfgGraph {
@@ -33,6 +29,12 @@ public class PCodeDfgGraph {
 		hfunction = highFunction;
 		this.graphService = graphService;
 		this.tool = tool;
+		GraphType graphType = new PCodeDfgGraphType();
+		graph = new AttributedGraph("Data Flow Graph", graphType);
+	}
+	
+	public PCodeDfgGraph(HighFunction highFunction) {
+		hfunction = highFunction;
 		GraphType graphType = new PCodeDfgGraphType();
 		graph = new AttributedGraph("Data Flow Graph", graphType);
 	}
@@ -68,7 +70,7 @@ public class PCodeDfgGraph {
 		add("RETURN");
 		add("PIECE");
 		add("CAST");
-	}}; // CALL, LOAD ram, PTRADD
+	}};
 	
 	private boolean isRegister(AttributedVertex vertex) {
 		var vertexType = vertex.getAttribute("VertexType");
@@ -101,7 +103,7 @@ public class PCodeDfgGraph {
 			AttributedVertex possibleReturnVertex = entry.getValue();
 			List<AttributedVertex> path = hasValidPathToReturn(vertex, possibleReturnVertex);
 			if (path != null) {
-				Msg.out(String.format("%s", hfunction.getFunction().getEntryPoint()));
+				Msg.out(String.format("%s %s", hfunction.getFunction().getEntryPoint(), path));
 				return;
 			}
 		}
