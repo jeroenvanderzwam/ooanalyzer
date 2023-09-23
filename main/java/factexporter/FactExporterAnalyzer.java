@@ -69,8 +69,8 @@ public class FactExporterAnalyzer extends AbstractAnalyzer {
 		// TODO: Perform analysis when things get added to the 'program'.  Return true if the
 		// analysis succeeded.
 		
-		 FunctionAnalyzer funcAnalyzer = new FunctionAnalyzer(program);
-		 funcAnalyzer.findReturnsSelf(); // loc.getAddress()
+		 FactExporter factExporter = new FactExporter(program);
+		 factExporter.CreateFacts();
 
 
 		return false;

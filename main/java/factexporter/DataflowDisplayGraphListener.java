@@ -28,11 +28,11 @@ import ghidra.service.graph.*;
 /**
  * GraphDisplayListener for a PCode data flow graph
  */
-class PCodeDfgDisplayListener extends AddressBasedGraphDisplayListener {
+class DataflowDisplayGraphListener extends AddressBasedGraphDisplayListener {
 
 	HighFunction highfunc;
 
-	public PCodeDfgDisplayListener(PluginTool tool, GraphDisplay display, HighFunction high,
+	public DataflowDisplayGraphListener(PluginTool tool, GraphDisplay display, HighFunction high,
 			Program program) {
 		super(tool, program, display);
 		highfunc = high;
@@ -73,6 +73,6 @@ class PCodeDfgDisplayListener extends AddressBasedGraphDisplayListener {
 
 	@Override
 	public GraphDisplayListener cloneWith(GraphDisplay display) {
-		return new PCodeDfgDisplayListener(tool, display, highfunc, program);
+		return new DataflowDisplayGraphListener(tool, display, highfunc, program);
 	}
 }

@@ -5,38 +5,69 @@ import static ghidra.app.plugin.core.decompile.actions.PCodeDfgDisplayOptions.*;
 import java.util.*;
 
 import ghidra.app.plugin.core.decompile.actions.*;
-import ghidra.app.services.GraphDisplayBroker;
-import ghidra.framework.plugintool.PluginTool;
 import ghidra.program.model.address.AddressSpace;
 import ghidra.program.model.lang.Register;
-import ghidra.program.model.listing.Function;
 import ghidra.program.model.pcode.*;
 import ghidra.service.graph.*;
 import ghidra.util.Msg;
-import ghidra.util.exception.*;
-import ghidra.util.task.TaskMonitor;
 
-public class PCodeDfgGraph {
-
-	private GraphDisplayBroker graphService;
+public class DataflowGraph {
 	protected HighFunction hfunction;
-	private AttributedGraph graph;
-	private PluginTool tool;
+	protected AttributedGraph graph;
+
 	private HashMap<Integer, AttributedVertex> vertices = new HashMap<>();
 	private HashMap<Integer, AttributedVertex> returnVertices = new HashMap<>();
 	
-	public PCodeDfgGraph(PluginTool tool,GraphDisplayBroker graphService, HighFunction highFunction) {
+	public DataflowGraph(HighFunction highFunction) {
 		hfunction = highFunction;
-		this.graphService = graphService;
-		this.tool = tool;
 		GraphType graphType = new PCodeDfgGraphType();
 		graph = new AttributedGraph("Data Flow Graph", graphType);
 	}
 	
-	public PCodeDfgGraph(HighFunction highFunction) {
-		hfunction = highFunction;
-		GraphType graphType = new PCodeDfgGraphType();
-		graph = new AttributedGraph("Data Flow Graph", graphType);
+	public void buildGraph() {
+		Iterator<PcodeOpAST> opiter = getPcodeOpIterator();
+		while (opiter.hasNext()) {
+			PcodeOpAST op = opiter.next();
+			AttributedVertex o = createOpVertex(op);
+			for (int i = 0; i < op.getNumInputs(); ++i) {
+				int opcode = op.getOpcode();
+				
+				if ((i == 0) && ((opcode == PcodeOp.LOAD) || (opcode == PcodeOp.STORE))) {
+					continue;
+				}
+				if ((i == 1) && (opcode == PcodeOp.INDIRECT)) {
+					continue;
+				}
+				VarnodeAST vn = (VarnodeAST) op.getInput(i);
+				if (vn != null) {
+					AttributedVertex v = getVarnodeVertex(vertices, vn);
+					createEdge(v, o);
+					if (opcode == PcodeOp.RETURN) {
+						returnVertices.put(vn.getUniqueId(), o);
+					}
+				}
+			}
+			VarnodeAST outvn = (VarnodeAST) op.getOutput();
+			if (outvn != null) {
+				AttributedVertex outv = getVarnodeVertex(vertices, outvn);
+				if (outv != null) {
+					createEdge(o, outv);
+				}
+			}
+		}
+	}
+	
+	public void checkIfReturnsSelf(VarnodeAST param) 
+	{
+		var vertex = vertices.get(param.getUniqueId());
+		for (var entry : returnVertices.entrySet()) {
+			AttributedVertex possibleReturnVertex = entry.getValue();
+			List<AttributedVertex> path = hasValidPathToReturn(vertex, possibleReturnVertex);
+			if (path != null) {
+				Msg.out(String.format("%s %s", hfunction.getFunction().getEntryPoint(), path));
+				return;
+			}
+		}
 	}
 	
 	private List<AttributedVertex> hasValidPathToReturn(AttributedVertex vertex, AttributedVertex possibleReturnVertex) {
@@ -96,70 +127,6 @@ public class PCodeDfgGraph {
 		return false;
 	}
 	
-	public void checkIfReturnsSelf(VarnodeAST param) 
-	{
-		var vertex = vertices.get(param.getUniqueId());
-		for (var entry : returnVertices.entrySet()) {
-			AttributedVertex possibleReturnVertex = entry.getValue();
-			List<AttributedVertex> path = hasValidPathToReturn(vertex, possibleReturnVertex);
-			if (path != null) {
-				Msg.out(String.format("%s %s", hfunction.getFunction().getEntryPoint(), path));
-				return;
-			}
-		}
-	}
-	
-	protected void buildAndDisplayGraph(TaskMonitor monitor)
-			throws GraphException, CancelledException {
-
-		GraphType graphType = new PCodeDfgGraphType();
-		Function func = hfunction.getFunction();
-		graph = new AttributedGraph("Data Flow Graph", graphType);
-		buildGraph();
-		GraphDisplay graphDisplay = graphService.getDefaultGraphDisplay(false, monitor);
-		GraphDisplayOptions displayOptions = new PCodeDfgDisplayOptions(tool);
-
-		String description = "AST Data Flow Graph For " + func.getName();
-		graphDisplay.setGraph(graph, displayOptions, description, false, monitor);
-
-		// Install a handler so the selection/location will map
-//		graphDisplay.setGraphDisplayListener(new PCodeDfgDisplayListener(tool, graphDisplay,
-//			hfunction, func.getProgram()));
-	}
-	
-	protected void buildGraph() {
-		Iterator<PcodeOpAST> opiter = getPcodeOpIterator();
-		while (opiter.hasNext()) {
-			PcodeOpAST op = opiter.next();
-			AttributedVertex o = createOpVertex(op);
-			for (int i = 0; i < op.getNumInputs(); ++i) {
-				int opcode = op.getOpcode();
-				
-				if ((i == 0) && ((opcode == PcodeOp.LOAD) || (opcode == PcodeOp.STORE))) {
-					continue;
-				}
-				if ((i == 1) && (opcode == PcodeOp.INDIRECT)) {
-					continue;
-				}
-				VarnodeAST vn = (VarnodeAST) op.getInput(i);
-				if (vn != null) {
-					AttributedVertex v = getVarnodeVertex(vertices, vn);
-					createEdge(v, o);
-					if (opcode == PcodeOp.RETURN) {
-						returnVertices.put(vn.getUniqueId(), o);
-					}
-				}
-			}
-			VarnodeAST outvn = (VarnodeAST) op.getOutput();
-			if (outvn != null) {
-				AttributedVertex outv = getVarnodeVertex(vertices, outvn);
-				if (outv != null) {
-					createEdge(o, outv);
-				}
-			}
-		}
-	}
-	
 	private String getVarnodeKey(VarnodeAST vn) {
 		PcodeOp op = vn.getDef();
 		String id;
@@ -173,7 +140,7 @@ public class PCodeDfgGraph {
 		return id;
 	}
 
-	protected AttributedVertex createVarnodeVertex(VarnodeAST vn) {
+	private AttributedVertex createVarnodeVertex(VarnodeAST vn) {
 		String name = vn.getAddress().toString(true);
 		String id = getVarnodeKey(vn);
 		String vertexType = PCodeDfgGraphType.DEFAULT_VERTEX;
@@ -206,7 +173,7 @@ public class PCodeDfgGraph {
 		return vert;
 	}
 
-	protected AttributedVertex getVarnodeVertex(Map<Integer, AttributedVertex> vertices,
+	private AttributedVertex getVarnodeVertex(Map<Integer, AttributedVertex> vertices,
 			VarnodeAST vn) {
 		AttributedVertex res;
 		res = vertices.get(vn.getUniqueId());
@@ -217,13 +184,13 @@ public class PCodeDfgGraph {
 		return res;
 	}
 
-	protected AttributedEdge createEdge(AttributedVertex in, AttributedVertex out) {
+	private AttributedEdge createEdge(AttributedVertex in, AttributedVertex out) {
 		AttributedEdge newEdge = graph.addEdge(in, out);
 		newEdge.setEdgeType(PCodeDfgGraphType.DEFAULT_EDGE);
 		return newEdge;
 	}
 
-	protected AttributedVertex createOpVertex(PcodeOpAST op) {
+	private AttributedVertex createOpVertex(PcodeOpAST op) {
 		String name = op.getMnemonic();
 		String id = getOpKey(op);
 		int opcode = op.getOpcode();
@@ -250,7 +217,7 @@ public class PCodeDfgGraph {
 		return vert;
 	}
 
-	protected Iterator<PcodeOpAST> getPcodeOpIterator() {
+	private Iterator<PcodeOpAST> getPcodeOpIterator() {
 		Iterator<PcodeOpAST> opiter = hfunction.getPcodeOps();
 		return opiter;
 	}

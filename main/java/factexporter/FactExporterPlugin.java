@@ -76,11 +76,6 @@ public class FactExporterPlugin extends ProgramPlugin {
 
 	@Override
 	protected void selectionChanged(ProgramSelection selection) {
-		/*
-		 * if (selection != null) { FunctionAnalyzer funcAnalyzer = new
-		 * FunctionAnalyzer(currentProgram, tool); funcAnalyzer.findReturnsSelf(); //
-		 * loc.getAddress() }
-		 */
 	}
 
 	@Override
