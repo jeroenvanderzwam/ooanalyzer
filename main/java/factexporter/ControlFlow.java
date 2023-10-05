@@ -1,45 +1,52 @@
 package factexporter;
 
-import ghidra.util.Msg;
+import ghidra.graph.GDirectedGraph;
+import ghidra.graph.GraphFactory;
+import ghidra.program.model.address.AddressSetView;
+import ghidra.program.model.block.*;
+import ghidra.program.model.block.graph.*;
 import ghidra.program.model.listing.*;
-import ghidra.program.model.symbol.RefType;
-import ghidra.program.model.address.*;
+import ghidra.util.exception.CancelledException;
+import ghidra.util.task.TaskMonitor;
 
 public class ControlFlow {
-	
-	public void run(Program program) 
-	{
-		Function startingPoint = program.getListing().getGlobalFunctions("entry").get(0);
-		Address addr = startingPoint.getEntryPoint();
-		Instruction instruction = program.getListing().getInstructionAt(addr);
-        while (true) {
-        	
-            RefType t = instruction.getFlowType();
 
-            if (t == RefType.UNCONDITIONAL_CALL) 
-            {
-            	var addresses = instruction.getFlows();
-            	instruction = program.getListing().getInstructionAt(addresses[0]);
-            	Function function = program.getListing().getFunctionAt(addresses[0]);
-            	Msg.out("Call to: " + function.getName());
-            }
-            else if (t == RefType.UNCONDITIONAL_JUMP) 
-            {
-            	var addresses = instruction.getFlows();
-            	instruction = program.getListing().getInstructionAt(addresses[0]);
-            	Function function = program.getListing().getFunctionAt(addresses[0]);
-            	if (function != null) 
-            	{
-            		Msg.out("Unconditional jump to: " + function.getName());
-            	}
-            	
-            }
-            else 
-            {
-            	instruction = instruction.getNext();
-            	Msg.out(t.toString() + "---"+ instruction);
-            }  
-        }
-	}
-	
+		protected GDirectedGraph<CodeBlockVertex, CodeBlockEdge> _cfg;
+		protected Program _program;
+		
+		public ControlFlow(Program program) {
+			_program = program;
+			_cfg = GraphFactory.createDirectedGraph();
+		}
+		
+		public GDirectedGraph<CodeBlockVertex, CodeBlockEdge> CreateGraph(Function function) {
+			BasicBlockModel basicBlockModel = new BasicBlockModel(_program);
+			AddressSetView addrSet = function.getBody();
+			try {
+				CodeBlockIterator codeBlockIter = basicBlockModel.getCodeBlocksContaining(addrSet, TaskMonitor.DUMMY);
+			
+				while (codeBlockIter.hasNext()) {
+					CodeBlock block = codeBlockIter.next();
+					CodeBlockReferenceIterator dstBlocks = block.getDestinations(TaskMonitor.DUMMY);
+					
+					while (dstBlocks.hasNext()) {
+						this.addEdge(dstBlocks.next());
+					}
+					
+				}
+			} catch (CancelledException e) {
+				e.printStackTrace();
+			}
+			return _cfg;
+		}
+		
+		public void addEdge(CodeBlockReference codeBlockRef) {
+			CodeBlockEdge edge = new CodeBlockEdge(new CodeBlockVertex(codeBlockRef.getSourceBlock()), new CodeBlockVertex(codeBlockRef.getDestinationBlock()));
+			this._cfg.addEdge(edge);
+		}
+		
+		public void addEdge(CodeBlock srcBlock, CodeBlock dstBlock) {
+			CodeBlockEdge edge = new CodeBlockEdge(new CodeBlockVertex(srcBlock), new CodeBlockVertex(dstBlock));
+			this._cfg.addEdge(edge);
+		}
 }
