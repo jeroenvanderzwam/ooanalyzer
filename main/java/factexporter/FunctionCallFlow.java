@@ -5,7 +5,7 @@ import ghidra.program.model.listing.*;
 import ghidra.program.model.symbol.RefType;
 import ghidra.program.model.address.*;
 
-public class ControlFlowV1 {
+public class FunctionCallFlow {
 	
 	public void run(Program program) 
 	{
