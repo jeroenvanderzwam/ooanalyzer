@@ -5,7 +5,7 @@ import ghidra.app.decompiler.*;
 import ghidra.program.model.listing.*;
 import ghidra.program.model.pcode.*;
 
-public class ReturnsSelf implements Fact{
+public class ReturnsSelf implements Fact {
 
 	@Override
 	public void CreateFacts(Program program) {

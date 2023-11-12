@@ -7,8 +7,8 @@ public class NoCallsBefore implements Fact {
 
 	@Override
 	public void CreateFacts(Program program) {
-		ThisPtrCalls thisPtrCalls = new ThisPtrCalls();
-		thisPtrCalls.run(program);
+		ThisPtrCalls thisPtrCalls = new ThisPtrCalls(program);
+		thisPtrCalls.run();
 	}
 
 }

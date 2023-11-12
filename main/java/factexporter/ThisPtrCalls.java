@@ -7,88 +7,124 @@ import org.javatuples.Triplet;
 
 import ghidra.app.decompiler.DecompInterface;
 import ghidra.app.decompiler.DecompileResults;
-import ghidra.program.model.data.PointerDataType;
-import ghidra.program.model.data.Undefined;
-import ghidra.program.model.data.Undefined4DataType;
 import ghidra.program.model.listing.Function;
 import ghidra.program.model.listing.Program;
-import ghidra.program.model.pcode.FunctionPrototype;
+import ghidra.program.model.pcode.HighConstant;
 import ghidra.program.model.pcode.HighFunction;
-import ghidra.program.model.pcode.HighSymbol;
+import ghidra.program.model.pcode.HighGlobal;
+import ghidra.program.model.pcode.HighLocal;
+import ghidra.program.model.pcode.HighOther;
 import ghidra.program.model.pcode.HighVariable;
-import ghidra.program.model.pcode.VarnodeAST;
-import ghidra.program.model.symbol.RefType;
+import ghidra.program.model.pcode.PcodeOp;
+import ghidra.program.model.pcode.Varnode;
 import ghidra.util.Msg;
 
-public class ThisPtrCalls {
+public class ThisPtrCalls 
+{
+	private List<Triplet<Function, Function, ArgumentValue>> functionCalls = new ArrayList<Triplet<Function, Function, ArgumentValue>>();
+	private Program _program;
 	
-	class ECXValue {
+	public ThisPtrCalls(Program program) 
+	{
+		_program = program;
+	}
+	
+	class ArgumentValue {
 		private String name;
 		private String type;
 		
-		public ECXValue(String name, String type) {
+		public ArgumentValue(String name, String type) 
+		{
 			this.name = name;
 			this.type = type;
 		}
 		
 		@Override
-		public String toString() {
+		public String toString() 
+		{
 			return this.name + "::" + this.type;
 		}
 	}
+	
 
-	public void run(Program program) 
+	private String argumentValue(HighVariable highVariable) {
+		String argumentValue = "";
+		if (highVariable instanceof HighConstant) {
+			var constant = (HighConstant)highVariable;
+			argumentValue = constant.getScalar().toString();
+		} else if(highVariable instanceof HighOther) {
+			var highOther = (HighOther)highVariable;
+			argumentValue = highOther.getName();
+		} else if (highVariable instanceof HighLocal) {
+			var highLocal = (HighLocal)highVariable;
+			argumentValue = highLocal.getSymbol().getName();
+		} else if (highVariable instanceof HighGlobal){
+			var highGlobal = (HighGlobal)highVariable;
+			argumentValue = highGlobal.getName();
+		}
+		return argumentValue;
+	}
+	
+	private String argumentDataType(HighVariable highVariable) {
+		return highVariable.getDataType().toString();
+	}
+
+	public void run() 
 	{
-		List<Triplet<Function, Function, ECXValue>> functionCalls = new ArrayList<Triplet<Function, Function, ECXValue>>();
-		var funcIter = program.getListing().getFunctions(true);
+		
+		var funcIter = _program.getListing().getFunctions(true);
 		DecompInterface decompInterface = new DecompInterface();
-		decompInterface.openProgram(program);
+		decompInterface.openProgram(_program);
 		while (funcIter.hasNext())
 		{
 			var function = funcIter.next();
-			var functionBodyAddresses = function.getBody().getAddresses(true);
-			for (var address : functionBodyAddresses)
+
+			DecompileResults results = decompInterface.decompileFunction(function, 0, null);
+			HighFunction highFunction = results.getHighFunction();
+			var pCodeOps = highFunction.getPcodeOps();
+			while (pCodeOps.hasNext()) 
 			{
-				var ins = program.getListing().getInstructionAt(address);
-				if (ins != null && ins.getFlowType() == RefType.UNCONDITIONAL_CALL)
+				var op = pCodeOps.next();
+				var opCode = op.getOpcode();
+				if (opCode == PcodeOp.CALL ) {
+
+					handleCalls(function, op.getInputs());
+				} 
+				else if (opCode == PcodeOp.CALLIND) 
 				{
-					var funcAddress = ins.getFlows()[0];
-					var calledFunction = program.getListing().getFunctionAt(funcAddress);
-					if (calledFunction.getName().equals("__RTC_CheckEsp")) { continue;}
-					
-					ECXValue ecxValue = null;
-					if (calledFunction.getParameterCount() > 0) {
-						DecompileResults res = decompInterface.decompileFunction(calledFunction, 30, null);
-						HighFunction highFunction = res.getHighFunction();
-						FunctionPrototype funcPrototype = highFunction.getFunctionPrototype();
-						HighSymbol firstParamaterSymbol = funcPrototype.getParam(0);
-						HighVariable firstParamaterVariable = firstParamaterSymbol.getHighVariable();
-						VarnodeAST firstParameterVarnode = (VarnodeAST)firstParamaterVariable.getRepresentative();
-						if (firstParameterVarnode.isRegister()) {
-							var register = program.getRegister(firstParameterVarnode.getAddress());
-							var name = register.getName();
-							if (name.equals("ECX")) {
-								if (firstParamaterSymbol.getDataType() instanceof PointerDataType ||
-									firstParamaterSymbol.getDataType() instanceof Undefined4DataType) {
-									ecxValue = new ECXValue(firstParamaterSymbol.getName(), firstParamaterSymbol.getDataType().getName());
-									var triplet = new Triplet<Function, Function, ECXValue>(function, calledFunction, ecxValue);
-									functionCalls.add(triplet);
-								} else {
-									Msg.out("");
-								}
-
-							}
-							
-						}
-					}
-
+					handleIndirectCalls(function, op.getInputs());
 				}
 			}
 		}
-		Msg.out(functionCalls.size());
+		Msg.out("Found " + functionCalls.size() + " tuples.");
 		for(var functionCall : functionCalls)
 		{
-			Msg.out(String.format("%s: %s: %s", functionCall.getValue0(), functionCall.getValue1(), functionCall.getValue2()));
+			Msg.out(String.format("%s, %s, %s, %s", 
+					functionCall.getValue0().getName(), 
+					functionCall.getValue0().getEntryPoint(), 
+					functionCall.getValue1().getName(), 
+					functionCall.getValue2()));
 		}
+	}
+
+	private void handleIndirectCalls(Function function, Varnode[] inputs) {
+		Msg.out(inputs);
+	}
+
+	private void handleCalls(Function function, Varnode[] inputs) {
+
+		var funcAddress = inputs[0].getAddress();
+		var calledFunction = _program.getListing().getFunctionAt(funcAddress);
+		if (calledFunction != null) {
+			if (inputs.length >= 2) {
+				var arg1 = inputs[1].getHigh();
+				String name = argumentValue(arg1);
+				String dataType = argumentDataType(arg1);
+				functionCalls.add(new Triplet<Function, Function, ArgumentValue>(function, 
+						calledFunction, 
+						new ArgumentValue(name, dataType)));
+			}
+		}
+		
 	}
 }

@@ -17,13 +17,13 @@ public class DataflowGraph {
 
 	private HashMap<Integer, AttributedVertex> vertices = new HashMap<>();
 	private HashMap<Integer, AttributedVertex> returnVertices = new HashMap<>();
-	
+
 	public DataflowGraph(HighFunction highFunction) {
 		hfunction = highFunction;
 		GraphType graphType = new PCodeDfgGraphType();
 		graph = new AttributedGraph("Data Flow Graph", graphType);
 	}
-	
+
 	public void buildGraph() {
 		Iterator<PcodeOpAST> opiter = getPcodeOpIterator();
 		while (opiter.hasNext()) {
@@ -31,7 +31,7 @@ public class DataflowGraph {
 			AttributedVertex o = createOpVertex(op);
 			for (int i = 0; i < op.getNumInputs(); ++i) {
 				int opcode = op.getOpcode();
-				
+
 				if ((i == 0) && ((opcode == PcodeOp.LOAD) || (opcode == PcodeOp.STORE))) {
 					continue;
 				}
@@ -56,9 +56,8 @@ public class DataflowGraph {
 			}
 		}
 	}
-	
-	public void checkIfReturnsSelf(VarnodeAST param) 
-	{
+
+	public void checkIfReturnsSelf(VarnodeAST param) {
 		var vertex = vertices.get(param.getUniqueId());
 		for (var entry : returnVertices.entrySet()) {
 			AttributedVertex possibleReturnVertex = entry.getValue();
@@ -69,15 +68,24 @@ public class DataflowGraph {
 			}
 		}
 	}
-	
-	private List<AttributedVertex> hasValidPathToReturn(AttributedVertex vertex, AttributedVertex possibleReturnVertex) {
+
+	private List<AttributedVertex> hasValidPathToReturn(AttributedVertex vertex,
+			AttributedVertex possibleReturnVertex) {
 		List<List<AttributedVertex>> frontier = new ArrayList<>();
-		frontier.add(new ArrayList<AttributedVertex>() {{ add(vertex); }});
+		frontier.add(new ArrayList<AttributedVertex>() {
+			{
+				add(vertex);
+			}
+		});
 		while (!frontier.isEmpty()) {
 			var nextVertexList = frontier.remove(0);
 			var nextVertex = nextVertexList.get(nextVertexList.size() - 1);
-			if (nextVertex == null) { continue; }
-			if (!operationIsAllowed(nextVertex)) { continue; }
+			if (nextVertex == null) {
+				continue;
+			}
+			if (!operationIsAllowed(nextVertex)) {
+				continue;
+			}
 			if (nextVertex.equals(possibleReturnVertex)) {
 				return nextVertexList;
 			}
@@ -89,26 +97,29 @@ public class DataflowGraph {
 		}
 		return null;
 	}
-	
-	private ArrayList<String> allowedOperations = new ArrayList<String>() 
-	{{
-		add("STACK");
-		add("UNIQUE");
-		add("INDIRECT (CALL)");
-		add("COPY");
-		add("MULTIEQUAL");
-		add("VARIABLE");
-		add("RETURN");
-		add("PIECE");
-		add("CAST");
-	}};
-	
+
+	private ArrayList<String> allowedOperations = new ArrayList<String>() {
+		{
+			add("STACK");
+			add("UNIQUE");
+			add("INDIRECT (CALL)");
+			add("COPY");
+			add("MULTIEQUAL");
+			add("VARIABLE");
+			add("RETURN");
+			add("PIECE");
+			add("CAST");
+		}
+	};
+
 	private boolean isRegister(AttributedVertex vertex) {
 		var vertexType = vertex.getAttribute("VertexType");
-		if (vertexType == "Register") {return true;}
+		if (vertexType == "Register") {
+			return true;
+		}
 		return false;
 	}
-	
+
 	private boolean isAllowedOperation(AttributedVertex vertex) {
 		var name = vertex.getAttribute("Name");
 		if (name.contains(":")) {
@@ -117,24 +128,28 @@ public class DataflowGraph {
 		if (name.contains("[")) {
 			name = name.split("\\[")[0];
 		}
-		if (allowedOperations.contains(name.toUpperCase())) { return true;}
+		if (allowedOperations.contains(name.toUpperCase())) {
+			return true;
+		}
 		return false;
 	}
-	
+
 	private boolean operationIsAllowed(AttributedVertex vertex) {
-		if (isRegister(vertex)) {return true;}
-		if (isAllowedOperation(vertex)) {return true;}
+		if (isRegister(vertex)) {
+			return true;
+		}
+		if (isAllowedOperation(vertex)) {
+			return true;
+		}
 		return false;
 	}
-	
+
 	private String getVarnodeKey(VarnodeAST vn) {
 		PcodeOp op = vn.getDef();
 		String id;
 		if (op != null) {
-			id = op.getSeqnum().getTarget().toString(true) + " v " +
-				Integer.toString(vn.getUniqueId());
-		}
-		else {
+			id = op.getSeqnum().getTarget().toString(true) + " v " + Integer.toString(vn.getUniqueId());
+		} else {
 			id = "i v " + Integer.toString(vn.getUniqueId());
 		}
 		return id;
@@ -146,22 +161,17 @@ public class DataflowGraph {
 		String vertexType = PCodeDfgGraphType.DEFAULT_VERTEX;
 		if (vn.isConstant()) {
 			vertexType = PCodeDfgGraphType.CONSTANT;
-		}
-		else if (vn.isRegister()) {
+		} else if (vn.isRegister()) {
 			vertexType = PCodeDfgGraphType.REGISTER;
-			Register reg =
-				hfunction.getFunction().getProgram().getRegister(vn.getAddress(), vn.getSize());
+			Register reg = hfunction.getFunction().getProgram().getRegister(vn.getAddress(), vn.getSize());
 			if (reg != null) {
 				name = reg.getName();
 			}
-		}
-		else if (vn.isUnique()) {
+		} else if (vn.isUnique()) {
 			vertexType = PCodeDfgGraphType.UNIQUE;
-		}
-		else if (vn.isPersistent()) {
+		} else if (vn.isPersistent()) {
 			vertexType = PCodeDfgGraphType.PERSISTENT;
-		}
-		else if (vn.isAddrTied()) {
+		} else if (vn.isAddrTied()) {
 			vertexType = PCodeDfgGraphType.ADDRESS_TIED;
 		}
 		AttributedVertex vert = graph.addVertex(id, name);
@@ -173,8 +183,7 @@ public class DataflowGraph {
 		return vert;
 	}
 
-	private AttributedVertex getVarnodeVertex(Map<Integer, AttributedVertex> vertices,
-			VarnodeAST vn) {
+	private AttributedVertex getVarnodeVertex(Map<Integer, AttributedVertex> vertices, VarnodeAST vn) {
 		AttributedVertex res;
 		res = vertices.get(vn.getUniqueId());
 		if (res == null) {
@@ -196,14 +205,10 @@ public class DataflowGraph {
 		int opcode = op.getOpcode();
 		if ((opcode == PcodeOp.LOAD) || (opcode == PcodeOp.STORE)) {
 			Varnode vn = op.getInput(0);
-			AddressSpace addrspace =
-				hfunction.getFunction()
-						.getProgram()
-						.getAddressFactory()
-						.getAddressSpace((int) vn.getOffset());
+			AddressSpace addrspace = hfunction.getFunction().getProgram().getAddressFactory()
+					.getAddressSpace((int) vn.getOffset());
 			name += ' ' + addrspace.getName();
-		}
-		else if (opcode == PcodeOp.INDIRECT) {
+		} else if (opcode == PcodeOp.INDIRECT) {
 			Varnode vn = op.getInput(1);
 			if (vn != null) {
 				PcodeOp indOp = hfunction.getOpRef((int) vn.getOffset());
@@ -224,8 +229,7 @@ public class DataflowGraph {
 
 	private String getOpKey(PcodeOpAST op) {
 		SequenceNumber sq = op.getSeqnum();
-		String id =
-			sq.getTarget().toString(true) + " o " + Integer.toString(op.getSeqnum().getTime());
+		String id = sq.getTarget().toString(true) + " o " + Integer.toString(op.getSeqnum().getTime());
 		return id;
 	}
 }
