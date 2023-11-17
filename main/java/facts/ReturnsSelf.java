@@ -1,9 +1,9 @@
 package facts;
 
-import factexporter.DataflowGraph;
 import ghidra.app.decompiler.*;
 import ghidra.program.model.listing.*;
 import ghidra.program.model.pcode.*;
+import returnsSelf.DataflowGraph;
 
 public class ReturnsSelf implements Fact {
 

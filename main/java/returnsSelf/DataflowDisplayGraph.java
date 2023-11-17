@@ -1,4 +1,4 @@
-package factexporter;
+package returnsSelf;
 
 import ghidra.app.plugin.core.decompile.actions.PCodeDfgDisplayOptions;
 import ghidra.app.plugin.core.decompile.actions.PCodeDfgGraphType;

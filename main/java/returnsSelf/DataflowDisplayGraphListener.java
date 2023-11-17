@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package factexporter;
+package returnsSelf;
 
 import java.util.Collections;
 import java.util.Set;
@@ -28,7 +28,7 @@ import ghidra.service.graph.*;
 /**
  * GraphDisplayListener for a PCode data flow graph
  */
-class DataflowDisplayGraphListener extends AddressBasedGraphDisplayListener {
+public class DataflowDisplayGraphListener extends AddressBasedGraphDisplayListener {
 
 	HighFunction highfunc;
 

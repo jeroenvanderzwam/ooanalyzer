@@ -1,7 +1,7 @@
 package facts;
 
-import factexporter.ThisPtrCalls;
 import ghidra.program.model.listing.Program;
+import noCallsBefore.ThisPtrCalls;
 
 public class NoCallsBefore implements Fact {
 
