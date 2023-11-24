@@ -8,6 +8,7 @@ import facts.ReturnsSelf;
 import ghidra.app.decompiler.*;
 import ghidra.framework.plugintool.PluginTool;
 import ghidra.program.model.listing.*;
+import ghidra.util.task.TaskMonitor;
 
 public class FactExporter {
 	

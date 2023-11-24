@@ -15,6 +15,7 @@ public class ReturnsSelf implements Fact {
 		while (funcIter.hasNext()) 
 		{	
 			Function function = funcIter.next();
+			
 			if (function.isThunk()) { continue; }
 			DecompileResults res = decompInterface.decompileFunction(function, 30, null);
 			HighFunction highFunction = res.getHighFunction();

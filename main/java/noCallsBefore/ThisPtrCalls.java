@@ -41,8 +41,8 @@ public class ThisPtrCalls
 				var op = pCodeOps.next();
 				
 				var inputs = op.getInputs();
-				var funcAddress = inputs[0].getAddress();
-				var calledFunction = _program.getListing().getFunctionAt(funcAddress);
+				var callAddress = inputs[0].getAddress();
+				var calledFunction = _program.getListing().getFunctionAt(callAddress);
 				
 				var opCode = op.getOpcode();
 				if (opCode == PcodeOp.CALL) 
@@ -51,7 +51,6 @@ public class ThisPtrCalls
 					var calleeDecomp = decompInterface.decompileFunction(calledFunction, 0, null);
 					var funcPrototype = calleeDecomp.getHighFunction().getFunctionPrototype();
 					if (funcPrototype.getNumParams() < 1) { continue;}
-					
 					var param = funcPrototype.getParam(0);
 					var registers = param.getStorage().getRegisters();
 					if (registers != null && registers.contains(ecx)) {
@@ -64,10 +63,11 @@ public class ThisPtrCalls
 				} 
 				else if (opCode == PcodeOp.CALLIND) 
 				{
-					if (inputs.length < 2) {continue;}
-					var arg1 = inputs[1];
-					if (arg1.isRegister()) {
-						Msg.out(String.format("%s %s", funcAddress, arg1.getHigh().getName()));
+					if (inputs.length < 1) {continue;}
+					var high = inputs[0].getHigh();
+					Argument arg = new ConvertVariable(high).resolve();
+					if (arg instanceof VariableArgument) {
+						Msg.out(String.format("%s %s %s",function.getName(), callAddress, arg));
 					}
 				}
 			}
