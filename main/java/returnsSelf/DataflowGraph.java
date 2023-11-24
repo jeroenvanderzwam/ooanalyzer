@@ -23,6 +23,10 @@ public class DataflowGraph {
 		GraphType graphType = new PCodeDfgGraphType();
 		graph = new AttributedGraph("Data Flow Graph", graphType);
 	}
+	
+	public AttributedGraph graph() {
+		return graph;
+	}
 
 	public void buildGraph() {
 		Iterator<PcodeOpAST> opiter = getPcodeOpIterator();
@@ -63,7 +67,7 @@ public class DataflowGraph {
 			AttributedVertex possibleReturnVertex = entry.getValue();
 			List<AttributedVertex> path = hasValidPathToReturn(vertex, possibleReturnVertex);
 			if (path != null) {
-				Msg.out(String.format("%s %s", hfunction.getFunction().getEntryPoint(), path));
+				Msg.out(String.format("returnsSelf(%s)", hfunction.getFunction().getEntryPoint()));
 				return;
 			}
 		}
@@ -81,6 +85,10 @@ public class DataflowGraph {
 			var nextVertexList = frontier.remove(0);
 			var nextVertex = nextVertexList.get(nextVertexList.size() - 1);
 			if (nextVertex == null) {
+				continue;
+			}
+			var previousVertexes = nextVertexList.subList(0, nextVertexList.size() - 1);
+			if (previousVertexes.contains(nextVertex)) {
 				continue;
 			}
 			if (!operationIsAllowed(nextVertex)) {
