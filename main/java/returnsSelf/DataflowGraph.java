@@ -2,6 +2,8 @@ package returnsSelf;
 
 import static ghidra.app.plugin.core.decompile.actions.PCodeDfgDisplayOptions.*;
 
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.*;
 
 import ghidra.app.plugin.core.decompile.actions.*;
@@ -17,11 +19,18 @@ public class DataflowGraph {
 
 	private HashMap<Integer, AttributedVertex> vertices = new HashMap<>();
 	private HashMap<Integer, AttributedVertex> returnVertices = new HashMap<>();
+	
+	private PrintWriter file;
 
 	public DataflowGraph(HighFunction highFunction) {
 		hfunction = highFunction;
 		GraphType graphType = new PCodeDfgGraphType();
 		graph = new AttributedGraph("Data Flow Graph", graphType);
+	}
+	
+	public DataflowGraph(HighFunction highFunction, PrintWriter  file) {
+		this(highFunction);
+		this.file = file;
 	}
 	
 	public AttributedGraph graph() {
@@ -67,7 +76,9 @@ public class DataflowGraph {
 			AttributedVertex possibleReturnVertex = entry.getValue();
 			List<AttributedVertex> path = hasValidPathToReturn(vertex, possibleReturnVertex);
 			if (path != null) {
-				Msg.out(String.format("returnsSelf(%s)", hfunction.getFunction().getEntryPoint()));
+				var output = String.format("returnsSelf(%s).", hfunction.getFunction().getEntryPoint().toString().replace("00","0x"));
+				file.println(output);
+				Msg.out(output);
 				return;
 			}
 		}
