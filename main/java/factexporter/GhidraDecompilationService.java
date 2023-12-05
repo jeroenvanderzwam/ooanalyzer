@@ -29,7 +29,7 @@ public class GhidraDecompilationService implements DecompilationService
 		var preferredParameterLocation = new ArrayList<String>();
 		for (int i = 0; i < function.getParameterCount(); i++) {
 			var paramDatatype = function.getParameter(i).getDataType();
-			var firstArgLocation = callingConv.getArgLocation(0, function.getParameters(), paramDatatype, _program);
+			var firstArgLocation = callingConv.getArgLocation(i, function.getParameters(), paramDatatype, _program);
 			if (firstArgLocation.isRegisterStorage()) {
 				var register = firstArgLocation.getRegister();
 				preferredParameterLocation.add(register.getName());
@@ -66,7 +66,7 @@ public class GhidraDecompilationService implements DecompilationService
 			var ghidraCallingConv = function.getCallingConvention();
 			CallingConvention callingConvention = null;
 			if (ghidraCallingConv != null) {
-				callingConvention = new CallingConvention(preferredParameterLocations(function, ghidraCallingConv));
+				callingConvention = new CallingConvention(ghidraCallingConv.getName(),preferredParameterLocations(function, ghidraCallingConv));
 			}
 			
 			var res = decompInterface.decompileFunction(function, 30, null);

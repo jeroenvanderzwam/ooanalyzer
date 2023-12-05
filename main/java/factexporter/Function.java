@@ -42,4 +42,9 @@ public class Function
 	public boolean hasParameters() {
 		return _parameters.size() != 0;
 	}
+	
+	public CallingConvention callingConvention() 
+	{
+		return _callingConvention;
+	}
 }
