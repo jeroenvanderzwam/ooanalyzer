@@ -22,7 +22,7 @@ public class DataflowDisplayGraph {
 	
 	private PluginTool tool;
 	private GraphDisplayBroker graphService;
-	private DataflowGraph dataflowGraph;
+	private GhidraDataflowGraph dataflowGraph;
 	private HighFunction highFunction;
 	
 	private DataflowDisplayGraph(PluginTool tool) {
@@ -33,7 +33,7 @@ public class DataflowDisplayGraph {
 	public DataflowDisplayGraph(PluginTool tool, HighFunction highFunction) {
 		this(tool);
 		this.highFunction = highFunction;
-		dataflowGraph = new DataflowGraph(highFunction);
+		dataflowGraph = new GhidraDataflowGraph(highFunction);
 	}
 	
 	public DataflowDisplayGraph(PluginTool tool, Program program, String addressString) {
@@ -44,7 +44,7 @@ public class DataflowDisplayGraph {
 		Function function = program.getFunctionManager().getFunctionAt(address);
 		DecompileResults res = decompInterface.decompileFunction(function, 30, null);
 		highFunction = res.getHighFunction();
-		dataflowGraph = new DataflowGraph(highFunction);
+		dataflowGraph = new GhidraDataflowGraph(highFunction);
 	}
 	
 	public void buildAndDisplayGraph()

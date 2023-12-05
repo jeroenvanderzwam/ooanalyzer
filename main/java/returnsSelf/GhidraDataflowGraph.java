@@ -2,36 +2,32 @@ package returnsSelf;
 
 import static ghidra.app.plugin.core.decompile.actions.PCodeDfgDisplayOptions.*;
 
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.*;
 
+import factexporter.File;
 import ghidra.app.plugin.core.decompile.actions.*;
 import ghidra.program.model.address.AddressSpace;
 import ghidra.program.model.lang.Register;
 import ghidra.program.model.pcode.*;
 import ghidra.service.graph.*;
-import ghidra.util.Msg;
 
-public class DataflowGraph {
+public class GhidraDataflowGraph {
 	protected HighFunction hfunction;
 	protected AttributedGraph graph;
+	
 
 	private HashMap<Integer, AttributedVertex> vertices = new HashMap<>();
 	private HashMap<Integer, AttributedVertex> returnVertices = new HashMap<>();
+	private List<AttributedVertex> _path;
 	
-	private PrintWriter file;
+	private File file;
 
-	public DataflowGraph(HighFunction highFunction) {
+	public GhidraDataflowGraph(HighFunction highFunction) {
 		hfunction = highFunction;
 		GraphType graphType = new PCodeDfgGraphType();
 		graph = new AttributedGraph("Data Flow Graph", graphType);
 	}
 	
-	public DataflowGraph(HighFunction highFunction, PrintWriter  file) {
-		this(highFunction);
-		this.file = file;
-	}
 	
 	public AttributedGraph graph() {
 		return graph;
@@ -70,18 +66,20 @@ public class DataflowGraph {
 		}
 	}
 
-	public void checkIfReturnsSelf(VarnodeAST param) {
+	public boolean pathFromParamToReturn(VarnodeAST param) {
 		var vertex = vertices.get(param.getUniqueId());
 		for (var entry : returnVertices.entrySet()) {
 			AttributedVertex possibleReturnVertex = entry.getValue();
-			List<AttributedVertex> path = hasValidPathToReturn(vertex, possibleReturnVertex);
-			if (path != null) {
-				var output = String.format("returnsSelf(%s).", hfunction.getFunction().getEntryPoint().toString().replace("00","0x"));
-				file.println(output);
-				Msg.out(output);
-				return;
+			_path = hasValidPathToReturn(vertex, possibleReturnVertex);
+			if (_path != null) {
+				return true;
 			}
 		}
+		return false;
+	}
+	
+	public List<AttributedVertex> path() {
+		return _path;
 	}
 
 	private List<AttributedVertex> hasValidPathToReturn(AttributedVertex vertex,

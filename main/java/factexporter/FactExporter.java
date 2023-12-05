@@ -2,21 +2,16 @@ package factexporter;
 
 import java.util.ArrayList;
 
-import facts.Fact;
-import facts.NoCallsBefore;
-import facts.ReturnsSelf;
-import ghidra.app.decompiler.*;
-import ghidra.framework.plugintool.PluginTool;
-import ghidra.program.model.listing.*;
-import ghidra.util.task.TaskMonitor;
+import noCallsBefore.NoCallsBefore;
+import returnsSelf.ReturnsSelf;
 
 public class FactExporter {
 	
-	private Program _program;
+	private DecompilationService _decompService;
 	
-	public FactExporter(Program program) 
+	public FactExporter(DecompilationService decompService) 
 	{
-		_program = program;
+		_decompService = decompService;
 	}
 	
 	public void CreateFacts() 
@@ -29,7 +24,7 @@ public class FactExporter {
 		
 		for(var fact : facts) 
 		{
-			fact.CreateFacts(_program);
+			fact.CreateFacts(_decompService);
 		}
 	}
 

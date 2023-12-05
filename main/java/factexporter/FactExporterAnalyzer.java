@@ -68,10 +68,9 @@ public class FactExporterAnalyzer extends AbstractAnalyzer {
 
 		// TODO: Perform analysis when things get added to the 'program'.  Return true if the
 		// analysis succeeded.
-		
-		 FactExporter factExporter = new FactExporter(program);
-		 factExporter.CreateFacts();
-
+		DecompilationService decompService = new GhidraDecompilationService(program);
+		FactExporter factExporter = new FactExporter(decompService);
+		factExporter.CreateFacts();
 
 		return false;
 	}

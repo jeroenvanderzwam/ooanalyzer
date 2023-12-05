@@ -6,11 +6,8 @@ import java.util.List;
 import org.javatuples.Triplet;
 
 import ghidra.app.decompiler.DecompInterface;
-import ghidra.app.decompiler.DecompileResults;
-import ghidra.program.model.lang.Register;
 import ghidra.program.model.listing.Function;
 import ghidra.program.model.listing.Program;
-import ghidra.program.model.pcode.HighFunction;
 import ghidra.program.model.pcode.PcodeOp;
 import ghidra.util.Msg;
 
