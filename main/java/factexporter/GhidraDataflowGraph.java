@@ -1,10 +1,9 @@
-package returnsSelf;
+package factexporter;
 
 import static ghidra.app.plugin.core.decompile.actions.PCodeDfgDisplayOptions.*;
 
 import java.util.*;
 
-import factexporter.File;
 import ghidra.app.plugin.core.decompile.actions.*;
 import ghidra.program.model.address.AddressSpace;
 import ghidra.program.model.lang.Register;
@@ -15,12 +14,9 @@ public class GhidraDataflowGraph {
 	protected HighFunction hfunction;
 	protected AttributedGraph graph;
 	
-
 	private HashMap<Integer, AttributedVertex> vertices = new HashMap<>();
 	private HashMap<Integer, AttributedVertex> returnVertices = new HashMap<>();
 	private List<AttributedVertex> _path;
-	
-	private File file;
 
 	public GhidraDataflowGraph(HighFunction highFunction) {
 		hfunction = highFunction;

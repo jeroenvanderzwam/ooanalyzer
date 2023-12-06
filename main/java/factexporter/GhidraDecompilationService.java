@@ -10,18 +10,35 @@ import ghidra.program.model.listing.Program;
 import ghidra.program.model.pcode.FunctionPrototype;
 import ghidra.program.model.pcode.HighFunction;
 import ghidra.program.model.pcode.VarnodeAST;
-import returnsSelf.GhidraDataflowGraph;
+import ghidra.util.Msg;
 
 public class GhidraDecompilationService implements DecompilationService
 {
 	private Program _program;
 	private HashMap<String, HighFunction> _decompiledFunctions = new HashMap<String, HighFunction>();
-	private GhidraDataflowGraph _graph;
-	private String _graphFunction;
+	private ArrayList<Function> _functions = new ArrayList<Function>();
 	
 	GhidraDecompilationService(Program program) 
 	{
 		_program = program;
+	}
+	
+	public HashMap<String, HighFunction> decompiledFunctions() 
+	{
+		if (_decompiledFunctions.isEmpty()) 
+		{
+			var decompInterface = new DecompInterface();
+			decompInterface.openProgram(_program);
+			var funcIter = _program.getListing().getFunctions(true);
+			while (funcIter.hasNext()) 
+			{	
+				var function = funcIter.next();
+				var res = decompInterface.decompileFunction(function, 30, null);
+				var highFunction = res.getHighFunction();
+				_decompiledFunctions.put(function.getName(), highFunction);
+			}
+		}
+		return _decompiledFunctions;
 	}
 	
 	private ArrayList<String> preferredParameterLocations(ghidra.program.model.listing.Function function, PrototypeModel callingConv) 
@@ -56,67 +73,41 @@ public class GhidraDecompilationService implements DecompilationService
 
 	@Override
 	public List<Function> functions() {
-		var functions = new ArrayList<Function>();
-		var decompInterface = new DecompInterface();
-		decompInterface.openProgram(_program);
-		var funcIter = _program.getListing().getFunctions(true);
-		while (funcIter.hasNext()) 
-		{	
-			var function = funcIter.next();
-			var ghidraCallingConv = function.getCallingConvention();
-			CallingConvention callingConvention = null;
-			if (ghidraCallingConv != null) {
-				callingConvention = new CallingConvention(ghidraCallingConv.getName(),preferredParameterLocations(function, ghidraCallingConv));
-			}
-			
-			var res = decompInterface.decompileFunction(function, 30, null);
-			var highFunction = res.getHighFunction();
-			_decompiledFunctions.put(function.getName(), highFunction);
-			
-			var funcPrototype = highFunction.getFunctionPrototype();
-			var parameters = parameters(funcPrototype);
-
-			var func = new Function(function.getEntryPoint().toString(), 
-									function.getName(), 
-									function.isThunk(), 
-									parameters, 
-									callingConvention != null ? callingConvention : null);
-			functions.add(func);
-		}
+		if (_functions.isEmpty()) {
+			for (var highFunction : decompiledFunctions().values()) 
+			{		
+				var function = highFunction.getFunction();
+				var ghidraCallingConv = function.getCallingConvention();
+				CallingConvention callingConvention = null;
+				if (ghidraCallingConv != null) {
+					callingConvention = new CallingConvention(ghidraCallingConv.getName());
+				}
+				
+				var funcPrototype = highFunction.getFunctionPrototype();
+				var parameters = parameters(funcPrototype);
 		
-		return functions;
+				var func = new Function(function.getEntryPoint().toString(), 
+										function.getName(), 
+										function.isThunk(), 
+										parameters, 
+										callingConvention != null ? callingConvention : null);
+				_functions.add(func);
+			}
+		}
+		return _functions;
 	}
 
 	@Override
 	public CompilerSpecification compilerSpec() {
 		var compilerSpec = _program.getCompilerSpec();
-		var callingConventions = compilerSpec.getCallingConventions();
-		var default_ = compilerSpec.getDefaultCallingConvention();
-		var language = compilerSpec.getLanguage();
-		var stackPointer = compilerSpec.getStackPointer();
-		var properties = compilerSpec.getPropertyKeys();
-		return null;
+		var id = compilerSpec.getLanguage().getLanguageID().toString();
+		var architecture = id.split(":")[2];
+		var compilerId = compilerSpec.getCompilerSpecID();
+		return new CompilerSpecification(architecture, compilerId.toString());
 	}
 
 	@Override
 	public String decompiledFileName() {
 		return _program.getDomainFile().getName();
-	}
-
-	@Override
-	public void buildGraph(Function function) {
-		_graphFunction = function.name();
-		_graph = new GhidraDataflowGraph(_decompiledFunctions.get(function.name()));
-		_graph.buildGraph();
-	}
-
-	@Override
-	public boolean pathFromParamToReturn(Parameter param) {
-		var function = _decompiledFunctions.get(_graphFunction);
-		var prototype = function.getFunctionPrototype();
-		var symbol = prototype.getParam(param.index());
-		var variable = symbol.getHighVariable();
-		var registerLocation = (VarnodeAST)variable.getRepresentative();
-		return _graph.pathFromParamToReturn(registerLocation);
 	}
 }

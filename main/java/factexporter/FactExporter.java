@@ -1,6 +1,5 @@
 package factexporter;
 
-import java.util.ArrayList;
 
 import noCallsBefore.NoCallsBefore;
 import returnsSelf.ReturnsSelf;
@@ -8,24 +7,19 @@ import returnsSelf.ReturnsSelf;
 public class FactExporter {
 	
 	private DecompilationService _decompService;
+	private DataFlowGraphService _dataFlowGraphService;
 	
-	public FactExporter(DecompilationService decompService) 
+	public FactExporter(DecompilationService decompService, DataFlowGraphService dataFlowGraphService) 
 	{
 		_decompService = decompService;
+		_dataFlowGraphService = dataFlowGraphService;
 	}
 	
 	public void CreateFacts() 
 	{
-		ArrayList<Fact> facts = new ArrayList<Fact>()
-		{{
-			add(new ReturnsSelf());
-			add(new NoCallsBefore());
-		}};
-		
-		for(var fact : facts) 
-		{
-			fact.CreateFacts(_decompService);
-		}
+		new ReturnsSelf().CreateFacts(_decompService, _dataFlowGraphService);
+		new NoCallsBefore();
+
 	}
 
 }

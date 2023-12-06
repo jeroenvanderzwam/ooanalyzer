@@ -1,5 +1,6 @@
 package returnsSelf;
 
+import factexporter.GhidraDataflowGraph;
 import ghidra.app.decompiler.DecompInterface;
 import ghidra.app.decompiler.DecompileResults;
 import ghidra.app.plugin.core.decompile.actions.PCodeDfgDisplayOptions;
