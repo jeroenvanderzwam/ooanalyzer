@@ -1,10 +1,10 @@
-package factexporter;
+package sourcecode;
 
 public class Register 
 {
-	private String _name;
+	private final String _name;
 	
-	Register(String name) 
+	public Register(String name) 
 	{
 		_name = name;
 	}

@@ -5,67 +5,45 @@ import java.util.List;
 
 import org.javatuples.Triplet;
 
-import ghidra.app.decompiler.DecompInterface;
-import ghidra.program.model.listing.Function;
-import ghidra.program.model.listing.Program;
-import ghidra.program.model.pcode.PcodeOp;
+import factexporter.DecompilationService;
 import ghidra.util.Msg;
+import sourcecode.Function;
+import sourcecode.FunctionCall;
+import sourcecode.Value;
+import thispointer.ThisPointer;
 
 public class ThisPtrCalls 
 {
-	private List<Triplet<Function, Function, Argument>> functionCalls = new ArrayList<Triplet<Function, Function, Argument>>();
-	private Program _program;
+	private List<Triplet<Function, String, Value>> functionCalls = new ArrayList<Triplet<Function, String, Value>>();
+	private DecompilationService _decompService;
 	
-	public ThisPtrCalls(Program program) 
+	public ThisPtrCalls(DecompilationService decompService) 
 	{
-		_program = program;
+		_decompService = decompService;
 	}
 	
 	public void run() 
 	{
-		var funcIter = _program.getListing().getFunctions(true);
-		DecompInterface decompInterface = new DecompInterface();
-		decompInterface.openProgram(_program);
-		while (funcIter.hasNext())
+		var compilerSpec = _decompService.compilerSpec();
+		var thisPointerRegister = new ThisPointer().build(compilerSpec);
+		for (var function : _decompService.functions())
 		{
-			var function = funcIter.next();
-			var ecx = _program.getLanguage().getRegister("ECX");
-			var callerDecomp = decompInterface.decompileFunction(function, 0, null);
-			var highFunction = callerDecomp.getHighFunction();
-			var pCodeOps = highFunction.getPcodeOps();
-			while (pCodeOps.hasNext()) 
+			for (var instruction : function.instructions()) 
 			{
-				var op = pCodeOps.next();
-				
-				var inputs = op.getInputs();
-				var callAddress = inputs[0].getAddress();
-				var calledFunction = _program.getListing().getFunctionAt(callAddress);
-				
-				var opCode = op.getOpcode();
-				if (opCode == PcodeOp.CALL) 
+				if (instruction instanceof FunctionCall) 
 				{
-					if (calledFunction == null) { continue; }
-					var calleeDecomp = decompInterface.decompileFunction(calledFunction, 0, null);
-					var funcPrototype = calleeDecomp.getHighFunction().getFunctionPrototype();
-					if (funcPrototype.getNumParams() < 1) { continue;}
-					var param = funcPrototype.getParam(0);
-					var registers = param.getStorage().getRegisters();
-					if (registers != null && registers.contains(ecx)) {
-						var arg1 = inputs[1];
-
-						var highVariable = arg1.getHigh();
-						functionCalls.add(new Triplet<Function, Function, Argument>(function, calledFunction, new ConvertVariable(highVariable).resolve()));
+					var functionCall = (FunctionCall)instruction;
+					if (function.parameters().size() < 1) { continue;}
+					var firstParam = function.parameters().get(0);
+					if (firstParam.inRegister() && firstParam.register().name().equals(thisPointerRegister.name())) {
+						functionCalls.add(new Triplet<Function, String, Value>(function, functionCall.name(), function.parameters().get(0)));
 					}
-
 				} 
-				else if (opCode == PcodeOp.CALLIND) 
+				else //if (opCode == PcodeOp.CALLIND) 
 				{
-					if (inputs.length < 1) {continue;}
-					var high = inputs[0].getHigh();
-					Argument arg = new ConvertVariable(high).resolve();
-					if (arg instanceof VariableArgument) {
-						Msg.out(String.format("%s %s %s",function.getName(), callAddress, arg));
-					}
+//					if (inputs.length < 1) {continue;}
+//					var high = inputs[0].getHigh();
+//					Msg.out(String.format("%s %s %s",function.getName(), callAddress, high));
 				}
 			}
 		}
@@ -78,9 +56,9 @@ public class ThisPtrCalls
 		for(var functionCall : functionCalls)
 		{
 			Msg.out(String.format("%s, %s, %s, %s", 
-					functionCall.getValue0().getName(), 
-					functionCall.getValue0().getEntryPoint(), 
-					functionCall.getValue1().getName(), 
+					functionCall.getValue0().name(), 
+					functionCall.getValue0().address(), 
+					functionCall.getValue1(), 
 					functionCall.getValue2()));
 		}
 	}

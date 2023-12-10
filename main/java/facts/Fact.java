@@ -1,4 +1,4 @@
-package factexporter;
+package facts;
 
 public interface Fact 
 {	

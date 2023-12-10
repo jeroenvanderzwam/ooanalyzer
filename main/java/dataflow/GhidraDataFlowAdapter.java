@@ -1,17 +1,17 @@
-package factexporter;
+package dataflow;
 
-import java.util.HashMap;
-
-import ghidra.program.model.pcode.HighFunction;
+import factexporter.GhidraDecompilationAdapter;
 import ghidra.program.model.pcode.VarnodeAST;
+import sourcecode.Function;
+import sourcecode.Parameter;
 
-public class GhidraDataFlowServiceAdapter implements DataFlowGraphService 
+public class GhidraDataFlowAdapter implements DataFlowGraphService 
 {
-	private GhidraDecompilationService _ghidraDecompilationService;
+	private GhidraDecompilationAdapter _ghidraDecompilationService;
 	private GhidraDataflowGraph _graph;
 	private String _graphFunction;
 	
-	public GhidraDataFlowServiceAdapter(GhidraDecompilationService ghidraDecompilationService) 
+	public GhidraDataFlowAdapter(GhidraDecompilationAdapter ghidraDecompilationService) 
 	{
 		_ghidraDecompilationService = ghidraDecompilationService;
 	}

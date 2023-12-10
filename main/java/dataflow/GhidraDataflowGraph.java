@@ -1,4 +1,4 @@
-package factexporter;
+package dataflow;
 
 import static ghidra.app.plugin.core.decompile.actions.PCodeDfgDisplayOptions.*;
 

@@ -2,7 +2,7 @@ package factexporter;
 
 public class CallingConvention 
 {
-	private String _name;
+	private final String _name;
 	
 	public CallingConvention(String name) 
 	{

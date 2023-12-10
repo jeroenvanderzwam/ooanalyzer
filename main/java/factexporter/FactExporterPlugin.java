@@ -27,10 +27,7 @@ import ghidra.framework.plugintool.util.PluginStatus;
 import ghidra.program.model.listing.Program;
 import ghidra.program.util.*;
 import ghidra.util.*;
-import ghidra.util.exception.CancelledException;
-import ghidra.util.exception.GraphException;
 import resources.Icons;
-import returnsSelf.DataflowDisplayGraph;
 
 /**
  * TODO: Provide class-level documentation that describes what this plugin does.
@@ -90,13 +87,12 @@ public class FactExporterPlugin extends ProgramPlugin {
 		// TODO Auto-generated method stub
 		super.programOpened(program);
 		
-		DataflowDisplayGraph graph = new DataflowDisplayGraph(tool, program, "00411800");
-		try {
-			graph.buildAndDisplayGraph();
-		} catch (GraphException | CancelledException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		/*
+		 * var addressString = "00411800"; DataflowDisplayGraph graph = new
+		 * DataflowDisplayGraph(tool, program, ); try { graph.buildAndDisplayGraph(); }
+		 * catch (GraphException | CancelledException e) { // TODO Auto-generated catch
+		 * block e.printStackTrace(); }
+		 */
 	}
 
 	// TODO: If provider is desired, it is recommended to move it to its own file

@@ -1,17 +1,14 @@
 package noCallsBefore;
 
 import factexporter.DecompilationService;
-import factexporter.Fact;
-import ghidra.program.model.listing.Program;
+import facts.Fact;
 
 public class NoCallsBefore implements Fact {
 
 
 	public void CreateFacts(DecompilationService service) {
 		
-		ThisPtrCalls thisPtrCalls = new ThisPtrCalls(null);
+		ThisPtrCalls thisPtrCalls = new ThisPtrCalls(service);
 		thisPtrCalls.run();
 	}
-
-
 }

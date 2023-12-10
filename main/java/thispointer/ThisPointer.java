@@ -1,4 +1,6 @@
-package factexporter;
+package thispointer;
+
+import factexporter.CompilerSpecification;
 
 public class ThisPointer
 {
@@ -24,7 +26,8 @@ public class ThisPointer
 	{
 
 		@Override
-		public String name() {
+		public String name() 
+		{
 			return "ECX";
 		}
 	}
@@ -33,7 +36,8 @@ public class ThisPointer
 	{
 
 		@Override
-		public String name() {
+		public String name() 
+		{
 			return "RCX";
 		}
 		
@@ -43,7 +47,8 @@ public class ThisPointer
 	{
 
 		@Override
-		public String name() {
+		public String name() 
+		{
 			return "RDI";
 		}
 		

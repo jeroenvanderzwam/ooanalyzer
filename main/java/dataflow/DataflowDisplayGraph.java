@@ -1,20 +1,15 @@
-package returnsSelf;
+package dataflow;
 
-import factexporter.GhidraDataflowGraph;
 import ghidra.app.decompiler.DecompInterface;
 import ghidra.app.decompiler.DecompileResults;
 import ghidra.app.plugin.core.decompile.actions.PCodeDfgDisplayOptions;
-import ghidra.app.plugin.core.decompile.actions.PCodeDfgGraphType;
 import ghidra.app.services.GraphDisplayBroker;
 import ghidra.framework.plugintool.PluginTool;
-import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Function;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.pcode.HighFunction;
-import ghidra.service.graph.AttributedGraph;
 import ghidra.service.graph.GraphDisplay;
 import ghidra.service.graph.GraphDisplayOptions;
-import ghidra.service.graph.GraphType;
 import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.GraphException;
 import ghidra.util.task.TaskMonitor;

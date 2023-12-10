@@ -15,6 +15,8 @@
  */
 package factexporter;
 
+import dataflow.DataFlowGraphService;
+import dataflow.GhidraDataFlowAdapter;
 import ghidra.app.services.AbstractAnalyzer;
 import ghidra.app.services.AnalyzerType;
 import ghidra.app.util.importer.MessageLog;
@@ -68,8 +70,8 @@ public class FactExporterAnalyzer extends AbstractAnalyzer {
 
 		// TODO: Perform analysis when things get added to the 'program'.  Return true if the
 		// analysis succeeded.
-		DecompilationService decompService = new GhidraDecompilationService(program);
-		DataFlowGraphService graphService = new GhidraDataFlowServiceAdapter((GhidraDecompilationService)decompService);
+		DecompilationService decompService = new GhidraDecompilationAdapter(program);
+		DataFlowGraphService graphService = new GhidraDataFlowAdapter((GhidraDecompilationAdapter)decompService);
 		FactExporter factExporter = new FactExporter(decompService, graphService);
 		factExporter.CreateFacts();
 
