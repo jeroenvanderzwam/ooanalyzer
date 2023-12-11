@@ -5,7 +5,7 @@ import java.util.List;
 
 import export.File;
 
-public class MockFile implements File 
+public class ArrayListFile implements File 
 {
 
 	private ArrayList<String> facts;

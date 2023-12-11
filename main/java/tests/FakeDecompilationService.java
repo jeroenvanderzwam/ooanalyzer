@@ -10,7 +10,7 @@ import sourcecode.Function;
 import sourcecode.Parameter;
 import sourcecode.Register;
 
-public class MokeDecompilationService implements DecompilationService
+public class FakeDecompilationService implements DecompilationService
 {
 
 	@Override

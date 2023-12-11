@@ -27,7 +27,7 @@ public class FactExporter {
 		var file = new TextFile(fileName);
 		new ReturnsSelf(_decompService, _dataFlowGraphService).CreateFacts(file);
 		Msg.out(file.read());
-		new NoCallsBefore().CreateFacts(_decompService);
+		new NoCallsBefore(_decompService).CreateFacts(file);
 	}
 
 }

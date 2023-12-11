@@ -4,7 +4,7 @@ import dataflow.DataFlowGraphService;
 import sourcecode.Function;
 import sourcecode.Parameter;
 
-public class MockDataFlowGraphService implements DataFlowGraphService {
+public class FakeDataFlowGraphService implements DataFlowGraphService {
 
 	@Override
 	public void buildGraph(Function functionName) 

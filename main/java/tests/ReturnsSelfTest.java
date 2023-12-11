@@ -10,16 +10,16 @@ import returnsSelf.ReturnsSelf;
 
 public class ReturnsSelfTest 
 {
-	MokeDecompilationService _service;
-	MockDataFlowGraphService _graph;
-	MockFile _file;
+	FakeDecompilationService _service;
+	FakeDataFlowGraphService _graph;
+	ArrayListFile _file;
 	
 	@Before
 	public void setUp() 
 	{
-		_service = new MokeDecompilationService();
-		_graph = new MockDataFlowGraphService();
-		_file = new MockFile();
+		_service = new FakeDecompilationService();
+		_graph = new FakeDataFlowGraphService();
+		_file = new ArrayListFile();
 		new ReturnsSelf(_service, _graph).CreateFacts(_file);
 	}
 	

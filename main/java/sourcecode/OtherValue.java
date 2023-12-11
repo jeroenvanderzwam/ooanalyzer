@@ -3,7 +3,8 @@ package sourcecode;
 public class OtherValue extends Value 
 {
 
-	public OtherValue(int size) {
+	public OtherValue(int size) 
+	{
 		super(size);
 	}
 	
