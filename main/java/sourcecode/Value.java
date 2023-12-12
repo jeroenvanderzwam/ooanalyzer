@@ -2,15 +2,15 @@ package sourcecode;
 
 public abstract class Value 
 {
-	protected final int _size;
+	protected final int size;
 	
 	protected Value(int size) 
 	{
-		_size = size;
+		this.size = size;
 	}
 	
 	public int size() 
 	{
-		return _size;
+		return size;
 	}
 }

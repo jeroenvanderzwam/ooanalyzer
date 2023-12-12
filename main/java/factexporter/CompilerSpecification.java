@@ -2,22 +2,22 @@ package factexporter;
 
 public class CompilerSpecification 
 {
-	private String _architecture;
-	private String _compiler;
+	private String architecture;
+	private String compiler;
 	
-	public CompilerSpecification(String architecture, String compiler) 
+	public CompilerSpecification(String arch, String comp) 
 	{
-		_architecture = architecture;
-		_compiler = compiler;
+		architecture = arch;
+		compiler = comp;
 	}
 	
 	public String architecture() 
 	{
-		return _architecture;
+		return architecture;
 	}
 	
 	public String compiler() 
 	{
-		return _compiler;
+		return compiler;
 	}
 }

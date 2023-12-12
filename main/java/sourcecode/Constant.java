@@ -2,22 +2,22 @@ package sourcecode;
 
 public class Constant extends Value
 {
-	private final String _value;
+	private final String value;
 	
-	public Constant(String value, int size) 
+	public Constant(String val, int size) 
 	{
 		super(size);
-		_value = value;
+		value = val;
 	}
 	
 	public String value() 
 	{
-		return _value;
+		return value;
 	}
 	
 	@Override
 	public String toString()
 	{
-		return "%s::%s".formatted(_value, _size);
+		return "%s::%s".formatted(value, size);
 	}
 }

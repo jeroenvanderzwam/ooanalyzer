@@ -12,22 +12,22 @@ import returnsSelf.ReturnsSelf;
 
 public class FactExporter {
 	
-	private DecompilationService _decompService;
-	private DataFlowGraphService _dataFlowGraphService;
+	private DecompilationService decompService;
+	private DataFlowGraphService dataFlowGraphService;
 	
-	public FactExporter(DecompilationService decompService, DataFlowGraphService dataFlowGraphService) 
+	public FactExporter(DecompilationService decompServ, DataFlowGraphService dataFlowGraphServ) 
 	{
-		_decompService = decompService;
-		_dataFlowGraphService = dataFlowGraphService;
+		decompService = decompServ;
+		dataFlowGraphService = dataFlowGraphServ;
 	}
 	
 	public void CreateFacts() 
 	{
-		var fileName = "C:/Users/jeroe/Downloads/Facts/Ghidra/" + _decompService.decompiledFileName().split(Pattern.quote("."))[0] + ".ghidrafacts";
+		var fileName = "C:/Users/jeroe/Downloads/Facts/Ghidra/" + decompService.decompiledFileName().split(Pattern.quote("."))[0] + ".ghidrafacts";
 		var file = new TextFile(fileName);
-		new ReturnsSelf(_decompService, _dataFlowGraphService).CreateFacts(file);
+		new ReturnsSelf(decompService, dataFlowGraphService).CreateFacts(file);
 		Msg.out(file.read());
-		new NoCallsBefore(_decompService).CreateFacts(file);
+		new NoCallsBefore(decompService).CreateFacts(file);
 	}
 
 }

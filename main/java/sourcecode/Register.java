@@ -1,16 +1,16 @@
 package sourcecode;
 
-public class Register 
+public class Register extends Storage
 {
-	private final String _name;
+	private final String name;
 	
 	public Register(String name) 
 	{
-		_name = name;
+		this.name = name;
 	}
 	
 	public String name() 
 	{
-		return _name;
+		return name;
 	}
 }

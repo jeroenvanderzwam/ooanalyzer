@@ -4,30 +4,25 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import ghidra.program.model.pcode.HighConstant;
 import ghidra.program.model.pcode.HighFunction;
-import ghidra.program.model.pcode.HighGlobal;
-import ghidra.program.model.pcode.HighLocal;
-import ghidra.program.model.pcode.HighOther;
 import ghidra.program.model.pcode.HighSymbol;
 import ghidra.program.model.pcode.PcodeOp;
 import ghidra.program.model.pcode.PcodeOpAST;
 import ghidra.program.model.pcode.Varnode;
-import sourcecode.Constant;
 import sourcecode.Function;
 import sourcecode.FunctionCall;
 import sourcecode.Instruction;
 import sourcecode.OtherInstruction;
-import sourcecode.OtherValue;
 import sourcecode.Parameter;
 import sourcecode.Register;
+import sourcecode.Stack;
+import sourcecode.Storage;
 import sourcecode.Value;
-import sourcecode.Variable;
 
-public class ConvertFunction 
+public class FunctionConverter 
 {
 	
-	ConvertFunction() 
+	FunctionConverter() 
 	{
 	}
 	
@@ -81,19 +76,24 @@ public class ConvertFunction
 		var mnemonic = op.getMnemonic();
 		var output = op.getOutput();
 		var inputs = op.getInputs();
+		var outputVar = output != null ? convertVariable(output) : null;
 		if (op.getOpcode() == PcodeOp.CALL) {
-			return new FunctionCall(inputs[0].getAddress().toString(), convertVariables(inputs), 
-					output != null ? convertVariable(output) : null);
+			return new FunctionCall(inputs[0].getAddress().toString(), convertVariables(inputs), outputVar);
 		}
-		return new OtherInstruction(mnemonic, convertVariables(inputs), 
-				output != null ? convertVariable(output) : null);
+		return new OtherInstruction(mnemonic, convertVariables(inputs), outputVar);
 	}
 	
 	private Parameter convertParameter(int index, HighSymbol param) 
 	{
+		Storage storage = null;
 		var register = param.getStorage().getRegister();
-		return new Parameter(param.getName(), param.getSize(), index, 
-						register != null ? new Register( register.getName()) : null);
+		if (register != null) {
+			storage = new Register(register.getName());
+		}
+		else if (param.getStorage().isStackStorage()) {
+			storage = new Stack();
+		}
+		return new Parameter(param.getName(), param.getSize(), index, storage);
 	}
 	
 	private List<Value> convertVariables(Varnode[] inputs) 
@@ -108,21 +108,6 @@ public class ConvertFunction
 	
 	private Value convertVariable(Varnode output) 
 	{
-		var variable = output.getHigh();
-		if (variable instanceof HighConstant) {
-			var constant = (HighConstant)variable;
-			return new Constant(constant.getScalar().toString(), constant.getSize());
-		} else if(variable instanceof HighOther) {
-			var highOther = (HighOther)variable;
-			return new Variable(highOther.getName(), highOther.getSize());
-		} else if (variable instanceof HighLocal) {
-			var highLocal = (HighLocal)variable;
-			return new Variable(highLocal.getSymbol().getName(), highLocal.getSize());
-		} else if (variable instanceof HighGlobal){
-			var highGlobal = (HighGlobal)variable;
-			return new Variable(highGlobal.getName(), highGlobal.getSize());
-		} else {
-			return new OtherValue(0);
-		}
+		return new ValueBuilder().build(output);
 	}
 }

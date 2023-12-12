@@ -8,20 +8,20 @@ import thispointer.ThisPointer;
 
 public class ReturnsSelf implements Fact 
 {
-	private DecompilationService _dataService;
-	private DataFlowGraphService _graphService;
+	private DecompilationService dataService;
+	private DataFlowGraphService graphService;
 	
-	public ReturnsSelf(DecompilationService dataService, DataFlowGraphService graphService)
+	public ReturnsSelf(DecompilationService dataServ, DataFlowGraphService graphServ)
 	{
-		_dataService = dataService;
-		_graphService = graphService;
+		dataService = dataServ;
+		graphService = graphServ;
 	}
 
 	public void CreateFacts(File file) {
-		var compilerSpec = _dataService.compilerSpec();
+		var compilerSpec = dataService.compilerSpec();
 		file.open();
 		var thisPointerRegister = new ThisPointer().build(compilerSpec);
-		for (var function : _dataService.functions())
+		for (var function : dataService.functions())
 		{
 			if (function.isThunk()) { continue; }
 			if (!function.hasParameters()) { continue ;}
@@ -29,9 +29,9 @@ public class ReturnsSelf implements Fact
 			var param = function.parameters().get(0);
 			if (param.inRegister()) {
 				if (param.register().name().equals(thisPointerRegister.name())) {
-					_graphService.buildGraph(function);
+					graphService.buildGraph(function);
 					
-					if (_graphService.pathFromParamToReturn(param)) {
+					if (graphService.pathFromParamToReturn(param)) {
 						var output = String.format("returnsSelf(%s).", function.address());
 						file.write(output);
 					}

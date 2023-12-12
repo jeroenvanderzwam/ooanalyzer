@@ -2,41 +2,41 @@ package sourcecode;
 
 public class Parameter extends Value
 {
-	private final Register _register;
-	private final int _index;
-	private final String _name;
+	private final Storage storage;
+	private final int index;
+	private final String name;
 	
-	public Parameter(String name, int size, int index, Register register) 
+	public Parameter(String name, int size, int index, Storage storage) 
 	{
 		super(size);
-		_index = index;
-		_register = register;
-		_name = name;
+		this.index = index;
+		this.storage = storage;
+		this.name = name;
 	}
 
 	public String name() 
 	{
-		return _name;
+		return name;
 	}
 	
 	public boolean inRegister()
 	{
-		return _register != null;
+		return (storage instanceof Register);
 	}
 	
-	public Register register() 
+	public Storage register() 
 	{
-		return _register;
+		return storage;
 	}
 	
 	public int index() 
 	{
-		return _index;
+		return index;
 	}
 	
 	@Override
 	public String toString()
 	{
-		return _name;
+		return name;
 	}
 }

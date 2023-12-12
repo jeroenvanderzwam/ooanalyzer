@@ -2,23 +2,23 @@ package sourcecode;
 
 public class Variable extends Value
 {
-	private final String _name;
+	private final String name;
 	
 	public Variable(String name, int size) 
 	{
 		super(size);
-		_name = name;
+		this.name = name;
 	}
 	
 	public String name() 
 	{
-		return _name;
+		return name;
 	}
 	
 	@Override
 	public String toString()
 	{
-		return "%s::%s".formatted(_name, _size);
+		return "%s::%s".formatted(name, size);
 	}
 
 }

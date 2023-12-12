@@ -2,15 +2,15 @@ package factexporter;
 
 public class CallingConvention 
 {
-	private final String _name;
+	private final String name;
 	
-	public CallingConvention(String name) 
+	public CallingConvention(String n) 
 	{
-		_name = name;
+		name = n;
 	}
 	
 	public String name() 
 	{
-		return _name;
+		return name;
 	}
 }

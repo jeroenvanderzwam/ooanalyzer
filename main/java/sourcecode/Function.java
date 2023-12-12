@@ -6,67 +6,67 @@ import factexporter.CallingConvention;
 
 public class Function 
 {
-	private final boolean _isThunk;
-	private final List<Parameter> _parameters;
-	private final String _address;
-	private final String _name;
-	private final CallingConvention _callingConvention;
+	private final boolean isThunk;
+	private final List<Parameter> parameters;
+	private final String address;
+	private final String name;
+	private final CallingConvention callingConvention;
 	
-	private List<Instruction> _instructions = null;
+	private List<Instruction> instructions = null;
 	
-	public Function(String address, String name, boolean isThunk, List<Parameter> parameters, CallingConvention callingConv) 
+	public Function(String addr, String name, boolean isThunk, List<Parameter> parameters, CallingConvention callingConv) 
 	{
-		_isThunk = isThunk;
-		_parameters = parameters;
-		_address = address.replaceFirst("00","0x");
-		_name = name;
-		_callingConvention = callingConv;
+		this.isThunk = isThunk;
+		this.parameters = parameters;
+		address = addr.replaceFirst("00","0x");
+		this.name = name;
+		callingConvention = callingConv;
 	}
 	
 	public Function(String address, String name, boolean isThunk, List<Parameter> parameters, CallingConvention callingConv,
 			List<Instruction> instructions) 
 	{
 		this(address, name, isThunk, parameters, callingConv);
-		_instructions = instructions;
+		this.instructions = instructions;
 	}
 	
 	public String name() 
 	{
-		return _name;
+		return name;
 	}
 	
 	public String address() 
 	{
-		return _address;
+		return address;
 	}
 	
 	public boolean isThunk()
 	{
-		return _isThunk;
+		return isThunk;
 	}
 	
 	public List<Parameter> parameters()
 	{
-		return _parameters;
+		return parameters;
 	}
 	
 	public boolean hasParameters() {
-		return _parameters.size() != 0;
+		return parameters.size() != 0;
 	}
 	
 	public CallingConvention callingConvention() 
 	{
-		return _callingConvention;
+		return callingConvention;
 	}
 	
 	public List<Instruction> instructions()
 	{
-		return _instructions;
+		return instructions;
 	}
 	
 	@Override
 	public String toString() 
 	{
-		return _name;
+		return name;
 	}
 }

@@ -16,19 +16,19 @@ import thispointer.ThisPointer;
 
 public class NoCallsBefore implements Fact 
 {
-	private DecompilationService _decompService;
+	private DecompilationService decompService;
 	
 	public NoCallsBefore(DecompilationService service) 
 	{
-		_decompService = service;
+		decompService = service;
 	}
 
 	public void CreateFacts(File file) 
 	{
 		var functionCalls = new ArrayList<Triplet<Function, String, Value>>();
-		var compilerSpec = _decompService.compilerSpec();
+		var compilerSpec = decompService.compilerSpec();
 		var thisPointerRegister = new ThisPointer().build(compilerSpec);
-		for (var function : _decompService.functions())
+		for (var function : decompService.functions())
 		{
 			for (var instruction : function.instructions()) 
 			{

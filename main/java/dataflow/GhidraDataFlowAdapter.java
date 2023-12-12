@@ -7,30 +7,30 @@ import sourcecode.Parameter;
 
 public class GhidraDataFlowAdapter implements DataFlowGraphService 
 {
-	private GhidraDecompilationAdapter _ghidraDecompilationService;
-	private GhidraDataflowGraph _graph;
-	private String _graphFunction;
+	private GhidraDecompilationAdapter ghidraDecompilationService;
+	private GhidraDataflowGraph graph;
+	private String graphFunction;
 	
-	public GhidraDataFlowAdapter(GhidraDecompilationAdapter ghidraDecompilationService) 
+	public GhidraDataFlowAdapter(GhidraDecompilationAdapter ghidraDecompService) 
 	{
-		_ghidraDecompilationService = ghidraDecompilationService;
+		ghidraDecompilationService = ghidraDecompService;
 	}
 	
 	@Override
 	public void buildGraph(Function function) {
-		_graphFunction = function.name();
-		_graph = new GhidraDataflowGraph(_ghidraDecompilationService.decompiledFunctions().get(function.name()));
-		_graph.buildGraph();
+		graphFunction = function.name();
+		graph = new GhidraDataflowGraph(ghidraDecompilationService.decompiledFunctions().get(function.name()));
+		graph.buildGraph();
 	}
 
 	@Override
 	public boolean pathFromParamToReturn(Parameter param) {
-		var function = _ghidraDecompilationService.decompiledFunctions().get(_graphFunction);
+		var function = ghidraDecompilationService.decompiledFunctions().get(graphFunction);
 		var prototype = function.getFunctionPrototype();
 		var symbol = prototype.getParam(param.index());
 		var variable = symbol.getHighVariable();
 		var registerLocation = (VarnodeAST)variable.getRepresentative();
-		return _graph.pathFromParamToReturn(registerLocation);
+		return graph.pathFromParamToReturn(registerLocation);
 	}
 
 }

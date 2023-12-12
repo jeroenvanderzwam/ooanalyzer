@@ -9,6 +9,7 @@ import factexporter.DecompilationService;
 import sourcecode.Function;
 import sourcecode.Parameter;
 import sourcecode.Register;
+import sourcecode.Stack;
 
 public class FakeDecompilationService implements DecompilationService
 {
@@ -25,7 +26,7 @@ public class FakeDecompilationService implements DecompilationService
 			
 			// Parameter is passed on the stack and should therefor not be a returnsSelf 
 			add(new Function("00000002", "FUN_00000002", false, 
-					new ArrayList<Parameter>(){{ add(new Parameter("param_1", 4, 0, new Register("STACK"))); }}, 
+					new ArrayList<Parameter>(){{ add(new Parameter("param_1", 4, 0, new Stack())); }}, 
 					new CallingConvention("__fastcall__")));
 			
 			// Function is a thunk, and should therefore not be considered for returnsSelf

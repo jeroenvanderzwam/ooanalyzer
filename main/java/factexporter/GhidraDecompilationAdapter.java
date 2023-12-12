@@ -28,30 +28,30 @@ import sourcecode.Variable;
 
 public class GhidraDecompilationAdapter implements DecompilationService
 {
-	private Program _program;
+	private Program program;
 	private HashMap<String, HighFunction> _decompiledFunctions = new HashMap<String, HighFunction>();
-	private ArrayList<Function> _functions = new ArrayList<Function>();
+	private ArrayList<Function> functions = new ArrayList<Function>();
 	
-	GhidraDecompilationAdapter(Program program) 
+	GhidraDecompilationAdapter(Program prog) 
 	{
-		_program = program;
+		program = prog;
 	}
 	
 	@Override
 	public List<Function> functions() {
-		if (_functions.isEmpty()) {
+		if (functions.isEmpty()) {
 			for (var highFunction : decompiledFunctions().values()) 
 			{		
-				var func = new ConvertFunction().convert(highFunction);
-				_functions.add(func);
+				var func = new FunctionConverter().convert(highFunction);
+				functions.add(func);
 			}
 		}
-		return _functions;
+		return functions;
 	}
 
 	@Override
 	public CompilerSpecification compilerSpec() {
-		var compilerSpec = _program.getCompilerSpec();
+		var compilerSpec = program.getCompilerSpec();
 		var id = compilerSpec.getLanguage().getLanguageID().toString();
 		var architecture = id.split(":")[2];
 		var compilerId = compilerSpec.getCompilerSpecID();
@@ -60,7 +60,7 @@ public class GhidraDecompilationAdapter implements DecompilationService
 
 	@Override
 	public String decompiledFileName() {
-		return _program.getDomainFile().getName();
+		return program.getDomainFile().getName();
 	}
 	
 	public HashMap<String, HighFunction> decompiledFunctions() 
@@ -68,8 +68,8 @@ public class GhidraDecompilationAdapter implements DecompilationService
 		if (_decompiledFunctions.isEmpty()) 
 		{
 			var decompInterface = new DecompInterface();
-			decompInterface.openProgram(_program);
-			var funcIter = _program.getListing().getFunctions(true);
+			decompInterface.openProgram(program);
+			var funcIter = program.getListing().getFunctions(true);
 			while (funcIter.hasNext()) 
 			{	
 				var function = funcIter.next();

@@ -16,7 +16,7 @@ public class GhidraDataflowGraph {
 	
 	private HashMap<Integer, AttributedVertex> vertices = new HashMap<>();
 	private HashMap<Integer, AttributedVertex> returnVertices = new HashMap<>();
-	private List<AttributedVertex> _path;
+	private List<AttributedVertex> path;
 
 	public GhidraDataflowGraph(HighFunction highFunction) {
 		hfunction = highFunction;
@@ -66,8 +66,8 @@ public class GhidraDataflowGraph {
 		var vertex = vertices.get(param.getUniqueId());
 		for (var entry : returnVertices.entrySet()) {
 			AttributedVertex possibleReturnVertex = entry.getValue();
-			_path = hasValidPathToReturn(vertex, possibleReturnVertex);
-			if (_path != null) {
+			path = hasValidPathToReturn(vertex, possibleReturnVertex);
+			if (path != null) {
 				return true;
 			}
 		}
@@ -75,7 +75,7 @@ public class GhidraDataflowGraph {
 	}
 	
 	public List<AttributedVertex> path() {
-		return _path;
+		return path;
 	}
 
 	private List<AttributedVertex> hasValidPathToReturn(AttributedVertex vertex,

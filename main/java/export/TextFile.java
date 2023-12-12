@@ -11,27 +11,27 @@ import java.util.List;
 
 public class TextFile implements File
 {
-	private PrintWriter _printWriter;
-	private String _fileName;
-	private String _format;
+	private PrintWriter printWriter;
+	private String fileName;
+	private String format;
 	
-	public TextFile(String fileName)
+	public TextFile(String fName)
 	{
-		_fileName = fileName;
-		_format = "UTF-8";
+		fileName = fName;
+		format = "UTF-8";
 	}
 	
-	TextFile(String fileName, String format)
+	TextFile(String fName, String form)
 	{
-		_fileName = fileName;
-		_format = format;
+		fileName = fName;
+		format = form;
 	}
 	
 	@Override
 	public void open() {
-		_printWriter = null;
+		printWriter = null;
 		try {
-			_printWriter = new PrintWriter(_fileName, _format);
+			printWriter = new PrintWriter(fileName, format);
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
 		} catch (UnsupportedEncodingException e1) {
@@ -42,12 +42,12 @@ public class TextFile implements File
 
 	@Override
 	public void write(String text) {
-		_printWriter.println(text);
+		printWriter.println(text);
 	}
 
 	@Override
 	public void close() {
-		_printWriter.close();
+		printWriter.close();
 		
 	}
 
@@ -57,7 +57,7 @@ public class TextFile implements File
 		
 		BufferedReader bufferedReader = null;
 		try {
-			bufferedReader = new BufferedReader(new FileReader(_fileName));
+			bufferedReader = new BufferedReader(new FileReader(fileName));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
