@@ -1,14 +1,15 @@
 package dataflow;
 
+import factexporter.DataFlowGraphService;
 import factexporter.GhidraDecompilationAdapter;
 import ghidra.program.model.pcode.VarnodeAST;
-import sourcecode.Function;
+import sourcecode.Func;
 import sourcecode.Parameter;
 
 public class GhidraDataFlowAdapter implements DataFlowGraphService 
 {
 	private GhidraDecompilationAdapter ghidraDecompilationService;
-	private GhidraDataflowGraph graph;
+	private GhidraDataflowPathFinder graph;
 	private String graphFunction;
 	
 	public GhidraDataFlowAdapter(GhidraDecompilationAdapter ghidraDecompService) 
@@ -17,9 +18,9 @@ public class GhidraDataFlowAdapter implements DataFlowGraphService
 	}
 	
 	@Override
-	public void buildGraph(Function function) {
+	public void buildGraph(Func function) {
 		graphFunction = function.name();
-		graph = new GhidraDataflowGraph(ghidraDecompilationService.decompiledFunctions().get(function.name()));
+		graph = new GhidraDataflowPathFinder(ghidraDecompilationService.decompiledFunctions().get(function.name()));
 		graph.buildGraph();
 	}
 

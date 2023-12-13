@@ -1,10 +1,10 @@
-package dataflow;
+package factexporter;
 
-import sourcecode.Function;
+import sourcecode.Func;
 import sourcecode.Parameter;
 
 public interface DataFlowGraphService 
 {
-	void buildGraph(Function functionName);
+	void buildGraph(Func functionName);
 	boolean pathFromParamToReturn(Parameter param);
 }

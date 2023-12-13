@@ -9,6 +9,7 @@ import export.File;
 import factexporter.DecompilationService;
 import facts.Fact;
 import ghidra.util.Msg;
+import sourcecode.Func;
 import sourcecode.Function;
 import sourcecode.FunctionCall;
 import sourcecode.Value;
@@ -25,7 +26,7 @@ public class NoCallsBefore implements Fact
 
 	public void CreateFacts(File file) 
 	{
-		var functionCalls = new ArrayList<Triplet<Function, String, Value>>();
+		var functionCalls = new ArrayList<Triplet<Func, String, Value>>();
 		var compilerSpec = decompService.compilerSpec();
 		var thisPointerRegister = new ThisPointer().build(compilerSpec);
 		for (var function : decompService.functions())
@@ -38,7 +39,7 @@ public class NoCallsBefore implements Fact
 					if (function.parameters().size() < 1) { continue;}
 					var firstParam = function.parameters().get(0);
 					if (firstParam.inRegister() && firstParam.register().name().equals(thisPointerRegister.name())) {
-						functionCalls.add(new Triplet<Function, String, Value>(function, functionCall.name(), function.parameters().get(0)));
+						functionCalls.add(new Triplet<Func, String, Value>(function, functionCall.name(), function.parameters().get(0)));
 					}
 				} 
 				else //if (opCode == PcodeOp.CALLIND) 
@@ -53,7 +54,7 @@ public class NoCallsBefore implements Fact
 		printFunctionCalls(functionCalls);
 	}
 	
-	private void printFunctionCalls(List<Triplet<Function, String, Value>> functionCalls) {
+	private void printFunctionCalls(List<Triplet<Func, String, Value>> functionCalls) {
 		Msg.out("Found " + functionCalls.size() + " tuples.");
 		for(var functionCall : functionCalls)
 		{

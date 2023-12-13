@@ -1,13 +1,13 @@
 package tests;
 
-import dataflow.DataFlowGraphService;
-import sourcecode.Function;
+import factexporter.DataFlowGraphService;
+import sourcecode.Func;
 import sourcecode.Parameter;
 
 public class FakeDataFlowGraphService implements DataFlowGraphService {
 
 	@Override
-	public void buildGraph(Function functionName) 
+	public void buildGraph(Func functionName) 
 	{
 
 	}

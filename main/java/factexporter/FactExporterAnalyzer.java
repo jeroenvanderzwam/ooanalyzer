@@ -15,7 +15,6 @@
  */
 package factexporter;
 
-import dataflow.DataFlowGraphService;
 import dataflow.GhidraDataFlowAdapter;
 import ghidra.app.services.AbstractAnalyzer;
 import ghidra.app.services.AnalyzerType;

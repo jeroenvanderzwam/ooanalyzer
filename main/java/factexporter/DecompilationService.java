@@ -2,11 +2,11 @@ package factexporter;
 
 import java.util.List;
 
-import sourcecode.Function;
+import sourcecode.Func;
 
 public interface DecompilationService 
 {
-	List<Function> functions();
+	List<Func> functions();
 	CompilerSpecification compilerSpec();
 	String decompiledFileName();
 }

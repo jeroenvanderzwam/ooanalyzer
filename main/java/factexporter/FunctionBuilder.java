@@ -9,6 +9,7 @@ import ghidra.program.model.pcode.HighSymbol;
 import ghidra.program.model.pcode.PcodeOp;
 import ghidra.program.model.pcode.PcodeOpAST;
 import ghidra.program.model.pcode.Varnode;
+import sourcecode.Func;
 import sourcecode.Function;
 import sourcecode.FunctionCall;
 import sourcecode.Instruction;
@@ -17,73 +18,74 @@ import sourcecode.Parameter;
 import sourcecode.Register;
 import sourcecode.Stack;
 import sourcecode.Storage;
+import sourcecode.ThunkFunction;
 import sourcecode.Value;
 
-public class FunctionConverter 
+public class FunctionBuilder 
 {
 	
-	FunctionConverter() 
+	FunctionBuilder() 
 	{
 	}
 	
-	public Function convert(HighFunction highFunction) 
+	public Func build(HighFunction highFunction) 
 	{
 		var function = highFunction.getFunction();
 		
-		var instructions = convertInstructions(highFunction.getPcodeOps());
-		var callingConvention = convertCallingConvention(highFunction);
-		var parameters = convertParameters(highFunction);
-		var func = new Function(function.getEntryPoint().toString(), 
-								function.getName(), 
-								function.isThunk(), 
-								parameters, 
-								callingConvention != null ? callingConvention : null,
-								instructions);
+		var instructions = buildInstructions(highFunction.getPcodeOps());
+		var callingConvention = buildCallingConvention(highFunction);
+		var parameters = buildParameters(highFunction);
+		Func func;
+		if (!function.isThunk()) {
+			func = new Function(function.getEntryPoint().toString(), function.getName(), parameters, callingConvention, instructions);
+		} else {
+			func = new ThunkFunction(function.getEntryPoint().toString(), function.getName(), parameters, callingConvention , instructions);
+		}
 		return func;
 	}
 	
-	private List<Instruction> convertInstructions(Iterator<PcodeOpAST> pCodeOps) 
+	private List<Instruction> buildInstructions(Iterator<PcodeOpAST> pCodeOps) 
 	{
 		var instructions = new ArrayList<Instruction>();
 		while (pCodeOps.hasNext())
 		{
-			instructions.add(convertInstruction(pCodeOps.next()));
+			instructions.add(buildInstruction(pCodeOps.next()));
 		}
 		return instructions;
 	}
 	
-	private CallingConvention convertCallingConvention(HighFunction highFunction) 
+	private CallingConvention buildCallingConvention(HighFunction highFunction) 
 	{
 		var ghidraCallingConv = highFunction.getFunction().getCallingConvention();
 		if (ghidraCallingConv != null) {
 			return new CallingConvention(ghidraCallingConv.getName());
 		}
-		return null;
+		return new CallingConvention("No calling convention available");
 	}
 	
-	private ArrayList<Parameter> convertParameters(HighFunction highFunction) {
+	private ArrayList<Parameter> buildParameters(HighFunction highFunction) {
 		var funcPrototype = highFunction.getFunctionPrototype();
 		var parameters = new ArrayList<Parameter>();
 		for (int i = 0; i < funcPrototype.getNumParams(); i++) {
 			var param = funcPrototype.getParam(i);
-			parameters.add(convertParameter(i,param));
+			parameters.add(buildParameter(i,param));
 		}
 		return parameters;
 	}
 
-	private Instruction convertInstruction(PcodeOpAST op) 
+	private Instruction buildInstruction(PcodeOpAST op) 
 	{
 		var mnemonic = op.getMnemonic();
 		var output = op.getOutput();
 		var inputs = op.getInputs();
-		var outputVar = output != null ? convertVariable(output) : null;
+		var outputVar = output != null ? buildVariable(output) : null;
 		if (op.getOpcode() == PcodeOp.CALL) {
-			return new FunctionCall(inputs[0].getAddress().toString(), convertVariables(inputs), outputVar);
+			return new FunctionCall(inputs[0].getAddress().toString(), buildVariables(inputs), outputVar);
 		}
-		return new OtherInstruction(mnemonic, convertVariables(inputs), outputVar);
+		return new OtherInstruction(mnemonic, buildVariables(inputs), outputVar);
 	}
 	
-	private Parameter convertParameter(int index, HighSymbol param) 
+	private Parameter buildParameter(int index, HighSymbol param) 
 	{
 		Storage storage = null;
 		var register = param.getStorage().getRegister();
@@ -96,17 +98,17 @@ public class FunctionConverter
 		return new Parameter(param.getName(), param.getSize(), index, storage);
 	}
 	
-	private List<Value> convertVariables(Varnode[] inputs) 
+	private List<Value> buildVariables(Varnode[] inputs) 
 	{
 		var values = new ArrayList<Value>();
 		for(var input : inputs)
 		{
-			values.add(convertVariable(input));
+			values.add(buildVariable(input));
 		}
 		return values;
 	}
 	
-	private Value convertVariable(Varnode output) 
+	private Value buildVariable(Varnode output) 
 	{
 		return new ValueBuilder().build(output);
 	}

@@ -1,7 +1,7 @@
 package returnsSelf;
 
-import dataflow.DataFlowGraphService;
 import export.File;
+import factexporter.DataFlowGraphService;
 import factexporter.DecompilationService;
 import facts.Fact;
 import thispointer.ThisPointer;

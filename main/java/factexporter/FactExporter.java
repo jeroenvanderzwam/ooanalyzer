@@ -2,7 +2,6 @@ package factexporter;
 
 import java.util.regex.Pattern;
 
-import dataflow.DataFlowGraphService;
 import export.TextFile;
 
 import ghidra.util.Msg;
