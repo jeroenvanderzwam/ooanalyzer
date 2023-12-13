@@ -31,22 +31,25 @@ public class GhidraDataflowPathFinder {
 		}
 		return false;
 	}
+	
+	private boolean hasCycle(AttributedVertex nextVertex, List<AttributedVertex> nextVertexList) {
+		var previousVertexes = nextVertexList.subList(0, nextVertexList.size() - 1);
+		if (previousVertexes.contains(nextVertex)) {
+			return true; 
+		}
+		return false;
+	}
 
 	private List<AttributedVertex> hasValidPathToReturn(AttributedVertex vertex, AttributedVertex possibleReturnVertex) {
 		List<List<AttributedVertex>> frontier = new ArrayList<>();
-		frontier.add(new ArrayList<AttributedVertex>() {
-			{
-				add(vertex);
-			}
-		});
+		frontier.add(new ArrayList<AttributedVertex>() {{add(vertex);}});
 		while (!frontier.isEmpty()) {
 			var nextVertexList = frontier.remove(0);
 			var nextVertex = nextVertexList.get(nextVertexList.size() - 1);
 			if (nextVertex == null) {
 				continue;
 			}
-			var previousVertexes = nextVertexList.subList(0, nextVertexList.size() - 1);
-			if (previousVertexes.contains(nextVertex)) {
+			if (hasCycle(nextVertex, nextVertexList)) {
 				continue;
 			}
 			if (!operationIsAllowed(nextVertex)) {
