@@ -18,6 +18,7 @@ public class ReturnsSelfTest
 	public void setUp() 
 	{
 		_service = new FakeDecompilationService();
+		_service.initialize();
 		_graph = new FakeDataFlowGraphService();
 		_file = new ArrayListFile();
 		new ReturnsSelf(_service, _graph).CreateFacts(_file);

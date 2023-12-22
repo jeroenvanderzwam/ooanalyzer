@@ -16,7 +16,7 @@ public abstract class Func
 	public Func(String addr, String name, List<Parameter> parameters, CallingConvention callingConv) 
 	{
 		this.parameters = parameters;
-		address = addr.replaceFirst("00","0x");
+		address = addr;
 		this.name = name;
 		callingConvention = callingConv;
 	}

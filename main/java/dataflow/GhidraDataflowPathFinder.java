@@ -9,6 +9,7 @@ public class GhidraDataflowPathFinder {
 	private DataFlowGraph dataFlowGraph;
 	
 	private List<AttributedVertex> path;
+	private List<List<AttributedVertex>> frontier;
 
 	public GhidraDataflowPathFinder(HighFunction highFunction) 
 	{
@@ -32,6 +33,39 @@ public class GhidraDataflowPathFinder {
 		return false;
 	}
 	
+	private List<AttributedVertex> hasValidPathToReturn(AttributedVertex vertex, AttributedVertex returnVertex) {
+		initalizeFrontier(vertex);
+		while (!frontier.isEmpty()) {
+			var nextPath = frontier.remove(0);
+			var nextVertex = nextPath.get(nextPath.size() - 1);
+			if (validNextVertex(nextVertex, nextPath)) {
+				if (nextVertex.equals(returnVertex)) {
+					return nextPath;
+				}
+				extendFrontier(nextVertex, nextPath);
+			}
+		}
+		return null;
+	}
+	
+	private void initalizeFrontier(AttributedVertex vertex) {
+		frontier = new ArrayList<>();
+		frontier.add(new ArrayList<AttributedVertex>() {{add(vertex);}});
+	}
+	
+	private boolean validNextVertex(AttributedVertex nextVertex, List<AttributedVertex> nextVertexList) {
+		if (nextVertex == null) {
+			return false;
+		}
+		if (hasCycle(nextVertex, nextVertexList)) {
+			return false;
+		}
+		if (!operationIsAllowed(nextVertex)) {
+			return false;
+		}
+		return true;
+	}
+	
 	private boolean hasCycle(AttributedVertex nextVertex, List<AttributedVertex> nextVertexList) {
 		var previousVertexes = nextVertexList.subList(0, nextVertexList.size() - 1);
 		if (previousVertexes.contains(nextVertex)) {
@@ -39,32 +73,13 @@ public class GhidraDataflowPathFinder {
 		}
 		return false;
 	}
-
-	private List<AttributedVertex> hasValidPathToReturn(AttributedVertex vertex, AttributedVertex possibleReturnVertex) {
-		List<List<AttributedVertex>> frontier = new ArrayList<>();
-		frontier.add(new ArrayList<AttributedVertex>() {{add(vertex);}});
-		while (!frontier.isEmpty()) {
-			var nextVertexList = frontier.remove(0);
-			var nextVertex = nextVertexList.get(nextVertexList.size() - 1);
-			if (nextVertex == null) {
-				continue;
-			}
-			if (hasCycle(nextVertex, nextVertexList)) {
-				continue;
-			}
-			if (!operationIsAllowed(nextVertex)) {
-				continue;
-			}
-			if (nextVertex.equals(possibleReturnVertex)) {
-				return nextVertexList;
-			}
-			for (var edge : dataFlowGraph.graph().outgoingEdgesOf(nextVertex)) {
-				var newVertexList = new ArrayList<>(nextVertexList);
-				newVertexList.add(dataFlowGraph.graph().getEdgeTarget(edge));
-				frontier.add(newVertexList);
-			}
+	
+	private void extendFrontier(AttributedVertex nextVertex, List<AttributedVertex> nextVertexList) {
+		for (var edge : dataFlowGraph.graph().outgoingEdgesOf(nextVertex)) {
+			var newVertexList = new ArrayList<>(nextVertexList);
+			newVertexList.add(dataFlowGraph.graph().getEdgeTarget(edge));
+			frontier.add(newVertexList);
 		}
-		return null;
 	}
 
 	private ArrayList<String> allowedOperations = new ArrayList<String>() {

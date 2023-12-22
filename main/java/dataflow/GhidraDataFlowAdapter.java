@@ -3,6 +3,7 @@ package dataflow;
 import factexporter.DataFlowGraphService;
 import factexporter.GhidraDecompilationAdapter;
 import ghidra.program.model.pcode.VarnodeAST;
+import ghidra.util.Msg;
 import sourcecode.Func;
 import sourcecode.Parameter;
 
@@ -19,8 +20,8 @@ public class GhidraDataFlowAdapter implements DataFlowGraphService
 	
 	@Override
 	public void buildGraph(Func function) {
-		graphFunction = function.name();
-		graph = new GhidraDataflowPathFinder(ghidraDecompilationService.decompiledFunctions().get(function.name()));
+		graphFunction = function.address();
+		graph = new GhidraDataflowPathFinder(ghidraDecompilationService.decompiledFunctions().get(graphFunction));
 		graph.buildGraph();
 	}
 
@@ -30,8 +31,11 @@ public class GhidraDataFlowAdapter implements DataFlowGraphService
 		var prototype = function.getFunctionPrototype();
 		var symbol = prototype.getParam(param.index());
 		var variable = symbol.getHighVariable();
-		var registerLocation = (VarnodeAST)variable.getRepresentative();
-		return graph.pathFromParamToReturn(registerLocation);
+		if (variable != null) {
+			var registerLocation = (VarnodeAST)variable.getRepresentative();
+			return graph.pathFromParamToReturn(registerLocation);
+		}
+		return false;
 	}
 
 }

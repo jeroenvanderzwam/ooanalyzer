@@ -70,6 +70,10 @@ public class FactExporterAnalyzer extends AbstractAnalyzer {
 		// TODO: Perform analysis when things get added to the 'program'.  Return true if the
 		// analysis succeeded.
 		DecompilationService decompService = new GhidraDecompilationAdapter(program);
+		decompService.initialize();
+		var service = (GhidraDecompilationAdapter)decompService;
+		//var constructors = service.constructors();
+		//var thisPointers = service.hasThisPointer();
 		DataFlowGraphService graphService = new GhidraDataFlowAdapter((GhidraDecompilationAdapter)decompService);
 		FactExporter factExporter = new FactExporter(decompService, graphService);
 		factExporter.CreateFacts();

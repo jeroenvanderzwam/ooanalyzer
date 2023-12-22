@@ -15,11 +15,11 @@ import sourcecode.ThunkFunction;
 
 public class FakeDecompilationService implements DecompilationService
 {
-
+	private List<Func> functions;
 	@Override
-	public List<Func> functions() 
+	public void initialize() 
 	{
-		var functions = new ArrayList<Func>() 
+		functions = new ArrayList<Func>() 
 		{{
 			// Parameter is passed in ECX and should therefore be a returnsSelf
 			add(new Function("00000001", "FUN_00000001", 
@@ -40,6 +40,11 @@ public class FakeDecompilationService implements DecompilationService
 			add(new Function("00000004", "FUN_00000004", new ArrayList<Parameter>(), new CallingConvention("__fastcall__")));
 			
 		}};
+	}
+	
+	@Override
+	public List<Func> functions() 
+	{
 		return functions;
 	}
 
