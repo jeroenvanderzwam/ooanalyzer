@@ -24,7 +24,7 @@ public class NoCallsBefore implements Fact
 		decompService = service;
 	}
 
-	public void CreateFacts(File file) 
+	public void createFacts(File file) 
 	{
 		var functionCalls = new ArrayList<Triplet<Func, String, Value>>();
 		var compilerSpec = decompService.compilerSpec();

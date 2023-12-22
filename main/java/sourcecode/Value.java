@@ -13,4 +13,6 @@ public abstract class Value
 	{
 		return size;
 	}
+	
+	public abstract String toString();
 }

@@ -21,7 +21,7 @@ public class ReturnsSelfTest
 		_service.initialize();
 		_graph = new FakeDataFlowGraphService();
 		_file = new ArrayListFile();
-		new ReturnsSelf(_service, _graph).CreateFacts(_file);
+		new ReturnsSelf(_service, _graph).createFacts(_file);
 	}
 	
 	@Test

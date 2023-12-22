@@ -22,7 +22,7 @@ public class ReturnsSelf implements Fact
 		thisPointerRegister = new ThisPointer().build(compilerSpec);
 	}
 
-	public void CreateFacts(File file) {
+	public void createFacts(File file) {
 		file.open();
 		for (var function : dataService.functions())
 		{
@@ -44,15 +44,16 @@ public class ReturnsSelf implements Fact
 	}
 	
 	private boolean firstParamHasPathToReturn(Func function) {
-		var param = function.parameters().get(0);
-		if (param.inRegister()) {
-			if (param.register().name().equals(thisPointerRegister.name())) {
+		var firstParam = function.parameters().get(0);
+		if (firstParam.inRegister()) {
+			if (firstParam.register().name().equals(thisPointerRegister.name())) {
 				graphService.buildGraph(function);
-				if (graphService.pathFromParamToReturn(param)) {
+				if (graphService.pathFromParamToReturn(firstParam)) {
 					return true;
 				}
 			}
 		}
 		return false;
 	}
+
 }

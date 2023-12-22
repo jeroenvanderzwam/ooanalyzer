@@ -25,9 +25,9 @@ public class FactExporter {
 		var fileName = "C:/Users/jeroe/Downloads/Facts/Ghidra/" + decompService.decompiledFileName().split(Pattern.quote("."))[0] + ".ghidrafacts";
 		var file = new TextFile(fileName);
 		
-		new ReturnsSelf(decompService, dataFlowGraphService).CreateFacts(file);
+		new ReturnsSelf(decompService, dataFlowGraphService).createFacts(file);
 		Msg.out(file.read());
-		new NoCallsBefore(decompService).CreateFacts(file);
+		new NoCallsBefore(decompService).createFacts(file);
 	}
 
 }

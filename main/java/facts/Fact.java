@@ -4,5 +4,5 @@ import export.File;
 
 public interface Fact 
 {	
-	void CreateFacts(File output);
+	void createFacts(File output);
 }
