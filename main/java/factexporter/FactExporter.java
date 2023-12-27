@@ -1,13 +1,11 @@
 package factexporter;
 
+import java.util.ArrayList;
 import java.util.regex.Pattern;
 
-import export.TextFile;
-
-import ghidra.util.Msg;
-
-import noCallsBefore.NoCallsBefore;
-import returnsSelf.ReturnsSelf;
+import factexporter.export.File;
+import factexporter.export.TextFile;
+import factexporter.facts.Fact;
 
 public class FactExporter {
 	
@@ -20,14 +18,21 @@ public class FactExporter {
 		dataFlowGraphService = dataFlowGraphServ;
 	}
 	
-	public void CreateFacts() 
+	public void createFacts() 
 	{
 		var fileName = "C:/Users/jeroe/Downloads/Facts/Ghidra/" + decompService.decompiledFileName().split(Pattern.quote("."))[0] + ".ghidrafacts";
-		var file = new TextFile(fileName);
+		File file = new TextFile(fileName);
 		
-		new ReturnsSelf(decompService, dataFlowGraphService).createFacts(file);
-		Msg.out(file.read());
-		new NoCallsBefore(decompService).createFacts(file);
+		var factFactory = new FactFactory();
+		var facts = new ArrayList<Fact>() 
+		{{
+			add(factFactory.createReturnsSelf(decompService, dataFlowGraphService));
+			add(factFactory.createNoCallsBefore(decompService));
+		}};
+		
+		for(Fact fact : facts) {
+			fact.createFacts(file);
+		}
 	}
 
 }

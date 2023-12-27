@@ -1,8 +1,8 @@
 package tests;
 
 import factexporter.DataFlowGraphService;
-import sourcecode.Func;
-import sourcecode.Parameter;
+import factexporter.datastructures.Func;
+import factexporter.datastructures.Parameter;
 
 public class FakeDataFlowGraphService implements DataFlowGraphService {
 

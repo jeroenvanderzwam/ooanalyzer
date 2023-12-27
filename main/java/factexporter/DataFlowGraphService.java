@@ -1,7 +1,7 @@
 package factexporter;
 
-import sourcecode.Func;
-import sourcecode.Parameter;
+import factexporter.datastructures.Func;
+import factexporter.datastructures.Parameter;
 
 public interface DataFlowGraphService 
 {

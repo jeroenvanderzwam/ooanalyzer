@@ -2,7 +2,8 @@ package factexporter;
 
 import java.util.List;
 
-import sourcecode.Func;
+import factexporter.datastructures.CompilerSpecification;
+import factexporter.datastructures.Func;
 
 public interface DecompilationService 
 {

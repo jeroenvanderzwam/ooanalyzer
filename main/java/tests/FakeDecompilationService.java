@@ -3,15 +3,15 @@ package tests;
 import java.util.ArrayList;
 import java.util.List;
 
-import factexporter.CallingConvention;
-import factexporter.CompilerSpecification;
 import factexporter.DecompilationService;
-import sourcecode.Func;
-import sourcecode.Function;
-import sourcecode.Parameter;
-import sourcecode.Register;
-import sourcecode.Stack;
-import sourcecode.ThunkFunction;
+import factexporter.datastructures.CallingConvention;
+import factexporter.datastructures.CompilerSpecification;
+import factexporter.datastructures.Func;
+import factexporter.datastructures.Function;
+import factexporter.datastructures.Parameter;
+import factexporter.datastructures.Register;
+import factexporter.datastructures.Stack;
+import factexporter.datastructures.ThunkFunction;
 
 public class FakeDecompilationService implements DecompilationService
 {
