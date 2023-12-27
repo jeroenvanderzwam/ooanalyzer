@@ -16,30 +16,46 @@ import factexporter.datastructures.ThunkFunction;
 class FakeDecompilationService implements DecompilationService
 {
 	private List<Func> functions;
+	
 	@Override
 	public void initialize() 
 	{
 		functions = new ArrayList<Func>() 
 		{{
-			// Parameter is passed in ECX and should therefore be a returnsSelf
-			add(new Function("00000001", "FUN_00000001", 
-					new ArrayList<Parameter>(){{ add(new Parameter("param_1", 4, 0, new Register("ECX"))); }}, 
-					new CallingConvention("__thiscall__")));
-			
-			// Parameter is passed on the stack and should therefore not be a returnsSelf 
-			add(new Function("00000002", "FUN_00000002", 
-					new ArrayList<Parameter>(){{ add(new Parameter("param_1", 4, 0, new Stack())); }}, 
-					new CallingConvention("__fastcall__")));
-			
-			// Function is a thunk, and should therefore not be considered for returnsSelf
-			add(new ThunkFunction("00000003", "FUN_00000003", 
-					new ArrayList<Parameter>(){{ add(new Parameter("param_1", 4, 0, new Register("ECX"))); }}, 
-					new CallingConvention("__fastcall__")));
-			
-			// No parameters so cannot be returnsSelf
-			add(new Function("00000004", "FUN_00000004", new ArrayList<Parameter>(), new CallingConvention("__fastcall__")));
-			
+			add(validReturnsSelfFunction());
+			add(invalidReturnsSelfBecauseOnStack());
+			add(invalidBecauseThunk());
+			add(invalidBecauseNoParameters());
+			add(invalidBecauseNotECXRegister());
 		}};
+	}
+		
+	private Func validReturnsSelfFunction() {
+		return new Function("00000001", "FUN_00000001", 
+				new ArrayList<Parameter>(){{ add(new Parameter("param_1", 4, 0, new Register("ECX"))); }}, 
+				new CallingConvention("__thiscall__"));
+	}
+	
+	private Func invalidReturnsSelfBecauseOnStack() {
+		return new Function("00000002", "FUN_00000002", 
+				new ArrayList<Parameter>(){{ add(new Parameter("param_1", 4, 0, new Stack())); }}, 
+				new CallingConvention("__fastcall__"));
+	}
+	
+	private Func invalidBecauseThunk() {
+		return new ThunkFunction("00000003", "FUN_00000003", 
+				new ArrayList<Parameter>(){{ add(new Parameter("param_1", 4, 0, new Register("ECX"))); }}, 
+				new CallingConvention("__fastcall__"));
+	}
+	
+	private Func invalidBecauseNoParameters() {
+		return new Function("00000004", "FUN_00000004", new ArrayList<Parameter>(), new CallingConvention("__fastcall__"));
+	}
+	
+	private Func invalidBecauseNotECXRegister() {
+		return new Function("00000005", "FUN_00000005", 
+				new ArrayList<Parameter>(){{ add(new Parameter("param_1", 4, 0, new Register("EAX"))); }}, 
+				new CallingConvention("__thiscall__"));
 	}
 	
 	@Override

@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import factexporter.facts.FactFactory;
 
-public class ReturnsSelfTest 
+public class ReturnsSelfWindows32BitTest 
 {
 	FakeDecompilationService _service;
 	FakeDataFlowGraphService _graph;
@@ -46,7 +46,13 @@ public class ReturnsSelfTest
 	@Test
 	public void testNoParametersSoNoReturnsSelf()
 	{
-		assertFalse(_file.read().contains("returnsSelf(00000003)."));
+		assertFalse(_file.read().contains("returnsSelf(00000004)."));
+	}
+	
+	@Test
+	public void testParameterNotPassedInECX()
+	{
+		assertFalse(_file.read().contains("returnsSelf(00000005)."));
 	}
 
 }
