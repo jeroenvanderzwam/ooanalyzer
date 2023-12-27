@@ -14,7 +14,7 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.GraphException;
 import ghidra.util.task.TaskMonitor;
 
-public class DataflowDisplayGraph {
+class DataflowDisplayGraph {
 	
 	private PluginTool tool;
 	private GraphDisplayBroker graphService;

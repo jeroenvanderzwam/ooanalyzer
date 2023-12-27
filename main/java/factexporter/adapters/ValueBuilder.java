@@ -10,7 +10,7 @@ import ghidra.program.model.pcode.HighLocal;
 import ghidra.program.model.pcode.HighOther;
 import ghidra.program.model.pcode.Varnode;
 
-public class ValueBuilder 
+class ValueBuilder 
 {
 	ValueBuilder()
 	{

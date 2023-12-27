@@ -1,8 +1,7 @@
-package factexporter;
+package factexporter.facts;
 
-import factexporter.facts.Fact;
-import factexporter.facts.NoCallsBefore;
-import factexporter.facts.ReturnsSelf;
+import factexporter.DataFlowGraphService;
+import factexporter.DecompilationService;
 
 public class FactFactory 
 {

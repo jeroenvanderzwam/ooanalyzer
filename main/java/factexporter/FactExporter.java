@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 import factexporter.export.File;
 import factexporter.export.TextFile;
 import factexporter.facts.Fact;
+import factexporter.facts.FactFactory;
 
 public class FactExporter {
 	

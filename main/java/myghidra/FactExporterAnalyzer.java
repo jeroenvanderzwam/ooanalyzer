@@ -32,7 +32,7 @@ import ghidra.util.task.TaskMonitor;
 /**
  * TODO: Provide class-level documentation that describes what this analyzer does.
  */
-public class FactExporterAnalyzer extends AbstractAnalyzer {
+class FactExporterAnalyzer extends AbstractAnalyzer {
 
 	public FactExporterAnalyzer() {
 

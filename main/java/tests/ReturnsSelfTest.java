@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
-import factexporter.facts.ReturnsSelf;
+import factexporter.facts.FactFactory;
 
 public class ReturnsSelfTest 
 {
@@ -21,31 +21,32 @@ public class ReturnsSelfTest
 		_service.initialize();
 		_graph = new FakeDataFlowGraphService();
 		_file = new ArrayListFile();
-		new ReturnsSelf(_service, _graph).createFacts(_file);
+		var factFactory = new FactFactory();
+		factFactory.createReturnsSelf(_service, _graph).createFacts(_file);
 	}
 	
 	@Test
 	public void testValidReturnsSelf() 
 	{
-		assertTrue(_file.read().get(0).equals("returnsSelf(0x000001)."));
+		assertTrue(_file.read().get(0).equals("returnsSelf(00000001)."));
 	}
 	
 	@Test
 	public void testPassedOnStackSoNoReturnsSelf() 
 	{
-		assertFalse(_file.read().contains("returnsSelf(0x000002)."));
+		assertFalse(_file.read().contains("returnsSelf(00000002)."));
 	}
 	
 	@Test
 	public void testThunkFunctionSoNoReturnsSelf() 
 	{
-		assertFalse(_file.read().contains("returnsSelf(0x000003)."));
+		assertFalse(_file.read().contains("returnsSelf(00000003)."));
 	}
 	
 	@Test
 	public void testNoParametersSoNoReturnsSelf()
 	{
-		assertFalse(_file.read().contains("returnsSelf(0x000003)."));
+		assertFalse(_file.read().contains("returnsSelf(00000003)."));
 	}
 
 }

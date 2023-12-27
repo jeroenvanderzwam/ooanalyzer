@@ -22,7 +22,7 @@ import ghidra.program.model.pcode.PcodeOp;
 import ghidra.program.model.pcode.PcodeOpAST;
 import ghidra.program.model.pcode.Varnode;
 
-public class FunctionBuilder 
+class FunctionBuilder 
 {
 	
 	FunctionBuilder() 

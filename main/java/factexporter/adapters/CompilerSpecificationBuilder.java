@@ -3,7 +3,7 @@ package factexporter.adapters;
 import factexporter.datastructures.CompilerSpecification;
 import ghidra.program.model.lang.CompilerSpec;
 
-public class CompilerSpecificationBuilder 
+class CompilerSpecificationBuilder 
 {
 	public CompilerSpecificationBuilder() 
 	{

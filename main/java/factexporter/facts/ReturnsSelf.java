@@ -2,12 +2,11 @@ package factexporter.facts;
 
 import factexporter.DataFlowGraphService;
 import factexporter.DecompilationService;
-import factexporter.ThisPointer;
-import factexporter.ThisPointer.ThisPointerRegister;
 import factexporter.datastructures.Func;
 import factexporter.export.File;
+import factexporter.facts.ThisPointer.ThisPointerRegister;
 
-public class ReturnsSelf implements Fact 
+class ReturnsSelf implements Fact 
 {
 	private final DecompilationService dataService;
 	private final DataFlowGraphService graphService;

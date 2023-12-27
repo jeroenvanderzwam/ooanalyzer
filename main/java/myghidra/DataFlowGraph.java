@@ -20,7 +20,7 @@ import ghidra.service.graph.AttributedVertex;
 import ghidra.service.graph.GraphType;
 import ghidra.service.graph.VertexShape;
 
-public class DataFlowGraph 
+class DataFlowGraph 
 {
 	private HashMap<Integer, AttributedVertex> vertices = new HashMap<>();
 	private HashMap<Integer, AttributedVertex> returnVertices = new HashMap<>();

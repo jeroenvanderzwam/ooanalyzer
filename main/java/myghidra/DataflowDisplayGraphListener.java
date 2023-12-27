@@ -28,7 +28,7 @@ import ghidra.service.graph.*;
 /**
  * GraphDisplayListener for a PCode data flow graph
  */
-public class DataflowDisplayGraphListener extends AddressBasedGraphDisplayListener {
+class DataflowDisplayGraphListener extends AddressBasedGraphDisplayListener {
 
 	HighFunction highfunc;
 

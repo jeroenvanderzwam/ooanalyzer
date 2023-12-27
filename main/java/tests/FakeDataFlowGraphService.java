@@ -4,7 +4,7 @@ import factexporter.DataFlowGraphService;
 import factexporter.datastructures.Func;
 import factexporter.datastructures.Parameter;
 
-public class FakeDataFlowGraphService implements DataFlowGraphService {
+class FakeDataFlowGraphService implements DataFlowGraphService {
 
 	@Override
 	public void buildGraph(Func functionName) 

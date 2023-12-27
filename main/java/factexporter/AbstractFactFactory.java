@@ -4,7 +4,7 @@ import java.util.List;
 
 import factexporter.facts.Fact;
 
-public interface AbstractFactFactory {
+interface AbstractFactFactory {
 
 	Fact createFact(String factType, List<String> args);
 	List<String> availableFacts();

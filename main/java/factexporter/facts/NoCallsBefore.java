@@ -6,14 +6,13 @@ import java.util.List;
 import org.javatuples.Triplet;
 
 import factexporter.DecompilationService;
-import factexporter.ThisPointer;
 import factexporter.datastructures.Func;
 import factexporter.datastructures.FunctionCall;
 import factexporter.datastructures.Value;
 import factexporter.export.File;
 import ghidra.util.Msg;
 
-public class NoCallsBefore implements Fact 
+class NoCallsBefore implements Fact 
 {
 	private DecompilationService decompService;
 	

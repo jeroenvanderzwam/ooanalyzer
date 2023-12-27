@@ -13,7 +13,7 @@ import factexporter.datastructures.Register;
 import factexporter.datastructures.Stack;
 import factexporter.datastructures.ThunkFunction;
 
-public class FakeDecompilationService implements DecompilationService
+class FakeDecompilationService implements DecompilationService
 {
 	private List<Func> functions;
 	@Override

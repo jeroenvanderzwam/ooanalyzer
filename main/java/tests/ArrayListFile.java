@@ -5,7 +5,7 @@ import java.util.List;
 
 import factexporter.export.File;
 
-public class ArrayListFile implements File 
+class ArrayListFile implements File 
 {
 
 	private ArrayList<String> facts;

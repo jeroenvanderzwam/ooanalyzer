@@ -1,8 +1,8 @@
-package factexporter;
+package factexporter.facts;
 
 import factexporter.datastructures.CompilerSpecification;
 
-public class ThisPointer
+class ThisPointer
 {
 	public ThisPointerRegister build(CompilerSpecification compSpecs ) 
 	{
