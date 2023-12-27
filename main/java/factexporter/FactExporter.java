@@ -1,10 +1,8 @@
 package factexporter;
 
 import java.util.ArrayList;
-import java.util.regex.Pattern;
 
 import factexporter.export.File;
-import factexporter.export.TextFile;
 import factexporter.facts.Fact;
 import factexporter.facts.FactFactory;
 
@@ -19,11 +17,8 @@ public class FactExporter {
 		dataFlowGraphService = dataFlowGraphServ;
 	}
 	
-	public void createFacts() 
+	public void createFacts(File file) 
 	{
-		var fileName = "C:/Users/jeroe/Downloads/Facts/Ghidra/" + decompService.decompiledFileName().split(Pattern.quote("."))[0] + ".ghidrafacts";
-		File file = new TextFile(fileName);
-		
 		var factFactory = new FactFactory();
 		var facts = new ArrayList<Fact>() 
 		{{
@@ -35,5 +30,4 @@ public class FactExporter {
 			fact.createFacts(file);
 		}
 	}
-
 }

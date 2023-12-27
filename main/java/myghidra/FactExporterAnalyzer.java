@@ -15,11 +15,12 @@
  */
 package myghidra;
 
-import factexporter.DataFlowGraphService;
-import factexporter.DecompilationService;
+import java.util.regex.Pattern;
+
 import factexporter.FactExporter;
 import factexporter.adapters.GhidraDataFlowAdapter;
 import factexporter.adapters.GhidraDecompilationAdapter;
+import factexporter.export.TextFile;
 import ghidra.app.services.AbstractAnalyzer;
 import ghidra.app.services.AnalyzerType;
 import ghidra.app.util.importer.MessageLog;
@@ -71,17 +72,15 @@ class FactExporterAnalyzer extends AbstractAnalyzer {
 	public boolean added(Program program, AddressSetView set, TaskMonitor monitor, MessageLog log)
 			throws CancelledException {
 
-		// TODO: Perform analysis when things get added to the 'program'.  Return true if the
-		// analysis succeeded.
-		DecompilationService decompService = new GhidraDecompilationAdapter(program);
+		var decompService = new GhidraDecompilationAdapter(program);
 		decompService.initialize();
 		
-		//var service = (GhidraDecompilationAdapter)decompService;
-		//var constructors = service.constructors();
-		//var thisPointers = service.hasThisPointer();
-		DataFlowGraphService graphService = new GhidraDataFlowAdapter((GhidraDecompilationAdapter)decompService);
-		FactExporter factExporter = new FactExporter(decompService, graphService);
-		factExporter.createFacts();
+		var graphService = new GhidraDataFlowAdapter(decompService);
+		var factExporter = new FactExporter(decompService, graphService);
+		
+		var fileName = "C:/Users/jeroe/Downloads/Facts/Ghidra/" + decompService.decompiledFileName().split(Pattern.quote("."))[0] + ".ghidrafacts";
+		var file = new TextFile(fileName);
+		factExporter.createFacts(file);
 
 		return false;
 	}
