@@ -8,7 +8,7 @@ The research was done at the *Open Universiteit* in the Netherlands.
 
 The main contributor is [Jeroen van der Zwam](https://github.com/jeroenvanderzwam).
 
-This analyzer is run inside the [Ghidra](https://ghidra-sre.org/ framework).
+This analyzer is run inside the [Ghidra](https://ghidra-sre.org/) framework.
 To install Ghidra and the factexporter analyzer follow the [Ghidra installation guide](https://ghidra-sre.org/InstallationGuide.html).
 
 For convenience it is also possible to import the analyzer with the provided [zip file](ghidra_11.0_PUBLIC_20240112_FactExporter.zip)
