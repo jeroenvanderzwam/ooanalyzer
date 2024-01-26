@@ -33,7 +33,7 @@ import ghidra.util.task.TaskMonitor;
 /**
  * TODO: Provide class-level documentation that describes what this analyzer does.
  */
-class FactExporterAnalyzer extends AbstractAnalyzer {
+public class FactExporterAnalyzer extends AbstractAnalyzer {
 
 	public FactExporterAnalyzer() {
 
@@ -78,7 +78,7 @@ class FactExporterAnalyzer extends AbstractAnalyzer {
 		var graphService = new GhidraDataFlowAdapter(decompService);
 		var factExporter = new FactExporter(decompService, graphService);
 		
-		var fileName = "C:/Users/jeroe/Downloads/Facts/Ghidra/" + decompService.decompiledFileName().split(Pattern.quote("."))[0] + ".ghidrafacts";
+		var fileName = "C:/Users/jeroe/Downloads/Facts64/Ghidra/" + decompService.decompiledFileName().split(Pattern.quote("."))[0] + ".ghidrafacts";
 		var file = new TextFile(fileName);
 		factExporter.createFacts(file);
 

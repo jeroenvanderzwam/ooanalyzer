@@ -41,7 +41,7 @@ import resources.Icons;
 	description = "Plugin long description goes here."
 )
 //@formatter:on
-class FactExporterPlugin extends ProgramPlugin {
+public class FactExporterPlugin extends ProgramPlugin {
 
 	MyProvider provider;
 
