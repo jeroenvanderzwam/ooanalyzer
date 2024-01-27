@@ -23,11 +23,14 @@ public class FactExporter {
 		var facts = new ArrayList<Fact>() 
 		{{
 			add(factFactory.createReturnsSelf(decompService, dataFlowGraphService));
-			add(factFactory.createNoCallsBefore(decompService));
+			add(factFactory.createCallingConvention(decompService));
+			//add(factFactory.createNoCallsBefore(decompService));
 		}};
 		
+		file.open();
 		for(Fact fact : facts) {
 			fact.createFacts(file);
 		}
+		file.close();
 	}
 }

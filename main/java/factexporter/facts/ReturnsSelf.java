@@ -21,7 +21,6 @@ class ReturnsSelf implements Fact
 	}
 
 	public void createFacts(File file) {
-		file.open();
 		for (var function : dataService.functions())
 		{
 			if (functionReturnsSelf(function)) {
@@ -29,7 +28,6 @@ class ReturnsSelf implements Fact
 				file.write(output);
 			}
 		}
-		file.close();
 	}
 	
 	private boolean functionReturnsSelf(Func function) {

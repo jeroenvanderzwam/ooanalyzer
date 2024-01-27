@@ -61,7 +61,7 @@ class FunctionBuilder
 		if (ghidraCallingConv != null) {
 			return new CallingConvention(ghidraCallingConv.getName());
 		}
-		return new CallingConvention("No calling convention available");
+		return new CallingConvention("invalid");
 	}
 	
 	private ArrayList<Parameter> buildParameters(HighFunction highFunction) {

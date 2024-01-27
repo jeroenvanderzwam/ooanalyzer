@@ -12,4 +12,8 @@ public class FactFactory
 	public Fact createNoCallsBefore(DecompilationService decompServ) {
 		return new NoCallsBefore(decompServ);
 	}
+	
+	public Fact createCallingConvention(DecompilationService decompServ) {
+		return new CallingConvention(decompServ);
+	}
 }
