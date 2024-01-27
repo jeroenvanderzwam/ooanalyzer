@@ -16,6 +16,8 @@
 package myghidra;
 
 import java.awt.BorderLayout;
+import java.util.ArrayList;
+
 import javax.swing.*;
 import docking.ActionContext;
 import docking.ComponentProvider;
@@ -27,6 +29,8 @@ import ghidra.framework.plugintool.util.PluginStatus;
 import ghidra.program.model.listing.Program;
 import ghidra.program.util.*;
 import ghidra.util.*;
+import ghidra.util.exception.CancelledException;
+import ghidra.util.exception.GraphException;
 import resources.Icons;
 
 /**
@@ -87,12 +91,34 @@ public class FactExporterPlugin extends ProgramPlugin {
 		// TODO Auto-generated method stub
 		super.programOpened(program);
 		
-		/*
-		 * var addressString = "00411800"; DataflowDisplayGraph graph = new
-		 * DataflowDisplayGraph(tool, program, ); try { graph.buildAndDisplayGraph(); }
-		 * catch (GraphException | CancelledException e) { // TODO Auto-generated catch
-		 * block e.printStackTrace(); }
-		 */
+//		var addressStrings = new ArrayList<String>() 
+//		{{
+//			add("140001e00"); 
+//			add("140001e30"); 
+//			add("140001e60"); 
+//			add("140001e60"); 
+//			add("140001ee0"); 
+//			add("140001f70"); 
+//			add("140002c80"); 
+//			add("140002cd0"); 
+//			add("140002d20");
+//			add("140002d70");
+//			add("140002dc0");
+//			add("140002e00");
+//			add("140002e70");
+//		}};
+//		
+//		for(var addressString : addressStrings) {
+//			DataflowDisplayGraph graph = new DataflowDisplayGraph(tool, program, addressString); 
+//			try { 
+//				graph.buildAndDisplayGraph(); 
+//			}
+//			catch (GraphException | CancelledException e) {
+//				e.printStackTrace();
+//			}
+//		}
+
+		 
 	}
 
 	// TODO: If provider is desired, it is recommended to move it to its own file

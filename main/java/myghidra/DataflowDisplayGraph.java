@@ -14,14 +14,14 @@ import ghidra.util.exception.CancelledException;
 import ghidra.util.exception.GraphException;
 import ghidra.util.task.TaskMonitor;
 
-class DataflowDisplayGraph {
+public class DataflowDisplayGraph {
 	
 	private PluginTool tool;
 	private GraphDisplayBroker graphService;
 	private DataFlowGraph dataflowGraph;
 	private HighFunction highFunction;
 	
-	private DataflowDisplayGraph(PluginTool tool) {
+	public DataflowDisplayGraph(PluginTool tool) {
 		this.tool = tool;
 		graphService = tool.getService(GraphDisplayBroker.class);
 	}
