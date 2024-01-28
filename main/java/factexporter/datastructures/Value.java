@@ -3,10 +3,12 @@ package factexporter.datastructures;
 public abstract class Value 
 {
 	protected final int size;
+	protected final Storage storage;
 	
-	protected Value(int size) 
+	protected Value(int size, Storage storage) 
 	{
 		this.size = size;
+		this.storage = storage;
 	}
 	
 	public int size() 
@@ -14,5 +16,11 @@ public abstract class Value
 		return size;
 	}
 	
+	public abstract String value();
+	
+	public abstract String name();
+	
 	public abstract String toString();
+	
+	public abstract Storage storage();
 }

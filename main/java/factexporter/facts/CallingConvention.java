@@ -3,7 +3,7 @@ package factexporter.facts;
 import factexporter.DecompilationService;
 import factexporter.export.File;
 
-public class CallingConvention implements Fact {
+class CallingConvention implements Fact {
 	private DecompilationService decompilationService;
 	
 	public CallingConvention(DecompilationService decompService) {

@@ -42,7 +42,7 @@ class ReturnsSelf implements Fact
 	private boolean firstParamHasPathToReturn(Func function) {
 		var firstParam = function.parameters().get(0);
 		if (firstParam.inRegister()) {
-			if (firstParam.register().name().equals(thisPointerRegister.name())) {
+			if (firstParam.storage().name().equals(thisPointerRegister.name())) {
 				graphService.buildGraph(function);
 				if (graphService.pathFromParamToReturn(firstParam)) {
 					return true;

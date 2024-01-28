@@ -2,15 +2,13 @@ package factexporter.datastructures;
 
 public class Parameter extends Value
 {
-	private final Storage storage;
 	private final int index;
 	private final String name;
 	
 	public Parameter(String name, int size, int index, Storage storage) 
 	{
-		super(size);
+		super(size, storage);
 		this.index = index;
-		this.storage = storage;
 		this.name = name;
 	}
 
@@ -24,7 +22,8 @@ public class Parameter extends Value
 		return (storage instanceof Register);
 	}
 	
-	public Storage register() 
+	@Override
+	public Storage storage() 
 	{
 		return storage;
 	}
@@ -38,5 +37,10 @@ public class Parameter extends Value
 	public String toString()
 	{
 		return name;
+	}
+
+	@Override
+	public String value() {
+		return null;
 	}
 }

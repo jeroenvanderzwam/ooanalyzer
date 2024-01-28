@@ -24,6 +24,9 @@ public class FactExporter {
 		{{
 			add(factFactory.createReturnsSelf(decompService, dataFlowGraphService));
 			add(factFactory.createCallingConvention(decompService));
+			add(factFactory.createCallParameter(decompService));
+			//add(factFactory.createCallReturn(decompService));
+			add(factFactory.createCallTarget(decompService));
 			//add(factFactory.createNoCallsBefore(decompService));
 		}};
 		

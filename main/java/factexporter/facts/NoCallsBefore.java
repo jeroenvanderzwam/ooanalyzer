@@ -7,7 +7,7 @@ import org.javatuples.Triplet;
 
 import factexporter.DecompilationService;
 import factexporter.datastructures.Func;
-import factexporter.datastructures.FunctionCall;
+import factexporter.datastructures.FunctionCallInstruction;
 import factexporter.datastructures.Value;
 import factexporter.export.File;
 import ghidra.util.Msg;
@@ -30,13 +30,13 @@ class NoCallsBefore implements Fact
 		{
 			for (var instruction : function.instructions()) 
 			{
-				if (instruction instanceof FunctionCall) 
+				if (instruction instanceof FunctionCallInstruction) 
 				{
-					var functionCall = (FunctionCall)instruction;
+					var functionCall = (FunctionCallInstruction)instruction;
 					if (function.parameters().size() < 1) { continue;}
 					var firstParam = function.parameters().get(0);
-					if (firstParam.inRegister() && firstParam.register().name().equals(thisPointerRegister.name())) {
-						functionCalls.add(new Triplet<Func, String, Value>(function, functionCall.name(), function.parameters().get(0)));
+					if (firstParam.inRegister() && firstParam.storage().name().equals(thisPointerRegister.name())) {
+						functionCalls.add(new Triplet<Func, String, Value>(function, functionCall.inputs().get(0).name(), function.parameters().get(0)));
 					}
 				} 
 				else //if (opCode == PcodeOp.CALLIND) 

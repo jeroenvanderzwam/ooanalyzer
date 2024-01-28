@@ -4,9 +4,9 @@ public class Variable extends Value
 {
 	private final String name;
 	
-	public Variable(String name, int size) 
+	public Variable(String name, String value, int size, Storage storage) 
 	{
-		super(size);
+		super(size, storage);
 		this.name = name;
 	}
 	
@@ -19,6 +19,16 @@ public class Variable extends Value
 	public String toString()
 	{
 		return "%s::%s".formatted(name, size);
+	}
+
+	@Override
+	public String value() {
+		return null;
+	}
+
+	@Override
+	public Storage storage() {
+		return storage;
 	}
 
 }

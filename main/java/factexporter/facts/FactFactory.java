@@ -16,4 +16,12 @@ public class FactFactory
 	public Fact createCallingConvention(DecompilationService decompServ) {
 		return new CallingConvention(decompServ);
 	}
+
+	public Fact createCallParameter(DecompilationService decompService) {
+		return new CallParameter(decompService);
+	}
+
+	public Fact createCallTarget(DecompilationService decompService) {
+		return new CallTarget(decompService);
+	}
 }
