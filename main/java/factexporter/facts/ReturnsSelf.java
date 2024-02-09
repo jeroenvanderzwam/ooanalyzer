@@ -2,7 +2,7 @@ package factexporter.facts;
 
 import factexporter.DataFlowGraphService;
 import factexporter.DecompilationService;
-import factexporter.datastructures.Func;
+import factexporter.datastructures.Function;
 import factexporter.export.File;
 import factexporter.facts.ThisPointer.ThisPointerRegister;
 
@@ -24,13 +24,13 @@ class ReturnsSelf implements Fact
 		for (var function : dataService.functions())
 		{
 			if (functionReturnsSelf(function)) {
-				var output = String.format("returnsSelf(%s).", function.address());
+				var output = String.format("returnsSelf(%s).", function.getAddress());
 				file.write(output);
 			}
 		}
 	}
 	
-	private boolean functionReturnsSelf(Func function) {
+	private boolean functionReturnsSelf(Function function) {
 		if (function.isThunk()) { return false; }
 		if (!function.hasParameters()) { return false ;}
 		if (firstParamHasPathToReturn(function)) {
@@ -39,10 +39,10 @@ class ReturnsSelf implements Fact
 		return false;
 	}
 	
-	private boolean firstParamHasPathToReturn(Func function) {
-		var firstParam = function.parameters().get(0);
+	private boolean firstParamHasPathToReturn(Function function) {
+		var firstParam = function.getParameters().get(0);
 		if (firstParam.inRegister()) {
-			if (firstParam.storage().name().equals(thisPointerRegister.name())) {
+			if (firstParam.getStorage().getName().equals(thisPointerRegister.name())) {
 				graphService.buildGraph(function);
 				if (graphService.pathFromParamToReturn(firstParam)) {
 					return true;

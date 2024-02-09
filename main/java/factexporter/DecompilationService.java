@@ -3,12 +3,12 @@ package factexporter;
 import java.util.List;
 
 import factexporter.datastructures.CompilerSpecification;
-import factexporter.datastructures.Func;
+import factexporter.datastructures.Function;
 
 public interface DecompilationService 
 {
 	void initialize();
-	List<Func> functions();
+	List<Function> functions();
 	CompilerSpecification compilerSpec();
 	String decompiledFileName();
 }

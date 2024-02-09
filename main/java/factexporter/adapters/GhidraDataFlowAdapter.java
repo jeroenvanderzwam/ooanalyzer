@@ -1,8 +1,8 @@
 package factexporter.adapters;
 
 import factexporter.DataFlowGraphService;
-import factexporter.datastructures.Func;
-import factexporter.datastructures.Parameter;
+import factexporter.datastructures.Function;
+import factexporter.datastructures.Value;
 import ghidra.program.model.pcode.VarnodeAST;
 import myghidra.GhidraDataflowPathFinder;
 
@@ -18,17 +18,17 @@ public class GhidraDataFlowAdapter implements DataFlowGraphService
 	}
 	
 	@Override
-	public void buildGraph(Func function) {
-		graphFunction = function.address();
+	public void buildGraph(Function function) {
+		graphFunction = function.getAddress();
 		graph = new GhidraDataflowPathFinder(ghidraDecompilationService.decompiledFunctions().get(graphFunction));
 		graph.buildGraph();
 	}
 
 	@Override
-	public boolean pathFromParamToReturn(Parameter param) {
+	public boolean pathFromParamToReturn(Value param) {
 		var function = ghidraDecompilationService.decompiledFunctions().get(graphFunction);
 		var prototype = function.getFunctionPrototype();
-		var symbol = prototype.getParam(param.index());
+		var symbol = prototype.getParam(param.getIndex());
 		var variable = symbol.getHighVariable();
 		if (variable != null) {
 			var registerLocation = (VarnodeAST)variable.getRepresentative();

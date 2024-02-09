@@ -6,7 +6,7 @@ import java.util.List;
 
 import factexporter.DecompilationService;
 import factexporter.datastructures.CompilerSpecification;
-import factexporter.datastructures.Func;
+import factexporter.datastructures.Function;
 import ghidra.app.decompiler.DecompInterface;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.pcode.HighFunction;
@@ -15,7 +15,7 @@ public class GhidraDecompilationAdapter implements DecompilationService
 {
 	private Program program;
 	private HashMap<String, HighFunction> _decompiledFunctions = new HashMap<String, HighFunction>();
-	private ArrayList<Func> functions = new ArrayList<Func>();
+	private ArrayList<Function> functions = new ArrayList<Function>();
 	
 	public GhidraDecompilationAdapter(Program prog) 
 	{
@@ -28,7 +28,7 @@ public class GhidraDecompilationAdapter implements DecompilationService
 	}
 	
 	@Override
-	public List<Func> functions() {
+	public List<Function> functions() {
 		if (functions.isEmpty()) {
 			for (var highFunction : decompiledFunctions().values()) 
 			{		
@@ -67,30 +67,5 @@ public class GhidraDecompilationAdapter implements DecompilationService
 			}
 		}
 		return _decompiledFunctions;
-	}
-	
-	public List<String> constructors() 
-	{
-		List<String> constructors = new ArrayList<String>();
-		for(var func : functions()) {
-			var hFunc = decompiledFunctions().get(func.name());
-			var prototype = hFunc.getFunctionPrototype();
-			if (prototype.isConstructor()) {
-				constructors.add(func.address());
-			}
-		}
-		return constructors;
-	}
-	
-	public List<String> hasThisPointer() {
-		List<String> thisPointerFunctions = new ArrayList<String>();
-		for(var func : functions()) {
-			var hFunc = decompiledFunctions().get(func.name());
-			var prototype = hFunc.getFunctionPrototype();
-			if (prototype.hasThisPointer()) {
-				thisPointerFunctions.add(func.address());
-			}
-		}
-		return thisPointerFunctions;
 	}
 }

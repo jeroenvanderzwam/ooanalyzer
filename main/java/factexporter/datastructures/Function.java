@@ -2,24 +2,73 @@ package factexporter.datastructures;
 
 import java.util.List;
 
-public class Function extends Func
+public class Function 
 {
-
-	public Function(String addr, String name, List<Parameter> parameters, CallingConvention callingConv) 
+	private List<Value> parameters;
+	private String address;
+	private String name;
+	private CallingConvention callingConvention;
+	private List<FunctionCallInstruction> functionCallInstructions = null;
+	private boolean isThunk;
+	
+	public Function(String address, String name, List<Value> parameters, CallingConvention callingConv,
+			List<FunctionCallInstruction> instructions, boolean isThunk) 
 	{
-		super(addr, name, parameters, callingConv);
+		this.parameters = parameters;
+		this.address = address;
+		this.name = name;
+		this.isThunk = isThunk;
+		this.callingConvention = callingConv;
+		this.functionCallInstructions = instructions;
+	}
+
+	public static Function createThunkFunction(String address, String name, List<Value> parameters, CallingConvention callingConv,
+			List<FunctionCallInstruction> instructions) {
+		return new Function(address, name, parameters, callingConv, instructions, true);
 	}
 	
-	public Function(String address, String name, List<Parameter> parameters, CallingConvention callingConv,
-			List<Instruction> instructions) 
-	{
-		super(address, name, parameters, callingConv, instructions);
+	public static Function createFunction(String address, String name, List<Value> parameters, CallingConvention callingConv,
+			List<FunctionCallInstruction> instructions) {
+		return new Function(address, name, parameters, callingConv, instructions, false);
 	}
-
+	
+	public String name() 
+	{
+		return name;
+	}
+	
+	public String getAddress() 
+	{
+		return address;
+	}
+	
+	public List<Value> getParameters()
+	{
+		return parameters;
+	}
+	
+	public boolean hasParameters() {
+		return parameters.size() != 0;
+	}
+	
+	public CallingConvention callingConvention() 
+	{
+		return callingConvention;
+	}
+	
+	public List<FunctionCallInstruction> instructions()
+	{
+		return functionCallInstructions;
+	}
+	
 	@Override
+	public String toString() 
+	{
+		return name;
+	}
+	
 	public boolean isThunk() 
 	{
-		return false;
+		return isThunk;
 	}
-
 }

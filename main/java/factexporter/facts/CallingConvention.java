@@ -14,7 +14,13 @@ class CallingConvention implements Fact {
 	public void createFacts(File output) {
 		var functions = decompilationService.functions();
 		for (var function : functions) {
-			var text = "callingConvention(%s, %s)".formatted(function.address(), function.callingConvention().name());
+			var name = function.callingConvention().name();
+			String text = "";
+			if (name.equals("invalid")) {
+				text = "callingConvention(%s, %s)".formatted(function.getAddress(), name);
+			} else {
+				text = "callingConvention(%s, '%s')".formatted(function.getAddress(), name);
+			}
 			output.write(text);
 		}
 	}

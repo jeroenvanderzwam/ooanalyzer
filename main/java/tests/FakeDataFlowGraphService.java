@@ -1,19 +1,19 @@
 package tests;
 
 import factexporter.DataFlowGraphService;
-import factexporter.datastructures.Func;
-import factexporter.datastructures.Parameter;
+import factexporter.datastructures.Function;
+import factexporter.datastructures.Value;
 
 class FakeDataFlowGraphService implements DataFlowGraphService {
 
 	@Override
-	public void buildGraph(Func functionName) 
+	public void buildGraph(Function functionName) 
 	{
 
 	}
 
 	@Override
-	public boolean pathFromParamToReturn(Parameter param) {
+	public boolean pathFromParamToReturn(Value param) {
 		return true;
 	}
 

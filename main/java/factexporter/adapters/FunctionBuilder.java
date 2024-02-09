@@ -1,52 +1,39 @@
 package factexporter.adapters;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
 import factexporter.datastructures.CallingConvention;
-import factexporter.datastructures.Func;
-import factexporter.datastructures.Function;
-import factexporter.datastructures.FunctionCallInstruction;
-import factexporter.datastructures.Instruction;
-import factexporter.datastructures.OtherInstruction;
-import factexporter.datastructures.Parameter;
-import factexporter.datastructures.Register;
-import factexporter.datastructures.Stack;
-import factexporter.datastructures.Storage;
-import factexporter.datastructures.ThunkFunction;
-import factexporter.datastructures.Value;
-import ghidra.program.model.pcode.HighFunction;
-import ghidra.program.model.pcode.HighSymbol;
-import ghidra.program.model.pcode.PcodeOp;
-import ghidra.program.model.pcode.PcodeOpAST;
-import ghidra.program.model.pcode.Varnode;
+import factexporter.datastructures.*;
+import ghidra.program.model.pcode.*;
 
 class FunctionBuilder {
-
-	FunctionBuilder() {
-	}
-
-	public Func build(HighFunction highFunction) {
+	
+	public Function build(HighFunction highFunction) {
 		var function = highFunction.getFunction();
-		var instructions = buildInstructions(highFunction.getPcodeOps());
+		var instructions = buildFunctionCallInstructions(highFunction.getPcodeOps());
 		var callingConvention = buildCallingConvention(highFunction);
 		var parameters = buildParameters(highFunction);
-		Func func;
+		Function func;
 		if (!function.isThunk()) {
-			func = new Function(function.getEntryPoint().toString(), function.getName(), parameters, callingConvention,
+			func = Function.createFunction(function.getEntryPoint().toString(), function.getName(), parameters, callingConvention,
 					instructions);
 		} else {
-			func = new ThunkFunction(function.getEntryPoint().toString(), function.getName(), parameters,
+			func = Function.createThunkFunction(function.getEntryPoint().toString(), function.getName(), parameters,
 					callingConvention, instructions);
 		}
 		return func;
 	}
 
-	private List<Instruction> buildInstructions(Iterator<PcodeOpAST> pCodeOps) {
-		var instructions = new ArrayList<Instruction>();
+	private List<FunctionCallInstruction> buildFunctionCallInstructions(Iterator<PcodeOpAST> pCodeOps) {
+		var instructions = new ArrayList<FunctionCallInstruction>();
 		while (pCodeOps.hasNext()) {
-			instructions.add(buildInstruction(pCodeOps.next()));
+			var op = pCodeOps.next();
+			if (op.getOpcode() == PcodeOp.CALL) {
+				instructions.add(buildFunctionCallInstruction(op));
+			}
 		}
 		return instructions;
 	}
@@ -59,9 +46,9 @@ class FunctionBuilder {
 		return new CallingConvention("invalid");
 	}
 
-	private ArrayList<Parameter> buildParameters(HighFunction highFunction) {
+	private ArrayList<Value> buildParameters(HighFunction highFunction) {
 		var funcPrototype = highFunction.getFunctionPrototype();
-		var parameters = new ArrayList<Parameter>();
+		var parameters = new ArrayList<Value>();
 		for (int i = 0; i < funcPrototype.getNumParams(); i++) {
 			var param = funcPrototype.getParam(i);
 			parameters.add(buildParameter(i, param));
@@ -69,30 +56,29 @@ class FunctionBuilder {
 		return parameters;
 	}
 
-	private Instruction buildInstruction(PcodeOpAST op) {
-		var mnemonic = op.getMnemonic();
+	private FunctionCallInstruction buildFunctionCallInstruction(PcodeOpAST op) {
 		var output = op.getOutput();
 		var inputs = op.getInputs();
-		var address = op.getSeqnum().getTarget();
+		var instructionAddress = op.getSeqnum().getTarget();
 		var outputVar = output != null ? buildVariable(output) : null;
-		if (op.getOpcode() == PcodeOp.CALL) {
-			return new FunctionCallInstruction(address.toString(), buildVariables(inputs), outputVar);
-		}
-		return new OtherInstruction(address.toString(), mnemonic, buildVariables(inputs), outputVar);
+		
+		var calledFunctionAddress = inputs[0].getAddress().toString();
+		var arguments = Arrays.asList(inputs).subList(1, inputs.length);
+		return new FunctionCallInstruction(instructionAddress.toString(), calledFunctionAddress, buildVariables(arguments), outputVar);
 	}
 
-	private Parameter buildParameter(int index, HighSymbol param) {
+	private Value buildParameter(int index, HighSymbol param) {
 		Storage storage = null;
 		var register = param.getStorage().getRegister();
 		if (register != null) {
-			storage = new Register(register.getName());
+			storage = Storage.createRegister(register.getName());
 		} else if (param.getStorage().isStackStorage()) {
-			storage = new Stack();
+			storage = Storage.createStack(param.getStorage().getStackOffset());
 		}
-		return new Parameter(param.getName(), param.getSize(), index, storage);
+		return Value.createParameter(param.getName(), param.getSize(), index, storage);
 	}
 
-	private List<Value> buildVariables(Varnode[] inputs) {
+	private List<Value> buildVariables(List<Varnode> inputs) {
 		var values = new ArrayList<Value>();
 		for (var input : inputs) {
 			values.add(buildVariable(input));

@@ -6,21 +6,16 @@ import java.util.List;
 import factexporter.DecompilationService;
 import factexporter.datastructures.CallingConvention;
 import factexporter.datastructures.CompilerSpecification;
-import factexporter.datastructures.Func;
-import factexporter.datastructures.Function;
-import factexporter.datastructures.Parameter;
-import factexporter.datastructures.Register;
-import factexporter.datastructures.Stack;
-import factexporter.datastructures.ThunkFunction;
+import factexporter.datastructures.*;
 
 class FakeDecompilationService implements DecompilationService
 {
-	private List<Func> functions;
+	private List<Function> functions;
 	
 	@Override
 	public void initialize() 
 	{
-		functions = new ArrayList<Func>() 
+		functions = new ArrayList<Function>() 
 		{{
 			add(validReturnsSelfFunction());
 			add(invalidReturnsSelfBecauseOnStack());
@@ -30,36 +25,38 @@ class FakeDecompilationService implements DecompilationService
 		}};
 	}
 		
-	private Func validReturnsSelfFunction() {
-		return new Function("00000001", "FUN_00000001", 
-				new ArrayList<Parameter>(){{ add(new Parameter("param_1", 4, 0, new Register("ECX"))); }}, 
-				new CallingConvention("__thiscall__"));
+	private Function validReturnsSelfFunction() {
+
+		return Function.createFunction("00000001", "FUN_00000001", 
+				new ArrayList<Value>(){{ add(Value.createParameter("param_1", 4, 0, Storage.createRegister("ECX"))); }}, 
+				new CallingConvention("__thiscall__"), new ArrayList<FunctionCallInstruction>());
 	}
 	
-	private Func invalidReturnsSelfBecauseOnStack() {
-		return new Function("00000002", "FUN_00000002", 
-				new ArrayList<Parameter>(){{ add(new Parameter("param_1", 4, 0, new Stack())); }}, 
-				new CallingConvention("__fastcall__"));
+	private Function invalidReturnsSelfBecauseOnStack() {
+		return Function.createFunction("00000002", "FUN_00000002", 
+				new ArrayList<Value>(){{ add(Value.createParameter("param_1", 4, 0, Storage.createStack(0))); }}, 
+				new CallingConvention("__fastcall__"), new ArrayList<FunctionCallInstruction>());
 	}
 	
-	private Func invalidBecauseThunk() {
-		return new ThunkFunction("00000003", "FUN_00000003", 
-				new ArrayList<Parameter>(){{ add(new Parameter("param_1", 4, 0, new Register("ECX"))); }}, 
-				new CallingConvention("__fastcall__"));
+	private Function invalidBecauseThunk() {
+		return Function.createThunkFunction("00000003", "FUN_00000003", 
+				new ArrayList<Value>(){{ add(Value.createParameter("param_1", 4, 0, Storage.createRegister("ECX"))); }}, 
+				new CallingConvention("__fastcall__"), new ArrayList<FunctionCallInstruction>());
 	}
 	
-	private Func invalidBecauseNoParameters() {
-		return new Function("00000004", "FUN_00000004", new ArrayList<Parameter>(), new CallingConvention("__fastcall__"));
+	private Function invalidBecauseNoParameters() {
+		return Function.createFunction("00000004", "FUN_00000004", new ArrayList<Value>(), 
+				new CallingConvention("__fastcall__"), new ArrayList<FunctionCallInstruction>());
 	}
 	
-	private Func invalidBecauseNotECXRegister() {
-		return new Function("00000005", "FUN_00000005", 
-				new ArrayList<Parameter>(){{ add(new Parameter("param_1", 4, 0, new Register("EAX"))); }}, 
-				new CallingConvention("__thiscall__"));
+	private Function invalidBecauseNotECXRegister() {
+		return Function.createFunction("00000005", "FUN_00000005", 
+				new ArrayList<Value>(){{ add(Value.createParameter("param_1", 4, 0, Storage.createRegister("EAX"))); }}, 
+				new CallingConvention("__thiscall__"), new ArrayList<FunctionCallInstruction>());
 	}
 	
 	@Override
-	public List<Func> functions() 
+	public List<Function> functions() 
 	{
 		return functions;
 	}

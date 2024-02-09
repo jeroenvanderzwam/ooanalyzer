@@ -1,17 +1,11 @@
 package factexporter.adapters;
 
-import factexporter.datastructures.Constant;
-import factexporter.datastructures.OtherValue;
-import factexporter.datastructures.Register;
-import factexporter.datastructures.Stack;
 import factexporter.datastructures.Storage;
 import factexporter.datastructures.Value;
-import factexporter.datastructures.Variable;
 import ghidra.program.model.pcode.HighConstant;
 import ghidra.program.model.pcode.HighGlobal;
 import ghidra.program.model.pcode.HighLocal;
 import ghidra.program.model.pcode.HighOther;
-import ghidra.program.model.pcode.HighVariable;
 import ghidra.program.model.pcode.Varnode;
 
 class ValueBuilder 
@@ -28,9 +22,9 @@ class ValueBuilder
 			var storage = symbol != null ? symbol.getStorage() : null;
 			if (storage != null) {
 				if (storage.isRegisterStorage()) {
-					store = new Register(storage.getRegister().getName());
-				} else {
-					store = new Stack();
+					store = Storage.createRegister(storage.getRegister().getName());
+				} else if (storage.hasStackStorage() ) {
+					store = Storage.createStack(storage.getStackOffset());
 				}
 			}
 		}
@@ -38,18 +32,18 @@ class ValueBuilder
 		if (variable instanceof HighConstant) {
 			var constant = (HighConstant)variable;
 			var name = constant.getSymbol() != null ? constant.getSymbol().getName() : "Unknown";
-			return new Constant(name, constant.getScalar().toString(), constant.getSize(), store );
+			return Value.createConstant(name, constant.getScalar().toString(), constant.getSize(), store );
 		} else if(variable instanceof HighOther) {
 			var highOther = (HighOther)variable;
-			return new Variable(highOther.getName(), "", highOther.getSize(), store);
+			return Value.createVariable(highOther.getName(), highOther.getSize(), store);
 		} else if (variable instanceof HighLocal) {
 			var highLocal = (HighLocal)variable;
-			return new Variable(highLocal.getSymbol().getName(),"", highLocal.getSize(), store);
+			return Value.createVariable(highLocal.getSymbol().getName(), highLocal.getSize(), store);
 		} else if (variable instanceof HighGlobal){
 			var highGlobal = (HighGlobal)variable;
-			return new Variable(highGlobal.getName(),"", highGlobal.getSize(), store);
+			return Value.createVariable(highGlobal.getName(), highGlobal.getSize(), store);
 		} else {
-			return new OtherValue();
+			return Value.createOtherValue();
 		}
 	}
 }
