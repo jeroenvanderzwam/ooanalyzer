@@ -33,7 +33,7 @@ public class GhidraDecompilationAdapter implements DecompilationService
 			for (var highFunction : decompiledFunctions().values()) 
 			{		
 				var func = new FunctionBuilder().build(highFunction);
-				functions.add(func);
+				addFunction(func);
 			}
 		}
 		return functions;
@@ -67,5 +67,10 @@ public class GhidraDecompilationAdapter implements DecompilationService
 			}
 		}
 		return _decompiledFunctions;
+	}
+
+	@Override
+	public void addFunction(Function func) {
+		functions.add(func);
 	}
 }

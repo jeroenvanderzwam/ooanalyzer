@@ -13,4 +13,8 @@ public class CallingConvention
 	{
 		return name;
 	}
+
+	public static CallingConvention createInvalidCallingConvention() {
+		return new CallingConvention("invalid");
+	}
 }

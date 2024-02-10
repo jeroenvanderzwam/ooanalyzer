@@ -5,7 +5,7 @@ import java.util.List;
 
 import factexporter.export.File;
 
-class ArrayListFile implements File 
+public class ArrayListFile implements File 
 {
 
 	private ArrayList<String> facts;
@@ -23,7 +23,7 @@ class ArrayListFile implements File
 	@Override
 	public void close()
 	{
-		
+		facts = new ArrayList<String>();
 	}
 
 	@Override

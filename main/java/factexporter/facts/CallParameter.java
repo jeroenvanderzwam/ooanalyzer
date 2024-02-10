@@ -1,8 +1,6 @@
 package factexporter.facts;
 
 import factexporter.DecompilationService;
-import factexporter.datastructures.FunctionCallInstruction;
-import factexporter.datastructures.Storage.StorageType;
 import factexporter.export.File;
 
 class CallParameter implements Fact {

@@ -9,6 +9,7 @@ public interface DecompilationService
 {
 	void initialize();
 	List<Function> functions();
+	void addFunction(Function func);
 	CompilerSpecification compilerSpec();
 	String decompiledFileName();
 }

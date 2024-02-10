@@ -16,7 +16,7 @@ public class FunctionCallInstruction
 		arguments = args;
 		output = out;
 	}
-	
+
 	public String getAddress() {
 		return instructionAddress;
 	}
