@@ -12,6 +12,8 @@ import factexporter.facts.*;
 
 public class CallParameterFactTest extends FactTest {
 	private Fact callParameter;
+	private String instructionAddress = "1001";
+	private String argName = "local_01";
 	
 	@Before
 	public void setUp() {
@@ -22,20 +24,9 @@ public class CallParameterFactTest extends FactTest {
 	
 	@Test
 	public void testValidCallParameterInRegister() {
-		service.addFunction(Function.createFunction("2001", "FUN_2001", new ArrayList<Value>() 
-		{{
-			add(Value.createParameter("param1", 4, 0, ecxRegister));
-		}}, fastCallConvention, emptyCallInstructions));
+		addCalleeFunction(ecxRegister);
+		addFunctionWithCallInstruction();
 		
-		var instructionAddress = "1001";
-		var argName = "local_01";
-		service.addFunction(Function.createFunction(funcAddress, funcName, emptyParameters, fastCallConvention, 
-				new ArrayList<FunctionCallInstruction>() 
-		{{
-			add(new FunctionCallInstruction(instructionAddress, "2001", new ArrayList<Value>() 
-				{{ add(Value.createVariable(argName, 4, Storage.createStack(0))); }}, 
-				Value.createOtherValue()));
-		}}));
 		callParameter.createFacts(file);
 		
 		assertEquals("callParameter(%s, %s, %s, %s)".formatted(instructionAddress, funcAddress, "ECX", argName),
@@ -43,7 +34,30 @@ public class CallParameterFactTest extends FactTest {
 	}
 
 	@Test
-	public void testValidCallParamaterOnStack() {
-
+	public void testValidCallParameterOnStack() {
+		addCalleeFunction(Storage.createStack(4));
+		addFunctionWithCallInstruction();
+		
+		callParameter.createFacts(file);
+		
+		assertEquals("callParameter(%s, %s, %s, %s)".formatted(instructionAddress, funcAddress, "1", argName),
+				file.read().get(0));
+	}
+	
+	private void addCalleeFunction(Storage storage) {
+		service.addFunction(Function.createFunction("2001", "FUN_2001", new ArrayList<Value>() 
+		{{
+			add(Value.createParameter("param1", 4, 0, storage));
+		}}, fastCallConvention, emptyCallInstructions));
+	}
+	
+	private void addFunctionWithCallInstruction() {
+		service.addFunction(Function.createFunction(funcAddress, funcName, emptyParameters, fastCallConvention, 
+				new ArrayList<FunctionCallInstruction>() 
+		{{
+			add(new FunctionCallInstruction(instructionAddress, "2001", new ArrayList<Value>() 
+				{{ add(Value.createVariable(argName, 4, Storage.createStack(0))); }}, 
+				Value.createOtherValue()));
+		}}));
 	}
 }
