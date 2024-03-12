@@ -21,4 +21,4 @@ Only Windows x64 and x86 are tested, for now.
 
 When in Ghidra go to Analysis -> Analyze All Open and make sure you see the fact exporter analyser.
 
-![Alt text](relative images/AnalysisOptions.png?raw=true "Ghidra Analysis options")
+![Screenshot](images/AnalysisOptions.png)
