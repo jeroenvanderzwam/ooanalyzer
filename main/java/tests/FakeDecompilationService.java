@@ -5,15 +5,18 @@ import java.util.List;
 
 import factexporter.DecompilationService;
 import factexporter.datastructures.*;
+import factexporter.facts.Memory;
 
 public class FakeDecompilationService implements DecompilationService
 {
 	private List<Function> functions;
+	private List<Memory> memory;
 	
 	@Override
 	public void initialize() 
 	{
 		functions = new ArrayList<Function>();
+		memory = new ArrayList<Memory>();
 	}
 	
 	@Override
@@ -39,4 +42,13 @@ public class FakeDecompilationService implements DecompilationService
 		functions.add(func);
 	}
 
+	@Override
+	public void addInitialMemory(String address, String value) {
+		memory.add(new Memory(address, value));
+	}
+
+	@Override
+	public List<Memory> memory() {
+		return memory;
+	}
 }

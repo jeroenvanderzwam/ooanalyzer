@@ -13,7 +13,7 @@ class CallTarget implements Fact {
 	@Override
 	public void createFacts(File output) {
 		for (var function : decompilationService.functions()) {
-			for (var instruction : function.instructions()) {
+			for (var instruction : function.getInstructions()) {
 				//var text = "callTarget(%s,%s,%s)".formatted(, function.address(), instruction.name())
 
 			}

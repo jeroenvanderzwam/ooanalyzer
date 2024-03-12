@@ -15,7 +15,7 @@ class CallParameter implements Fact {
 	public void createFacts(File output) {
 		var functions = decompilationService.functions();
 		for (var function : functions) {
-			for (var instruction : function.instructions()) {
+			for (var instruction : function.getInstructions()) {
 				for (var arg : instruction.getArguments()) {
 					var storage = arg.getStorage();
 					if (storage != null) {
@@ -31,7 +31,7 @@ class CallParameter implements Fact {
 								position = Integer.toString(parameter.getStorage().getOffset() / 4);
 							}
 							var text = "callParameter(%s, %s, %s, %s)".formatted(
-									instruction.getAddress(), function.getAddress(), position, arg.name());
+									instruction.getAddress(), function.getAddress(), position, arg.getName());
 							output.write(text);
 						} 
 					}

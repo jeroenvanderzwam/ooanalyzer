@@ -14,7 +14,7 @@ class CallingConvention implements Fact {
 	public void createFacts(File output) {
 		var functions = decompilationService.functions();
 		for (var function : functions) {
-			var name = function.callingConvention().name();
+			var name = function.getCallingConvention().name();
 			String text = "";
 			if (name.equals("invalid")) {
 				text = "callingConvention(%s, %s)".formatted(function.getAddress(), name);

@@ -28,7 +28,7 @@ class NoCallsBefore implements Fact
 		var thisPointerRegister = new ThisPointer().build(compilerSpec);
 		for (var function : decompService.functions())
 		{
-			for (var instruction : function.instructions()) 
+			for (var instruction : function.getInstructions()) 
 			{
 				if (function.getParameters().size() < 1) { continue;}
 				var firstParam = function.getParameters().get(0);
@@ -46,7 +46,7 @@ class NoCallsBefore implements Fact
 		for(var functionCall : functionCalls)
 		{
 			Msg.out(String.format("%s, %s, %s, %s", 
-					functionCall.getValue0().name(), 
+					functionCall.getValue0().getName(), 
 					functionCall.getValue0().getAddress(), 
 					functionCall.getValue1(), 
 					functionCall.getValue2()));

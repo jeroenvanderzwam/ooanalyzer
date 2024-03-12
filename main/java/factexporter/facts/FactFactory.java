@@ -2,6 +2,7 @@ package factexporter.facts;
 
 import factexporter.DataFlowGraphService;
 import factexporter.DecompilationService;
+import tests.FakeDecompilationService;
 
 public class FactFactory 
 {
@@ -23,5 +24,9 @@ public class FactFactory
 
 	public Fact createCallTarget(DecompilationService decompService) {
 		return new CallTarget(decompService);
+	}
+
+	public Fact createInitialMemory(DecompilationService decompService) {
+		return new InitialMemory(decompService);
 	}
 }

@@ -11,12 +11,12 @@ public class CompilerSpecification
 		compiler = comp;
 	}
 	
-	public String architecture() 
+	public String getArchitecture() 
 	{
 		return architecture;
 	}
 	
-	public String compiler() 
+	public String getCompiler() 
 	{
 		return compiler;
 	}

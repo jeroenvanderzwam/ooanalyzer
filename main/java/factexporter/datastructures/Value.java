@@ -44,12 +44,12 @@ public class Value
 		return storage.getStorageType() == StorageType.REGISTER;
 	}
 	
-	public int size() 
+	public int getSize() 
 	{
 		return size;
 	}
 	
-	public String name() {
+	public String getName() {
 		return name;
 	}
 	

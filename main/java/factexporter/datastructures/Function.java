@@ -32,7 +32,7 @@ public class Function
 		return new Function(address, name, parameters, callingConv, instructions, false);
 	}
 	
-	public String name() 
+	public String getName() 
 	{
 		return name;
 	}
@@ -51,12 +51,12 @@ public class Function
 		return parameters.size() != 0;
 	}
 	
-	public CallingConvention callingConvention() 
+	public CallingConvention getCallingConvention() 
 	{
 		return callingConvention;
 	}
 	
-	public List<FunctionCallInstruction> instructions()
+	public List<FunctionCallInstruction> getInstructions()
 	{
 		return functionCallInstructions;
 	}

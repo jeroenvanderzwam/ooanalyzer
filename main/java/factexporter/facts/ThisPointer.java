@@ -6,11 +6,11 @@ class ThisPointer
 {
 	public ThisPointerRegister build(CompilerSpecification compSpecs ) 
 	{
-		if (compSpecs.architecture().equals("64")) 
+		if (compSpecs.getArchitecture().equals("64")) 
 		{
 			return new VisualStudiox64();
 		}
-		else if(compSpecs.architecture().equals("32")) 
+		else if(compSpecs.getArchitecture().equals("32")) 
 		{
 			return new VisualStudiox32();
 		}

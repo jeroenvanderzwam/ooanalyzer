@@ -7,8 +7,10 @@ import java.util.List;
 import factexporter.DecompilationService;
 import factexporter.datastructures.CompilerSpecification;
 import factexporter.datastructures.Function;
+import factexporter.facts.Memory;
 import ghidra.app.decompiler.DecompInterface;
 import ghidra.program.model.listing.Program;
+import ghidra.program.model.mem.MemoryAccessException;
 import ghidra.program.model.pcode.HighFunction;
 
 public class GhidraDecompilationAdapter implements DecompilationService
@@ -16,6 +18,7 @@ public class GhidraDecompilationAdapter implements DecompilationService
 	private Program program;
 	private HashMap<String, HighFunction> _decompiledFunctions = new HashMap<String, HighFunction>();
 	private ArrayList<Function> functions = new ArrayList<Function>();
+	private ArrayList<Memory> memory = new ArrayList<Memory>();
 	
 	public GhidraDecompilationAdapter(Program prog) 
 	{
@@ -72,5 +75,32 @@ public class GhidraDecompilationAdapter implements DecompilationService
 	@Override
 	public void addFunction(Function func) {
 		functions.add(func);
+	}
+
+	@Override
+	public List<Memory> memory() {
+		if (memory.isEmpty()) {
+			var ghidraMemory = program.getMemory();
+
+			var memoryBlocks = ghidraMemory.getBlocks();
+
+	        for (var memoryBlock : memoryBlocks) {
+	        	var comment = memoryBlock.getComment();
+	        	var name = memoryBlock.getName();
+	        	var sourceName = memoryBlock.getSourceName();
+	        	var sourceInfo = memoryBlock.getSourceInfos();
+	        	var data = memoryBlock.getData();
+	        	var start = memoryBlock.getStart();
+	        	var end = memoryBlock.getEnd();
+
+	            addInitialMemory("", "");
+	        }
+		}
+		return memory;
+	}
+
+	@Override
+	public void addInitialMemory(String address, String value) {
+		memory.add(new Memory(address, value));
 	}
 }
