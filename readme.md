@@ -13,7 +13,7 @@ To install Ghidra and the factexporter analyzer follow the [Ghidra installation 
 
 For convenience it is also possible to import the analyzer with the provided 
 
-To run the factexporter you can either import the analyer in Ghidra with [zip file](ghidra_11.0_PUBLIC_20240112_FactExporter.zip).
+To run the factexporter you can either import the analyer in Ghidra with [zip file](ghidra_11.0_PUBLIC_20240312_FactExporter.zip).
 Or you can build the analyzer yourself with Eclipse. For that you need the [GhidraDev](https://ghidra-sre.org/InstallationGuide.html#Development). 
 
 To run the analyzer you can open Ghidra, import the analyzer and run the analyzer on a binary.
@@ -22,3 +22,5 @@ Only Windows x64 and x86 are tested, for now.
 When in Ghidra go to Analysis -> Analyze All Open and make sure you see the fact exporter analyser.
 
 ![Screenshot](images/AnalysisOptions.png)
+
+The option ExportPath enables you to export the facts to a location of your choice.
