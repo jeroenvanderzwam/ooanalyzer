@@ -4,12 +4,12 @@ import factexporter.DataFlowGraphService;
 import factexporter.datastructures.Function;
 import factexporter.datastructures.Value;
 import ghidra.program.model.pcode.VarnodeAST;
-import myghidra.GhidraDataflowPathFinder;
+import myghidra.DataflowPathFinder;
 
 public class GhidraDataFlowAdapter implements DataFlowGraphService 
 {
 	private GhidraDecompilationAdapter ghidraDecompilationService;
-	private GhidraDataflowPathFinder graph;
+	private DataflowPathFinder graph;
 	private String graphFunction;
 	
 	public GhidraDataFlowAdapter(GhidraDecompilationAdapter ghidraDecompService) 
@@ -20,7 +20,7 @@ public class GhidraDataFlowAdapter implements DataFlowGraphService
 	@Override
 	public void buildGraph(Function function) {
 		graphFunction = function.getAddress();
-		graph = new GhidraDataflowPathFinder(ghidraDecompilationService.decompiledFunctions().get(graphFunction));
+		graph = new DataflowPathFinder(ghidraDecompilationService.decompiledFunctions().get(graphFunction));
 		graph.buildGraph();
 	}
 

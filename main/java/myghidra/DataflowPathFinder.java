@@ -5,13 +5,13 @@ import java.util.*;
 import ghidra.program.model.pcode.*;
 import ghidra.service.graph.*;
 
-public class GhidraDataflowPathFinder {
+public class DataflowPathFinder {
 	private DataFlowGraph dataFlowGraph;
 	
 	private List<AttributedVertex> path;
 	private List<List<AttributedVertex>> frontier;
 
-	public GhidraDataflowPathFinder(HighFunction highFunction) 
+	public DataflowPathFinder(HighFunction highFunction) 
 	{
 		dataFlowGraph = new DataFlowGraph(highFunction);
 	}
