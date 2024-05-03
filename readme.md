@@ -3,24 +3,27 @@
 This factexporter is used to explore if the decompilation capabilities of Ghidra can improve the decompilation results of object
 oriented constructs in [OOAnalyzer](https://github.com/cmu-sei/pharos/blob/master/tools/ooanalyzer/ooanalyzer.pod).
 
-The factexporter was created during a research that looked to improve the decompilation of C++ code. 
+The factexporter was created for a research that tries to improve the decompilation of C++ code. 
 The research was done at the *Open Universiteit* in the Netherlands.
 
 The main contributor is [Jeroen van der Zwam](https://github.com/jeroenvanderzwam).
 
-This analyzer is run inside the [Ghidra](https://ghidra-sre.org/) framework.
-To install Ghidra and the factexporter analyzer follow the [Ghidra installation guide](https://ghidra-sre.org/InstallationGuide.html).
+## Installation
 
-For convenience it is also possible to import the analyzer with the provided 
-
-To run the factexporter you can either import the analyer in Ghidra with [zip file](ghidra_11.0_PUBLIC_20240312_FactExporter.zip).
-Or you can build the analyzer yourself with Eclipse. For that you need the [GhidraDev](https://ghidra-sre.org/InstallationGuide.html#Development). 
+The factexporter analyzer is run inside the [Ghidra](https://ghidra-sre.org/) framework.
+To install Ghidra, Ghidradev plugin and the factexporter analyzer follow the [Ghidra installation guide](https://ghidra-sre.org/InstallationGuide.html). For convenience it is also possible to import the analyzer with the provided [zip file](ghidra_11.0_PUBLIC_20240312_FactExporter.zip). For how to install extensions in Ghidra see the [Ghidra extension installation guide](https://ghidra-sre.org/InstallationGuide.html#Extensions). Or you can build the analyzer yourself with Eclipse. For that you need the [GhidraDev](https://ghidra-sre.org/InstallationGuide.html#Development) plugin within Eclipse.
 
 To run the analyzer you can open Ghidra, import the analyzer and run the analyzer on a binary.
-Only Windows x64 and x86 are tested, for now.
+Only Windows x64 and x86 binaries are tested, for now.
 
-When in Ghidra go to Analysis -> Analyze All Open and make sure you see the fact exporter analyser.
+## Usage
+
+After installation the fact exporter analyzer is available in the Analysis Options. When in Ghidra go to Analysis -> Analyze All Open and make sure you see the fact exporter analyzer.
 
 ![Screenshot](images/AnalysisOptions.png)
+
+To use the analyzer load your binary of choice, make sure the fact exporter analyzer is selected and run the analysis.
+
+## Configuration
 
 The option ExportPath enables you to export the facts to a location of your choice.
