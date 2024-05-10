@@ -1,0 +1,852 @@
+demangledName(0x411780, 'global function', 'near void __cdecl bar(class ObjectTest, int, int, class ObjectTest)').
+demangledName(0x411940, 'global function', 'near void __cdecl foo(int, class ObjectTest, int)').
+demangledName(0x411d80, 'class method', 'public: static near unsigned int __cdecl std::char_traits<char>::length(near char const *)').
+demangledName(0x411ea0, 'class method', 'public: static near near char * __cdecl std::char_traits<char>::copy(near char *, near char const *, unsigned int)').
+demangledName(0x4123e0, 'class method', 'public: static near void __cdecl std::char_traits<char>::assign(near char &, near char const &)').
+demangledName(0x412ab0, 'class method', 'public: static near near char * __cdecl std::char_traits<char>::move(near char *, near char const *, unsigned int)').
+demangledName(0x412eb0, 'global function', 'near near class std::basic_ostream<char, struct std::char_traits<char> > & __cdecl std::operator<<<char, struct std::char_traits<char>, class std::allocator<char> >(near class std::basic_ostream<char, struct std::char_traits<char> > &, near class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> > const &)').
+demangledName(0x413450, 'class method', 'public: static near bool __cdecl std::char_traits<char>::eq_int_type(near int const &, near int const &)').
+demangledName(0x4134a0, 'class method', 'public: static near int __cdecl std::char_traits<char>::eof(void)').
+demangledName(0x413940, 'global function', 'near void __cdecl std::_Debug_pointer<char>(near char const *, near wchar_t const *, unsigned int)').
+demangledName(0x4139f0, 'global function', 'near void __cdecl std::_Cons_val<class std::allocator<struct std::_Container_proxy>, struct std::_Container_proxy, struct std::_Container_proxy>(near class std::allocator<struct std::_Container_proxy> &, near struct std::_Container_proxy *, near struct std::_Container_proxy &&)').
+demangledName(0x413a50, 'global function', 'near void __cdecl std::_Dest_val<class std::allocator<struct std::_Container_proxy>, struct std::_Container_proxy>(near class std::allocator<struct std::_Container_proxy> &, near struct std::_Container_proxy *)').
+demangledName(0x413aa0, 'global function', 'near near struct std::_Container_proxy * __cdecl std::_Allocate<struct std::_Container_proxy>(unsigned int, near struct std::_Container_proxy *)').
+demangledName(0x413cb0, 'global function', 'near near char * __cdecl std::_Allocate<char>(unsigned int, near char *)').
+demangledName(0x413ef0, 'global function', 'near near void * __cdecl operator new(unsigned int, near void *)').
+demangledName(0x413f30, 'global function', 'near void __cdecl operator delete(near void *, near void *)').
+demangledName(0x413fc0, 'global function', 'near near struct std::_Container_proxy && __cdecl std::forward<struct std::_Container_proxy>(near struct std::_Container_proxy &)').
+demangledName(0x414000, 'global function', 'near void __cdecl std::_Destroy<struct std::_Container_proxy>(near struct std::_Container_proxy *)').
+demangledName(0x414930, 'global function', 'near void __cdecl _RTC_Failure(near void *, int)').
+demangledName(0x414dc0, 'global function', 'near void __cdecl _RTC_StackFailure(near void *, near char const *)').
+demangledName(0x414f00, 'global function', 'near void __cdecl _RTC_AllocaFailure(near void *, near struct _RTC_ALLOCA_NODE *, int)').
+demangledName(0x415300, 'global function', 'near int (__cdecl*__cdecl _RTC_GetErrorFunc(near void const *) )(int, near char const *, int, near char const *, near char const *, ...)').
+demangledName(0x415310, 'global function', 'near int (__cdecl*__cdecl _RTC_GetErrorFuncW(near void const *) )(int, near wchar_t const *, int, near wchar_t const *, near wchar_t const *, ...)').
+demangledName(0x415480, 'global function', 'near void __stdcall `eh vector destructor iterator\'(near void *, unsigned int, int, void (__thiscall*)(near void *) )').
+demangledName(0x415560, 'global function', 'near void __stdcall __ArrayUnwind(near void *, unsigned int, int, void (__thiscall*)(near void *) )').
+demangledName(0x415650, 'global function', 'near long __stdcall __CxxUnhandledExceptionFilter(near struct _EXCEPTION_POINTERS *)').
+demangledName(0x415d80, 'global function', 'near int __cdecl _RTC_GetSrcLine(near unsigned char *, near wchar_t *, unsigned long, near int *, near wchar_t *, unsigned long)').
+demangledName(0x41973c, 'static class member', 'public: static near bool const std::tr1::integral_constant<bool, 0>::value').
+demangledName(0x41973d, 'static class member', 'public: static near bool const std::tr1::integral_constant<bool, 1>::value').
+demangledName(0x419740, 'static class member', 'public: static near unsigned int const std::tr1::integral_constant<unsigned int, 0>::value').
+demangledName(0x419744, 'static class member', 'public: static near int const std::_Arithmetic_traits<bool>::_Rank').
+demangledName(0x419748, 'static class member', 'public: static near int const std::_Arithmetic_traits<char>::_Rank').
+demangledName(0x41974c, 'static class member', 'public: static near int const std::_Arithmetic_traits<signed char>::_Rank').
+demangledName(0x419750, 'static class member', 'public: static near int const std::_Arithmetic_traits<unsigned char>::_Rank').
+demangledName(0x419754, 'static class member', 'public: static near int const std::_Arithmetic_traits<short>::_Rank').
+demangledName(0x419758, 'static class member', 'public: static near int const std::_Arithmetic_traits<unsigned short>::_Rank').
+demangledName(0x41975c, 'static class member', 'public: static near int const std::_Arithmetic_traits<int>::_Rank').
+demangledName(0x419760, 'static class member', 'public: static near int const std::_Arithmetic_traits<unsigned int>::_Rank').
+demangledName(0x419764, 'static class member', 'public: static near int const std::_Arithmetic_traits<long>::_Rank').
+demangledName(0x419768, 'static class member', 'public: static near int const std::_Arithmetic_traits<unsigned long>::_Rank').
+demangledName(0x41976c, 'static class member', 'public: static near int const std::_Arithmetic_traits<__int64>::_Rank').
+demangledName(0x419770, 'static class member', 'public: static near int const std::_Arithmetic_traits<unsigned __int64>::_Rank').
+demangledName(0x419774, 'static class member', 'public: static near int const std::_Arithmetic_traits<float>::_Rank').
+demangledName(0x419778, 'static class member', 'public: static near int const std::_Arithmetic_traits<double>::_Rank').
+demangledName(0x41977c, 'static class member', 'public: static near int const std::_Arithmetic_traits<long double>::_Rank').
+demangledName(0x419780, 'static class member', 'public: static near int const std::_Locbase<int>::collate').
+demangledName(0x419784, 'static class member', 'public: static near int const std::_Locbase<int>::ctype').
+demangledName(0x419788, 'static class member', 'public: static near int const std::_Locbase<int>::monetary').
+demangledName(0x41978c, 'static class member', 'public: static near int const std::_Locbase<int>::numeric').
+demangledName(0x419790, 'static class member', 'public: static near int const std::_Locbase<int>::time').
+demangledName(0x419794, 'static class member', 'public: static near int const std::_Locbase<int>::messages').
+demangledName(0x419798, 'static class member', 'public: static near int const std::_Locbase<int>::all').
+demangledName(0x41979c, 'static class member', 'public: static near int const std::_Locbase<int>::none').
+demangledName(0x4197a0, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::skipws').
+demangledName(0x4197a4, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::unitbuf').
+demangledName(0x4197a8, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::uppercase').
+demangledName(0x4197ac, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::showbase').
+demangledName(0x4197b0, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::showpoint').
+demangledName(0x4197b4, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::showpos').
+demangledName(0x4197b8, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::left').
+demangledName(0x4197bc, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::right').
+demangledName(0x4197c0, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::internal').
+demangledName(0x4197c4, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::dec').
+demangledName(0x4197c8, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::oct').
+demangledName(0x4197cc, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::hex').
+demangledName(0x4197d0, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::scientific').
+demangledName(0x4197d4, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::fixed').
+demangledName(0x4197d8, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::hexfloat').
+demangledName(0x4197dc, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::boolalpha').
+demangledName(0x4197e0, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::_Stdio').
+demangledName(0x4197e4, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::adjustfield').
+demangledName(0x4197e8, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::basefield').
+demangledName(0x4197ec, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::floatfield').
+demangledName(0x4197f0, 'static class member', 'public: static near enum std::_Iosb<int>::_Iostate const std::_Iosb<int>::goodbit').
+demangledName(0x4197f4, 'static class member', 'public: static near enum std::_Iosb<int>::_Iostate const std::_Iosb<int>::eofbit').
+demangledName(0x4197f8, 'static class member', 'public: static near enum std::_Iosb<int>::_Iostate const std::_Iosb<int>::failbit').
+demangledName(0x4197fc, 'static class member', 'public: static near enum std::_Iosb<int>::_Iostate const std::_Iosb<int>::badbit').
+demangledName(0x419800, 'static class member', 'public: static near enum std::_Iosb<int>::_Iostate const std::_Iosb<int>::_Hardfail').
+demangledName(0x419804, 'static class member', 'public: static near enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::in').
+demangledName(0x419808, 'static class member', 'public: static near enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::out').
+demangledName(0x41980c, 'static class member', 'public: static near enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::ate').
+demangledName(0x419810, 'static class member', 'public: static near enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::app').
+demangledName(0x419814, 'static class member', 'public: static near enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::trunc').
+demangledName(0x419818, 'static class member', 'public: static near enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::_Nocreate').
+demangledName(0x41981c, 'static class member', 'public: static near enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::_Noreplace').
+demangledName(0x419820, 'static class member', 'public: static near enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::binary').
+demangledName(0x419824, 'static class member', 'public: static near enum std::_Iosb<int>::_Seekdir const std::_Iosb<int>::beg').
+demangledName(0x419828, 'static class member', 'public: static near enum std::_Iosb<int>::_Seekdir const std::_Iosb<int>::cur').
+demangledName(0x41982c, 'static class member', 'public: static near enum std::_Iosb<int>::_Seekdir const std::_Iosb<int>::end').
+demangledName(0x4198d4, 'static class member', 'public: static near unsigned int const std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::npos').
+demangledName(0x41a20c, 'static class member', 'private: static near unsigned int const <CrtImplementationDetails>::NativeDll::ProcessDetach').
+demangledName(0x41a210, 'static class member', 'private: static near unsigned int const <CrtImplementationDetails>::NativeDll::ProcessAttach').
+demangledName(0x41a214, 'static class member', 'private: static near unsigned int const <CrtImplementationDetails>::NativeDll::ThreadAttach').
+demangledName(0x41a218, 'static class member', 'private: static near unsigned int const <CrtImplementationDetails>::NativeDll::ThreadDetach').
+demangledName(0x41a21c, 'static class member', 'private: static near unsigned int const <CrtImplementationDetails>::NativeDll::ProcessVerifier').
+demangledName(0x41a754, 'global thing 1', 'std::bad_alloc::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x41a768, 'global thing 1', 'std::bad_alloc::`RTTI Base Class Array\'').
+demangledName(0x41a774, 'global thing 1', 'std::bad_alloc::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x41a798, 'global thing 1', 'std::exception::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x41a7bc, 'global thing 1', 'std::exception::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x41a7d0, 'global thing 1', 'std::exception::`RTTI Base Class Array\'').
+demangledName(0x41a7f0, 'global thing 1', 'type_info::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x41a804, 'global thing 1', 'type_info::`RTTI Base Class Array\'').
+demangledName(0x41a80c, 'global thing 1', 'type_info::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x41c000, 'global thing 1', 'class `RTTI Type Descriptor\'::std::bad_alloc').
+demangledName(0x41c024, 'global thing 1', 'class `RTTI Type Descriptor\'::std::exception').
+demangledName(0x41c050, 'global thing 1', 'class `RTTI Type Descriptor\'::type_info').
+demangledName(0x41c06c, 'global object', 'near int *near  _RTC_ErrorLevels').
+demangledName(0x41c1cc, 'global object', 'int (__cdecl*near  wsprintffp)(near char *, near char const *, ...)').
+demangledName(0x41d328, 'global function', 'near void __cdecl std::_Debug_message(near wchar_t const *, near wchar_t const *, unsigned int)').
+demangledName(0x41d32c, 'global function', 'near bool __cdecl std::uncaught_exception(void)').
+demangledName(0x41d360, 'global function', 'near void __cdecl std::_Xlength_error(near char const *)').
+demangledName(0x41d364, 'global function', 'near void __cdecl std::_Xout_of_range(near char const *)').
+demangledName(0x41d37c, 'global function', 'near near class std::basic_ostream<char, struct std::char_traits<char> > & __cdecl std::endl(near class std::basic_ostream<char, struct std::char_traits<char> > &)').
+demangledName(0x41d380, 'global object', 'near class std::basic_ostream<char, struct std::char_traits<char> > std::cout').
+demangledName(0x41d3c4, 'global function', 'near void __cdecl terminate(void)').
+demangledName(0x41d438, 'global function', 'near near void * __cdecl operator new(unsigned int)').
+demangledName(0x41d444, 'global function', 'near void __cdecl operator delete(near void *)').
+groundTruth(0x411800, 'ObjectTest', 'print', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x411a30, 'ObjectTest', 'ObjectTest', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x411a80, 'ObjectTest', 'add', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x411b70, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', 'basic_string', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x411c40, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', '~basic_string', method, realDestructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x411cf0, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', 'assign', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x411dd0, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', '_Tidy', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x411f00, 'std::_String_val<char, class std::allocator<char> >', '_String_val', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412050, 'std::_Container_proxy', '_Container_proxy', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x4120a0, 'std::_String_val<char, class std::allocator<char> >', '~_String_val', method, realDestructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x4121e0, 'std::allocator<char>', 'allocator', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412220, 'std::allocator<char>', 'allocator', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412260, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', 'assign', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412360, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', '_Eos', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412420, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', '_Myptr', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412490, 'std::allocator<char>', 'deallocate', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x4124f0, 'std::allocator<struct std::_Container_proxy>', 'deallocate', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412550, 'std::allocator<struct std::_Container_proxy>', 'allocate', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x4125b0, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', 'assign', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x4126d0, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', 'size', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412710, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', '_Myptr', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412780, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', '_Xran', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x4127e0, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', '_Grow', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x4128e0, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', '_Inside', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412960, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', '_Xlen', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x4129c0, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', 'erase', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412b20, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', 'max_size', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412bb0, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', '_Copy', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412de0, 'std::allocator<char>', 'allocate', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412e40, 'std::allocator<char>', 'max_size', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x4134e0, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', 'c_str', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x413530, 'std::basic_ostream<char, struct std::char_traits<char> >::sentry', 'sentry', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x413690, 'std::basic_ostream<char, struct std::char_traits<char> >::sentry', '~sentry', method, realDestructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x413760, 'std::basic_ostream<char, struct std::char_traits<char> >::sentry', 'operator std::_Bool_struct::*', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x4137b0, 'std::basic_ostream<char, struct std::char_traits<char> >::_Sentry_base', '_Sentry_base', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x413880, 'std::basic_ostream<char, struct std::char_traits<char> >::_Sentry_base', '~_Sentry_base', method, realDestructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x4139b0, 'std::allocator<struct std::_Container_proxy>', 'allocator', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x413b50, 'std::bad_alloc', 'bad_alloc', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x413bd0, 'std::bad_alloc', '~bad_alloc', method, realDestructor, linked, public, virtual, '__thiscall').
+groundTruth(0x413c40, 'std::bad_alloc', 'vector_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__thiscall').
+groundTruth(0x413c40, 'std::bad_alloc', 'scalar_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__thiscall').
+groundTruth(0x413d60, 'std::bad_alloc', 'bad_alloc', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x413de0, 'std::allocator<struct std::_Container_proxy>', 'construct', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x413f60, 'std::allocator<struct std::_Container_proxy>', 'destroy', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x414360, 'type_info', 'type_info', method, constructor, linked, private, nonvirtual, '__thiscall').
+groundTruth(0x414390, 'type_info', 'vector_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__thiscall').
+groundTruth(0x414420, 'type_info', 'operator=', method, none, linked, private, nonvirtual, '__thiscall').
+groundTruth(0x419940, 'std::bad_alloc', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x419950, 'type_info', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x41a73c, 'std::bad_alloc', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x41a7d8, 'type_info', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x41d330, 'std::basic_ostream<char, struct std::char_traits<char> >', '_Osfx', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d334, 'std::ios_base', 'good', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d338, 'std::basic_ios<char, struct std::char_traits<char> >', 'tie', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d33c, 'std::basic_ostream<char, struct std::char_traits<char> >', 'flush', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d340, 'std::ios_base', 'width', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d344, 'std::ios_base', 'flags', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d348, 'std::basic_ios<char, struct std::char_traits<char> >', 'fill', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d34c, 'std::basic_ios<char, struct std::char_traits<char> >', 'rdbuf', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d350, 'std::basic_streambuf<char, struct std::char_traits<char> >', 'sputc', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d354, 'std::basic_streambuf<char, struct std::char_traits<char> >', 'sputn', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d358, 'std::ios_base', 'width', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d35c, 'std::basic_ios<char, struct std::char_traits<char> >', 'setstate', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d368, 'std::_Container_base12', '_Orphan_all', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d36c, 'std::basic_ostream<char, struct std::char_traits<char> >', 'operator<<', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d370, 'std::_Container_base12', '_Container_base12', method, constructor, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d374, 'std::_Container_base12', '~_Container_base12', method, realDestructor, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d378, 'std::basic_ostream<char, struct std::char_traits<char> >', 'operator<<', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d3c8, 'type_info', '_type_info_dtor_internal_method', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d428, 'std::exception', '~exception', method, realDestructor, imported, public, virtual, '__thiscall').
+groundTruth(0x41d42c, 'std::exception', 'what', method, none, imported, public, virtual, '__thiscall').
+groundTruth(0x41d430, 'std::exception', 'exception', method, constructor, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41d434, 'std::exception', 'exception', method, constructor, imported, public, nonvirtual, '__thiscall').
+% Ground truth generation was completed successfully.
+symbol(0x401000, name, '__enc$textbss$begin').
+symbol(0x411000, name, '__enc$textbss$end').
+symbol(0x411005, tramp, '__setdefaultprecision').
+symbol(0x41100a, tramp, '?_Inside@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE_NPBD@Z').
+symbol(0x41100f, tramp, '?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBD@Z').
+symbol(0x411014, tramp, '__setargv').
+symbol(0x411019, tramp, '?_Orphan_all@_Container_base12@std@@QAEXXZ').
+symbol(0x41101e, tramp, '?good@ios_base@std@@QBE_NXZ').
+symbol(0x411023, tramp, '__RTC_GetErrDesc').
+symbol(0x411028, tramp, '??0?$allocator@D@std@@QAE@ABV01@@Z').
+symbol(0x41102d, tramp, '@__security_check_cookie@4').
+symbol(0x411032, tramp, '_IsDebuggerPresent@0').
+symbol(0x411037, tramp, '??2@YAPAXIPAX@Z').
+symbol(0x41103c, tramp, '??0bad_alloc@std@@QAE@PBD@Z').
+symbol(0x411041, tramp, '??4type_info@@AAEAAV0@ABV0@@Z').
+symbol(0x411046, tramp, '?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXII@Z').
+symbol(0x41104b, tramp, '?deallocate@?$allocator@U_Container_proxy@std@@@std@@QAEXPAU_Container_proxy@2@I@Z').
+symbol(0x411050, tramp, '__RTC_Terminate').
+symbol(0x411055, tramp, '_WideCharToMultiByte@32').
+symbol(0x41105a, tramp, '@_RTC_AllocaHelper@12').
+symbol(0x41105f, tramp, '?_RTC_GetErrorFuncW@@YAP6AHHPB_WH00ZZPBX@Z').
+symbol(0x411064, tramp, '__RTC_NumErrors').
+symbol(0x411069, tramp, '?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x41106e, tramp, '?allocate@?$allocator@D@std@@QAEPADI@Z').
+symbol(0x411073, tramp, '___setusermatherr').
+symbol(0x411078, tramp, '??1bad_alloc@std@@UAE@XZ').
+symbol(0x41107d, tramp, '_Sleep@4').
+symbol(0x411082, tramp, '??_Ebad_alloc@std@@UAEPAXI@Z').
+symbol(0x411087, tramp, '??1type_info@@UAE@XZ').
+symbol(0x41108c, tramp, '?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z').
+symbol(0x411091, tramp, '??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QBEPQ_Bool_struct@2@HXZ').
+symbol(0x411096, tramp, '_GetModuleFileNameW@12').
+symbol(0x41109b, tramp, '___security_init_cookie').
+symbol(0x4110a0, tramp, '_SetUnhandledExceptionFilter@4').
+symbol(0x4110a5, tramp, '__cexit').
+symbol(0x4110aa, tramp, '?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEXXZ').
+symbol(0x4110af, tramp, '__CrtDbgReportW').
+symbol(0x4110b4, tramp, '?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z').
+symbol(0x4110b9, tramp, '_VirtualQuery@12').
+symbol(0x4110be, tramp, '_atexit').
+symbol(0x4110c3, tramp, '_MultiByteToWideChar@24').
+symbol(0x4110c8, tramp, '?endl@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@AAV21@@Z').
+symbol(0x4110cd, tramp, '__RTC_SetErrorType').
+symbol(0x4110d2, tramp, '__except_handler4').
+symbol(0x4110d7, tramp, '__lock').
+symbol(0x4110dc, tramp, '_GetProcAddress@8').
+symbol(0x4110e1, tramp, '?assign@?$char_traits@D@std@@SAXAADABD@Z').
+symbol(0x4110e6, tramp, '@_RTC_CheckStackVars@8').
+symbol(0x4110eb, tramp, '?length@?$char_traits@D@std@@SAIPBD@Z').
+symbol(0x4110f0, tramp, '??3@YAXPAX@Z').
+symbol(0x4110f5, tramp, '?eq_int_type@?$char_traits@D@std@@SA_NABH0@Z').
+symbol(0x4110fa, tramp, '??1type_info@@UAE@XZ').
+symbol(0x4110ff, tramp, '??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z').
+symbol(0x411104, tramp, '?uncaught_exception@std@@YA_NXZ').
+symbol(0x411109, tramp, '___report_gsfailure').
+symbol(0x41110e, tramp, '?terminate@@YAXXZ').
+symbol(0x411113, tramp, '__exit').
+symbol(0x411118, tramp, '?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAE_JPBD_J@Z').
+symbol(0x41111d, tramp, '_GetCurrentThreadId@0').
+symbol(0x411122, tramp, '__initterm').
+symbol(0x411127, tramp, '_strlen').
+symbol(0x41112c, tramp, '??$_Dest_val@V?$allocator@U_Container_proxy@std@@@std@@U_Container_proxy@2@@std@@YAXAAV?$allocator@U_Container_proxy@std@@@0@PAU_Container_proxy@0@@Z').
+symbol(0x411131, tramp, '?width@ios_base@std@@QBE_JXZ').
+symbol(0x411136, tramp, '??0ObjectTest@@QAE@HH@Z').
+symbol(0x41113b, tramp, '?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x411140, tramp, '??$_Destroy@U_Container_proxy@std@@@std@@YAXPAU_Container_proxy@0@@Z').
+symbol(0x411145, tramp, '?_Myptr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEPBDXZ').
+symbol(0x41114a, tramp, '_GetCurrentProcess@0').
+symbol(0x41114f, tramp, '?_Myptr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEPADXZ').
+symbol(0x411154, tramp, '?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z').
+symbol(0x411159, tramp, '??$?0D@?$allocator@U_Container_proxy@std@@@std@@QAE@ABV?$allocator@D@1@@Z').
+symbol(0x41115e, tramp, '?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z').
+symbol(0x411163, tramp, '__RTC_UninitUse').
+symbol(0x411168, tramp, '__RTC_Shutdown').
+symbol(0x41116d, tramp, '??_Etype_info@@UAEPAXI@Z').
+symbol(0x411172, tramp, '__FindPESection').
+symbol(0x411177, tramp, '_LoadLibraryW@4').
+symbol(0x41117c, tramp, '_HeapSetInformation@16').
+symbol(0x411181, tramp, '__configthreadlocale').
+symbol(0x411186, tramp, '__RTC_InitBase').
+symbol(0x41118b, tramp, '?_RTC_StackFailure@@YAXPAXPBD@Z').
+symbol(0x411190, tramp, '??_Ebad_alloc@std@@UAEPAXI@Z').
+symbol(0x411195, tramp, '??$forward@U_Container_proxy@std@@@std@@YA$$QAU_Container_proxy@0@AAU10@@Z').
+symbol(0x41119a, tramp, '_RaiseException@16').
+symbol(0x41119f, tramp, '??0_Container_proxy@std@@QAE@XZ').
+symbol(0x4111a4, tramp, '__crt_debugger_hook').
+symbol(0x4111a9, tramp, '?destroy@?$allocator@U_Container_proxy@std@@@std@@QAEXPAU_Container_proxy@2@@Z').
+symbol(0x4111ae, tramp, '?copy@?$char_traits@D@std@@SAPADPADPBDI@Z').
+symbol(0x4111b3, tramp, '__ValidateImageBase').
+symbol(0x4111b8, tramp, '_InterlockedCompareExchange@12').
+symbol(0x4111bd, tramp, '?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE_NI_N@Z').
+symbol(0x4111c2, tramp, '?_Xran@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEXXZ').
+symbol(0x4111c7, tramp, '??1_Container_base12@std@@QAE@XZ').
+symbol(0x4111cc, tramp, '?eof@?$char_traits@D@std@@SAHXZ').
+symbol(0x4111d1, tramp, '?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEPBDXZ').
+symbol(0x4111d6, tramp, '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ').
+symbol(0x4111db, tramp, '__CxxThrowException@8').
+symbol(0x4111e0, tramp, '_memmove').
+symbol(0x4111e5, tramp, '_memcpy').
+symbol(0x4111ea, tramp, '_GetProcessHeap@0').
+symbol(0x4111ef, tramp, '__RTC_SetErrorFuncW').
+symbol(0x4111f4, tramp, '__onexit').
+symbol(0x4111f9, tramp, '_NtCurrentTeb').
+symbol(0x4111fe, tramp, '??0_Container_base12@std@@QAE@XZ').
+symbol(0x411203, tramp, '??$_Allocate@U_Container_proxy@std@@@std@@YAPAU_Container_proxy@0@IPAU10@@Z').
+symbol(0x411208, tramp, '??3@YAXPAX0@Z').
+symbol(0x41120d, tramp, '_HeapFree@12').
+symbol(0x411212, tramp, '??1?$_String_val@DV?$allocator@D@std@@@std@@QAE@XZ').
+symbol(0x411217, tramp, '?move@?$char_traits@D@std@@SAPADPADPBDI@Z').
+symbol(0x41121c, tramp, '__RTC_SetErrorFunc').
+symbol(0x411221, tramp, '__invoke_watson_if_error').
+symbol(0x411226, tramp, '??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z').
+symbol(0x41122b, tramp, '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ').
+symbol(0x411230, tramp, '?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXI@Z').
+symbol(0x411235, tramp, '_TerminateProcess@8').
+symbol(0x41123a, tramp, '?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ').
+symbol(0x41123f, tramp, '_mainCRTStartup').
+symbol(0x411244, tramp, '?construct@?$allocator@U_Container_proxy@std@@@std@@QAEXPAU_Container_proxy@2@$$QAU32@@Z').
+symbol(0x411249, tramp, '?allocate@?$allocator@U_Container_proxy@std@@@std@@QAEPAU_Container_proxy@2@I@Z').
+symbol(0x41124e, tramp, '??$_Cons_val@V?$allocator@U_Container_proxy@std@@@std@@U_Container_proxy@2@U32@@std@@YAXAAV?$allocator@U_Container_proxy@std@@@0@PAU_Container_proxy@0@$$QAU20@@Z').
+symbol(0x411253, tramp, '??0bad_alloc@std@@QAE@ABV01@@Z').
+symbol(0x411258, tramp, '?bar@@YAXVObjectTest@@HH0@Z').
+symbol(0x41125d, tramp, '?__CxxUnhandledExceptionFilter@@YGJPAU_EXCEPTION_POINTERS@@@Z').
+symbol(0x411262, tramp, '___CxxSetUnhandledExceptionFilter').
+symbol(0x411267, tramp, '_QueryPerformanceCounter@4').
+symbol(0x41126c, tramp, '??$_Allocate@D@std@@YAPADIPAD@Z').
+symbol(0x411271, tramp, '??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ').
+symbol(0x411276, tramp, '__unlock').
+symbol(0x41127b, tramp, '??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z').
+symbol(0x411280, tramp, '_GetCurrentProcessId@0').
+symbol(0x411285, tramp, '@_RTC_CheckStackVars2@12').
+symbol(0x41128a, tramp, '___set_app_type').
+symbol(0x41128f, tramp, '?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z').
+symbol(0x411294, tramp, '__RTC_CheckEsp').
+symbol(0x411299, tramp, '_main').
+symbol(0x41129e, tramp, '_EncodePointer@4').
+symbol(0x4112a3, tramp, '__RTC_Initialize').
+symbol(0x4112a8, tramp, '??$_Debug_pointer@D@std@@YAXPBDPB_WI@Z').
+symbol(0x4112ad, tramp, '?width@ios_base@std@@QAE_J_J@Z').
+symbol(0x4112b2, tramp, '?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEX_NI@Z').
+symbol(0x4112b7, tramp, '__controlfp_s').
+symbol(0x4112bc, tramp, '_GetSystemTimeAsFileTime@4').
+symbol(0x4112c1, tramp, '_DecodePointer@4').
+symbol(0x4112c6, tramp, '?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ').
+symbol(0x4112cb, tramp, '?_Debug_message@std@@YAXPB_W0I@Z').
+symbol(0x4112d0, tramp, '?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ').
+symbol(0x4112d5, tramp, '__invoke_watson').
+symbol(0x4112da, tramp, '?foo@@YAXHVObjectTest@@H@Z').
+symbol(0x4112df, tramp, '?_RTC_GetSrcLine@@YAHPAEPA_WKPAH1K@Z').
+symbol(0x4112e4, tramp, '??0exception@std@@QAE@ABQBD@Z').
+symbol(0x4112e9, tramp, '__CRT_RTC_INITW').
+symbol(0x4112ee, tramp, '_GetTickCount@0').
+symbol(0x4112f3, tramp, '__IsNonwritableInCurrentImage').
+symbol(0x4112f8, tramp, '___CxxFrameHandler3').
+symbol(0x4112fd, tramp, '_HeapAlloc@12').
+symbol(0x411302, tramp, '?print@ObjectTest@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z').
+symbol(0x411307, tramp, '?max_size@?$allocator@D@std@@QBEIXZ').
+symbol(0x41130c, tramp, '__amsg_exit').
+symbol(0x411311, tramp, '??2@YAPAXI@Z').
+symbol(0x411316, tramp, '__XcptFilter').
+symbol(0x41131b, tramp, '?add@ObjectTest@@QAEHXZ').
+symbol(0x411320, tramp, '__CrtSetCheckCount').
+symbol(0x411325, tramp, '_InterlockedExchange@8').
+symbol(0x41132a, tramp, '_UnhandledExceptionFilter@4').
+symbol(0x41132f, tramp, '??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@PBD@Z').
+symbol(0x411334, tramp, '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z').
+symbol(0x411339, tramp, '??0exception@std@@QAE@ABV01@@Z').
+symbol(0x41133e, tramp, '??0type_info@@AAE@ABV0@@Z').
+symbol(0x411343, tramp, '__except_handler4_common').
+symbol(0x411348, tramp, '?_Xout_of_range@std@@YAXPBD@Z').
+symbol(0x41134d, tramp, '__matherr').
+symbol(0x411352, tramp, '?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDXZ').
+symbol(0x411357, tramp, '___getmainargs').
+symbol(0x41135c, tramp, '?__ArrayUnwind@@YGXPAXIHP6EX0@Z@Z').
+symbol(0x411361, tramp, '??0?$_String_val@DV?$allocator@D@std@@@std@@QAE@V?$allocator@D@1@@Z').
+symbol(0x411366, tramp, '_lstrlenA@4').
+symbol(0x41136b, tramp, '?_RTC_Failure@@YAXPAXH@Z').
+symbol(0x411370, tramp, '?flags@ios_base@std@@QBEHXZ').
+symbol(0x411375, tramp, '??0?$allocator@D@std@@QAE@XZ').
+symbol(0x41137a, tramp, '?_RTC_AllocaFailure@@YAXPAXPAU_RTC_ALLOCA_NODE@@H@Z').
+symbol(0x41137f, tramp, '?_Xlength_error@std@@YAXPBD@Z').
+symbol(0x411384, tramp, '_exit').
+symbol(0x411389, tramp, '??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z').
+symbol(0x41138e, tramp, '?what@exception@std@@UBEPBDXZ').
+symbol(0x411393, tramp, '___dllonexit').
+symbol(0x411398, tramp, '?deallocate@?$allocator@D@std@@QAEXPADI@Z').
+symbol(0x41139d, tramp, '_FreeLibrary@4').
+symbol(0x4113a2, tramp, '??_M@YGXPAXIHP6EX0@Z@Z').
+symbol(0x4113a7, tramp, '__initterm_e').
+symbol(0x4113ac, tramp, '?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ').
+symbol(0x4113b1, tramp, '?_RTC_GetErrorFunc@@YAP6AHHPBDH00ZZPBX@Z').
+symbol(0x4113b6, tramp, '??1exception@std@@UAE@XZ').
+symbol(0x411780, func, '?bar@@YAXVObjectTest@@HH0@Z').
+symbol(0x411800, method, '?print@ObjectTest@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z').
+symbol(0x411940, func, '?foo@@YAXHVObjectTest@@H@Z').
+symbol(0x411a30, method, '??0ObjectTest@@QAE@HH@Z').
+symbol(0x411a80, method, '?add@ObjectTest@@QAEHXZ').
+symbol(0x411ad0, func, '_main').
+symbol(0x411b70, method, '??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@PBD@Z').
+symbol(0x411c40, method, '??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ').
+symbol(0x411cf0, method, '?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBD@Z').
+symbol(0x411d80, staticmethod, '?length@?$char_traits@D@std@@SAIPBD@Z').
+symbol(0x411dd0, method, '?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEX_NI@Z').
+symbol(0x411ea0, staticmethod, '?copy@?$char_traits@D@std@@SAPADPADPBDI@Z').
+symbol(0x411f00, method, '??0?$_String_val@DV?$allocator@D@std@@@std@@QAE@V?$allocator@D@1@@Z').
+symbol(0x412050, method, '??0_Container_proxy@std@@QAE@XZ').
+symbol(0x4120a0, method, '??1?$_String_val@DV?$allocator@D@std@@@std@@QAE@XZ').
+symbol(0x4121e0, method, '??0?$allocator@D@std@@QAE@XZ').
+symbol(0x412220, method, '??0?$allocator@D@std@@QAE@ABV01@@Z').
+symbol(0x412260, method, '?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z').
+symbol(0x412360, method, '?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXI@Z').
+symbol(0x4123e0, staticmethod, '?assign@?$char_traits@D@std@@SAXAADABD@Z').
+symbol(0x412420, method, '?_Myptr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEPADXZ').
+symbol(0x412490, method, '?deallocate@?$allocator@D@std@@QAEXPADI@Z').
+symbol(0x4124f0, method, '?deallocate@?$allocator@U_Container_proxy@std@@@std@@QAEXPAU_Container_proxy@2@I@Z').
+symbol(0x412550, method, '?allocate@?$allocator@U_Container_proxy@std@@@std@@QAEPAU_Container_proxy@2@I@Z').
+symbol(0x4125b0, method, '?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z').
+symbol(0x4126d0, method, '?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ').
+symbol(0x412710, method, '?_Myptr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEPBDXZ').
+symbol(0x412780, method, '?_Xran@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEXXZ').
+symbol(0x4127e0, method, '?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE_NI_N@Z').
+symbol(0x4128e0, method, '?_Inside@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE_NPBD@Z').
+symbol(0x412960, method, '?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEXXZ').
+symbol(0x4129c0, method, '?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z').
+symbol(0x412ab0, staticmethod, '?move@?$char_traits@D@std@@SAPADPADPBDI@Z').
+symbol(0x412b20, method, '?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ').
+symbol(0x412bb0, method, '?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXII@Z').
+symbol(0x412de0, method, '?allocate@?$allocator@D@std@@QAEPADI@Z').
+symbol(0x412e40, method, '?max_size@?$allocator@D@std@@QBEIXZ').
+symbol(0x412eb0, func, '??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z').
+symbol(0x413450, staticmethod, '?eq_int_type@?$char_traits@D@std@@SA_NABH0@Z').
+symbol(0x4134a0, staticmethod, '?eof@?$char_traits@D@std@@SAHXZ').
+symbol(0x4134e0, method, '?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEPBDXZ').
+symbol(0x413530, method, '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z').
+symbol(0x413690, method, '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ').
+symbol(0x413760, method, '??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QBEPQ_Bool_struct@2@HXZ').
+symbol(0x4137b0, method, '??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z').
+symbol(0x413880, method, '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ').
+symbol(0x413940, func, '??$_Debug_pointer@D@std@@YAXPBDPB_WI@Z').
+symbol(0x4139b0, method, '??$?0D@?$allocator@U_Container_proxy@std@@@std@@QAE@ABV?$allocator@D@1@@Z').
+symbol(0x4139f0, func, '??$_Cons_val@V?$allocator@U_Container_proxy@std@@@std@@U_Container_proxy@2@U32@@std@@YAXAAV?$allocator@U_Container_proxy@std@@@0@PAU_Container_proxy@0@$$QAU20@@Z').
+symbol(0x413a50, func, '??$_Dest_val@V?$allocator@U_Container_proxy@std@@@std@@U_Container_proxy@2@@std@@YAXAAV?$allocator@U_Container_proxy@std@@@0@PAU_Container_proxy@0@@Z').
+symbol(0x413aa0, func, '??$_Allocate@U_Container_proxy@std@@@std@@YAPAU_Container_proxy@0@IPAU10@@Z').
+symbol(0x413b50, method, '??0bad_alloc@std@@QAE@PBD@Z').
+symbol(0x413bd0, method, '??1bad_alloc@std@@UAE@XZ').
+symbol(0x413c40, method, '??_Ebad_alloc@std@@UAEPAXI@Z').
+symbol(0x413c40, method, '??_Gbad_alloc@std@@UAEPAXI@Z').
+symbol(0x413cb0, func, '??$_Allocate@D@std@@YAPADIPAD@Z').
+symbol(0x413d60, method, '??0bad_alloc@std@@QAE@ABV01@@Z').
+symbol(0x413de0, method, '?construct@?$allocator@U_Container_proxy@std@@@std@@QAEXPAU_Container_proxy@2@$$QAU32@@Z').
+symbol(0x413ef0, func, '??2@YAPAXIPAX@Z').
+symbol(0x413f30, func, '??3@YAXPAX0@Z').
+symbol(0x413f60, method, '?destroy@?$allocator@U_Container_proxy@std@@@std@@QAEXPAU_Container_proxy@2@@Z').
+symbol(0x413fc0, func, '??$forward@U_Container_proxy@std@@@std@@YA$$QAU_Container_proxy@0@AAU10@@Z').
+symbol(0x414000, func, '??$_Destroy@U_Container_proxy@std@@@std@@YAXPAU_Container_proxy@0@@Z').
+symbol(0x41402e, thunk, '??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z').
+symbol(0x414034, thunk, '?endl@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@AAV21@@Z').
+symbol(0x41403a, thunk, '??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z').
+symbol(0x414040, thunk, '??1_Container_base12@std@@QAE@XZ').
+symbol(0x414046, thunk, '??0_Container_base12@std@@QAE@XZ').
+symbol(0x41404c, thunk, '?_Orphan_all@_Container_base12@std@@QAEXXZ').
+symbol(0x414052, thunk, '?_Xout_of_range@std@@YAXPBD@Z').
+symbol(0x414058, thunk, '?_Xlength_error@std@@YAXPBD@Z').
+symbol(0x41405e, thunk, '?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z').
+symbol(0x414064, thunk, '?width@ios_base@std@@QAE_J_J@Z').
+symbol(0x41406a, thunk, '?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAE_JPBD_J@Z').
+symbol(0x414070, thunk, '?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z').
+symbol(0x414076, thunk, '?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x41407c, thunk, '?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDXZ').
+symbol(0x414082, thunk, '?flags@ios_base@std@@QBEHXZ').
+symbol(0x414088, thunk, '?width@ios_base@std@@QBE_JXZ').
+symbol(0x41408e, thunk, '?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ').
+symbol(0x414094, thunk, '?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x41409a, thunk, '?good@ios_base@std@@QBE_NXZ').
+symbol(0x4140a0, thunk, '?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ').
+symbol(0x4140a6, thunk, '?uncaught_exception@std@@YA_NXZ').
+symbol(0x4140ac, thunk, '?_Debug_message@std@@YAXPB_W0I@Z').
+symbol(0x4140c0, func, '__RTC_CheckEsp').
+symbol(0x4140f0, func, '@_RTC_CheckStackVars@8').
+symbol(0x414170, func, '@_RTC_AllocaHelper@12').
+symbol(0x4141b0, func, '@_RTC_CheckStackVars2@12').
+symbol(0x4142c0, func, '__RTC_InitBase').
+symbol(0x414300, func, '__RTC_Shutdown').
+symbol(0x414318, thunk, '___CxxFrameHandler3').
+symbol(0x414320, func, '@__security_check_cookie@4').
+symbol(0x414332, thunk, '_strlen').
+symbol(0x414338, thunk, '_memcpy').
+symbol(0x41433e, thunk, '??3@YAXPAX@Z').
+symbol(0x414344, thunk, '_memmove').
+symbol(0x41434a, thunk, '__CxxThrowException@8').
+symbol(0x414350, thunk, '??2@YAPAXI@Z').
+symbol(0x414360, method, '??0type_info@@AAE@ABV0@@Z').
+symbol(0x414390, method, '??_Etype_info@@UAEPAXI@Z').
+symbol(0x414420, method, '??4type_info@@AAEAAV0@ABV0@@Z').
+symbol(0x414436, thunk, '??0exception@std@@QAE@ABV01@@Z').
+symbol(0x41443c, thunk, '??0exception@std@@QAE@ABQBD@Z').
+symbol(0x414442, thunk, '?what@exception@std@@UBEPBDXZ').
+symbol(0x414448, thunk, '??1exception@std@@UAE@XZ').
+symbol(0x414450, func, 'pre_c_init').
+symbol(0x414500, func, 'pre_cpp_init').
+symbol(0x414570, func, '_mainCRTStartup').
+symbol(0x414590, func, '__tmainCRTStartup').
+symbol(0x414890, func, '_NtCurrentTeb').
+symbol(0x4148a0, func, 'check_managed_app').
+symbol(0x414930, func, '?_RTC_Failure@@YAXPAXH@Z').
+symbol(0x4149a0, func, 'failwithmessage').
+symbol(0x414c40, func, 'DebuggerProbe').
+symbol(0x414cf0, func, 'DebuggerRuntime').
+symbol(0x414dc0, func, '?_RTC_StackFailure@@YAXPAXPBD@Z').
+symbol(0x414f00, func, '?_RTC_AllocaFailure@@YAXPAXPAU_RTC_ALLOCA_NODE@@H@Z').
+symbol(0x415080, func, '_getMemBlockDataString').
+symbol(0x415110, func, '__RTC_UninitUse').
+symbol(0x415240, func, '__RTC_NumErrors').
+symbol(0x415250, func, '__RTC_GetErrDesc').
+symbol(0x415270, func, '__RTC_SetErrorType').
+symbol(0x4152a0, func, '__RTC_SetErrorFunc').
+symbol(0x4152d0, func, '__RTC_SetErrorFuncW').
+symbol(0x415300, func, '?_RTC_GetErrorFunc@@YAP6AHHPBDH00ZZPBX@Z').
+symbol(0x415310, func, '?_RTC_GetErrorFuncW@@YAP6AHHPB_WH00ZZPBX@Z').
+symbol(0x415316, thunk, '__CRT_RTC_INITW').
+symbol(0x415320, func, '___report_gsfailure').
+symbol(0x415480, func, '??_M@YGXPAXIHP6EX0@Z@Z').
+symbol(0x415560, func, '?__ArrayUnwind@@YGXPAXIHP6EX0@Z@Z').
+symbol(0x415610, func, 'ArrayUnwindFilter').
+symbol(0x415650, func, '?__CxxUnhandledExceptionFilter@@YGJPAU_EXCEPTION_POINTERS@@@Z').
+symbol(0x4156d0, func, '___CxxSetUnhandledExceptionFilter').
+symbol(0x4156ea, thunk, '__configthreadlocale').
+symbol(0x4156f0, func, '__setdefaultprecision').
+symbol(0x415740, func, '__invoke_watson_if_error').
+symbol(0x415772, thunk, '___setusermatherr').
+symbol(0x415780, func, '__matherr').
+symbol(0x415790, func, '__setargv').
+symbol(0x4157a0, func, '__RTC_Initialize').
+symbol(0x4157d0, func, '__RTC_Terminate').
+symbol(0x415800, func, '__onexit').
+symbol(0x415930, func, '_atexit').
+symbol(0x415954, thunk, '___set_app_type').
+symbol(0x41595a, thunk, '__amsg_exit').
+symbol(0x415960, thunk, '___getmainargs').
+symbol(0x415970, func, '___security_init_cookie').
+symbol(0x415a88, thunk, '__exit').
+symbol(0x415a8e, thunk, '__XcptFilter').
+symbol(0x415a94, thunk, '__cexit').
+symbol(0x415a9a, thunk, '_exit').
+symbol(0x415aa0, thunk, '__CrtSetCheckCount').
+symbol(0x415ab0, func, '__ValidateImageBase').
+symbol(0x415b30, func, '__FindPESection').
+symbol(0x415bd0, func, '__IsNonwritableInCurrentImage').
+symbol(0x415d26, thunk, '__CrtDbgReportW').
+symbol(0x415d2c, thunk, '__initterm').
+symbol(0x415d32, thunk, '__initterm_e').
+symbol(0x415d40, func, '__except_handler4').
+symbol(0x415d80, func, '?_RTC_GetSrcLine@@YAHPAEPA_WKPAH1K@Z').
+symbol(0x4160f0, func, 'GetPdbDll').
+symbol(0x416356, thunk, '__crt_debugger_hook').
+symbol(0x41635c, thunk, '?terminate@@YAXXZ').
+symbol(0x416362, thunk, '??1type_info@@UAE@XZ').
+symbol(0x416362, thunk, '?_type_info_dtor_internal_method@type_info@@QAEXXZ').
+symbol(0x416368, thunk, '__controlfp_s').
+symbol(0x41636e, thunk, '__invoke_watson').
+symbol(0x416374, thunk, '__unlock').
+symbol(0x41637a, thunk, '___dllonexit').
+symbol(0x416380, thunk, '__lock').
+symbol(0x416386, thunk, '__except_handler4_common').
+symbol(0x41638c, thunk, '_EncodePointer@4').
+symbol(0x416392, thunk, '_InterlockedExchange@8').
+symbol(0x416398, thunk, '_Sleep@4').
+symbol(0x41639e, thunk, '_InterlockedCompareExchange@12').
+symbol(0x4163a4, thunk, '_HeapSetInformation@16').
+symbol(0x4163aa, thunk, '_WideCharToMultiByte@32').
+symbol(0x4163b0, thunk, '_IsDebuggerPresent@0').
+symbol(0x4163b6, thunk, '_MultiByteToWideChar@24').
+symbol(0x4163bc, thunk, '_RaiseException@16').
+symbol(0x4163c2, thunk, '_lstrlenA@4').
+symbol(0x4163c8, thunk, '_GetProcAddress@8').
+symbol(0x4163ce, thunk, '_LoadLibraryW@4').
+symbol(0x4163d4, thunk, '_TerminateProcess@8').
+symbol(0x4163da, thunk, '_GetCurrentProcess@0').
+symbol(0x4163e0, thunk, '_UnhandledExceptionFilter@4').
+symbol(0x4163e6, thunk, '_SetUnhandledExceptionFilter@4').
+symbol(0x4163ec, thunk, '_DecodePointer@4').
+symbol(0x4163f2, thunk, '_QueryPerformanceCounter@4').
+symbol(0x4163f8, thunk, '_GetTickCount@0').
+symbol(0x4163fe, thunk, '_GetCurrentThreadId@0').
+symbol(0x416404, thunk, '_GetCurrentProcessId@0').
+symbol(0x41640a, thunk, '_GetSystemTimeAsFileTime@4').
+symbol(0x416410, thunk, '_HeapFree@12').
+symbol(0x416416, thunk, '_HeapAlloc@12').
+symbol(0x41641c, thunk, '_GetProcessHeap@0').
+symbol(0x416422, thunk, '_GetModuleFileNameW@12').
+symbol(0x416428, thunk, '_VirtualQuery@12').
+symbol(0x41642e, thunk, '_FreeLibrary@4').
+symbol(0x419000, name, '___xc_a').
+symbol(0x419208, name, '___xc_z').
+symbol(0x41930c, name, '___xi_a').
+symbol(0x419618, name, '___xi_z').
+symbol(0x41973c, name, '?value@?$integral_constant@_N$0A@@tr1@std@@2_NB').
+symbol(0x41973d, name, '?value@?$integral_constant@_N$00@tr1@std@@2_NB').
+symbol(0x419740, name, '?value@?$integral_constant@I$0A@@tr1@std@@2IB').
+symbol(0x419744, name, '?_Rank@?$_Arithmetic_traits@_N@std@@2HB').
+symbol(0x419748, name, '?_Rank@?$_Arithmetic_traits@D@std@@2HB').
+symbol(0x41974c, name, '?_Rank@?$_Arithmetic_traits@C@std@@2HB').
+symbol(0x419750, name, '?_Rank@?$_Arithmetic_traits@E@std@@2HB').
+symbol(0x419754, name, '?_Rank@?$_Arithmetic_traits@F@std@@2HB').
+symbol(0x419758, name, '?_Rank@?$_Arithmetic_traits@G@std@@2HB').
+symbol(0x41975c, name, '?_Rank@?$_Arithmetic_traits@H@std@@2HB').
+symbol(0x419760, name, '?_Rank@?$_Arithmetic_traits@I@std@@2HB').
+symbol(0x419764, name, '?_Rank@?$_Arithmetic_traits@J@std@@2HB').
+symbol(0x419768, name, '?_Rank@?$_Arithmetic_traits@K@std@@2HB').
+symbol(0x41976c, name, '?_Rank@?$_Arithmetic_traits@_J@std@@2HB').
+symbol(0x419770, name, '?_Rank@?$_Arithmetic_traits@_K@std@@2HB').
+symbol(0x419774, name, '?_Rank@?$_Arithmetic_traits@M@std@@2HB').
+symbol(0x419778, name, '?_Rank@?$_Arithmetic_traits@N@std@@2HB').
+symbol(0x41977c, name, '?_Rank@?$_Arithmetic_traits@O@std@@2HB').
+symbol(0x419780, name, '?collate@?$_Locbase@H@std@@2HB').
+symbol(0x419784, name, '?ctype@?$_Locbase@H@std@@2HB').
+symbol(0x419788, name, '?monetary@?$_Locbase@H@std@@2HB').
+symbol(0x41978c, name, '?numeric@?$_Locbase@H@std@@2HB').
+symbol(0x419790, name, '?time@?$_Locbase@H@std@@2HB').
+symbol(0x419794, name, '?messages@?$_Locbase@H@std@@2HB').
+symbol(0x419798, name, '?all@?$_Locbase@H@std@@2HB').
+symbol(0x41979c, name, '?none@?$_Locbase@H@std@@2HB').
+symbol(0x4197a0, name, '?skipws@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197a4, name, '?unitbuf@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197a8, name, '?uppercase@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197ac, name, '?showbase@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197b0, name, '?showpoint@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197b4, name, '?showpos@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197b8, name, '?left@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197bc, name, '?right@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197c0, name, '?internal@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197c4, name, '?dec@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197c8, name, '?oct@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197cc, name, '?hex@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197d0, name, '?scientific@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197d4, name, '?fixed@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197d8, name, '?hexfloat@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197dc, name, '?boolalpha@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197e0, name, '?_Stdio@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197e4, name, '?adjustfield@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197e8, name, '?basefield@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197ec, name, '?floatfield@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4197f0, name, '?goodbit@?$_Iosb@H@std@@2W4_Iostate@12@B').
+symbol(0x4197f4, name, '?eofbit@?$_Iosb@H@std@@2W4_Iostate@12@B').
+symbol(0x4197f8, name, '?failbit@?$_Iosb@H@std@@2W4_Iostate@12@B').
+symbol(0x4197fc, name, '?badbit@?$_Iosb@H@std@@2W4_Iostate@12@B').
+symbol(0x419800, name, '?_Hardfail@?$_Iosb@H@std@@2W4_Iostate@12@B').
+symbol(0x419804, name, '?in@?$_Iosb@H@std@@2W4_Openmode@12@B').
+symbol(0x419808, name, '?out@?$_Iosb@H@std@@2W4_Openmode@12@B').
+symbol(0x41980c, name, '?ate@?$_Iosb@H@std@@2W4_Openmode@12@B').
+symbol(0x419810, name, '?app@?$_Iosb@H@std@@2W4_Openmode@12@B').
+symbol(0x419814, name, '?trunc@?$_Iosb@H@std@@2W4_Openmode@12@B').
+symbol(0x419818, name, '?_Nocreate@?$_Iosb@H@std@@2W4_Openmode@12@B').
+symbol(0x41981c, name, '?_Noreplace@?$_Iosb@H@std@@2W4_Openmode@12@B').
+symbol(0x419820, name, '?binary@?$_Iosb@H@std@@2W4_Openmode@12@B').
+symbol(0x419824, name, '?beg@?$_Iosb@H@std@@2W4_Seekdir@12@B').
+symbol(0x419828, name, '?cur@?$_Iosb@H@std@@2W4_Seekdir@12@B').
+symbol(0x41982c, name, '?end@?$_Iosb@H@std@@2W4_Seekdir@12@B').
+symbol(0x419830, string, '??_C@_03BLIIKFAI@bar?$AA@').
+symbol(0x419838, string, '??_C@_1IC@FFBOGIDA@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAm?$AAi?$AAc?$AAr?$AAo?$AAs?$AAo?$AAf?$AAt?$AA?5?$AAv?$AAi?$AAs?$AAu?$AAa@').
+symbol(0x4198d4, name, '?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB').
+symbol(0x4198d8, string, '??_C@_0BI@CFPLBAOH@invalid?5string?5position?$AA@').
+symbol(0x4198f4, string, '??_C@_0BA@JFNIOLAK@string?5too?5long?$AA@').
+symbol(0x419908, string, '??_C@_1CK@EOPGIILJ@?$AAi?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAn?$AAu?$AAl?$AAl?$AA?5?$AAp?$AAo?$AAi?$AAn?$AAt?$AAe?$AAr?$AA?$AA@').
+symbol(0x419940, table, '??_7bad_alloc@std@@6B@').
+symbol(0x419950, table, '??_7type_info@@6B@').
+symbol(0x419958, string, '??_C@_1GA@EHAKPACL@?$AAf?$AA?3?$AA?2?$AAd?$AAd?$AA?2?$AAv?$AAc?$AAt?$AAo?$AAo?$AAl?$AAs?$AA?2?$AAc?$AAr?$AAt?$AA_?$AAb?$AAl?$AAd?$AA?2?$AAs?$AAe?$AAl?$AAf?$AA_?$AAx?$AA8?$AA6?$AA?2?$AAc@').
+symbol(0x4199d0, string, '??_C@_1FA@DALEHHGL@?$AA_?$AA_?$AAn?$AAa?$AAt?$AAi?$AAv?$AAe?$AA_?$AAs?$AAt?$AAa?$AAr?$AAt?$AAu?$AAp?$AA_?$AAs?$AAt?$AAa?$AAt?$AAe?$AA?5?$AA?$DN?$AA?$DN?$AA?5?$AA_?$AA_?$AAi?$AAn?$AAi?$AAt@').
+symbol(0x419a30, string, '??_C@_0BO@GNIAFIKK@Unknown?5Runtime?5Check?5Error?6?$AN?$AA@').
+symbol(0x419a54, string, '??_C@_0CM@NGINOKPC@Stack?5memory?5around?5_alloca?5was?5@').
+symbol(0x419a88, string, '??_C@_0DG@HKJMLLLP@A?5local?5variable?5was?5used?5before@').
+symbol(0x419ac8, string, '??_C@_0BN@FFOINMNJ@Stack?5memory?5was?5corrupted?6?$AN?$AA@').
+symbol(0x419af0, string, '??_C@_0BBN@GPMLNJCF@A?5cast?5to?5a?5smaller?5data?5type?5ha@').
+symbol(0x419c48, string, '??_C@_0NN@NGPKDKPD@The?5value?5of?5ESP?5was?5not?5properl@').
+symbol(0x419e10, string, '??_C@_0CA@IODNCDPG@Run?9Time?5Check?5Failure?5?$CD?$CFd?5?9?5?$CFs?$AA@').
+symbol(0x419e38, string, '??_C@_0BE@GNBOBNCK@Unknown?5Module?5Name?$AA@').
+symbol(0x419e50, string, '??_C@_0BB@PFFGGCJP@Unknown?5Filename?$AA@').
+symbol(0x419e68, string, '??_C@_1EA@NFKNIFJP@?$AAR?$AAu?$AAn?$AA?9?$AAT?$AAi?$AAm?$AAe?$AA?5?$AAC?$AAh?$AAe?$AAc?$AAk?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAu?$AAr?$AAe?$AA?5?$AA?$CD?$AA?$CF?$AAd?$AA?5?$AA?9?$AA?5?$AA?$CF?$AAs?$AA?$AA@').
+symbol(0x419eb8, string, '??_C@_1GM@OLMCBDMB@?$AAR?$AAu?$AAn?$AAt?$AAi?$AAm?$AAe?$AA?5?$AAC?$AAh?$AAe?$AAc?$AAk?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?4?$AA?6?$AA?$AN?$AA?5?$AAU?$AAn?$AAa?$AAb?$AAl?$AAe?$AA?5?$AAt?$AAo@').
+symbol(0x419f3c, string, '??_C@_0CG@IAFNJNEE@Stack?5corrupted?5near?5unknown?5var@').
+symbol(0x419f70, string, '??_C@_0EJ@LJKNEOLN@Stack?5area?5around?5_alloca?5memory@').
+symbol(0x419fc8, string, '??_C@_08KJEDNCKC@?$CFs?$CFs?$CFs?$CFs?$AA@').
+symbol(0x419fd4, string, '??_C@_02LLMPMKNF@?$DO?5?$AA@').
+symbol(0x419fd8, string, '??_C@_01EEMJAFIK@?6?$AA@').
+symbol(0x419fdc, string, '??_C@_0BC@KIBAILCI@?$CFs?$CFs?$CFp?$CFs?$CFld?$CFs?$CFd?$CFs?$AA@').
+symbol(0x419ff8, string, '??_C@_0EI@CLEPFNGI@Stack?5area?5around?5_alloca?5memory@').
+symbol(0x41a050, string, '??_C@_0N@MHFFIMFG@?6Address?3?50x?$AA@').
+symbol(0x41a060, string, '??_C@_07DFDJCKFN@?6Size?3?5?$AA@').
+symbol(0x41a06c, string, '??_C@_0CK@DKGBICFE@?6Allocation?5number?5within?5this?5f@').
+symbol(0x41a0a0, string, '??_C@_08OMAHNMHJ@?6Data?3?5?$DM?$AA@').
+symbol(0x41a0ac, string, '??_C@_09FOPFMPEJ@wsprintfA?$AA@').
+symbol(0x41a0b8, string, '??_C@_1BG@OILDLIOJ@?$AAu?$AAs?$AAe?$AAr?$AA3?$AA2?$AA?4?$AAd?$AAl?$AAl?$AA?$AA@').
+symbol(0x41a0d4, string, '??_C@_05MKKEDADM@?$CF?42X?5?$AA@').
+symbol(0x41a0dc, string, '??_C@_0DE@OHJBPMBP@A?5variable?5is?5being?5used?5without@').
+symbol(0x41a11c, string, '??_C@_0BP@OGBCLIBO@Stack?5around?5_alloca?5corrupted?$AA@').
+symbol(0x41a144, string, '??_C@_0CK@CNLNOEPB@Local?5variable?5used?5before?5initi@').
+symbol(0x41a178, string, '??_C@_0BI@CIGMDCBH@Stack?5memory?5corruption?$AA@').
+symbol(0x41a194, string, '??_C@_0CK@FEGOIOPB@Cast?5to?5smaller?5type?5causing?5los@').
+symbol(0x41a1c8, string, '??_C@_0BJ@HEGAHDFO@Stack?5pointer?5corruption?$AA@').
+symbol(0x41a20c, name, '?ProcessDetach@NativeDll@<CrtImplementationDetails>@@0IB').
+symbol(0x41a210, name, '?ProcessAttach@NativeDll@<CrtImplementationDetails>@@0IB').
+symbol(0x41a214, name, '?ThreadAttach@NativeDll@<CrtImplementationDetails>@@0IB').
+symbol(0x41a218, name, '?ThreadDetach@NativeDll@<CrtImplementationDetails>@@0IB').
+symbol(0x41a21c, name, '?ProcessVerifier@NativeDll@<CrtImplementationDetails>@@0IB').
+symbol(0x41a220, string, '??_C@_1GE@KOCFNGPB@?$AA_?$AAc?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAf?$AAp?$AA_?$AAs?$AA?$CI?$AA?$CI?$AA?$CI?$AAv?$AAo?$AAi?$AAd?$AA?5?$AA?$CK?$AA?$CJ?$AA0?$AA?$CJ?$AA?0?$AA?5?$AA0?$AAx?$AA0?$AA0?$AA0?$AA1@').
+symbol(0x41a298, string, '??_C@_1CK@JMKHCBEI@?$AA_?$AAs?$AAe?$AAt?$AAd?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAp?$AAr?$AAe?$AAc?$AAi?$AAs?$AAi?$AAo?$AAn?$AA?$AA@').
+symbol(0x41a2d0, string, '??_C@_1GG@PHGJJHBC@?$AAf?$AA?3?$AA?2?$AAd?$AAd?$AA?2?$AAv?$AAc?$AAt?$AAo?$AAo?$AAl?$AAs?$AA?2?$AAc?$AAr?$AAt?$AA_?$AAb?$AAl?$AAd?$AA?2?$AAs?$AAe?$AAl?$AAf?$AA_?$AAx?$AA8?$AA6?$AA?2?$AAc@').
+symbol(0x41a36c, string, '??_C@_01KDCPPGHE@r?$AA@').
+symbol(0x41a370, string, '??_C@_0BB@KCIACLNC@PDBOpenValidate5?$AA@').
+symbol(0x41a384, string, '??_C@_1CK@HHHCOJPD@?$AAE?$AAn?$AAv?$AAi?$AAr?$AAo?$AAn?$AAm?$AAe?$AAn?$AAt?$AAD?$AAi?$AAr?$AAe?$AAc?$AAt?$AAo?$AAr?$AAy?$AA?$AA@').
+symbol(0x41a3b8, string, '??_C@_1FM@DNCABAP@?$AAS?$AAO?$AAF?$AAT?$AAW?$AAA?$AAR?$AAE?$AA?2?$AAM?$AAi?$AAc?$AAr?$AAo?$AAs?$AAo?$AAf?$AAt?$AA?2?$AAV?$AAi?$AAs?$AAu?$AAa?$AAl?$AAS?$AAt?$AAu?$AAd?$AAi?$AAo?$AA?2@').
+symbol(0x41a428, string, '??_C@_0M@HLOHPNFA@RegCloseKey?$AA@').
+symbol(0x41a438, string, '??_C@_0BB@GLNAEDBD@RegQueryValueExW?$AA@').
+symbol(0x41a44c, string, '??_C@_0O@COHOBMLB@RegOpenKeyExW?$AA@').
+symbol(0x41a45c, string, '??_C@_1BK@GAEMIDIL@?$AAA?$AAD?$AAV?$AAA?$AAP?$AAI?$AA3?$AA2?$AA?4?$AAD?$AAL?$AAL?$AA?$AA@').
+symbol(0x41a73c, table, '??_R4bad_alloc@std@@6B@').
+symbol(0x41a754, name, '??_R3bad_alloc@std@@8').
+symbol(0x41a768, name, '??_R2bad_alloc@std@@8').
+symbol(0x41a774, name, '??_R1A@?0A@EA@bad_alloc@std@@8').
+symbol(0x41a798, name, '??_R1A@?0A@EA@exception@std@@8').
+symbol(0x41a7bc, name, '??_R3exception@std@@8').
+symbol(0x41a7d0, name, '??_R2exception@std@@8').
+symbol(0x41a7d8, table, '??_R4type_info@@6B@').
+symbol(0x41a7f0, name, '??_R3type_info@@8').
+symbol(0x41a804, name, '??_R2type_info@@8').
+symbol(0x41a80c, name, '??_R1A@?0A@EA@type_info@@8').
+symbol(0x41a934, name, '___rtc_iaa').
+symbol(0x41ab3c, name, '___rtc_izz').
+symbol(0x41ac40, name, '___rtc_taa').
+symbol(0x41ae48, name, '___rtc_tzz').
+symbol(0x41b1a8, name, '__TI2?AVbad_alloc@std@@').
+symbol(0x41b1bc, name, '__CTA2?AVbad_alloc@std@@').
+symbol(0x41b1cc, name, '__CT??_R0?AVbad_alloc@std@@@8??0bad_alloc@std@@QAE@ABV01@@Z12').
+symbol(0x41b1ec, name, '__CT??_R0?AVexception@std@@@8??0exception@std@@QAE@ABV01@@Z12').
+symbol(0x41c000, name, '??_R0?AVbad_alloc@std@@@8').
+symbol(0x41c024, name, '??_R0?AVexception@std@@@8').
+symbol(0x41c048, name, '___security_cookie').
+symbol(0x41c04c, name, '___security_cookie_complement').
+symbol(0x41c050, name, '??_R0?AVtype_info@@@8').
+symbol(0x41c06c, name, '?_RTC_ErrorLevels@@3PAHA').
+symbol(0x41c084, name, '___globallocalestatus').
+symbol(0x41c088, name, '___defaultmatherr').
+symbol(0x41c08c, name, '___native_dllmain_reason').
+symbol(0x41c090, name, '___native_vcclrit_reason').
+symbol(0x41c1cc, name, '?wsprintffp@@3P6AHPADPBDZZA').
+symbol(0x41c5a4, name, '__commode').
+symbol(0x41c5a8, name, '__fmode').
+symbol(0x41c5ac, name, '__dowildcard').
+symbol(0x41c5b0, name, '__newmode').
+symbol(0x41c5bc, name, '___native_startup_state').
+symbol(0x41c5cc, name, '___native_startup_lock').
+symbol(0x41c5d0, name, '___onexitend').
+symbol(0x41c5e0, name, '___onexitbegin').
+symbol(0x41c5e4, name, '__NoHeapEnableTerminationOnCorruption').
+symbol(0x41c5e8, name, '___dyn_tls_init_callback').
+symbol(0x41d000, name, '__IMPORT_DESCRIPTOR_MSVCP100D').
+symbol(0x41d014, name, '__IMPORT_DESCRIPTOR_MSVCR100D').
+symbol(0x41d028, name, '__IMPORT_DESCRIPTOR_KERNEL32').
+symbol(0x41d03c, name, '__NULL_IMPORT_DESCRIPTOR').
+symbol(0x41d278, name, '__imp__InterlockedExchange@8').
+symbol(0x41d27c, name, '__imp__Sleep@4').
+symbol(0x41d280, name, '__imp__InterlockedCompareExchange@12').
+symbol(0x41d284, name, '__imp__HeapSetInformation@16').
+symbol(0x41d288, name, '__imp__WideCharToMultiByte@32').
+symbol(0x41d28c, name, '__imp__IsDebuggerPresent@0').
+symbol(0x41d290, name, '__imp__MultiByteToWideChar@24').
+symbol(0x41d294, name, '__imp__RaiseException@16').
+symbol(0x41d298, name, '__imp__lstrlenA@4').
+symbol(0x41d29c, name, '__imp__GetProcAddress@8').
+symbol(0x41d2a0, name, '__imp__LoadLibraryW@4').
+symbol(0x41d2a4, name, '__imp__TerminateProcess@8').
+symbol(0x41d2a8, name, '__imp__GetCurrentProcess@0').
+symbol(0x41d2ac, name, '__imp__UnhandledExceptionFilter@4').
+symbol(0x41d2b0, name, '__imp__SetUnhandledExceptionFilter@4').
+symbol(0x41d2b4, name, '__imp__DecodePointer@4').
+symbol(0x41d2b8, name, '__imp__QueryPerformanceCounter@4').
+symbol(0x41d2bc, name, '__imp__GetTickCount@0').
+symbol(0x41d2c0, name, '__imp__GetCurrentThreadId@0').
+symbol(0x41d2c4, name, '__imp__GetCurrentProcessId@0').
+symbol(0x41d2c8, name, '__imp__GetSystemTimeAsFileTime@4').
+symbol(0x41d2cc, name, '__imp__HeapFree@12').
+symbol(0x41d2d0, name, '__imp__HeapAlloc@12').
+symbol(0x41d2d4, name, '__imp__FreeLibrary@4').
+symbol(0x41d2d8, name, '__imp__VirtualQuery@12').
+symbol(0x41d2dc, name, '__imp__GetModuleFileNameW@12').
+symbol(0x41d2e0, name, '__imp__GetProcessHeap@0').
+symbol(0x41d2e4, name, '__imp__EncodePointer@4').
+symbol(0x41d2e8, name, 'KERNEL32_NULL_THUNK_DATA').
+symbol(0x41d328, name, '__imp_?_Debug_message@std@@YAXPB_W0I@Z').
+symbol(0x41d32c, name, '__imp_?uncaught_exception@std@@YA_NXZ').
+symbol(0x41d330, method, '__imp_?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ').
+symbol(0x41d334, method, '__imp_?good@ios_base@std@@QBE_NXZ').
+symbol(0x41d338, method, '__imp_?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x41d33c, method, '__imp_?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ').
+symbol(0x41d340, method, '__imp_?width@ios_base@std@@QBE_JXZ').
+symbol(0x41d344, method, '__imp_?flags@ios_base@std@@QBEHXZ').
+symbol(0x41d348, method, '__imp_?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDXZ').
+symbol(0x41d34c, method, '__imp_?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x41d350, method, '__imp_?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z').
+symbol(0x41d354, method, '__imp_?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAE_JPBD_J@Z').
+symbol(0x41d358, method, '__imp_?width@ios_base@std@@QAE_J_J@Z').
+symbol(0x41d35c, method, '__imp_?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z').
+symbol(0x41d360, name, '__imp_?_Xlength_error@std@@YAXPBD@Z').
+symbol(0x41d364, name, '__imp_?_Xout_of_range@std@@YAXPBD@Z').
+symbol(0x41d368, method, '__imp_?_Orphan_all@_Container_base12@std@@QAEXXZ').
+symbol(0x41d36c, method, '__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z').
+symbol(0x41d370, method, '__imp_??0_Container_base12@std@@QAE@XZ').
+symbol(0x41d374, method, '__imp_??1_Container_base12@std@@QAE@XZ').
+symbol(0x41d378, method, '__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z').
+symbol(0x41d37c, name, '__imp_?endl@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@AAV21@@Z').
+symbol(0x41d380, name, '__imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A').
+symbol(0x41d384, name, 'MSVCP100D_NULL_THUNK_DATA').
+symbol(0x41d3c0, name, '__imp___crt_debugger_hook').
+symbol(0x41d3c4, name, '__imp_?terminate@@YAXXZ').
+symbol(0x41d3c8, method, '__imp_?_type_info_dtor_internal_method@type_info@@QAEXXZ').
+symbol(0x41d3cc, name, '__imp___controlfp_s').
+symbol(0x41d3d0, name, '__imp___invoke_watson').
+symbol(0x41d3d4, name, '__imp___unlock').
+symbol(0x41d3d8, name, '__imp____dllonexit').
+symbol(0x41d3dc, name, '__imp___lock').
+symbol(0x41d3e0, name, '__imp___onexit').
+symbol(0x41d3e4, name, '__imp___except_handler4_common').
+symbol(0x41d3e8, name, '__imp___initterm_e').
+symbol(0x41d3ec, name, '__imp___initterm').
+symbol(0x41d3f0, name, '__imp___CrtDbgReportW').
+symbol(0x41d3f4, name, '__imp___CrtSetCheckCount').
+symbol(0x41d3f8, name, '__imp____initenv').
+symbol(0x41d3fc, name, '__imp___cexit').
+symbol(0x41d400, name, '__imp___XcptFilter').
+symbol(0x41d404, name, '__imp___exit').
+symbol(0x41d408, name, '__imp____getmainargs').
+symbol(0x41d40c, name, '__imp___amsg_exit').
+symbol(0x41d410, name, '__imp____set_app_type').
+symbol(0x41d414, name, '__imp___fmode').
+symbol(0x41d418, name, '__imp___commode').
+symbol(0x41d41c, name, '__imp____setusermatherr').
+symbol(0x41d420, name, '__imp___configthreadlocale').
+symbol(0x41d424, name, '__imp___CRT_RTC_INITW').
+symbol(0x41d428, method, '__imp_??1exception@std@@UAE@XZ').
+symbol(0x41d42c, method, '__imp_?what@exception@std@@UBEPBDXZ').
+symbol(0x41d430, method, '__imp_??0exception@std@@QAE@ABQBD@Z').
+symbol(0x41d434, method, '__imp_??0exception@std@@QAE@ABV01@@Z').
+symbol(0x41d438, name, '__imp_??2@YAPAXI@Z').
+symbol(0x41d43c, name, '__imp___CxxThrowException@8').
+symbol(0x41d440, name, '__imp__memmove').
+symbol(0x41d444, name, '__imp_??3@YAXPAX@Z').
+symbol(0x41d448, name, '__imp__memcpy').
+symbol(0x41d44c, name, '__imp__strlen').
+symbol(0x41d450, name, '__imp____CxxFrameHandler3').
+symbol(0x41d454, name, '__imp__exit').
+symbol(0x41d458, name, 'MSVCR100D_NULL_THUNK_DATA').
+% Gound inheritance relationships.
+inheritanceGround('std::_String_val<char,std::allocator<char> >', 'std::_Container_base12', 0).
+embeddedGround('std::_String_val<char,std::allocator<char> >', 'std::allocator<char>', 28).
+inheritanceGround('std::bad_alloc', 'std::exception', 0).
+inheritanceGround('std::basic_ios<char,std::char_traits<char> >', 'std::ios_base', 0).
+virtualInheritanceGround('std::basic_ostream<char,std::char_traits<char> >', 'std::basic_ios<char,std::char_traits<char> >').
+inheritanceGround('std::basic_ostream<char,std::char_traits<char> >::sentry', 'std::basic_ostream<char,std::char_traits<char> >::_Sentry_base', 0).
+inheritanceGround('std::basic_string<char,std::char_traits<char>,std::allocator<char> >', 'std::_String_val<char,std::allocator<char> >', 0).
+% Ground inheritance completed successfully.

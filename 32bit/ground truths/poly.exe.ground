@@ -1,0 +1,683 @@
+demangledName(0x4119d0, 'global function', 'near near class std::basic_ostream<char, struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(near class std::basic_ostream<char, struct std::char_traits<char> > &, near char const *)').
+demangledName(0x411fd0, 'class method', 'public: static near unsigned int __cdecl std::char_traits<char>::length(near char const *)').
+demangledName(0x412020, 'class method', 'public: static near bool __cdecl std::char_traits<char>::eq_int_type(near int const &, near int const &)').
+demangledName(0x412070, 'class method', 'public: static near int __cdecl std::char_traits<char>::eof(void)').
+demangledName(0x412d70, 'global function', 'near void __cdecl _RTC_Failure(near void *, int)').
+demangledName(0x413200, 'global function', 'near void __cdecl _RTC_StackFailure(near void *, near char const *)').
+demangledName(0x413340, 'global function', 'near void __cdecl _RTC_AllocaFailure(near void *, near struct _RTC_ALLOCA_NODE *, int)').
+demangledName(0x413740, 'global function', 'near int (__cdecl*__cdecl _RTC_GetErrorFunc(near void const *) )(int, near char const *, int, near char const *, near char const *, ...)').
+demangledName(0x413750, 'global function', 'near int (__cdecl*__cdecl _RTC_GetErrorFuncW(near void const *) )(int, near wchar_t const *, int, near wchar_t const *, near wchar_t const *, ...)').
+demangledName(0x413770, 'global function', 'near void __stdcall `eh vector destructor iterator\'(near void *, unsigned int, int, void (__thiscall*)(near void *) )').
+demangledName(0x413850, 'global function', 'near void __stdcall __ArrayUnwind(near void *, unsigned int, int, void (__thiscall*)(near void *) )').
+demangledName(0x413aa0, 'global function', 'near long __stdcall __CxxUnhandledExceptionFilter(near struct _EXCEPTION_POINTERS *)').
+demangledName(0x4141d0, 'global function', 'near int __cdecl _RTC_GetSrcLine(near unsigned char *, near wchar_t *, unsigned long, near int *, near wchar_t *, unsigned long)').
+demangledName(0x41773c, 'static class member', 'public: static near bool const std::tr1::integral_constant<bool, 0>::value').
+demangledName(0x41773d, 'static class member', 'public: static near bool const std::tr1::integral_constant<bool, 1>::value').
+demangledName(0x417740, 'static class member', 'public: static near unsigned int const std::tr1::integral_constant<unsigned int, 0>::value').
+demangledName(0x417744, 'static class member', 'public: static near int const std::_Arithmetic_traits<bool>::_Rank').
+demangledName(0x417748, 'static class member', 'public: static near int const std::_Arithmetic_traits<char>::_Rank').
+demangledName(0x41774c, 'static class member', 'public: static near int const std::_Arithmetic_traits<signed char>::_Rank').
+demangledName(0x417750, 'static class member', 'public: static near int const std::_Arithmetic_traits<unsigned char>::_Rank').
+demangledName(0x417754, 'static class member', 'public: static near int const std::_Arithmetic_traits<short>::_Rank').
+demangledName(0x417758, 'static class member', 'public: static near int const std::_Arithmetic_traits<unsigned short>::_Rank').
+demangledName(0x41775c, 'static class member', 'public: static near int const std::_Arithmetic_traits<int>::_Rank').
+demangledName(0x417760, 'static class member', 'public: static near int const std::_Arithmetic_traits<unsigned int>::_Rank').
+demangledName(0x417764, 'static class member', 'public: static near int const std::_Arithmetic_traits<long>::_Rank').
+demangledName(0x417768, 'static class member', 'public: static near int const std::_Arithmetic_traits<unsigned long>::_Rank').
+demangledName(0x41776c, 'static class member', 'public: static near int const std::_Arithmetic_traits<__int64>::_Rank').
+demangledName(0x417770, 'static class member', 'public: static near int const std::_Arithmetic_traits<unsigned __int64>::_Rank').
+demangledName(0x417774, 'static class member', 'public: static near int const std::_Arithmetic_traits<float>::_Rank').
+demangledName(0x417778, 'static class member', 'public: static near int const std::_Arithmetic_traits<double>::_Rank').
+demangledName(0x41777c, 'static class member', 'public: static near int const std::_Arithmetic_traits<long double>::_Rank').
+demangledName(0x417780, 'static class member', 'public: static near int const std::_Locbase<int>::collate').
+demangledName(0x417784, 'static class member', 'public: static near int const std::_Locbase<int>::ctype').
+demangledName(0x417788, 'static class member', 'public: static near int const std::_Locbase<int>::monetary').
+demangledName(0x41778c, 'static class member', 'public: static near int const std::_Locbase<int>::numeric').
+demangledName(0x417790, 'static class member', 'public: static near int const std::_Locbase<int>::time').
+demangledName(0x417794, 'static class member', 'public: static near int const std::_Locbase<int>::messages').
+demangledName(0x417798, 'static class member', 'public: static near int const std::_Locbase<int>::all').
+demangledName(0x41779c, 'static class member', 'public: static near int const std::_Locbase<int>::none').
+demangledName(0x4177a0, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::skipws').
+demangledName(0x4177a4, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::unitbuf').
+demangledName(0x4177a8, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::uppercase').
+demangledName(0x4177ac, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::showbase').
+demangledName(0x4177b0, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::showpoint').
+demangledName(0x4177b4, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::showpos').
+demangledName(0x4177b8, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::left').
+demangledName(0x4177bc, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::right').
+demangledName(0x4177c0, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::internal').
+demangledName(0x4177c4, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::dec').
+demangledName(0x4177c8, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::oct').
+demangledName(0x4177cc, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::hex').
+demangledName(0x4177d0, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::scientific').
+demangledName(0x4177d4, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::fixed').
+demangledName(0x4177d8, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::hexfloat').
+demangledName(0x4177dc, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::boolalpha').
+demangledName(0x4177e0, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::_Stdio').
+demangledName(0x4177e4, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::adjustfield').
+demangledName(0x4177e8, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::basefield').
+demangledName(0x4177ec, 'static class member', 'public: static near enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::floatfield').
+demangledName(0x4177f0, 'static class member', 'public: static near enum std::_Iosb<int>::_Iostate const std::_Iosb<int>::goodbit').
+demangledName(0x4177f4, 'static class member', 'public: static near enum std::_Iosb<int>::_Iostate const std::_Iosb<int>::eofbit').
+demangledName(0x4177f8, 'static class member', 'public: static near enum std::_Iosb<int>::_Iostate const std::_Iosb<int>::failbit').
+demangledName(0x4177fc, 'static class member', 'public: static near enum std::_Iosb<int>::_Iostate const std::_Iosb<int>::badbit').
+demangledName(0x417800, 'static class member', 'public: static near enum std::_Iosb<int>::_Iostate const std::_Iosb<int>::_Hardfail').
+demangledName(0x417804, 'static class member', 'public: static near enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::in').
+demangledName(0x417808, 'static class member', 'public: static near enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::out').
+demangledName(0x41780c, 'static class member', 'public: static near enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::ate').
+demangledName(0x417810, 'static class member', 'public: static near enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::app').
+demangledName(0x417814, 'static class member', 'public: static near enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::trunc').
+demangledName(0x417818, 'static class member', 'public: static near enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::_Nocreate').
+demangledName(0x41781c, 'static class member', 'public: static near enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::_Noreplace').
+demangledName(0x417820, 'static class member', 'public: static near enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::binary').
+demangledName(0x417824, 'static class member', 'public: static near enum std::_Iosb<int>::_Seekdir const std::_Iosb<int>::beg').
+demangledName(0x417828, 'static class member', 'public: static near enum std::_Iosb<int>::_Seekdir const std::_Iosb<int>::cur').
+demangledName(0x41782c, 'static class member', 'public: static near enum std::_Iosb<int>::_Seekdir const std::_Iosb<int>::end').
+demangledName(0x418164, 'static class member', 'private: static near unsigned int const <CrtImplementationDetails>::NativeDll::ProcessDetach').
+demangledName(0x418168, 'static class member', 'private: static near unsigned int const <CrtImplementationDetails>::NativeDll::ProcessAttach').
+demangledName(0x41816c, 'static class member', 'private: static near unsigned int const <CrtImplementationDetails>::NativeDll::ThreadAttach').
+demangledName(0x418170, 'static class member', 'private: static near unsigned int const <CrtImplementationDetails>::NativeDll::ThreadDetach').
+demangledName(0x418174, 'static class member', 'private: static near unsigned int const <CrtImplementationDetails>::NativeDll::ProcessVerifier').
+demangledName(0x4186ac, 'global thing 1', 'Rectangle::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x4186c0, 'global thing 1', 'Rectangle::`RTTI Base Class Array\'').
+demangledName(0x4186cc, 'global thing 1', 'Rectangle::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x4186f0, 'global thing 1', 'Shape::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x418714, 'global thing 1', 'Shape::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x418728, 'global thing 1', 'Shape::`RTTI Base Class Array\'').
+demangledName(0x418748, 'global thing 1', 'Circle::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x41875c, 'global thing 1', 'Circle::`RTTI Base Class Array\'').
+demangledName(0x418768, 'global thing 1', 'Circle::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x4187a4, 'global thing 1', 'Triangle::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x4187b8, 'global thing 1', 'Triangle::`RTTI Base Class Array\'').
+demangledName(0x4187c4, 'global thing 1', 'Triangle::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x418818, 'global thing 1', 'type_info::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x41882c, 'global thing 1', 'type_info::`RTTI Base Class Array\'').
+demangledName(0x418834, 'global thing 1', 'type_info::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x41a000, 'global thing 1', 'class `RTTI Type Descriptor\'::Rectangle').
+demangledName(0x41a01c, 'global thing 1', 'class `RTTI Type Descriptor\'::Shape').
+demangledName(0x41a034, 'global thing 1', 'class `RTTI Type Descriptor\'::Circle').
+demangledName(0x41a050, 'global thing 1', 'class `RTTI Type Descriptor\'::Triangle').
+demangledName(0x41a06c, 'global thing 1', 'class `RTTI Type Descriptor\'::type_info').
+demangledName(0x41a090, 'global object', 'near int *near  _RTC_ErrorLevels').
+demangledName(0x41a1ec, 'global object', 'int (__cdecl*near  wsprintffp)(near char *, near char const *, ...)').
+demangledName(0x41b2ec, 'global function', 'near bool __cdecl std::uncaught_exception(void)').
+demangledName(0x41b324, 'global function', 'near near class std::basic_ostream<char, struct std::char_traits<char> > & __cdecl std::endl(near class std::basic_ostream<char, struct std::char_traits<char> > &)').
+demangledName(0x41b328, 'global object', 'near class std::basic_ostream<char, struct std::char_traits<char> > std::cout').
+demangledName(0x41b388, 'global function', 'near void __cdecl terminate(void)').
+demangledName(0x41b3cc, 'global function', 'near void __cdecl operator delete(near void *)').
+demangledName(0x41b3e0, 'global function', 'near near void * __cdecl operator new(unsigned int)').
+groundTruth(0x4116e0, 'Rectangle', 'Rectangle', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x411740, 'Rectangle', 'draw', method, none, linked, public, virtual, '__thiscall').
+groundTruth(0x4117c0, 'Circle', 'Circle', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x411820, 'Circle', 'draw', method, none, linked, public, virtual, '__thiscall').
+groundTruth(0x4118a0, 'Triangle', 'Triangle', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x411900, 'Triangle', 'draw', method, none, linked, public, virtual, '__thiscall').
+groundTruth(0x411980, 'Shape', 'Shape', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x4120b0, 'std::basic_ostream<char, struct std::char_traits<char> >::sentry', 'sentry', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412210, 'std::basic_ostream<char, struct std::char_traits<char> >::sentry', '~sentry', method, realDestructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x4122e0, 'std::basic_ostream<char, struct std::char_traits<char> >::sentry', 'operator std::_Bool_struct::*', method, none, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412330, 'std::basic_ostream<char, struct std::char_traits<char> >::_Sentry_base', '_Sentry_base', method, constructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412400, 'std::basic_ostream<char, struct std::char_traits<char> >::_Sentry_base', '~_Sentry_base', method, realDestructor, linked, public, nonvirtual, '__thiscall').
+groundTruth(0x412780, 'type_info', 'type_info', method, constructor, linked, private, nonvirtual, '__thiscall').
+groundTruth(0x4127b0, 'type_info', 'vector_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__thiscall').
+groundTruth(0x412840, 'type_info', 'operator=', method, none, linked, private, nonvirtual, '__thiscall').
+groundTruth(0x417834, 'Rectangle', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x417858, 'Circle', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x417878, 'Triangle', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x417898, 'Shape', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x4178a4, 'type_info', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x418694, 'Rectangle', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x418730, 'Circle', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x41878c, 'Triangle', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x4187e8, 'Shape', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x418800, 'type_info', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x41b2f0, 'std::basic_ostream<char, struct std::char_traits<char> >', '_Osfx', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41b2f4, 'std::ios_base', 'good', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41b2f8, 'std::basic_ios<char, struct std::char_traits<char> >', 'tie', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41b2fc, 'std::basic_ostream<char, struct std::char_traits<char> >', 'flush', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41b300, 'std::ios_base', 'width', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41b304, 'std::ios_base', 'flags', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41b308, 'std::basic_ios<char, struct std::char_traits<char> >', 'fill', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41b30c, 'std::basic_ios<char, struct std::char_traits<char> >', 'rdbuf', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41b310, 'std::basic_streambuf<char, struct std::char_traits<char> >', 'sputc', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41b314, 'std::basic_ostream<char, struct std::char_traits<char> >', 'operator<<', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41b318, 'std::basic_streambuf<char, struct std::char_traits<char> >', 'sputn', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41b31c, 'std::ios_base', 'width', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41b320, 'std::basic_ios<char, struct std::char_traits<char> >', 'setstate', method, none, imported, public, nonvirtual, '__thiscall').
+groundTruth(0x41b384, 'type_info', '_type_info_dtor_internal_method', method, none, imported, public, nonvirtual, '__thiscall').
+% Ground truth generation was completed successfully.
+symbol(0x401000, name, '__enc$textbss$begin').
+symbol(0x411000, name, '__enc$textbss$end').
+symbol(0x411005, tramp, '?draw@Circle@@UAEXXZ').
+symbol(0x41100a, tramp, '__setdefaultprecision').
+symbol(0x41100f, tramp, '__setargv').
+symbol(0x411014, tramp, '?good@ios_base@std@@QBE_NXZ').
+symbol(0x411019, tramp, '__RTC_GetErrDesc').
+symbol(0x41101e, tramp, '??0Triangle@@QAE@XZ').
+symbol(0x411023, tramp, '@__security_check_cookie@4').
+symbol(0x411028, tramp, '_IsDebuggerPresent@0').
+symbol(0x41102d, tramp, '??4type_info@@AAEAAV0@ABV0@@Z').
+symbol(0x411032, tramp, '?draw@Rectangle@@UAEXXZ').
+symbol(0x411037, tramp, '__RTC_Terminate').
+symbol(0x41103c, tramp, '_WideCharToMultiByte@32').
+symbol(0x411041, tramp, '@_RTC_AllocaHelper@12').
+symbol(0x411046, tramp, '?_RTC_GetErrorFuncW@@YAP6AHHPB_WH00ZZPBX@Z').
+symbol(0x41104b, tramp, '__RTC_NumErrors').
+symbol(0x411050, tramp, '?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x411055, tramp, '___setusermatherr').
+symbol(0x41105a, tramp, '_Sleep@4').
+symbol(0x41105f, tramp, '??1type_info@@UAE@XZ').
+symbol(0x411064, tramp, '?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z').
+symbol(0x411069, tramp, '??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QBEPQ_Bool_struct@2@HXZ').
+symbol(0x41106e, tramp, '_GetModuleFileNameW@12').
+symbol(0x411073, tramp, '___security_init_cookie').
+symbol(0x411078, tramp, '_SetUnhandledExceptionFilter@4').
+symbol(0x41107d, tramp, '__cexit').
+symbol(0x411082, tramp, '__CrtDbgReportW').
+symbol(0x411087, tramp, '_VirtualQuery@12').
+symbol(0x41108c, tramp, '_atexit').
+symbol(0x411091, tramp, '_MultiByteToWideChar@24').
+symbol(0x411096, tramp, '?endl@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@AAV21@@Z').
+symbol(0x41109b, tramp, '__RTC_SetErrorType').
+symbol(0x4110a0, tramp, '__except_handler4').
+symbol(0x4110a5, tramp, '__lock').
+symbol(0x4110aa, tramp, '_GetProcAddress@8').
+symbol(0x4110af, tramp, '@_RTC_CheckStackVars@8').
+symbol(0x4110b4, tramp, '?length@?$char_traits@D@std@@SAIPBD@Z').
+symbol(0x4110b9, tramp, '??3@YAXPAX@Z').
+symbol(0x4110be, tramp, '?eq_int_type@?$char_traits@D@std@@SA_NABH0@Z').
+symbol(0x4110c3, tramp, '??1type_info@@UAE@XZ').
+symbol(0x4110c8, tramp, '?uncaught_exception@std@@YA_NXZ').
+symbol(0x4110cd, tramp, '___report_gsfailure').
+symbol(0x4110d2, tramp, '?terminate@@YAXXZ').
+symbol(0x4110d7, tramp, '__exit').
+symbol(0x4110dc, tramp, '?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAE_JPBD_J@Z').
+symbol(0x4110e1, tramp, '_GetCurrentThreadId@0').
+symbol(0x4110e6, tramp, '__initterm').
+symbol(0x4110eb, tramp, '_strlen').
+symbol(0x4110f0, tramp, '??0Rectangle@@QAE@XZ').
+symbol(0x4110f5, tramp, '?width@ios_base@std@@QBE_JXZ').
+symbol(0x4110fa, tramp, '?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x4110ff, tramp, '_GetCurrentProcess@0').
+symbol(0x411104, tramp, '?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z').
+symbol(0x411109, tramp, '__RTC_UninitUse').
+symbol(0x41110e, tramp, '__RTC_Shutdown').
+symbol(0x411113, tramp, '??_Etype_info@@UAEPAXI@Z').
+symbol(0x411118, tramp, '__FindPESection').
+symbol(0x41111d, tramp, '_LoadLibraryW@4').
+symbol(0x411122, tramp, '_HeapSetInformation@16').
+symbol(0x411127, tramp, '__configthreadlocale').
+symbol(0x41112c, tramp, '__RTC_InitBase').
+symbol(0x411131, tramp, '?_RTC_StackFailure@@YAXPAXPBD@Z').
+symbol(0x411136, tramp, '_RaiseException@16').
+symbol(0x41113b, tramp, '__crt_debugger_hook').
+symbol(0x411140, tramp, '__ValidateImageBase').
+symbol(0x411145, tramp, '_InterlockedCompareExchange@12').
+symbol(0x41114a, tramp, '?eof@?$char_traits@D@std@@SAHXZ').
+symbol(0x41114f, tramp, '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ').
+symbol(0x411154, tramp, '_GetProcessHeap@0').
+symbol(0x411159, tramp, '__RTC_SetErrorFuncW').
+symbol(0x41115e, tramp, '__onexit').
+symbol(0x411163, tramp, '_NtCurrentTeb').
+symbol(0x411168, tramp, '_HeapFree@12').
+symbol(0x41116d, tramp, '??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z').
+symbol(0x411172, tramp, '__RTC_SetErrorFunc').
+symbol(0x411177, tramp, '__invoke_watson_if_error').
+symbol(0x41117c, tramp, '??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z').
+symbol(0x411181, tramp, '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ').
+symbol(0x411186, tramp, '_TerminateProcess@8').
+symbol(0x41118b, tramp, '?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ').
+symbol(0x411190, tramp, '_mainCRTStartup').
+symbol(0x411195, tramp, '??0Circle@@QAE@XZ').
+symbol(0x41119a, tramp, '?__CxxUnhandledExceptionFilter@@YGJPAU_EXCEPTION_POINTERS@@@Z').
+symbol(0x41119f, tramp, '___CxxSetUnhandledExceptionFilter').
+symbol(0x4111a4, tramp, '_QueryPerformanceCounter@4').
+symbol(0x4111a9, tramp, '__unlock').
+symbol(0x4111ae, tramp, '_GetCurrentProcessId@0').
+symbol(0x4111b3, tramp, '@_RTC_CheckStackVars2@12').
+symbol(0x4111b8, tramp, '___set_app_type').
+symbol(0x4111bd, tramp, '__purecall').
+symbol(0x4111c2, tramp, '__RTC_CheckEsp').
+symbol(0x4111c7, tramp, '_main').
+symbol(0x4111cc, tramp, '_EncodePointer@4').
+symbol(0x4111d1, tramp, '__RTC_Initialize').
+symbol(0x4111d6, tramp, '?width@ios_base@std@@QAE_J_J@Z').
+symbol(0x4111db, tramp, '__controlfp_s').
+symbol(0x4111e0, tramp, '_GetSystemTimeAsFileTime@4').
+symbol(0x4111e5, tramp, '_DecodePointer@4').
+symbol(0x4111ea, tramp, '__invoke_watson').
+symbol(0x4111ef, tramp, '?_RTC_GetSrcLine@@YAHPAEPA_WKPAH1K@Z').
+symbol(0x4111f4, tramp, '__CRT_RTC_INITW').
+symbol(0x4111f9, tramp, '_GetTickCount@0').
+symbol(0x4111fe, tramp, '__IsNonwritableInCurrentImage').
+symbol(0x411203, tramp, '___CxxFrameHandler3').
+symbol(0x411208, tramp, '_HeapAlloc@12').
+symbol(0x41120d, tramp, '__amsg_exit').
+symbol(0x411212, tramp, '??2@YAPAXI@Z').
+symbol(0x411217, tramp, '__XcptFilter').
+symbol(0x41121c, tramp, '__CrtSetCheckCount').
+symbol(0x411221, tramp, '_InterlockedExchange@8').
+symbol(0x411226, tramp, '_UnhandledExceptionFilter@4').
+symbol(0x41122b, tramp, '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z').
+symbol(0x411230, tramp, '??0type_info@@AAE@ABV0@@Z').
+symbol(0x411235, tramp, '__except_handler4_common').
+symbol(0x41123a, tramp, '__matherr').
+symbol(0x41123f, tramp, '?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDXZ').
+symbol(0x411244, tramp, '___getmainargs').
+symbol(0x411249, tramp, '?__ArrayUnwind@@YGXPAXIHP6EX0@Z@Z').
+symbol(0x41124e, tramp, '_lstrlenA@4').
+symbol(0x411253, tramp, '?_RTC_Failure@@YAXPAXH@Z').
+symbol(0x411258, tramp, '?flags@ios_base@std@@QBEHXZ').
+symbol(0x41125d, tramp, '?_RTC_AllocaFailure@@YAXPAXPAU_RTC_ALLOCA_NODE@@H@Z').
+symbol(0x411262, tramp, '?draw@Triangle@@UAEXXZ').
+symbol(0x411267, tramp, '??0Shape@@QAE@XZ').
+symbol(0x41126c, tramp, '_exit').
+symbol(0x411271, tramp, '??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z').
+symbol(0x411276, tramp, '___dllonexit').
+symbol(0x41127b, tramp, '_FreeLibrary@4').
+symbol(0x411280, tramp, '??_M@YGXPAXIHP6EX0@Z@Z').
+symbol(0x411285, tramp, '__initterm_e').
+symbol(0x41128a, tramp, '?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ').
+symbol(0x41128f, tramp, '?_RTC_GetErrorFunc@@YAP6AHHPBDH00ZZPBX@Z').
+symbol(0x411530, func, '_main').
+symbol(0x4116e0, method, '??0Rectangle@@QAE@XZ').
+symbol(0x411740, method, '?draw@Rectangle@@UAEXXZ').
+symbol(0x4117c0, method, '??0Circle@@QAE@XZ').
+symbol(0x411820, method, '?draw@Circle@@UAEXXZ').
+symbol(0x4118a0, method, '??0Triangle@@QAE@XZ').
+symbol(0x411900, method, '?draw@Triangle@@UAEXXZ').
+symbol(0x411980, method, '??0Shape@@QAE@XZ').
+symbol(0x4119d0, func, '??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z').
+symbol(0x411fd0, staticmethod, '?length@?$char_traits@D@std@@SAIPBD@Z').
+symbol(0x412020, staticmethod, '?eq_int_type@?$char_traits@D@std@@SA_NABH0@Z').
+symbol(0x412070, staticmethod, '?eof@?$char_traits@D@std@@SAHXZ').
+symbol(0x4120b0, method, '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z').
+symbol(0x412210, method, '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ').
+symbol(0x4122e0, method, '??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QBEPQ_Bool_struct@2@HXZ').
+symbol(0x412330, method, '??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z').
+symbol(0x412400, method, '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ').
+symbol(0x4124c0, thunk, '??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z').
+symbol(0x4124c6, thunk, '?endl@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@AAV21@@Z').
+symbol(0x4124cc, thunk, '?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z').
+symbol(0x4124d2, thunk, '?width@ios_base@std@@QAE_J_J@Z').
+symbol(0x4124d8, thunk, '?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAE_JPBD_J@Z').
+symbol(0x4124de, thunk, '?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z').
+symbol(0x4124e4, thunk, '?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x4124ea, thunk, '?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDXZ').
+symbol(0x4124f0, thunk, '?flags@ios_base@std@@QBEHXZ').
+symbol(0x4124f6, thunk, '?width@ios_base@std@@QBE_JXZ').
+symbol(0x4124fc, thunk, '?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ').
+symbol(0x412502, thunk, '?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x412508, thunk, '?good@ios_base@std@@QBE_NXZ').
+symbol(0x41250e, thunk, '?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ').
+symbol(0x412514, thunk, '?uncaught_exception@std@@YA_NXZ').
+symbol(0x41251a, thunk, '??2@YAPAXI@Z').
+symbol(0x412520, func, '__RTC_CheckEsp').
+symbol(0x412550, func, '@_RTC_CheckStackVars@8').
+symbol(0x4125d0, func, '@_RTC_AllocaHelper@12').
+symbol(0x412610, func, '@_RTC_CheckStackVars2@12').
+symbol(0x412720, func, '__RTC_InitBase').
+symbol(0x412760, func, '__RTC_Shutdown').
+symbol(0x412780, method, '??0type_info@@AAE@ABV0@@Z').
+symbol(0x4127b0, method, '??_Etype_info@@UAEPAXI@Z').
+symbol(0x412840, method, '??4type_info@@AAEAAV0@ABV0@@Z').
+symbol(0x412856, thunk, '__purecall').
+symbol(0x41285c, thunk, '___CxxFrameHandler3').
+symbol(0x412870, func, '@__security_check_cookie@4').
+symbol(0x412882, thunk, '_strlen').
+symbol(0x412890, func, 'pre_c_init').
+symbol(0x412940, func, 'pre_cpp_init').
+symbol(0x4129b0, func, '_mainCRTStartup').
+symbol(0x4129d0, func, '__tmainCRTStartup').
+symbol(0x412cd0, func, '_NtCurrentTeb').
+symbol(0x412ce0, func, 'check_managed_app').
+symbol(0x412d70, func, '?_RTC_Failure@@YAXPAXH@Z').
+symbol(0x412de0, func, 'failwithmessage').
+symbol(0x413080, func, 'DebuggerProbe').
+symbol(0x413130, func, 'DebuggerRuntime').
+symbol(0x413200, func, '?_RTC_StackFailure@@YAXPAXPBD@Z').
+symbol(0x413340, func, '?_RTC_AllocaFailure@@YAXPAXPAU_RTC_ALLOCA_NODE@@H@Z').
+symbol(0x4134c0, func, '_getMemBlockDataString').
+symbol(0x413550, func, '__RTC_UninitUse').
+symbol(0x413680, func, '__RTC_NumErrors').
+symbol(0x413690, func, '__RTC_GetErrDesc').
+symbol(0x4136b0, func, '__RTC_SetErrorType').
+symbol(0x4136e0, func, '__RTC_SetErrorFunc').
+symbol(0x413710, func, '__RTC_SetErrorFuncW').
+symbol(0x413740, func, '?_RTC_GetErrorFunc@@YAP6AHHPBDH00ZZPBX@Z').
+symbol(0x413750, func, '?_RTC_GetErrorFuncW@@YAP6AHHPB_WH00ZZPBX@Z').
+symbol(0x413756, thunk, '__CRT_RTC_INITW').
+symbol(0x41375c, thunk, '??3@YAXPAX@Z').
+symbol(0x413770, func, '??_M@YGXPAXIHP6EX0@Z@Z').
+symbol(0x413850, func, '?__ArrayUnwind@@YGXPAXIHP6EX0@Z@Z').
+symbol(0x413900, func, 'ArrayUnwindFilter').
+symbol(0x413940, func, '___report_gsfailure').
+symbol(0x413aa0, func, '?__CxxUnhandledExceptionFilter@@YGJPAU_EXCEPTION_POINTERS@@@Z').
+symbol(0x413b20, func, '___CxxSetUnhandledExceptionFilter').
+symbol(0x413b3a, thunk, '__configthreadlocale').
+symbol(0x413b40, func, '__setdefaultprecision').
+symbol(0x413b90, func, '__invoke_watson_if_error').
+symbol(0x413bc2, thunk, '___setusermatherr').
+symbol(0x413bd0, func, '__matherr').
+symbol(0x413be0, func, '__setargv').
+symbol(0x413bf0, func, '__RTC_Initialize').
+symbol(0x413c20, func, '__RTC_Terminate').
+symbol(0x413c50, func, '__onexit').
+symbol(0x413d80, func, '_atexit').
+symbol(0x413da4, thunk, '___set_app_type').
+symbol(0x413daa, thunk, '__amsg_exit').
+symbol(0x413db0, thunk, '___getmainargs').
+symbol(0x413dc0, func, '___security_init_cookie').
+symbol(0x413ed8, thunk, '__exit').
+symbol(0x413ede, thunk, '__XcptFilter').
+symbol(0x413ee4, thunk, '__cexit').
+symbol(0x413eea, thunk, '_exit').
+symbol(0x413ef0, thunk, '__CrtSetCheckCount').
+symbol(0x413f00, func, '__ValidateImageBase').
+symbol(0x413f80, func, '__FindPESection').
+symbol(0x414020, func, '__IsNonwritableInCurrentImage').
+symbol(0x414176, thunk, '__CrtDbgReportW').
+symbol(0x41417c, thunk, '__initterm').
+symbol(0x414182, thunk, '__initterm_e').
+symbol(0x414190, func, '__except_handler4').
+symbol(0x4141d0, func, '?_RTC_GetSrcLine@@YAHPAEPA_WKPAH1K@Z').
+symbol(0x414540, func, 'GetPdbDll').
+symbol(0x4147a6, thunk, '?terminate@@YAXXZ').
+symbol(0x4147ac, thunk, '??1type_info@@UAE@XZ').
+symbol(0x4147ac, thunk, '?_type_info_dtor_internal_method@type_info@@QAEXXZ').
+symbol(0x4147b2, thunk, '__crt_debugger_hook').
+symbol(0x4147b8, thunk, '__controlfp_s').
+symbol(0x4147be, thunk, '__invoke_watson').
+symbol(0x4147c4, thunk, '__unlock').
+symbol(0x4147ca, thunk, '___dllonexit').
+symbol(0x4147d0, thunk, '__lock').
+symbol(0x4147d6, thunk, '__except_handler4_common').
+symbol(0x4147dc, thunk, '_EncodePointer@4').
+symbol(0x4147e2, thunk, '_InterlockedExchange@8').
+symbol(0x4147e8, thunk, '_Sleep@4').
+symbol(0x4147ee, thunk, '_InterlockedCompareExchange@12').
+symbol(0x4147f4, thunk, '_HeapSetInformation@16').
+symbol(0x4147fa, thunk, '_WideCharToMultiByte@32').
+symbol(0x414800, thunk, '_IsDebuggerPresent@0').
+symbol(0x414806, thunk, '_MultiByteToWideChar@24').
+symbol(0x41480c, thunk, '_RaiseException@16').
+symbol(0x414812, thunk, '_lstrlenA@4').
+symbol(0x414818, thunk, '_GetProcAddress@8').
+symbol(0x41481e, thunk, '_LoadLibraryW@4').
+symbol(0x414824, thunk, '_TerminateProcess@8').
+symbol(0x41482a, thunk, '_GetCurrentProcess@0').
+symbol(0x414830, thunk, '_UnhandledExceptionFilter@4').
+symbol(0x414836, thunk, '_SetUnhandledExceptionFilter@4').
+symbol(0x41483c, thunk, '_DecodePointer@4').
+symbol(0x414842, thunk, '_QueryPerformanceCounter@4').
+symbol(0x414848, thunk, '_GetTickCount@0').
+symbol(0x41484e, thunk, '_GetCurrentThreadId@0').
+symbol(0x414854, thunk, '_GetCurrentProcessId@0').
+symbol(0x41485a, thunk, '_GetSystemTimeAsFileTime@4').
+symbol(0x414860, thunk, '_HeapFree@12').
+symbol(0x414866, thunk, '_HeapAlloc@12').
+symbol(0x41486c, thunk, '_GetProcessHeap@0').
+symbol(0x414872, thunk, '_GetModuleFileNameW@12').
+symbol(0x414878, thunk, '_VirtualQuery@12').
+symbol(0x41487e, thunk, '_FreeLibrary@4').
+symbol(0x417000, name, '___xc_a').
+symbol(0x417208, name, '___xc_z').
+symbol(0x41730c, name, '___xi_a').
+symbol(0x417618, name, '___xi_z').
+symbol(0x41773c, name, '?value@?$integral_constant@_N$0A@@tr1@std@@2_NB').
+symbol(0x41773d, name, '?value@?$integral_constant@_N$00@tr1@std@@2_NB').
+symbol(0x417740, name, '?value@?$integral_constant@I$0A@@tr1@std@@2IB').
+symbol(0x417744, name, '?_Rank@?$_Arithmetic_traits@_N@std@@2HB').
+symbol(0x417748, name, '?_Rank@?$_Arithmetic_traits@D@std@@2HB').
+symbol(0x41774c, name, '?_Rank@?$_Arithmetic_traits@C@std@@2HB').
+symbol(0x417750, name, '?_Rank@?$_Arithmetic_traits@E@std@@2HB').
+symbol(0x417754, name, '?_Rank@?$_Arithmetic_traits@F@std@@2HB').
+symbol(0x417758, name, '?_Rank@?$_Arithmetic_traits@G@std@@2HB').
+symbol(0x41775c, name, '?_Rank@?$_Arithmetic_traits@H@std@@2HB').
+symbol(0x417760, name, '?_Rank@?$_Arithmetic_traits@I@std@@2HB').
+symbol(0x417764, name, '?_Rank@?$_Arithmetic_traits@J@std@@2HB').
+symbol(0x417768, name, '?_Rank@?$_Arithmetic_traits@K@std@@2HB').
+symbol(0x41776c, name, '?_Rank@?$_Arithmetic_traits@_J@std@@2HB').
+symbol(0x417770, name, '?_Rank@?$_Arithmetic_traits@_K@std@@2HB').
+symbol(0x417774, name, '?_Rank@?$_Arithmetic_traits@M@std@@2HB').
+symbol(0x417778, name, '?_Rank@?$_Arithmetic_traits@N@std@@2HB').
+symbol(0x41777c, name, '?_Rank@?$_Arithmetic_traits@O@std@@2HB').
+symbol(0x417780, name, '?collate@?$_Locbase@H@std@@2HB').
+symbol(0x417784, name, '?ctype@?$_Locbase@H@std@@2HB').
+symbol(0x417788, name, '?monetary@?$_Locbase@H@std@@2HB').
+symbol(0x41778c, name, '?numeric@?$_Locbase@H@std@@2HB').
+symbol(0x417790, name, '?time@?$_Locbase@H@std@@2HB').
+symbol(0x417794, name, '?messages@?$_Locbase@H@std@@2HB').
+symbol(0x417798, name, '?all@?$_Locbase@H@std@@2HB').
+symbol(0x41779c, name, '?none@?$_Locbase@H@std@@2HB').
+symbol(0x4177a0, name, '?skipws@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177a4, name, '?unitbuf@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177a8, name, '?uppercase@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177ac, name, '?showbase@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177b0, name, '?showpoint@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177b4, name, '?showpos@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177b8, name, '?left@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177bc, name, '?right@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177c0, name, '?internal@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177c4, name, '?dec@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177c8, name, '?oct@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177cc, name, '?hex@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177d0, name, '?scientific@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177d4, name, '?fixed@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177d8, name, '?hexfloat@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177dc, name, '?boolalpha@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177e0, name, '?_Stdio@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177e4, name, '?adjustfield@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177e8, name, '?basefield@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177ec, name, '?floatfield@?$_Iosb@H@std@@2W4_Fmtflags@12@B').
+symbol(0x4177f0, name, '?goodbit@?$_Iosb@H@std@@2W4_Iostate@12@B').
+symbol(0x4177f4, name, '?eofbit@?$_Iosb@H@std@@2W4_Iostate@12@B').
+symbol(0x4177f8, name, '?failbit@?$_Iosb@H@std@@2W4_Iostate@12@B').
+symbol(0x4177fc, name, '?badbit@?$_Iosb@H@std@@2W4_Iostate@12@B').
+symbol(0x417800, name, '?_Hardfail@?$_Iosb@H@std@@2W4_Iostate@12@B').
+symbol(0x417804, name, '?in@?$_Iosb@H@std@@2W4_Openmode@12@B').
+symbol(0x417808, name, '?out@?$_Iosb@H@std@@2W4_Openmode@12@B').
+symbol(0x41780c, name, '?ate@?$_Iosb@H@std@@2W4_Openmode@12@B').
+symbol(0x417810, name, '?app@?$_Iosb@H@std@@2W4_Openmode@12@B').
+symbol(0x417814, name, '?trunc@?$_Iosb@H@std@@2W4_Openmode@12@B').
+symbol(0x417818, name, '?_Nocreate@?$_Iosb@H@std@@2W4_Openmode@12@B').
+symbol(0x41781c, name, '?_Noreplace@?$_Iosb@H@std@@2W4_Openmode@12@B').
+symbol(0x417820, name, '?binary@?$_Iosb@H@std@@2W4_Openmode@12@B').
+symbol(0x417824, name, '?beg@?$_Iosb@H@std@@2W4_Seekdir@12@B').
+symbol(0x417828, name, '?cur@?$_Iosb@H@std@@2W4_Seekdir@12@B').
+symbol(0x41782c, name, '?end@?$_Iosb@H@std@@2W4_Seekdir@12@B').
+symbol(0x417834, table, '??_7Rectangle@@6B@').
+symbol(0x41783c, string, '??_C@_0BC@GILPBKCG@Drawing?5Rectangle?$AA@').
+symbol(0x417858, table, '??_7Circle@@6B@').
+symbol(0x417860, string, '??_C@_0P@GMAAJLJJ@Drawing?5Circle?$AA@').
+symbol(0x417878, table, '??_7Triangle@@6B@').
+symbol(0x417880, string, '??_C@_0BB@IPLBEKCI@Drawing?5Triangle?$AA@').
+symbol(0x417898, table, '??_7Shape@@6B@').
+symbol(0x4178a4, table, '??_7type_info@@6B@').
+symbol(0x4178b0, string, '??_C@_1GA@EHAKPACL@?$AAf?$AA?3?$AA?2?$AAd?$AAd?$AA?2?$AAv?$AAc?$AAt?$AAo?$AAo?$AAl?$AAs?$AA?2?$AAc?$AAr?$AAt?$AA_?$AAb?$AAl?$AAd?$AA?2?$AAs?$AAe?$AAl?$AAf?$AA_?$AAx?$AA8?$AA6?$AA?2?$AAc@').
+symbol(0x417928, string, '??_C@_1FA@DALEHHGL@?$AA_?$AA_?$AAn?$AAa?$AAt?$AAi?$AAv?$AAe?$AA_?$AAs?$AAt?$AAa?$AAr?$AAt?$AAu?$AAp?$AA_?$AAs?$AAt?$AAa?$AAt?$AAe?$AA?5?$AA?$DN?$AA?$DN?$AA?5?$AA_?$AA_?$AAi?$AAn?$AAi?$AAt@').
+symbol(0x417988, string, '??_C@_0BO@GNIAFIKK@Unknown?5Runtime?5Check?5Error?6?$AN?$AA@').
+symbol(0x4179ac, string, '??_C@_0CM@NGINOKPC@Stack?5memory?5around?5_alloca?5was?5@').
+symbol(0x4179e0, string, '??_C@_0DG@HKJMLLLP@A?5local?5variable?5was?5used?5before@').
+symbol(0x417a20, string, '??_C@_0BN@FFOINMNJ@Stack?5memory?5was?5corrupted?6?$AN?$AA@').
+symbol(0x417a48, string, '??_C@_0BBN@GPMLNJCF@A?5cast?5to?5a?5smaller?5data?5type?5ha@').
+symbol(0x417ba0, string, '??_C@_0NN@NGPKDKPD@The?5value?5of?5ESP?5was?5not?5properl@').
+symbol(0x417d68, string, '??_C@_0CA@IODNCDPG@Run?9Time?5Check?5Failure?5?$CD?$CFd?5?9?5?$CFs?$AA@').
+symbol(0x417d90, string, '??_C@_0BE@GNBOBNCK@Unknown?5Module?5Name?$AA@').
+symbol(0x417da8, string, '??_C@_0BB@PFFGGCJP@Unknown?5Filename?$AA@').
+symbol(0x417dc0, string, '??_C@_1EA@NFKNIFJP@?$AAR?$AAu?$AAn?$AA?9?$AAT?$AAi?$AAm?$AAe?$AA?5?$AAC?$AAh?$AAe?$AAc?$AAk?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAu?$AAr?$AAe?$AA?5?$AA?$CD?$AA?$CF?$AAd?$AA?5?$AA?9?$AA?5?$AA?$CF?$AAs?$AA?$AA@').
+symbol(0x417e10, string, '??_C@_1GM@OLMCBDMB@?$AAR?$AAu?$AAn?$AAt?$AAi?$AAm?$AAe?$AA?5?$AAC?$AAh?$AAe?$AAc?$AAk?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?4?$AA?6?$AA?$AN?$AA?5?$AAU?$AAn?$AAa?$AAb?$AAl?$AAe?$AA?5?$AAt?$AAo@').
+symbol(0x417e94, string, '??_C@_0CG@IAFNJNEE@Stack?5corrupted?5near?5unknown?5var@').
+symbol(0x417ec8, string, '??_C@_0EJ@LJKNEOLN@Stack?5area?5around?5_alloca?5memory@').
+symbol(0x417f20, string, '??_C@_08KJEDNCKC@?$CFs?$CFs?$CFs?$CFs?$AA@').
+symbol(0x417f2c, string, '??_C@_02LLMPMKNF@?$DO?5?$AA@').
+symbol(0x417f30, string, '??_C@_01EEMJAFIK@?6?$AA@').
+symbol(0x417f34, string, '??_C@_0BC@KIBAILCI@?$CFs?$CFs?$CFp?$CFs?$CFld?$CFs?$CFd?$CFs?$AA@').
+symbol(0x417f50, string, '??_C@_0EI@CLEPFNGI@Stack?5area?5around?5_alloca?5memory@').
+symbol(0x417fa8, string, '??_C@_0N@MHFFIMFG@?6Address?3?50x?$AA@').
+symbol(0x417fb8, string, '??_C@_07DFDJCKFN@?6Size?3?5?$AA@').
+symbol(0x417fc4, string, '??_C@_0CK@DKGBICFE@?6Allocation?5number?5within?5this?5f@').
+symbol(0x417ff8, string, '??_C@_08OMAHNMHJ@?6Data?3?5?$DM?$AA@').
+symbol(0x418004, string, '??_C@_09FOPFMPEJ@wsprintfA?$AA@').
+symbol(0x418010, string, '??_C@_1BG@OILDLIOJ@?$AAu?$AAs?$AAe?$AAr?$AA3?$AA2?$AA?4?$AAd?$AAl?$AAl?$AA?$AA@').
+symbol(0x41802c, string, '??_C@_05MKKEDADM@?$CF?42X?5?$AA@').
+symbol(0x418034, string, '??_C@_0DE@OHJBPMBP@A?5variable?5is?5being?5used?5without@').
+symbol(0x418074, string, '??_C@_0BP@OGBCLIBO@Stack?5around?5_alloca?5corrupted?$AA@').
+symbol(0x41809c, string, '??_C@_0CK@CNLNOEPB@Local?5variable?5used?5before?5initi@').
+symbol(0x4180d0, string, '??_C@_0BI@CIGMDCBH@Stack?5memory?5corruption?$AA@').
+symbol(0x4180ec, string, '??_C@_0CK@FEGOIOPB@Cast?5to?5smaller?5type?5causing?5los@').
+symbol(0x418120, string, '??_C@_0BJ@HEGAHDFO@Stack?5pointer?5corruption?$AA@').
+symbol(0x418164, name, '?ProcessDetach@NativeDll@<CrtImplementationDetails>@@0IB').
+symbol(0x418168, name, '?ProcessAttach@NativeDll@<CrtImplementationDetails>@@0IB').
+symbol(0x41816c, name, '?ThreadAttach@NativeDll@<CrtImplementationDetails>@@0IB').
+symbol(0x418170, name, '?ThreadDetach@NativeDll@<CrtImplementationDetails>@@0IB').
+symbol(0x418174, name, '?ProcessVerifier@NativeDll@<CrtImplementationDetails>@@0IB').
+symbol(0x418178, string, '??_C@_1GE@KOCFNGPB@?$AA_?$AAc?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAf?$AAp?$AA_?$AAs?$AA?$CI?$AA?$CI?$AA?$CI?$AAv?$AAo?$AAi?$AAd?$AA?5?$AA?$CK?$AA?$CJ?$AA0?$AA?$CJ?$AA?0?$AA?5?$AA0?$AAx?$AA0?$AA0?$AA0?$AA1@').
+symbol(0x4181f0, string, '??_C@_1CK@JMKHCBEI@?$AA_?$AAs?$AAe?$AAt?$AAd?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAp?$AAr?$AAe?$AAc?$AAi?$AAs?$AAi?$AAo?$AAn?$AA?$AA@').
+symbol(0x418228, string, '??_C@_1GG@PHGJJHBC@?$AAf?$AA?3?$AA?2?$AAd?$AAd?$AA?2?$AAv?$AAc?$AAt?$AAo?$AAo?$AAl?$AAs?$AA?2?$AAc?$AAr?$AAt?$AA_?$AAb?$AAl?$AAd?$AA?2?$AAs?$AAe?$AAl?$AAf?$AA_?$AAx?$AA8?$AA6?$AA?2?$AAc@').
+symbol(0x4182c4, string, '??_C@_01KDCPPGHE@r?$AA@').
+symbol(0x4182c8, string, '??_C@_0BB@KCIACLNC@PDBOpenValidate5?$AA@').
+symbol(0x4182dc, string, '??_C@_1CK@HHHCOJPD@?$AAE?$AAn?$AAv?$AAi?$AAr?$AAo?$AAn?$AAm?$AAe?$AAn?$AAt?$AAD?$AAi?$AAr?$AAe?$AAc?$AAt?$AAo?$AAr?$AAy?$AA?$AA@').
+symbol(0x418310, string, '??_C@_1FM@DNCABAP@?$AAS?$AAO?$AAF?$AAT?$AAW?$AAA?$AAR?$AAE?$AA?2?$AAM?$AAi?$AAc?$AAr?$AAo?$AAs?$AAo?$AAf?$AAt?$AA?2?$AAV?$AAi?$AAs?$AAu?$AAa?$AAl?$AAS?$AAt?$AAu?$AAd?$AAi?$AAo?$AA?2@').
+symbol(0x418380, string, '??_C@_0M@HLOHPNFA@RegCloseKey?$AA@').
+symbol(0x418390, string, '??_C@_0BB@GLNAEDBD@RegQueryValueExW?$AA@').
+symbol(0x4183a4, string, '??_C@_0O@COHOBMLB@RegOpenKeyExW?$AA@').
+symbol(0x4183b4, string, '??_C@_1BK@GAEMIDIL@?$AAA?$AAD?$AAV?$AAA?$AAP?$AAI?$AA3?$AA2?$AA?4?$AAD?$AAL?$AAL?$AA?$AA@').
+symbol(0x418694, table, '??_R4Rectangle@@6B@').
+symbol(0x4186ac, name, '??_R3Rectangle@@8').
+symbol(0x4186c0, name, '??_R2Rectangle@@8').
+symbol(0x4186cc, name, '??_R1A@?0A@EA@Rectangle@@8').
+symbol(0x4186f0, name, '??_R1A@?0A@EA@Shape@@8').
+symbol(0x418714, name, '??_R3Shape@@8').
+symbol(0x418728, name, '??_R2Shape@@8').
+symbol(0x418730, table, '??_R4Circle@@6B@').
+symbol(0x418748, name, '??_R3Circle@@8').
+symbol(0x41875c, name, '??_R2Circle@@8').
+symbol(0x418768, name, '??_R1A@?0A@EA@Circle@@8').
+symbol(0x41878c, table, '??_R4Triangle@@6B@').
+symbol(0x4187a4, name, '??_R3Triangle@@8').
+symbol(0x4187b8, name, '??_R2Triangle@@8').
+symbol(0x4187c4, name, '??_R1A@?0A@EA@Triangle@@8').
+symbol(0x4187e8, table, '??_R4Shape@@6B@').
+symbol(0x418800, table, '??_R4type_info@@6B@').
+symbol(0x418818, name, '??_R3type_info@@8').
+symbol(0x41882c, name, '??_R2type_info@@8').
+symbol(0x418834, name, '??_R1A@?0A@EA@type_info@@8').
+symbol(0x418960, name, '___rtc_iaa').
+symbol(0x418b68, name, '___rtc_izz').
+symbol(0x418c6c, name, '___rtc_taa').
+symbol(0x418e74, name, '___rtc_tzz').
+symbol(0x41a000, name, '??_R0?AVRectangle@@@8').
+symbol(0x41a01c, name, '??_R0?AVShape@@@8').
+symbol(0x41a034, name, '??_R0?AVCircle@@@8').
+symbol(0x41a050, name, '??_R0?AVTriangle@@@8').
+symbol(0x41a06c, name, '??_R0?AVtype_info@@@8').
+symbol(0x41a088, name, '___security_cookie').
+symbol(0x41a08c, name, '___security_cookie_complement').
+symbol(0x41a090, name, '?_RTC_ErrorLevels@@3PAHA').
+symbol(0x41a0a8, name, '___globallocalestatus').
+symbol(0x41a0ac, name, '___defaultmatherr').
+symbol(0x41a0b0, name, '___native_dllmain_reason').
+symbol(0x41a0b4, name, '___native_vcclrit_reason').
+symbol(0x41a1ec, name, '?wsprintffp@@3P6AHPADPBDZZA').
+symbol(0x41a5c4, name, '__commode').
+symbol(0x41a5c8, name, '__fmode').
+symbol(0x41a5cc, name, '__dowildcard').
+symbol(0x41a5d0, name, '__newmode').
+symbol(0x41a5dc, name, '___native_startup_state').
+symbol(0x41a5ec, name, '___native_startup_lock').
+symbol(0x41a5f0, name, '___onexitend').
+symbol(0x41a600, name, '___onexitbegin').
+symbol(0x41a604, name, '__NoHeapEnableTerminationOnCorruption').
+symbol(0x41a608, name, '___dyn_tls_init_callback').
+symbol(0x41b000, name, '__IMPORT_DESCRIPTOR_MSVCP100D').
+symbol(0x41b014, name, '__IMPORT_DESCRIPTOR_MSVCR100D').
+symbol(0x41b028, name, '__IMPORT_DESCRIPTOR_KERNEL32').
+symbol(0x41b03c, name, '__NULL_IMPORT_DESCRIPTOR').
+symbol(0x41b23c, name, '__imp__InterlockedExchange@8').
+symbol(0x41b240, name, '__imp__Sleep@4').
+symbol(0x41b244, name, '__imp__InterlockedCompareExchange@12').
+symbol(0x41b248, name, '__imp__HeapSetInformation@16').
+symbol(0x41b24c, name, '__imp__WideCharToMultiByte@32').
+symbol(0x41b250, name, '__imp__IsDebuggerPresent@0').
+symbol(0x41b254, name, '__imp__MultiByteToWideChar@24').
+symbol(0x41b258, name, '__imp__RaiseException@16').
+symbol(0x41b25c, name, '__imp__lstrlenA@4').
+symbol(0x41b260, name, '__imp__GetProcAddress@8').
+symbol(0x41b264, name, '__imp__LoadLibraryW@4').
+symbol(0x41b268, name, '__imp__TerminateProcess@8').
+symbol(0x41b26c, name, '__imp__GetCurrentProcess@0').
+symbol(0x41b270, name, '__imp__UnhandledExceptionFilter@4').
+symbol(0x41b274, name, '__imp__SetUnhandledExceptionFilter@4').
+symbol(0x41b278, name, '__imp__DecodePointer@4').
+symbol(0x41b27c, name, '__imp__FreeLibrary@4').
+symbol(0x41b280, name, '__imp__VirtualQuery@12').
+symbol(0x41b284, name, '__imp__GetModuleFileNameW@12').
+symbol(0x41b288, name, '__imp__GetProcessHeap@0').
+symbol(0x41b28c, name, '__imp__HeapAlloc@12').
+symbol(0x41b290, name, '__imp__HeapFree@12').
+symbol(0x41b294, name, '__imp__GetSystemTimeAsFileTime@4').
+symbol(0x41b298, name, '__imp__GetCurrentProcessId@0').
+symbol(0x41b29c, name, '__imp__GetCurrentThreadId@0').
+symbol(0x41b2a0, name, '__imp__GetTickCount@0').
+symbol(0x41b2a4, name, '__imp__QueryPerformanceCounter@4').
+symbol(0x41b2a8, name, '__imp__EncodePointer@4').
+symbol(0x41b2ac, name, 'KERNEL32_NULL_THUNK_DATA').
+symbol(0x41b2ec, name, '__imp_?uncaught_exception@std@@YA_NXZ').
+symbol(0x41b2f0, method, '__imp_?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ').
+symbol(0x41b2f4, method, '__imp_?good@ios_base@std@@QBE_NXZ').
+symbol(0x41b2f8, method, '__imp_?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x41b2fc, method, '__imp_?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ').
+symbol(0x41b300, method, '__imp_?width@ios_base@std@@QBE_JXZ').
+symbol(0x41b304, method, '__imp_?flags@ios_base@std@@QBEHXZ').
+symbol(0x41b308, method, '__imp_?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDXZ').
+symbol(0x41b30c, method, '__imp_?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x41b310, method, '__imp_?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z').
+symbol(0x41b314, method, '__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z').
+symbol(0x41b318, method, '__imp_?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAE_JPBD_J@Z').
+symbol(0x41b31c, method, '__imp_?width@ios_base@std@@QAE_J_J@Z').
+symbol(0x41b320, method, '__imp_?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z').
+symbol(0x41b324, name, '__imp_?endl@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@AAV21@@Z').
+symbol(0x41b328, name, '__imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A').
+symbol(0x41b32c, name, 'MSVCP100D_NULL_THUNK_DATA').
+symbol(0x41b364, name, '__imp____dllonexit').
+symbol(0x41b368, name, '__imp___lock').
+symbol(0x41b36c, name, '__imp___onexit').
+symbol(0x41b370, name, '__imp___except_handler4_common').
+symbol(0x41b374, name, '__imp___unlock').
+symbol(0x41b378, name, '__imp___invoke_watson').
+symbol(0x41b37c, name, '__imp___controlfp_s').
+symbol(0x41b380, name, '__imp___crt_debugger_hook').
+symbol(0x41b384, method, '__imp_?_type_info_dtor_internal_method@type_info@@QAEXXZ').
+symbol(0x41b388, name, '__imp_?terminate@@YAXXZ').
+symbol(0x41b38c, name, '__imp___initterm_e').
+symbol(0x41b390, name, '__imp___initterm').
+symbol(0x41b394, name, '__imp___CrtDbgReportW').
+symbol(0x41b398, name, '__imp___CrtSetCheckCount').
+symbol(0x41b39c, name, '__imp____initenv').
+symbol(0x41b3a0, name, '__imp__exit').
+symbol(0x41b3a4, name, '__imp___cexit').
+symbol(0x41b3a8, name, '__imp___XcptFilter').
+symbol(0x41b3ac, name, '__imp___exit').
+symbol(0x41b3b0, name, '__imp____getmainargs').
+symbol(0x41b3b4, name, '__imp___amsg_exit').
+symbol(0x41b3b8, name, '__imp____set_app_type').
+symbol(0x41b3bc, name, '__imp___fmode').
+symbol(0x41b3c0, name, '__imp___commode').
+symbol(0x41b3c4, name, '__imp____setusermatherr').
+symbol(0x41b3c8, name, '__imp___configthreadlocale').
+symbol(0x41b3cc, name, '__imp_??3@YAXPAX@Z').
+symbol(0x41b3d0, name, '__imp___CRT_RTC_INITW').
+symbol(0x41b3d4, name, '__imp__strlen').
+symbol(0x41b3d8, name, '__imp____CxxFrameHandler3').
+symbol(0x41b3dc, name, '__imp___purecall').
+symbol(0x41b3e0, name, '__imp_??2@YAPAXI@Z').
+symbol(0x41b3e4, name, 'MSVCR100D_NULL_THUNK_DATA').
+% Gound inheritance relationships.
+inheritanceGround('Circle', 'Shape', 0).
+inheritanceGround('Rectangle', 'Shape', 0).
+inheritanceGround('Triangle', 'Shape', 0).
+inheritanceGround('std::basic_ios<char,std::char_traits<char> >', 'std::ios_base', 0).
+virtualInheritanceGround('std::basic_ostream<char,std::char_traits<char> >', 'std::basic_ios<char,std::char_traits<char> >').
+inheritanceGround('std::basic_ostream<char,std::char_traits<char> >::sentry', 'std::basic_ostream<char,std::char_traits<char> >::_Sentry_base', 0).
+% Ground inheritance completed successfully.

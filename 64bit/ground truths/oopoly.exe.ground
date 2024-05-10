@@ -1,0 +1,842 @@
+demangledName(0x1400018c0, 'global function', 'near near class std::basic_ostream<char, struct std::char_traits<char> > & & __cdecl std::operator<<<struct std::char_traits<char> >(near class std::basic_ostream<char, struct std::char_traits<char> > & &, near char const *)').
+demangledName(0x140001d90, 'global function', 'near near class std::basic_ostream<char, struct std::char_traits<char> > & & __cdecl std::endl<char, struct std::char_traits<char> >(near class std::basic_ostream<char, struct std::char_traits<char> > & &)').
+demangledName(0x1400021a0, 'global function', 'near void __cdecl __empty_global_delete(near void *)').
+demangledName(0x1400021b0, 'global function', 'near void __cdecl __empty_global_delete(near void *, unsigned __int64)').
+demangledName(0x140002280, 'class method', 'public: static near int __cdecl std::_Narrow_char_traits<char, int>::eof(void)').
+demangledName(0x140002290, 'class method', 'public: static near bool __cdecl std::_Narrow_char_traits<char, int>::eq_int_type(near int const & &, near int const & &)').
+demangledName(0x1400022e0, 'class method', 'public: static near unsigned __int64 __cdecl std::_Narrow_char_traits<char, int>::length(near char const * const)').
+demangledName(0x140002360, 'global function', 'near near void * __cdecl operator new(unsigned __int64)').
+demangledName(0x1400023d0, 'global function', 'near void __cdecl operator delete(near void *, unsigned __int64)').
+demangledName(0x140002c80, 'class method', 'public: static near int __cdecl __scrt_narrow_argv_policy::configure_argv(void)').
+demangledName(0x140002ca0, 'class method', 'public: static near int __cdecl __scrt_narrow_environment_policy::initialize_environment(void)').
+demangledName(0x140002d10, 'class method', 'public: static near void __cdecl __scrt_main_policy::set_app_type(void)').
+demangledName(0x140002d30, 'class method', 'public: static near void __cdecl __scrt_file_policy::set_commode(void)').
+demangledName(0x140002d60, 'class method', 'public: static near void __cdecl __scrt_file_policy::set_fmode(void)').
+demangledName(0x140003160, 'global function', 'near void __cdecl __scrt_throw_std_bad_alloc(void)').
+demangledName(0x140003190, 'global function', 'near void __cdecl __scrt_throw_std_bad_array_new_length(void)').
+demangledName(0x140003210, 'global function', 'near void __cdecl operator delete(near void *)').
+demangledName(0x1400032f0, 'global function', 'near void __cdecl _RTC_AllocaFailure(near void *, near struct _RTC_ALLOCA_NODE *, int)').
+demangledName(0x1400034a0, 'global function', 'near void __cdecl _RTC_Failure(near void *, int)').
+demangledName(0x140003510, 'global function', 'near void __cdecl _RTC_StackFailure(near void *, near char const *)').
+demangledName(0x140003c10, 'global function', 'near int (__cdecl*__cdecl _RTC_GetErrorFunc(near void const *) )(int, near char const *, int, near char const *, near char const *, ...)').
+demangledName(0x140003c20, 'global function', 'near int (__cdecl*__cdecl _RTC_GetErrorFuncW(near void const *) )(int, near wchar_t const *, int, near wchar_t const *, near wchar_t const *, ...)').
+demangledName(0x140004c30, 'global function', 'near void __cdecl __scrt_initialize_type_info(void)').
+demangledName(0x140004c50, 'global function', 'near void __cdecl __scrt_uninitialize_type_info(void)').
+demangledName(0x140005e00, 'global function', 'near int __cdecl _RTC_GetSrcLine(near unsigned char *, near wchar_t *, unsigned long, near int *, near wchar_t *, unsigned long)').
+demangledName(0x14000c1d0, 'global thing 1', 'Shape::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x14000c1e8, 'global thing 1', 'Shape::`RTTI Base Class Array\'').
+demangledName(0x14000c1f8, 'global thing 1', 'Shape::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x14000c258, 'global thing 1', 'Rectangle::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x14000c270, 'global thing 1', 'Rectangle::`RTTI Base Class Array\'').
+demangledName(0x14000c288, 'global thing 1', 'Rectangle::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x14000c2e8, 'global thing 1', 'Circle::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x14000c300, 'global thing 1', 'Circle::`RTTI Base Class Array\'').
+demangledName(0x14000c318, 'global thing 1', 'Circle::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x14000c378, 'global thing 1', 'Triangle::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x14000c390, 'global thing 1', 'Triangle::`RTTI Base Class Array\'').
+demangledName(0x14000c3a8, 'global thing 1', 'Triangle::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x14000c408, 'global thing 1', 'type_info::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x14000c420, 'global thing 1', 'type_info::`RTTI Base Class Array\'').
+demangledName(0x14000c430, 'global thing 1', 'type_info::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x14000c490, 'global thing 1', 'std::exception::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x14000c4a8, 'global thing 1', 'std::exception::`RTTI Base Class Array\'').
+demangledName(0x14000c4b8, 'global thing 1', 'std::exception::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x14000c518, 'global thing 1', 'std::bad_alloc::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x14000c530, 'global thing 1', 'std::bad_alloc::`RTTI Base Class Array\'').
+demangledName(0x14000c548, 'global thing 1', 'std::bad_alloc::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x14000c5a8, 'global thing 1', 'std::bad_array_new_length::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x14000c5c0, 'global thing 1', 'std::bad_array_new_length::`RTTI Base Class Array\'').
+demangledName(0x14000c5e8, 'global thing 1', 'std::bad_array_new_length::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x14000e018, 'global object', 'near int *near  _RTC_ErrorLevels').
+demangledName(0x14000e170, 'global thing 1', 'class `RTTI Type Descriptor\'::std::bad_alloc').
+demangledName(0x14000e1a0, 'global thing 1', 'class `RTTI Type Descriptor\'::std::exception').
+demangledName(0x14000e1d0, 'global thing 1', 'class `RTTI Type Descriptor\'::std::bad_array_new_length').
+demangledName(0x14000e310, 'global thing 1', 'class `RTTI Type Descriptor\'::Shape').
+demangledName(0x14000e338, 'global thing 1', 'class `RTTI Type Descriptor\'::Rectangle').
+demangledName(0x14000e360, 'global thing 1', 'class `RTTI Type Descriptor\'::Circle').
+demangledName(0x14000e388, 'global thing 1', 'class `RTTI Type Descriptor\'::Triangle').
+demangledName(0x14000e3b0, 'global thing 1', 'class `RTTI Type Descriptor\'::type_info').
+demangledName(0x14000e4e8, 'global object', 'near unsigned __int64 `__local_stdio_printf_options\'::`2\'::_OptionsStorage').
+demangledName(0x14000ebf0, 'global object', 'near struct __type_info_node __type_info_root_node').
+demangledName(0x14000ec08, 'global object', 'near unsigned __int64 `__local_stdio_scanf_options\'::`2\'::_OptionsStorage').
+demangledName(0x140010160, 'global function', 'near bool __cdecl std::uncaught_exception(void)').
+demangledName(0x140010188, 'global object', 'near class std::basic_ostream<char, struct std::char_traits<char> > std::cout').
+groundTruth(0x140001e00, 'Circle', 'Circle', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140001e40, 'Rectangle', 'Rectangle', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140001e80, 'Shape', 'Shape', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140001eb0, 'Triangle', 'Triangle', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140001ef0, 'std::basic_ostream<char, struct std::char_traits<char> >::_Sentry_base', '_Sentry_base', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140001f80, 'std::basic_ostream<char, struct std::char_traits<char> >::sentry', 'sentry', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002090, 'std::basic_ostream<char, struct std::char_traits<char> >::_Sentry_base', '~_Sentry_base', method, realDestructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002110, 'std::basic_ostream<char, struct std::char_traits<char> >::sentry', '~sentry', method, realDestructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002180, 'std::basic_ostream<char, struct std::char_traits<char> >::sentry', 'operator bool', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x1400021c0, 'Circle', 'draw', method, none, linked, public, virtual, '__cdecl').
+groundTruth(0x140002200, 'Rectangle', 'draw', method, none, linked, public, virtual, '__cdecl').
+groundTruth(0x140002240, 'Triangle', 'draw', method, none, linked, public, virtual, '__cdecl').
+groundTruth(0x1400028c0, 'type_info', '~type_info', method, realDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x1400028e0, 'type_info', 'vector_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x1400028e0, 'type_info', 'scalar_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140002da0, 'std::bad_alloc', 'bad_alloc', method, constructor, linked, private, nonvirtual, '__cdecl').
+groundTruth(0x140002df0, 'std::bad_alloc', 'bad_alloc', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002e40, 'std::bad_alloc', 'bad_alloc', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002e90, 'std::bad_array_new_length', 'bad_array_new_length', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002ee0, 'std::bad_array_new_length', 'bad_array_new_length', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002f20, 'std::exception', 'exception', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002f90, 'std::exception', 'exception', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002ff0, 'std::bad_alloc', '~bad_alloc', method, realDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140003010, 'std::bad_array_new_length', '~bad_array_new_length', method, realDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140003030, 'std::exception', '~exception', method, realDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140003070, 'std::bad_alloc', 'vector_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140003070, 'std::bad_alloc', 'scalar_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x1400030c0, 'std::bad_array_new_length', 'vector_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x1400030c0, 'std::bad_array_new_length', 'scalar_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140003110, 'std::exception', 'vector_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140003110, 'std::exception', 'scalar_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x1400031c0, 'std::exception', 'what', method, none, linked, public, virtual, '__cdecl').
+groundTruth(0x14000af00, 'Shape', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x14000af18, 'Rectangle', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x14000af48, 'Circle', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x14000af78, 'Triangle', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x14000afa8, 'type_info', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x14000afc0, 'std::exception', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x14000aff8, 'std::bad_alloc', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x14000b030, 'std::bad_array_new_length', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x14000c1a0, 'Shape', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x14000c228, 'Rectangle', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x14000c2b8, 'Circle', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x14000c348, 'Triangle', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x14000c3d8, 'type_info', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x14000c460, 'std::exception', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x14000c4e8, 'std::bad_alloc', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x14000c578, 'std::bad_array_new_length', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x140010150, 'std::basic_ostream<char, struct std::char_traits<char> >', 'flush', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x140010158, 'std::basic_ostream<char, struct std::char_traits<char> >', 'put', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x140010168, 'std::basic_ostream<char, struct std::char_traits<char> >', 'operator<<', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x140010170, 'std::basic_ostream<char, struct std::char_traits<char> >', '_Osfx', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x140010178, 'std::basic_ios<char, struct std::char_traits<char> >', 'widen', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x140010180, 'std::basic_ios<char, struct std::char_traits<char> >', 'fill', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x140010190, 'std::basic_ios<char, struct std::char_traits<char> >', 'tie', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x140010198, 'std::basic_ios<char, struct std::char_traits<char> >', 'setstate', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x1400101a0, 'std::basic_streambuf<char, struct std::char_traits<char> >', 'sputn', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x1400101a8, 'std::basic_streambuf<char, struct std::char_traits<char> >', 'sputc', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x1400101b0, 'std::ios_base', 'width', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x1400101b8, 'std::ios_base', 'width', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x1400101c0, 'std::ios_base', 'flags', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x1400101c8, 'std::ios_base', 'good', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x1400101d0, 'std::basic_ios<char, struct std::char_traits<char> >', 'rdbuf', method, none, imported, public, nonvirtual, '__cdecl').
+% Ground truth generation was completed successfully.
+symbol(0x140000000, name, '__AbsoluteZero').
+symbol(0x140000000, name, '__enclave_config').
+symbol(0x140000000, name, '__guard_eh_cont_count').
+symbol(0x140000000, name, '__guard_eh_cont_table').
+symbol(0x140000000, name, '__guard_fids_count').
+symbol(0x140000000, name, '__guard_fids_table').
+symbol(0x140000000, name, '__guard_iat_count').
+symbol(0x140000000, name, '__guard_iat_table').
+symbol(0x140000000, name, '__guard_longjmp_count').
+symbol(0x140000000, name, '__guard_longjmp_table').
+symbol(0x140000000, name, '__volatile_metadata').
+symbol(0x140000100, name, '__guard_flags').
+symbol(0x140001005, tramp, '?set_commode@__scrt_file_policy@@SAXXZ').
+symbol(0x14000100a, tramp, '__scrt_exe_initialize_mta').
+symbol(0x14000100f, tramp, '__local_stdio_printf_options').
+symbol(0x140001014, tramp, '??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z').
+symbol(0x140001019, tramp, '?draw@Rectangle@@UEAAXXZ').
+symbol(0x14000101e, tramp, '_guard_check_icall_nop').
+symbol(0x140001023, tramp, '??2@YAPEAX_K@Z').
+symbol(0x140001028, tramp, '_CRT_RTC_INITW').
+symbol(0x14000102d, tramp, '_RTC_GetErrDesc').
+symbol(0x140001032, tramp, '__scrt_dllmain_before_initialize_c').
+symbol(0x140001037, tramp, '__local_stdio_scanf_options').
+symbol(0x14000103c, tramp, '__scrt_stub_for_acrt_thread_detach').
+symbol(0x140001041, tramp, '__report_gsfailure').
+symbol(0x140001046, tramp, 'ReadNoFence64').
+symbol(0x14000104b, tramp, '_get_startup_thread_locale_mode').
+symbol(0x140001050, tramp, '?what@exception@std@@UEBAPEBDXZ').
+symbol(0x140001055, tramp, '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z').
+symbol(0x14000105a, tramp, '_get_startup_new_mode').
+symbol(0x14000105f, tramp, '__scrt_stub_for_acrt_initialize').
+symbol(0x140001064, tramp, '__scrt_stub_for_is_c_termination_complete').
+symbol(0x140001069, tramp, '?_RTC_GetErrorFuncW@@YAP6AHHPEB_WH00ZZPEBX@Z').
+symbol(0x14000106e, tramp, '??0bad_alloc@std@@QEAA@AEBV01@@Z').
+symbol(0x140001073, tramp, '_RTC_UninitUse').
+symbol(0x140001078, tramp, '_guard_xfg_dispatch_icall_nop').
+symbol(0x14000107d, tramp, '_onexit').
+symbol(0x140001082, tramp, '_matherr').
+symbol(0x140001087, tramp, '??_Gtype_info@@UEAAPEAXI@Z').
+symbol(0x14000108c, tramp, '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z').
+symbol(0x140001091, tramp, '?__scrt_initialize_type_info@@YAXXZ').
+symbol(0x140001096, tramp, '??0bad_alloc@std@@AEAA@QEBD@Z').
+symbol(0x14000109b, tramp, '__scrt_stub_for_acrt_uninitialize').
+symbol(0x1400010a0, tramp, '__castguard_slow_path_check_nop').
+symbol(0x1400010a5, tramp, '?set_app_type@__scrt_main_policy@@SAXXZ').
+symbol(0x1400010aa, tramp, '__castguard_slow_path_check_user_handled').
+symbol(0x1400010af, tramp, '_guard_dispatch_icall_nop').
+symbol(0x1400010b4, tramp, '__GSHandlerCheckCommon').
+symbol(0x1400010b9, tramp, '__scrt_stub_for_acrt_thread_attach').
+symbol(0x1400010be, tramp, '??1exception@std@@UEAA@XZ').
+symbol(0x1400010c3, tramp, '_RTC_NumErrors').
+symbol(0x1400010c8, tramp, '__scrt_initialize_onexit_tables').
+symbol(0x1400010cd, tramp, '__report_securityfailure').
+symbol(0x1400010d2, tramp, '__scrt_stub_for_acrt_uninitialize_critical').
+symbol(0x1400010d7, tramp, '__scrt_unhandled_exception_filter').
+symbol(0x1400010dc, tramp, '__castguard_check_failure_user_handled').
+symbol(0x1400010e1, tramp, '?__scrt_throw_std_bad_alloc@@YAXXZ').
+symbol(0x1400010e6, tramp, '_RTC_SetErrorFuncW').
+symbol(0x1400010eb, tramp, '?eof@?$_Narrow_char_traits@DH@std@@SAHXZ').
+symbol(0x1400010f0, tramp, '__scrt_exe_initialize_mta').
+symbol(0x1400010f5, tramp, '_guard_icall_checks_enforced').
+symbol(0x1400010fa, tramp, '_initialize_denormal_control').
+symbol(0x1400010ff, tramp, '_RTC_SetErrorFunc').
+symbol(0x140001104, tramp, '?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z').
+symbol(0x140001109, tramp, '?__empty_global_delete@@YAXPEAX_K@Z').
+symbol(0x14000110e, tramp, '__castguard_check_failure_debugbreak').
+symbol(0x140001113, tramp, '?initialize_environment@__scrt_narrow_environment_policy@@SAHXZ').
+symbol(0x140001118, tramp, '??_Ebad_array_new_length@std@@UEAAPEAXI@Z').
+symbol(0x14000111d, tramp, '__scrt_uninitialize_crt').
+symbol(0x140001122, tramp, '__scrt_is_ucrt_dll_in_use').
+symbol(0x140001127, tramp, '??_Gtype_info@@UEAAPEAXI@Z').
+symbol(0x14000112c, tramp, '_RTC_SetErrorType').
+symbol(0x140001131, tramp, '__scrt_is_nonwritable_in_current_image').
+symbol(0x140001136, tramp, 'atexit').
+symbol(0x14000113b, tramp, '__GSHandlerCheck').
+symbol(0x140001140, tramp, '__scrt_stub_for_acrt_thread_detach').
+symbol(0x140001145, tramp, '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ').
+symbol(0x14000114a, tramp, 'ReadPointerNoFence').
+symbol(0x14000114f, tramp, '?draw@Triangle@@UEAAXXZ').
+symbol(0x140001154, tramp, '??0bad_array_new_length@std@@QEAA@AEBV01@@Z').
+symbol(0x140001159, tramp, '__scrt_stub_for_acrt_uninitialize').
+symbol(0x14000115e, tramp, '__scrt_stub_for_acrt_uninitialize_critical').
+symbol(0x140001163, tramp, '_get_startup_commit_mode').
+symbol(0x140001168, tramp, '__scrt_stub_for_acrt_thread_attach').
+symbol(0x14000116d, tramp, 'at_quick_exit').
+symbol(0x140001172, tramp, '_should_initialize_environment').
+symbol(0x140001177, tramp, '__security_check_cookie').
+symbol(0x14000117c, tramp, '?_RTC_Failure@@YAXPEAXH@Z').
+symbol(0x140001181, tramp, '__castguard_slow_path_check_fastfail').
+symbol(0x140001186, tramp, '??1bad_alloc@std@@UEAA@XZ').
+symbol(0x14000118b, tramp, '_get_startup_file_mode').
+symbol(0x140001190, tramp, '__scrt_stub_for_is_c_termination_complete').
+symbol(0x140001195, tramp, '_get_startup_argv_mode').
+symbol(0x14000119a, tramp, '__scrt_initialize_winrt').
+symbol(0x14000119f, tramp, '__raise_securityfailure').
+symbol(0x1400011a4, tramp, '??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEBA_NXZ').
+symbol(0x1400011a9, tramp, '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ').
+symbol(0x1400011ae, tramp, '_RTC_Initialize').
+symbol(0x1400011b3, tramp, '??_Ebad_alloc@std@@UEAAPEAXI@Z').
+symbol(0x1400011b8, tramp, 'sprintf_s').
+symbol(0x1400011bd, tramp, '_CRT_RTC_INIT').
+symbol(0x1400011c2, tramp, '?configure_argv@__scrt_narrow_argv_policy@@SAHXZ').
+symbol(0x1400011c7, tramp, '_RTC_Terminate').
+symbol(0x1400011cc, tramp, '__scrt_is_user_matherr_present').
+symbol(0x1400011d1, tramp, '??1bad_array_new_length@std@@UEAA@XZ').
+symbol(0x1400011d6, tramp, '__scrt_set_unhandled_exception_filter').
+symbol(0x1400011db, tramp, '__scrt_stub_for_acrt_thread_detach').
+symbol(0x1400011e0, tramp, '__scrt_stub_for_acrt_uninitialize').
+symbol(0x1400011e5, tramp, '__scrt_stub_for_acrt_thread_attach').
+symbol(0x1400011ea, tramp, '??0Rectangle@@QEAA@XZ').
+symbol(0x1400011ef, tramp, '_RTC_CheckStackVars2').
+symbol(0x1400011f4, tramp, '?_RTC_StackFailure@@YAXPEAXPEBD@Z').
+symbol(0x1400011f9, tramp, 'main').
+symbol(0x1400011fe, tramp, '??0exception@std@@QEAA@QEBDH@Z').
+symbol(0x140001203, tramp, 'mainCRTStartup').
+symbol(0x140001208, tramp, '??0Shape@@QEAA@XZ').
+symbol(0x14000120d, tramp, '__scrt_is_managed_app').
+symbol(0x140001212, tramp, '__castguard_set_user_handler').
+symbol(0x140001217, tramp, '__scrt_stub_for_acrt_uninitialize_critical').
+symbol(0x14000121c, tramp, '__security_init_cookie').
+symbol(0x140001221, tramp, '__castguard_slow_path_check_os_handled').
+symbol(0x140001226, tramp, '__scrt_stub_for_acrt_initialize').
+symbol(0x14000122b, tramp, '__scrt_get_dyn_tls_init_callback').
+symbol(0x140001230, tramp, '?__scrt_uninitialize_type_info@@YAXXZ').
+symbol(0x140001235, tramp, '__report_rangecheckfailure').
+symbol(0x14000123a, tramp, '??_Ebad_alloc@std@@UEAAPEAXI@Z').
+symbol(0x14000123f, tramp, '_guard_rf_checks_enforced').
+symbol(0x140001244, tramp, '?_RTC_GetSrcLine@@YAHPEAEPEA_WKPEAH1K@Z').
+symbol(0x140001249, tramp, '__scrt_dllmain_uninitialize_critical').
+symbol(0x14000124e, tramp, '__scrt_dllmain_crt_thread_attach').
+symbol(0x140001253, tramp, '__scrt_get_dyn_tls_dtor_callback').
+symbol(0x140001258, tramp, '__scrt_stub_for_acrt_initialize').
+symbol(0x14000125d, tramp, '?__empty_global_delete@@YAXPEAX@Z').
+symbol(0x140001262, tramp, '__scrt_initialize_default_local_stdio_options').
+symbol(0x140001267, tramp, '?draw@Circle@@UEAAXXZ').
+symbol(0x14000126c, tramp, '__crt_debugger_hook').
+symbol(0x140001271, tramp, '__castguard_slow_path_check_debugbreak').
+symbol(0x140001276, tramp, '__castguard_check_failure_nop').
+symbol(0x14000127b, tramp, '__scrt_dllmain_after_initialize_c').
+symbol(0x140001280, tramp, '??0Triangle@@QEAA@XZ').
+symbol(0x140001285, tramp, '??3@YAXPEAX_K@Z').
+symbol(0x14000128a, tramp, '__scrt_release_startup_lock').
+symbol(0x14000128f, tramp, '_RTC_CheckStackVars').
+symbol(0x140001294, tramp, '__isa_available_init').
+symbol(0x140001299, tramp, '__scrt_fastfail').
+symbol(0x14000129e, tramp, '?eq_int_type@?$_Narrow_char_traits@DH@std@@SA_NAEBH0@Z').
+symbol(0x1400012a3, tramp, '??_Gexception@std@@UEAAPEAXI@Z').
+symbol(0x1400012a8, tramp, '??0bad_array_new_length@std@@QEAA@XZ').
+symbol(0x1400012ad, tramp, 'NtCurrentTeb').
+symbol(0x1400012b2, tramp, '??_Ebad_array_new_length@std@@UEAAPEAXI@Z').
+symbol(0x1400012b7, tramp, '__scrt_acquire_startup_lock').
+symbol(0x1400012bc, tramp, '??3@YAXPEAX@Z').
+symbol(0x1400012c1, tramp, '?set_fmode@__scrt_file_policy@@SAXXZ').
+symbol(0x1400012c6, tramp, '??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z').
+symbol(0x1400012cb, tramp, '??0Circle@@QEAA@XZ').
+symbol(0x1400012d0, tramp, '_RTC_InitBase').
+symbol(0x1400012d5, tramp, '__castguard_check_failure_os_handled').
+symbol(0x1400012da, tramp, '??0exception@std@@QEAA@AEBV01@@Z').
+symbol(0x1400012df, tramp, '_vsprintf_s_l').
+symbol(0x1400012e4, tramp, '?_RTC_GetErrorFunc@@YAP6AHHPEBDH00ZZPEBX@Z').
+symbol(0x1400012e9, tramp, '?_RTC_AllocaFailure@@YAXPEAXPEAU_RTC_ALLOCA_NODE@@H@Z').
+symbol(0x1400012ee, tramp, '??_Gexception@std@@UEAAPEAXI@Z').
+symbol(0x1400012f3, tramp, '_initialize_invalid_parameter_handler').
+symbol(0x1400012f8, tramp, '__scrt_initialize_mta').
+symbol(0x1400012fd, tramp, '__scrt_dllmain_exception_filter').
+symbol(0x140001302, tramp, '__scrt_initialize_crt').
+symbol(0x140001307, tramp, '__castguard_check_failure_fastfail').
+symbol(0x14000130c, tramp, '??1type_info@@UEAA@XZ').
+symbol(0x140001311, tramp, '?__scrt_throw_std_bad_array_new_length@@YAXXZ').
+symbol(0x140001316, tramp, '__scrt_get_show_window_mode').
+symbol(0x14000131b, tramp, '__scrt_dllmain_crt_thread_detach').
+symbol(0x140001320, tramp, '__report_securityfailureEx').
+symbol(0x140001325, tramp, '__scrt_dllmain_uninitialize_c').
+symbol(0x14000132a, tramp, '??0bad_alloc@std@@QEAA@XZ').
+symbol(0x14000132f, tramp, '_RTC_AllocaHelper').
+symbol(0x140001334, tramp, '_RTC_Shutdown').
+symbol(0x140001670, func, 'main').
+symbol(0x1400018c0, func, '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z').
+symbol(0x140001d90, func, '??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z').
+symbol(0x140001e00, method, '??0Circle@@QEAA@XZ').
+symbol(0x140001e40, method, '??0Rectangle@@QEAA@XZ').
+symbol(0x140001e80, method, '??0Shape@@QEAA@XZ').
+symbol(0x140001eb0, method, '??0Triangle@@QEAA@XZ').
+symbol(0x140001ef0, method, '??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z').
+symbol(0x140001f80, method, '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z').
+symbol(0x140002090, method, '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ').
+symbol(0x140002110, method, '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ').
+symbol(0x140002180, method, '??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEBA_NXZ').
+symbol(0x1400021a0, func, '?__empty_global_delete@@YAXPEAX@Z').
+symbol(0x1400021b0, func, '?__empty_global_delete@@YAXPEAX_K@Z').
+symbol(0x1400021c0, method, '?draw@Circle@@UEAAXXZ').
+symbol(0x140002200, method, '?draw@Rectangle@@UEAAXXZ').
+symbol(0x140002240, method, '?draw@Triangle@@UEAAXXZ').
+symbol(0x140002280, staticmethod, '?eof@?$_Narrow_char_traits@DH@std@@SAHXZ').
+symbol(0x140002290, staticmethod, '?eq_int_type@?$_Narrow_char_traits@DH@std@@SA_NAEBH0@Z').
+symbol(0x1400022e0, staticmethod, '?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z').
+symbol(0x140002300, thunk, '?uncaught_exception@std@@YA_NXZ').
+symbol(0x140002306, thunk, '?good@ios_base@std@@QEBA_NXZ').
+symbol(0x14000230c, thunk, '?flags@ios_base@std@@QEBAHXZ').
+symbol(0x140002312, thunk, '?width@ios_base@std@@QEBA_JXZ').
+symbol(0x140002318, thunk, '?width@ios_base@std@@QEAA_J_J@Z').
+symbol(0x14000231e, thunk, '?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z').
+symbol(0x140002324, thunk, '?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z').
+symbol(0x14000232a, thunk, '?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z').
+symbol(0x140002330, thunk, '?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x140002336, thunk, '?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x14000233c, thunk, '?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ').
+symbol(0x140002342, thunk, '?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z').
+symbol(0x140002348, thunk, '?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ').
+symbol(0x14000234e, thunk, '??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z').
+symbol(0x140002354, thunk, '?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@D@Z').
+symbol(0x14000235a, thunk, '?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ').
+symbol(0x140002360, func, '??2@YAPEAX_K@Z').
+symbol(0x1400023d0, func, '??3@YAXPEAX_K@Z').
+symbol(0x140002400, func, '_RTC_AllocaHelper').
+symbol(0x140002450, func, '_RTC_CheckStackVars').
+symbol(0x140002500, func, '_RTC_CheckStackVars2').
+symbol(0x140002650, func, '_CRT_RTC_INIT').
+symbol(0x140002660, func, '_CRT_RTC_INITW').
+symbol(0x140002670, func, '_RTC_InitBase').
+symbol(0x1400026c0, func, '_RTC_Shutdown').
+symbol(0x1400026f0, func, '__GSHandlerCheck').
+symbol(0x140002740, func, '__GSHandlerCheckCommon').
+symbol(0x140002890, func, '__security_check_cookie').
+symbol(0x1400028c0, method, '??1type_info@@UEAA@XZ').
+symbol(0x1400028e0, method, '??_Etype_info@@UEAAPEAXI@Z').
+symbol(0x1400028e0, method, '??_Gtype_info@@UEAAPEAXI@Z').
+symbol(0x140002930, func, 'pre_c_initialization').
+symbol(0x140002a10, func, 'post_pgo_initialization').
+symbol(0x140002a30, func, 'pre_cpp_initialization').
+symbol(0x140002a50, func, '__scrt_common_main').
+symbol(0x140002a70, func, '__scrt_common_main_seh').
+symbol(0x140002c80, staticmethod, '?configure_argv@__scrt_narrow_argv_policy@@SAHXZ').
+symbol(0x140002ca0, staticmethod, '?initialize_environment@__scrt_narrow_environment_policy@@SAHXZ').
+symbol(0x140002cc0, func, 'invoke_main').
+symbol(0x140002d10, staticmethod, '?set_app_type@__scrt_main_policy@@SAXXZ').
+symbol(0x140002d30, staticmethod, '?set_commode@__scrt_file_policy@@SAXXZ').
+symbol(0x140002d60, staticmethod, '?set_fmode@__scrt_file_policy@@SAXXZ').
+symbol(0x140002d80, func, 'mainCRTStartup').
+symbol(0x140002da0, method, '??0bad_alloc@std@@AEAA@QEBD@Z').
+symbol(0x140002df0, method, '??0bad_alloc@std@@QEAA@AEBV01@@Z').
+symbol(0x140002e40, method, '??0bad_alloc@std@@QEAA@XZ').
+symbol(0x140002e90, method, '??0bad_array_new_length@std@@QEAA@AEBV01@@Z').
+symbol(0x140002ee0, method, '??0bad_array_new_length@std@@QEAA@XZ').
+symbol(0x140002f20, method, '??0exception@std@@QEAA@AEBV01@@Z').
+symbol(0x140002f90, method, '??0exception@std@@QEAA@QEBDH@Z').
+symbol(0x140002ff0, method, '??1bad_alloc@std@@UEAA@XZ').
+symbol(0x140003010, method, '??1bad_array_new_length@std@@UEAA@XZ').
+symbol(0x140003030, method, '??1exception@std@@UEAA@XZ').
+symbol(0x140003070, method, '??_Ebad_alloc@std@@UEAAPEAXI@Z').
+symbol(0x140003070, method, '??_Gbad_alloc@std@@UEAAPEAXI@Z').
+symbol(0x1400030c0, method, '??_Ebad_array_new_length@std@@UEAAPEAXI@Z').
+symbol(0x1400030c0, method, '??_Gbad_array_new_length@std@@UEAAPEAXI@Z').
+symbol(0x140003110, method, '??_Eexception@std@@UEAAPEAXI@Z').
+symbol(0x140003110, method, '??_Gexception@std@@UEAAPEAXI@Z').
+symbol(0x140003160, func, '?__scrt_throw_std_bad_alloc@@YAXXZ').
+symbol(0x140003190, func, '?__scrt_throw_std_bad_array_new_length@@YAXXZ').
+symbol(0x1400031c0, method, '?what@exception@std@@UEBAPEBDXZ').
+symbol(0x140003210, func, '??3@YAXPEAX@Z').
+symbol(0x140003240, func, 'DebuggerProbe').
+symbol(0x140003290, func, 'DebuggerRuntime').
+symbol(0x1400032f0, func, '?_RTC_AllocaFailure@@YAXPEAXPEAU_RTC_ALLOCA_NODE@@H@Z').
+symbol(0x1400034a0, func, '?_RTC_Failure@@YAXPEAXH@Z').
+symbol(0x140003510, func, '?_RTC_StackFailure@@YAXPEAXPEBD@Z').
+symbol(0x140003620, func, '_getMemBlockDataString').
+symbol(0x140003700, func, '_strlen_priv').
+symbol(0x140003720, func, 'failwithmessage').
+symbol(0x140003a20, func, 'notify_debugger').
+symbol(0x140003a50, func, '_RTC_UninitUse').
+symbol(0x140003b50, func, '__local_stdio_printf_options').
+symbol(0x140003b60, func, '_vsprintf_s_l').
+symbol(0x140003be0, func, 'sprintf_s').
+symbol(0x140003c10, func, '?_RTC_GetErrorFunc@@YAP6AHHPEBDH00ZZPEBX@Z').
+symbol(0x140003c20, func, '?_RTC_GetErrorFuncW@@YAP6AHHPEB_WH00ZZPEBX@Z').
+symbol(0x140003c30, func, '_RTC_GetErrDesc').
+symbol(0x140003c50, func, '_RTC_NumErrors').
+symbol(0x140003c60, func, '_RTC_SetErrorFunc').
+symbol(0x140003c80, func, '_RTC_SetErrorFuncW').
+symbol(0x140003ca0, func, '_RTC_SetErrorType').
+symbol(0x140003cd0, func, '__raise_securityfailure').
+symbol(0x140003d20, func, '__report_gsfailure').
+symbol(0x140003e30, func, '__report_rangecheckfailure').
+symbol(0x140003e50, func, '__report_securityfailure').
+symbol(0x140003f20, func, '__report_securityfailureEx').
+symbol(0x140004080, func, 'capture_current_context').
+symbol(0x140004140, func, 'capture_previous_context').
+symbol(0x140004220, func, 'find_pe_section').
+symbol(0x140004320, func, 'is_potentially_valid_image_base').
+symbol(0x1400043d0, func, 'NtCurrentTeb').
+symbol(0x1400043e0, func, '__scrt_acquire_startup_lock').
+symbol(0x140004460, func, '__scrt_dllmain_after_initialize_c').
+symbol(0x1400044a0, func, '__scrt_dllmain_before_initialize_c').
+symbol(0x1400044d0, func, '__scrt_dllmain_crt_thread_attach').
+symbol(0x140004510, func, '__scrt_dllmain_crt_thread_detach').
+symbol(0x140004530, func, '__scrt_dllmain_exception_filter').
+symbol(0x1400045b0, func, '__scrt_dllmain_uninitialize_c').
+symbol(0x1400045f0, func, '__scrt_dllmain_uninitialize_critical').
+symbol(0x140004610, func, '__scrt_initialize_crt').
+symbol(0x140004670, func, '__scrt_initialize_onexit_tables').
+symbol(0x1400047c0, func, '__scrt_is_nonwritable_in_current_image').
+symbol(0x140004870, func, '__scrt_release_startup_lock').
+symbol(0x1400048b0, func, '__scrt_uninitialize_crt').
+symbol(0x140004900, func, '_onexit').
+symbol(0x1400049a0, func, 'at_quick_exit').
+symbol(0x140004a00, func, 'atexit').
+symbol(0x140004a40, func, '__get_entropy').
+symbol(0x140004b30, func, '__security_init_cookie').
+symbol(0x140004bd0, func, '_matherr').
+symbol(0x140004be0, func, '_get_startup_argv_mode').
+symbol(0x140004bf0, func, '_get_startup_commit_mode').
+symbol(0x140004c00, func, '_get_startup_file_mode').
+symbol(0x140004c10, func, '_get_startup_new_mode').
+symbol(0x140004c20, func, '_get_startup_thread_locale_mode').
+symbol(0x140004c30, func, '?__scrt_initialize_type_info@@YAXXZ').
+symbol(0x140004c50, func, '?__scrt_uninitialize_type_info@@YAXXZ').
+symbol(0x140004c70, func, '_should_initialize_environment').
+symbol(0x140004c80, func, '_initialize_invalid_parameter_handler').
+symbol(0x140004c90, func, '_initialize_denormal_control').
+symbol(0x140004ca0, func, '__local_stdio_scanf_options').
+symbol(0x140004cb0, func, '__scrt_initialize_default_local_stdio_options').
+symbol(0x140004d10, func, '__scrt_is_user_matherr_present').
+symbol(0x140004d40, func, '__scrt_get_dyn_tls_init_callback').
+symbol(0x140004d50, func, '__scrt_get_dyn_tls_dtor_callback').
+symbol(0x140004d60, func, '__crt_debugger_hook').
+symbol(0x140004d80, func, '__scrt_fastfail').
+symbol(0x140004f80, func, '__scrt_get_show_window_mode').
+symbol(0x140004ff0, func, '__scrt_initialize_mta').
+symbol(0x140005010, func, '__scrt_initialize_winrt').
+symbol(0x140005020, func, '__scrt_is_managed_app').
+symbol(0x1400050f0, func, '__scrt_set_unhandled_exception_filter').
+symbol(0x140005110, func, '__scrt_exe_initialize_mta').
+symbol(0x140005110, func, '__scrt_stub_for_initialize_mta').
+symbol(0x140005120, func, '__scrt_unhandled_exception_filter').
+symbol(0x1400051e0, func, '_RTC_Initialize').
+symbol(0x140005240, func, '_RTC_Terminate').
+symbol(0x1400052a0, func, '_guard_check_icall_nop').
+symbol(0x1400052b0, func, 'ReadNoFence64').
+symbol(0x1400052e0, func, 'ReadPointerNoFence').
+symbol(0x140005300, func, '__castguard_check_failure_debugbreak').
+symbol(0x140005330, func, '__castguard_check_failure_fastfail').
+symbol(0x140005360, func, '__castguard_check_failure_nop').
+symbol(0x140005370, func, '__castguard_check_failure_os_handled').
+symbol(0x1400053a0, func, '__castguard_check_failure_os_handled_wrapper').
+symbol(0x1400053e0, func, '__castguard_check_failure_user_handled').
+symbol(0x140005410, func, '__castguard_check_failure_user_handled_wrapper').
+symbol(0x140005460, func, '__castguard_compat_check').
+symbol(0x1400054f0, func, '__castguard_set_user_handler').
+symbol(0x140005520, func, '__castguard_slow_path_check_debugbreak').
+symbol(0x140005570, func, '__castguard_slow_path_check_fastfail').
+symbol(0x1400055d0, func, '__castguard_slow_path_check_nop').
+symbol(0x1400055f0, func, '__castguard_slow_path_check_os_handled').
+symbol(0x140005650, func, '__castguard_slow_path_check_user_handled').
+symbol(0x1400056b0, func, '__castguard_slow_path_compat_check').
+symbol(0x140005740, func, '_guard_icall_checks_enforced').
+symbol(0x140005790, func, '_guard_rf_checks_enforced').
+symbol(0x1400057a0, func, 'GetPdbDll').
+symbol(0x140005960, func, 'GetPdbDllFromInstallPath').
+symbol(0x140005cc0, func, 'GetPdbDllPathFromFilePath').
+symbol(0x140005e00, func, '?_RTC_GetSrcLine@@YAHPEAEPEA_WKPEAH1K@Z').
+symbol(0x1400062c0, func, '__isa_available_init').
+symbol(0x140006750, func, '__scrt_is_ucrt_dll_in_use').
+symbol(0x140006780, thunk, '_purecall').
+symbol(0x140006786, thunk, '__CxxFrameHandler4').
+symbol(0x14000678c, thunk, '__C_specific_handler').
+symbol(0x140006792, thunk, '__std_exception_copy').
+symbol(0x140006798, thunk, '__std_exception_destroy').
+symbol(0x14000679e, thunk, '_CxxThrowException').
+symbol(0x1400067a4, thunk, '__C_specific_handler_noexcept').
+symbol(0x1400067aa, thunk, '__std_type_info_destroy_list').
+symbol(0x1400067b0, thunk, '__current_exception').
+symbol(0x1400067b6, thunk, '__current_exception_context').
+symbol(0x1400067bc, thunk, '__vcrt_GetModuleFileNameW').
+symbol(0x1400067c2, thunk, '__vcrt_GetModuleHandleW').
+symbol(0x1400067c8, thunk, '__vcrt_LoadLibraryExW').
+symbol(0x1400067ce, thunk, 'strlen').
+symbol(0x1400067d4, thunk, '_callnewh').
+symbol(0x1400067da, thunk, 'malloc').
+symbol(0x1400067e0, thunk, '_CrtDbgReport').
+symbol(0x1400067e6, thunk, '_CrtDbgReportW').
+symbol(0x1400067ec, thunk, '_seh_filter_exe').
+symbol(0x1400067f2, thunk, '_set_app_type').
+symbol(0x1400067f8, thunk, '__setusermatherr').
+symbol(0x1400067fe, thunk, '_configure_narrow_argv').
+symbol(0x140006804, thunk, '_initialize_narrow_environment').
+symbol(0x14000680a, thunk, '_get_initial_narrow_environment').
+symbol(0x140006810, thunk, '_initterm').
+symbol(0x140006816, thunk, '_initterm_e').
+symbol(0x14000681c, thunk, 'exit').
+symbol(0x140006822, thunk, '_exit').
+symbol(0x140006828, thunk, '_set_fmode').
+symbol(0x14000682e, thunk, '__p___argc').
+symbol(0x140006834, thunk, '__p___argv').
+symbol(0x14000683a, thunk, '_cexit').
+symbol(0x140006840, thunk, '_c_exit').
+symbol(0x140006846, thunk, '_register_thread_local_exe_atexit_callback').
+symbol(0x14000684c, thunk, '_configthreadlocale').
+symbol(0x140006852, thunk, '_set_new_mode').
+symbol(0x140006858, thunk, '__p__commode').
+symbol(0x14000685e, thunk, '_free_dbg').
+symbol(0x140006864, thunk, 'strcpy_s').
+symbol(0x14000686a, thunk, 'strcat_s').
+symbol(0x140006870, thunk, '__stdio_common_vsprintf_s').
+symbol(0x140006876, thunk, '_seh_filter_dll').
+symbol(0x14000687c, thunk, '_initialize_onexit_table').
+symbol(0x140006882, thunk, '_register_onexit_function').
+symbol(0x140006888, thunk, '_execute_onexit_table').
+symbol(0x14000688e, thunk, '_crt_atexit').
+symbol(0x140006894, thunk, '_crt_at_quick_exit').
+symbol(0x14000689a, thunk, 'terminate').
+symbol(0x1400068a0, thunk, '_wmakepath_s').
+symbol(0x1400068a6, thunk, '_wsplitpath_s').
+symbol(0x1400068ac, thunk, 'wcscpy_s').
+symbol(0x1400068b2, thunk, 'IsDebuggerPresent').
+symbol(0x1400068b8, thunk, 'RaiseException').
+symbol(0x1400068be, thunk, 'MultiByteToWideChar').
+symbol(0x1400068c4, thunk, 'WideCharToMultiByte').
+symbol(0x1400068ca, thunk, 'RtlCaptureContext').
+symbol(0x1400068d0, thunk, 'RtlLookupFunctionEntry').
+symbol(0x1400068d6, thunk, 'RtlVirtualUnwind').
+symbol(0x1400068dc, thunk, 'UnhandledExceptionFilter').
+symbol(0x1400068e2, thunk, 'SetUnhandledExceptionFilter').
+symbol(0x1400068e8, thunk, 'GetCurrentProcess').
+symbol(0x1400068ee, thunk, 'TerminateProcess').
+symbol(0x1400068f4, thunk, 'IsProcessorFeaturePresent').
+symbol(0x1400068fa, thunk, 'QueryPerformanceCounter').
+symbol(0x140006900, thunk, 'GetCurrentProcessId').
+symbol(0x140006906, thunk, 'GetCurrentThreadId').
+symbol(0x14000690c, thunk, 'GetSystemTimeAsFileTime').
+symbol(0x140006912, thunk, 'InitializeSListHead').
+symbol(0x140006918, thunk, 'GetStartupInfoW').
+symbol(0x14000691e, thunk, 'GetModuleHandleW').
+symbol(0x140006924, thunk, 'GetLastError').
+symbol(0x14000692a, thunk, 'HeapAlloc').
+symbol(0x140006930, thunk, 'HeapFree').
+symbol(0x140006936, thunk, 'GetProcessHeap').
+symbol(0x14000693c, thunk, 'VirtualQuery').
+symbol(0x140006942, thunk, 'FreeLibrary').
+symbol(0x140006948, thunk, 'GetProcAddress').
+symbol(0x140006950, func, '__acrt_initialize').
+symbol(0x140006950, func, '__scrt_stub_for_acrt_initialize').
+symbol(0x140006950, func, '__vcrt_initialize').
+symbol(0x140006960, func, '__acrt_thread_attach').
+symbol(0x140006960, func, '__scrt_stub_for_acrt_thread_attach').
+symbol(0x140006960, func, '__vcrt_thread_attach').
+symbol(0x140006970, func, '__acrt_thread_detach').
+symbol(0x140006970, func, '__scrt_stub_for_acrt_thread_detach').
+symbol(0x140006970, func, '__vcrt_thread_detach').
+symbol(0x140006980, func, '__acrt_uninitialize').
+symbol(0x140006980, func, '__scrt_stub_for_acrt_uninitialize').
+symbol(0x140006980, func, '__vcrt_uninitialize').
+symbol(0x140006990, func, '__acrt_uninitialize_critical').
+symbol(0x140006990, func, '__scrt_stub_for_acrt_uninitialize_critical').
+symbol(0x140006990, func, '__vcrt_uninitialize_critical').
+symbol(0x1400069a0, func, '__scrt_stub_for_is_c_termination_complete').
+symbol(0x1400069a0, func, '_is_c_termination_complete').
+symbol(0x1400069a3, thunk, 'memcpy').
+symbol(0x140007d70, func, '_guard_dispatch_icall_nop').
+symbol(0x140007d90, func, '_guard_xfg_dispatch_icall_nop').
+symbol(0x14000a000, name, '__xc_a').
+symbol(0x14000a220, name, '__xc_z').
+symbol(0x14000a330, name, '__xi_a').
+symbol(0x14000a660, name, '__xi_z').
+symbol(0x14000a770, name, '__xp_a').
+symbol(0x14000a880, name, '__xp_z').
+symbol(0x14000a990, name, '__xt_a').
+symbol(0x14000aaa0, name, '__xt_z').
+symbol(0x14000af00, table, '??_7Shape@@6B@').
+symbol(0x14000af18, table, '??_7Rectangle@@6B@').
+symbol(0x14000af28, string, '??_C@_0BC@GILPBKCG@Drawing?5Rectangle@').
+symbol(0x14000af48, table, '??_7Circle@@6B@').
+symbol(0x14000af58, string, '??_C@_0P@GMAAJLJJ@Drawing?5Circle@').
+symbol(0x14000af78, table, '??_7Triangle@@6B@').
+symbol(0x14000af88, string, '??_C@_0BB@IPLBEKCI@Drawing?5Triangle@').
+symbol(0x14000afa8, table, '??_7type_info@@6B@').
+symbol(0x14000afc0, table, '??_7exception@std@@6B@').
+symbol(0x14000afd8, string, '??_C@_0BC@EOODALEL@Unknown?5exception@').
+symbol(0x14000aff8, table, '??_7bad_alloc@std@@6B@').
+symbol(0x14000b010, string, '??_C@_0P@GHFPNOJB@bad?5allocation@').
+symbol(0x14000b030, table, '??_7bad_array_new_length@std@@6B@').
+symbol(0x14000b048, string, '??_C@_0BF@KINCDENJ@bad?5array?5new?5length@').
+symbol(0x14000b150, string, '??_C@_0NN@JMPELKLB@The?5value?5of?5ESP?5was?5not?5proper@').
+symbol(0x14000b260, string, '??_C@_0BBN@ELNNILBE@A?5cast?5to?5a?5smaller?5data?5type?5h@').
+symbol(0x14000b3b8, string, '??_C@_0BN@BPOGFMJL@Stack?5memory?5was?5corrupted?$AN?6@').
+symbol(0x14000b3e0, string, '??_C@_0DG@DAJCDLPN@A?5local?5variable?5was?5used?5befor@').
+symbol(0x14000b420, string, '??_C@_0CM@JMIDGKLA@Stack?5memory?5around?5_alloca?5was@').
+symbol(0x14000b458, string, '??_C@_0BO@CHIONIOI@Unknown?5Runtime?5Check?5Error?$AN?6@').
+symbol(0x14000b480, string, '??_C@_1GM@CNOOJIHC@?$AAR?$AAu?$AAn?$AAt?$AAi?$AAm?$AAe?$AA?5?$AAC?$AAh?$AAe?$AAc?$AAk?$AA?5?$AAE@').
+symbol(0x14000b510, string, '??_C@_1EA@NFKNIFJP@?$AAR?$AAu?$AAn?$AA?9?$AAT?$AAi?$AAm?$AAe?$AA?5?$AAC?$AAh?$AAe?$AAc?$AAk?$AA?5@').
+symbol(0x14000b560, string, '??_C@_0BB@PFFGGCJP@Unknown?5Filename@').
+symbol(0x14000b578, string, '??_C@_0BE@GNBOBNCK@Unknown?5Module?5Name@').
+symbol(0x14000b590, string, '??_C@_0CA@IODNCDPG@Run?9Time?5Check?5Failure?5?$CD?$CFd?5?9?5?$CFs@').
+symbol(0x14000b5b8, string, '??_C@_0CG@IAFNJNEE@Stack?5corrupted?5near?5unknown?5va@').
+symbol(0x14000b5e8, string, '??_C@_05MKKEDADM@?$CF?42X?5@').
+symbol(0x14000b5f0, string, '??_C@_0EJ@LJKNEOLN@Stack?5area?5around?5_alloca?5memor@').
+symbol(0x14000b648, string, '??_C@_01EEMJAFIK@?6@').
+symbol(0x14000b64c, string, '??_C@_02LLMPMKNF@?$DO?5@').
+symbol(0x14000b650, string, '??_C@_08OMAHNMHJ@?6Data?3?5?$DM@').
+symbol(0x14000b660, string, '??_C@_0CK@DKGBICFE@?6Allocation?5number?5within?5this?5@').
+symbol(0x14000b698, string, '??_C@_07DFDJCKFN@?6Size?3?5@').
+symbol(0x14000b6a8, string, '??_C@_0N@MHFFIMFG@?6Address?3?50x@').
+symbol(0x14000b6c0, string, '??_C@_0EI@CLEPFNGI@Stack?5area?5around?5_alloca?5memor@').
+symbol(0x14000b718, string, '??_C@_0BK@ODNDAGKB@?$CFs?$CFs?$CFp?$CFs?$CFzd?$CFs?$CFd?$CFs?$CFs?$CFs?$CFs?$CFs@').
+symbol(0x14000b738, string, '??_C@_0DE@OHJBPMBP@A?5variable?5is?5being?5used?5withou@').
+symbol(0x14000b7a8, string, '??_C@_0BJ@HEGAHDFO@Stack?5pointer?5corruption@').
+symbol(0x14000b7c8, string, '??_C@_0CK@FEGOIOPB@Cast?5to?5smaller?5type?5causing?5lo@').
+symbol(0x14000b800, string, '??_C@_0BI@CIGMDCBH@Stack?5memory?5corruption@').
+symbol(0x14000b820, string, '??_C@_0CK@CNLNOEPB@Local?5variable?5used?5before?5init@').
+symbol(0x14000b858, string, '??_C@_0BP@OGBCLIBO@Stack?5around?5_alloca?5corrupted@').
+symbol(0x14000b900, string, '??_C@_1EI@MLPKHBGE@?$AAa?$AAp?$AAi?$AA?9?$AAm?$AAs?$AA?9?$AAw?$AAi?$AAn?$AA?9?$AAc?$AAo?$AAr?$AAe@').
+symbol(0x14000b958, string, '??_C@_1BK@JHLNAEJL@?$AAa?$AAd?$AAv?$AAa?$AAp?$AAi?$AA3?$AA2?$AA?4?$AAd?$AAl?$AAl@').
+symbol(0x14000b978, string, '??_C@_0O@COHOBMLB@RegOpenKeyExW@').
+symbol(0x14000b988, string, '??_C@_0BB@GLNAEDBD@RegQueryValueExW@').
+symbol(0x14000b9a0, string, '??_C@_0M@HLOHPNFA@RegCloseKey@').
+symbol(0x14000b9b0, string, '??_C@_1HE@EBEAGLFB@?$AAS?$AAO?$AAF?$AAT?$AAW?$AAA?$AAR?$AAE?$AA?2?$AAW?$AAo?$AAw?$AA6?$AA4?$AA3@').
+symbol(0x14000ba40, string, '??_C@_1BG@EABPBLLF@?$AAP?$AAr?$AAo?$AAd?$AAu?$AAc?$AAt?$AAD?$AAi?$AAr@').
+symbol(0x14000ba88, string, '??_C@_1BC@JINFINNJ@?$AAM?$AAS?$AAP?$AAD?$AAB?$AA1?$AA4?$AA0@').
+symbol(0x14000baa0, string, '??_C@_0BB@KCIACLNC@PDBOpenValidate5@').
+symbol(0x14000bab4, string, '??_C@_01KDCPPGHE@r@').
+symbol(0x14000bac0, name, '_load_config_used').
+symbol(0x14000be00, name, '__CastGuardVftablesStart').
+symbol(0x14000c000, name, '__CastGuardVftablesEnd').
+symbol(0x14000c1a0, table, '??_R4Shape@@6B@').
+symbol(0x14000c1d0, name, '??_R3Shape@@8').
+symbol(0x14000c1e8, name, '??_R2Shape@@8').
+symbol(0x14000c1f8, name, '??_R1A@?0A@EA@Shape@@8').
+symbol(0x14000c228, table, '??_R4Rectangle@@6B@').
+symbol(0x14000c258, name, '??_R3Rectangle@@8').
+symbol(0x14000c270, name, '??_R2Rectangle@@8').
+symbol(0x14000c288, name, '??_R1A@?0A@EA@Rectangle@@8').
+symbol(0x14000c2b8, table, '??_R4Circle@@6B@').
+symbol(0x14000c2e8, name, '??_R3Circle@@8').
+symbol(0x14000c300, name, '??_R2Circle@@8').
+symbol(0x14000c318, name, '??_R1A@?0A@EA@Circle@@8').
+symbol(0x14000c348, table, '??_R4Triangle@@6B@').
+symbol(0x14000c378, name, '??_R3Triangle@@8').
+symbol(0x14000c390, name, '??_R2Triangle@@8').
+symbol(0x14000c3a8, name, '??_R1A@?0A@EA@Triangle@@8').
+symbol(0x14000c3d8, table, '??_R4type_info@@6B@').
+symbol(0x14000c408, name, '??_R3type_info@@8').
+symbol(0x14000c420, name, '??_R2type_info@@8').
+symbol(0x14000c430, name, '??_R1A@?0A@EA@type_info@@8').
+symbol(0x14000c460, table, '??_R4exception@std@@6B@').
+symbol(0x14000c490, name, '??_R3exception@std@@8').
+symbol(0x14000c4a8, name, '??_R2exception@std@@8').
+symbol(0x14000c4b8, name, '??_R1A@?0A@EA@exception@std@@8').
+symbol(0x14000c4e8, table, '??_R4bad_alloc@std@@6B@').
+symbol(0x14000c518, name, '??_R3bad_alloc@std@@8').
+symbol(0x14000c530, name, '??_R2bad_alloc@std@@8').
+symbol(0x14000c548, name, '??_R1A@?0A@EA@bad_alloc@std@@8').
+symbol(0x14000c578, table, '??_R4bad_array_new_length@std@@6B@').
+symbol(0x14000c5a8, name, '??_R3bad_array_new_length@std@@8').
+symbol(0x14000c5c0, name, '??_R2bad_array_new_length@std@@8').
+symbol(0x14000c5e8, name, '??_R1A@?0A@EA@bad_array_new_length@std@@8').
+symbol(0x14000c8a0, name, '__rtc_iaa').
+symbol(0x14000cac0, name, '__rtc_izz').
+symbol(0x14000cbd0, name, '__rtc_taa').
+symbol(0x14000cdf0, name, '__rtc_tzz').
+symbol(0x14000d920, name, '_TI2?AVbad_alloc@std@@').
+symbol(0x14000d940, name, '_CTA2?AVbad_alloc@std@@').
+symbol(0x14000d958, name, '_CT??_R0?AVbad_alloc@std@@@8??0bad_alloc@std@@QEAA@AEBV01@@Z24').
+symbol(0x14000d980, name, '_CT??_R0?AVexception@std@@@8??0exception@std@@QEAA@AEBV01@@Z24').
+symbol(0x14000d9a8, name, '_TI3?AVbad_array_new_length@std@@').
+symbol(0x14000d9c8, name, '_CTA3?AVbad_array_new_length@std@@').
+symbol(0x14000d9e8, name, '_CT??_R0?AVbad_array_new_length@std@@@8??0bad_array_new_length@std@@QEAA@AEBV01@@Z24').
+symbol(0x14000e000, name, '__security_cookie_complement').
+symbol(0x14000e008, name, '__security_cookie').
+symbol(0x14000e018, name, '?_RTC_ErrorLevels@@3PAHA').
+symbol(0x14000e030, name, '__scrt_native_dllmain_reason').
+symbol(0x14000e034, name, '__scrt_default_matherr').
+symbol(0x14000e038, name, '__isa_available').
+symbol(0x14000e03c, name, '__isa_enabled').
+symbol(0x14000e040, name, '__memset_fast_string_threshold').
+symbol(0x14000e048, name, '__memset_nt_threshold').
+symbol(0x14000e060, name, '__scrt_ucrt_dll_is_in_use').
+symbol(0x14000e170, name, '??_R0?AVbad_alloc@std@@@8').
+symbol(0x14000e1a0, name, '??_R0?AVexception@std@@@8').
+symbol(0x14000e1d0, name, '??_R0?AVbad_array_new_length@std@@@8').
+symbol(0x14000e310, name, '??_R0?AVShape@@@8').
+symbol(0x14000e338, name, '??_R0?AVRectangle@@@8').
+symbol(0x14000e360, name, '??_R0?AVCircle@@@8').
+symbol(0x14000e388, name, '??_R0?AVTriangle@@@8').
+symbol(0x14000e3b0, name, '??_R0?AVtype_info@@@8').
+symbol(0x14000e4e8, name, '?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA').
+symbol(0x14000eb98, name, '__scrt_current_native_startup_state').
+symbol(0x14000eba0, name, '__scrt_native_startup_lock').
+symbol(0x14000ebf0, name, '?__type_info_root_node@@3U__type_info_node@@A').
+symbol(0x14000ec08, name, '?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA').
+symbol(0x14000ec14, name, '__scrt_debugger_hook_flag').
+symbol(0x14000ec18, name, '__castguard_check_failure_user_handled_fptr').
+symbol(0x14000ec34, name, '__favor').
+symbol(0x14000ec38, name, '__dyn_tls_dtor_callback').
+symbol(0x14000ec50, name, '__dyn_tls_init_callback').
+symbol(0x140010000, name, '__imp_IsDebuggerPresent').
+symbol(0x140010008, name, '__imp_GetCurrentThreadId').
+symbol(0x140010010, name, '__imp_GetSystemTimeAsFileTime').
+symbol(0x140010018, name, '__imp_InitializeSListHead').
+symbol(0x140010020, name, '__imp_GetStartupInfoW').
+symbol(0x140010028, name, '__imp_GetModuleHandleW').
+symbol(0x140010030, name, '__imp_GetLastError').
+symbol(0x140010038, name, '__imp_HeapAlloc').
+symbol(0x140010040, name, '__imp_HeapFree').
+symbol(0x140010048, name, '__imp_GetProcessHeap').
+symbol(0x140010050, name, '__imp_VirtualQuery').
+symbol(0x140010058, name, '__imp_FreeLibrary').
+symbol(0x140010060, name, '__imp_GetProcAddress').
+symbol(0x140010068, name, '__imp_QueryPerformanceCounter').
+symbol(0x140010070, name, '__imp_IsProcessorFeaturePresent').
+symbol(0x140010078, name, '__imp_TerminateProcess').
+symbol(0x140010080, name, '__imp_GetCurrentProcess').
+symbol(0x140010088, name, '__imp_RaiseException').
+symbol(0x140010090, name, '__imp_MultiByteToWideChar').
+symbol(0x140010098, name, '__imp_SetUnhandledExceptionFilter').
+symbol(0x1400100a0, name, '__imp_WideCharToMultiByte').
+symbol(0x1400100a8, name, '__imp_RtlCaptureContext').
+symbol(0x1400100b0, name, '__imp_RtlLookupFunctionEntry').
+symbol(0x1400100b8, name, '__imp_RtlVirtualUnwind').
+symbol(0x1400100c0, name, '__imp_UnhandledExceptionFilter').
+symbol(0x1400100c8, name, '__imp_GetCurrentProcessId').
+symbol(0x1400100d0, name, 'KERNEL32_NULL_THUNK_DATA').
+symbol(0x140010150, method, '__imp_?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ').
+symbol(0x140010158, method, '__imp_?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@D@Z').
+symbol(0x140010160, name, '__imp_?uncaught_exception@std@@YA_NXZ').
+symbol(0x140010168, method, '__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z').
+symbol(0x140010170, method, '__imp_?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ').
+symbol(0x140010178, method, '__imp_?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z').
+symbol(0x140010180, method, '__imp_?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ').
+symbol(0x140010188, name, '__imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A').
+symbol(0x140010190, method, '__imp_?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x140010198, method, '__imp_?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z').
+symbol(0x1400101a0, method, '__imp_?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z').
+symbol(0x1400101a8, method, '__imp_?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z').
+symbol(0x1400101b0, method, '__imp_?width@ios_base@std@@QEAA_J_J@Z').
+symbol(0x1400101b8, method, '__imp_?width@ios_base@std@@QEBA_JXZ').
+symbol(0x1400101c0, method, '__imp_?flags@ios_base@std@@QEBAHXZ').
+symbol(0x1400101c8, method, '__imp_?good@ios_base@std@@QEBA_NXZ').
+symbol(0x1400101d0, method, '__imp_?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x1400101d8, name, 'MSVCP140D_NULL_THUNK_DATA').
+symbol(0x140010248, name, '__imp___vcrt_GetModuleFileNameW').
+symbol(0x140010250, name, '__imp___current_exception_context').
+symbol(0x140010258, name, '__imp___current_exception').
+symbol(0x140010260, name, '__imp___std_type_info_destroy_list').
+symbol(0x140010268, name, '__imp___C_specific_handler_noexcept').
+symbol(0x140010270, name, '__imp_memcpy').
+symbol(0x140010278, name, '__imp__CxxThrowException').
+symbol(0x140010280, name, '__imp___std_exception_destroy').
+symbol(0x140010288, name, '__imp___std_exception_copy').
+symbol(0x140010290, name, '__imp___C_specific_handler').
+symbol(0x140010298, name, '__imp__purecall').
+symbol(0x1400102a0, name, '__imp___vcrt_LoadLibraryExW').
+symbol(0x1400102a8, name, '__imp___vcrt_GetModuleHandleW').
+symbol(0x1400102b0, name, 'VCRUNTIME140D_NULL_THUNK_DATA').
+symbol(0x140010318, name, '__imp___CxxFrameHandler4').
+symbol(0x140010320, name, 'VCRUNTIME140_1D_NULL_THUNK_DATA').
+symbol(0x140010378, name, '__imp__seh_filter_dll').
+symbol(0x140010380, name, '__imp__initialize_onexit_table').
+symbol(0x140010388, name, '__imp__register_onexit_function').
+symbol(0x140010390, name, '__imp__execute_onexit_table').
+symbol(0x140010398, name, '__imp__crt_atexit').
+symbol(0x1400103a0, name, '__imp__crt_at_quick_exit').
+symbol(0x1400103a8, name, '__imp_terminate').
+symbol(0x1400103b0, name, '__imp__wmakepath_s').
+symbol(0x1400103b8, name, '__imp__wsplitpath_s').
+symbol(0x1400103c0, name, '__imp_wcscpy_s').
+symbol(0x1400103c8, name, '__imp___stdio_common_vsprintf_s').
+symbol(0x1400103d0, name, '__imp__free_dbg').
+symbol(0x1400103d8, name, '__imp___p__commode').
+symbol(0x1400103e0, name, '__imp__set_new_mode').
+symbol(0x1400103e8, name, '__imp__configthreadlocale').
+symbol(0x1400103f0, name, '__imp__register_thread_local_exe_atexit_callback').
+symbol(0x1400103f8, name, '__imp_strcat_s').
+symbol(0x140010400, name, '__imp__cexit').
+symbol(0x140010408, name, '__imp___p___argc').
+symbol(0x140010410, name, '__imp__set_fmode').
+symbol(0x140010418, name, '__imp__exit').
+symbol(0x140010420, name, '__imp_exit').
+symbol(0x140010428, name, '__imp__initterm_e').
+symbol(0x140010430, name, '__imp__initterm').
+symbol(0x140010438, name, '__imp__get_initial_narrow_environment').
+symbol(0x140010440, name, '__imp__initialize_narrow_environment').
+symbol(0x140010448, name, '__imp__configure_narrow_argv').
+symbol(0x140010450, name, '__imp___setusermatherr').
+symbol(0x140010458, name, '__imp__set_app_type').
+symbol(0x140010460, name, '__imp__seh_filter_exe').
+symbol(0x140010468, name, '__imp__CrtDbgReportW').
+symbol(0x140010470, name, '__imp__CrtDbgReport').
+symbol(0x140010478, name, '__imp_malloc').
+symbol(0x140010480, name, '__imp__callnewh').
+symbol(0x140010488, name, '__imp_strlen').
+symbol(0x140010490, name, '__imp__c_exit').
+symbol(0x140010498, name, '__imp_strcpy_s').
+symbol(0x1400104a0, name, '__imp___p___argv').
+symbol(0x1400104a8, name, 'ucrtbased_NULL_THUNK_DATA').
+symbol(0x140010538, name, '__IMPORT_DESCRIPTOR_MSVCP140D').
+symbol(0x14001054c, name, '__IMPORT_DESCRIPTOR_VCRUNTIME140D').
+symbol(0x140010560, name, '__IMPORT_DESCRIPTOR_VCRUNTIME140_1D').
+symbol(0x140010574, name, '__IMPORT_DESCRIPTOR_ucrtbased').
+symbol(0x140010588, name, '__IMPORT_DESCRIPTOR_KERNEL32').
+symbol(0x14001059c, name, '__NULL_IMPORT_DESCRIPTOR').
+symbol(0x140012000, name, '__guard_check_icall_fptr').
+symbol(0x140012010, name, '__guard_xfg_check_icall_fptr').
+symbol(0x140012020, name, '__guard_dispatch_icall_fptr').
+symbol(0x140012030, name, '__guard_xfg_dispatch_icall_fptr').
+symbol(0x140012040, name, '__guard_xfg_table_dispatch_icall_fptr').
+symbol(0x140012050, name, '__castguard_check_failure_os_handled_fptr').
+symbol(0x140012060, name, '__guard_memcpy_fptr').
+% Gound inheritance relationships.
+inheritanceGround('Circle', 'Shape', 0).
+inheritanceGround('Rectangle', 'Shape', 0).
+inheritanceGround('Triangle', 'Shape', 0).
+inheritanceGround('std::bad_alloc', 'std::exception', 0).
+inheritanceGround('std::bad_array_new_length', 'std::bad_alloc', 0).
+inheritanceGround('std::basic_ios<char,std::char_traits<char> >', 'std::ios_base', 0).
+virtualInheritanceGround('std::basic_ostream<char,std::char_traits<char> >', 'std::basic_ios<char,std::char_traits<char> >').
+inheritanceGround('std::basic_ostream<char,std::char_traits<char> >::sentry', 'std::basic_ostream<char,std::char_traits<char> >::_Sentry_base', 0).
+% Ground inheritance completed successfully.

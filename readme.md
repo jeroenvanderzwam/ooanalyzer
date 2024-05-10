@@ -24,6 +24,8 @@ After installation the fact exporter analyzer is available in the Analysis Optio
 
 To use the analyzer load your binary of choice, make sure the fact exporter analyzer is selected and run the analysis.
 
+The binaries in the folders 32bit/binaries and 64bit/binaries are used for this research. The ground truths are located in 32bit/ground truths and 64bit/ground truths.
+
 ## Configuration
 
 The option ExportPath enables you to export the facts to a location of your choice.

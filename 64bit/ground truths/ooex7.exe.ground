@@ -1,0 +1,1016 @@
+demangledName(0x140001910, 'global function', 'near void __cdecl bar(class ObjectTest, int, int, class ObjectTest)').
+demangledName(0x140001970, 'global function', 'near void __cdecl foo(int, class ObjectTest, int)').
+demangledName(0x140001b30, 'global function', 'near near class std::basic_ostream<char, struct std::char_traits<char> > & & __cdecl std::operator<<<char, struct std::char_traits<char>, class std::allocator<char> >(near class std::basic_ostream<char, struct std::char_traits<char> > & &, near class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> > const & &)').
+demangledName(0x140001b90, 'global function', 'near near void * __cdecl std::_Allocate<16, struct std::_Default_allocate_traits, 0>(unsigned __int64)').
+demangledName(0x140001be0, 'global function', 'near near void * __cdecl std::_Allocate_manually_vector_aligned<struct std::_Default_allocate_traits>(unsigned __int64)').
+demangledName(0x140002030, 'global function', 'near void __cdecl std::_Construct_in_place<near char *, near char *near  const & &>(near char *near  & &, near char *near  const & &)').
+demangledName(0x140002090, 'global function', 'near void __cdecl std::_Construct_in_place<struct std::_Container_proxy, near struct std::_Container_base12 *>(near struct std::_Container_proxy & &, near struct std::_Container_base12 *near  && & &&)').
+demangledName(0x1400020f0, 'global function', 'near unsigned __int64 __cdecl std::_Convert_size<unsigned __int64, unsigned __int64>(unsigned __int64)').
+demangledName(0x140002100, 'global function', 'near void __cdecl std::_Deallocate<16, 0>(near void *, unsigned __int64)').
+demangledName(0x140002150, 'global function', 'near void __cdecl std::_Deallocate_plain<class std::allocator<struct std::_Container_proxy> >(near class std::allocator<struct std::_Container_proxy> & &, near struct std::_Container_proxy * const)').
+demangledName(0x140002190, 'global function', 'near void __cdecl std::_Delete_plain_internal<class std::allocator<struct std::_Container_proxy> >(near class std::allocator<struct std::_Container_proxy> & &, near struct std::_Container_proxy * const)').
+demangledName(0x1400021c0, 'global function', 'near void __cdecl std::_Destroy_in_place<near char *>(near char *near  & &)').
+demangledName(0x1400021d0, 'global function', 'near unsigned __int64 __cdecl std::_Get_size_of_n<1>(unsigned __int64)').
+demangledName(0x1400021f0, 'global function', 'near unsigned __int64 __cdecl std::_Get_size_of_n<16>(unsigned __int64)').
+demangledName(0x140002240, 'global function', 'near near class std::basic_ostream<char, struct std::char_traits<char> > & & __cdecl std::_Insert_string<char, struct std::char_traits<char>, unsigned __int64>(near class std::basic_ostream<char, struct std::char_traits<char> > & &, near char const * const, unsigned __int64)').
+demangledName(0x1400026e0, 'global function', 'near near char * __cdecl std::_Unfancy<char>(near char *)').
+demangledName(0x1400026f0, 'global function', 'near near struct std::_Container_proxy * __cdecl std::_Unfancy<struct std::_Container_proxy>(near struct std::_Container_proxy *)').
+demangledName(0x140002700, 'global function', 'near near char *near  * __cdecl std::addressof<near char *>(near char *near  & &)').
+demangledName(0x140002710, 'global function', 'near near struct std::_Container_base12 * __cdecl std::addressof<struct std::_Container_base12>(near struct std::_Container_base12 & &)').
+demangledName(0x140002720, 'global function', 'near near struct std::_Container_proxy * __cdecl std::addressof<struct std::_Container_proxy>(near struct std::_Container_proxy & &)').
+demangledName(0x140002730, 'global function', 'near near class std::basic_ostream<char, struct std::char_traits<char> > & & __cdecl std::endl<char, struct std::char_traits<char> >(near class std::basic_ostream<char, struct std::char_traits<char> > & &)').
+demangledName(0x1400027a0, 'global function', 'near near struct std::_Iterator_base12 * __cdecl std::exchange<near struct std::_Iterator_base12 *, std::nullptr_t>(near struct std::_Iterator_base12 *near  & &, near std::nullptr_t && & &&)').
+demangledName(0x1400027f0, 'global function', 'near near char *near  const & & __cdecl std::forward<near char *near  const & &>(near char *near  const & &)').
+demangledName(0x140002800, 'global function', 'near near struct std::_Container_base12 *near  && & && __cdecl std::forward<near struct std::_Container_base12 *>(near struct std::_Container_base12 *near  & &)').
+demangledName(0x140002810, 'global function', 'near near unsigned __int64 const & & __cdecl std::max<unsigned __int64>(near unsigned __int64 const & &, near unsigned __int64 const & &)').
+demangledName(0x140002870, 'global function', 'near near unsigned __int64 const & & __cdecl std::min<unsigned __int64>(near unsigned __int64 const & &, near unsigned __int64 const & &)').
+demangledName(0x1400031e0, 'global function', 'near near void * __cdecl operator new(unsigned __int64, near void *)').
+demangledName(0x140003320, 'global function', 'near void __cdecl std::_Adjust_manually_vector_aligned(near void *near  & &, near unsigned __int64 & &)').
+demangledName(0x140003520, 'class method', 'public: static near near void * __cdecl std::_Default_allocate_traits::_Allocate(unsigned __int64)').
+demangledName(0x140003590, 'class method', 'private: static near unsigned __int64 __cdecl std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::_Calculate_growth(unsigned __int64, unsigned __int64, unsigned __int64)').
+demangledName(0x1400038e0, 'class method', 'private: static near void __cdecl std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::_Start_element_lifetimes(near char * const, unsigned __int64)').
+demangledName(0x1400038f0, 'global function', 'near void __cdecl std::_Throw_bad_array_new_length(void)').
+demangledName(0x140003a20, 'global function', 'near void __cdecl std::_Xlen_string(void)').
+demangledName(0x140003a40, 'global function', 'near void __cdecl __empty_global_delete(near void *)').
+demangledName(0x140003a50, 'global function', 'near void __cdecl __empty_global_delete(near void *, unsigned __int64)').
+demangledName(0x140003ae0, 'class method', 'public: static near void __cdecl std::_Narrow_char_traits<char, int>::assign(near char & &, near char const & &)').
+demangledName(0x140003b10, 'class method', 'public: static near near char * __cdecl std::_Char_traits<char, int>::copy(near char * const, near char const * const, unsigned __int64)').
+demangledName(0x140003b80, 'class method', 'public: static near void __cdecl std::_Default_allocator_traits<class std::allocator<struct std::_Container_proxy> >::deallocate(near class std::allocator<struct std::_Container_proxy> & &, near struct std::_Container_proxy * const, unsigned __int64)').
+demangledName(0x140003ca0, 'class method', 'public: static near int __cdecl std::_Narrow_char_traits<char, int>::eof(void)').
+demangledName(0x140003cb0, 'class method', 'public: static near bool __cdecl std::_Narrow_char_traits<char, int>::eq_int_type(near int const & &, near int const & &)').
+demangledName(0x140003d00, 'class method', 'public: static near unsigned __int64 __cdecl std::_Narrow_char_traits<char, int>::length(near char const * const)').
+demangledName(0x140003d20, 'class method', 'public: static near __int64 __cdecl std::numeric_limits<__int64>::max(void)').
+demangledName(0x140003d40, 'class method', 'public: static near unsigned __int64 __cdecl std::_Default_allocator_traits<class std::allocator<char> >::max_size(near class std::allocator<char> const & &)').
+demangledName(0x140003fa0, 'global function', 'near near void * __cdecl operator new(unsigned __int64)').
+demangledName(0x140004010, 'global function', 'near void __cdecl operator delete(near void *, unsigned __int64)').
+demangledName(0x1400046f0, 'class method', 'public: static near int __cdecl __scrt_narrow_argv_policy::configure_argv(void)').
+demangledName(0x140004710, 'class method', 'public: static near int __cdecl __scrt_narrow_environment_policy::initialize_environment(void)').
+demangledName(0x140004780, 'class method', 'public: static near void __cdecl __scrt_main_policy::set_app_type(void)').
+demangledName(0x1400047a0, 'class method', 'public: static near void __cdecl __scrt_file_policy::set_commode(void)').
+demangledName(0x1400047d0, 'class method', 'public: static near void __cdecl __scrt_file_policy::set_fmode(void)').
+demangledName(0x140004860, 'global function', 'near void __cdecl __scrt_throw_std_bad_alloc(void)').
+demangledName(0x140004890, 'global function', 'near void __cdecl __scrt_throw_std_bad_array_new_length(void)').
+demangledName(0x1400048c0, 'global function', 'near void __cdecl operator delete(near void *)').
+demangledName(0x1400049a0, 'global function', 'near void __cdecl _RTC_AllocaFailure(near void *, near struct _RTC_ALLOCA_NODE *, int)').
+demangledName(0x140004b50, 'global function', 'near void __cdecl _RTC_Failure(near void *, int)').
+demangledName(0x140004bc0, 'global function', 'near void __cdecl _RTC_StackFailure(near void *, near char const *)').
+demangledName(0x1400052c0, 'global function', 'near int (__cdecl*__cdecl _RTC_GetErrorFunc(near void const *) )(int, near char const *, int, near char const *, near char const *, ...)').
+demangledName(0x1400052d0, 'global function', 'near int (__cdecl*__cdecl _RTC_GetErrorFuncW(near void const *) )(int, near wchar_t const *, int, near wchar_t const *, near wchar_t const *, ...)').
+demangledName(0x140005d90, 'global function', 'near void __cdecl __scrt_initialize_type_info(void)').
+demangledName(0x140005db0, 'global function', 'near void __cdecl __scrt_uninitialize_type_info(void)').
+demangledName(0x140006f60, 'global function', 'near int __cdecl _RTC_GetSrcLine(near unsigned char *, near wchar_t *, unsigned long, near int *, near wchar_t *, unsigned long)').
+demangledName(0x14000e750, 'global thing 1', 'std::exception::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x14000e768, 'global thing 1', 'std::exception::`RTTI Base Class Array\'').
+demangledName(0x14000e778, 'global thing 1', 'std::exception::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x14000e7d8, 'global thing 1', 'std::bad_alloc::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x14000e7f0, 'global thing 1', 'std::bad_alloc::`RTTI Base Class Array\'').
+demangledName(0x14000e808, 'global thing 1', 'std::bad_alloc::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x14000e868, 'global thing 1', 'std::bad_array_new_length::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x14000e880, 'global thing 1', 'std::bad_array_new_length::`RTTI Base Class Array\'').
+demangledName(0x14000e8a8, 'global thing 1', 'std::bad_array_new_length::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x14000e908, 'global thing 1', 'type_info::`RTTI Class Hierarchy Descriptor\'').
+demangledName(0x14000e920, 'global thing 1', 'type_info::`RTTI Base Class Array\'').
+demangledName(0x14000e930, 'global thing 1', 'type_info::`RTTI Base Class Descriptor at (0, -1, 0, 64)\'').
+demangledName(0x140011000, 'global object', 'near int *near  _RTC_ErrorLevels').
+demangledName(0x140011170, 'global thing 1', 'class `RTTI Type Descriptor\'::std::bad_array_new_length').
+demangledName(0x1400111a8, 'global thing 1', 'class `RTTI Type Descriptor\'::std::bad_alloc').
+demangledName(0x1400111d8, 'global thing 1', 'class `RTTI Type Descriptor\'::std::exception').
+demangledName(0x140011308, 'global thing 1', 'class `RTTI Type Descriptor\'::type_info').
+demangledName(0x140011438, 'global object', 'near unsigned __int64 `__local_stdio_printf_options\'::`2\'::_OptionsStorage').
+demangledName(0x1400114c0, 'global object', 'near struct __type_info_node __type_info_root_node').
+demangledName(0x1400114d8, 'global object', 'near unsigned __int64 `__local_stdio_scanf_options\'::`2\'::_OptionsStorage').
+demangledName(0x1400131d0, 'global function', 'near bool __cdecl std::uncaught_exception(void)').
+demangledName(0x1400131d8, 'global function', 'near void __cdecl std::_Xlength_error(near char const *)').
+demangledName(0x1400131e8, 'global object', 'near class std::basic_ostream<char, struct std::char_traits<char> > std::cout').
+groundTruth(0x140001ad0, 'std::_Compressed_pair<class std::allocator<char>, class std::_String_val<struct std::_Simple_types<char> >, 1>', '_Compressed_pair', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140001b10, 'std::allocator<struct std::_Container_proxy>', 'allocator', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140001d30, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', '_Construct', method, none, linked, private, nonvirtual, '__cdecl').
+groundTruth(0x1400028d0, 'std::_Container_proxy_ptr12<class std::allocator<struct std::_Container_proxy> >', '_Container_proxy_ptr12', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002980, 'std::_String_val<struct std::_Simple_types<char> >', '_String_val', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x1400029e0, 'std::allocator<char>', 'allocator', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x1400029f0, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', 'basic_string', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002a60, 'ObjectTest', 'ObjectTest', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002aa0, 'std::_Basic_container_proxy_ptr12', '_Basic_container_proxy_ptr12', method, constructor, linked, protected, nonvirtual, '__cdecl').
+groundTruth(0x140002ac0, 'std::_String_val<struct std::_Simple_types<char> >::_Bxty', '_Bxty', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002af0, 'std::_Container_base12', '_Container_base12', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002b10, 'std::_Container_proxy', '_Container_proxy', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002b50, 'std::basic_ostream<char, struct std::char_traits<char> >::_Sentry_base', '_Sentry_base', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002be0, 'std::bad_alloc', 'bad_alloc', method, constructor, linked, private, nonvirtual, '__cdecl').
+groundTruth(0x140002c30, 'std::bad_alloc', 'bad_alloc', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002c80, 'std::bad_array_new_length', 'bad_array_new_length', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002cd0, 'std::bad_array_new_length', 'bad_array_new_length', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002d20, 'std::exception', 'exception', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002d90, 'std::exception', 'exception', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002df0, 'std::basic_ostream<char, struct std::char_traits<char> >::sentry', 'sentry', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002f00, 'std::_Compressed_pair<class std::allocator<char>, class std::_String_val<struct std::_Simple_types<char> >, 1>', '~_Compressed_pair', method, realDestructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002f30, 'std::_Container_proxy_ptr12<class std::allocator<struct std::_Container_proxy> >', '~_Container_proxy_ptr12', method, realDestructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002f70, 'std::_String_val<struct std::_Simple_types<char> >', '~_String_val', method, realDestructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140002fa0, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', '~basic_string', method, realDestructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140003060, 'std::_String_val<struct std::_Simple_types<char> >::_Bxty', '~_Bxty', method, realDestructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140003070, 'std::basic_ostream<char, struct std::char_traits<char> >::_Sentry_base', '~_Sentry_base', method, realDestructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x1400030f0, 'std::bad_alloc', '~bad_alloc', method, realDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140003110, 'std::bad_array_new_length', '~bad_array_new_length', method, realDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140003130, 'std::exception', '~exception', method, realDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140003170, 'std::basic_ostream<char, struct std::char_traits<char> >::sentry', '~sentry', method, realDestructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140003200, 'std::basic_ostream<char, struct std::char_traits<char> >::sentry', 'operator bool', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140003220, 'std::bad_alloc', 'vector_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140003220, 'std::bad_alloc', 'scalar_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140003270, 'std::bad_array_new_length', 'vector_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140003270, 'std::bad_array_new_length', 'scalar_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x1400032c0, 'std::exception', 'vector_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x1400032c0, 'std::exception', 'scalar_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140003310, 'std::_String_val<struct std::_Simple_types<char> >', '_Activate_SSO_buffer', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140003540, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', '_Calculate_growth', method, none, linked, private, nonvirtual, '__cdecl').
+groundTruth(0x140003680, 'std::_Compressed_pair<class std::allocator<char>, class std::_String_val<struct std::_Simple_types<char> >, 1>', '_Get_first', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140003690, 'std::_Compressed_pair<class std::allocator<char>, class std::_String_val<struct std::_Simple_types<char> >, 1>', '_Get_first', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x1400036a0, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', '_Getal', method, none, linked, private, nonvirtual, '__cdecl').
+groundTruth(0x1400036d0, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', '_Getal', method, none, linked, private, nonvirtual, '__cdecl').
+groundTruth(0x140003700, 'std::_String_val<struct std::_Simple_types<char> >', '_Large_string_engaged', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140003740, 'std::_String_val<struct std::_Simple_types<char> >', '_Myptr', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x1400037a0, 'std::_Container_base12', '_Orphan_all', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x1400037c0, 'std::_Container_base12', '_Orphan_all_locked_v3', method, none, linked, private, nonvirtual, '__cdecl').
+groundTruth(0x140003830, 'std::_Container_base12', '_Orphan_all_unlocked_v3', method, none, linked, private, nonvirtual, '__cdecl').
+groundTruth(0x1400038c0, 'std::_Basic_container_proxy_ptr12', '_Release', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140003920, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', '_Tidy_deallocate', method, none, linked, private, nonvirtual, '__cdecl').
+groundTruth(0x140003a60, 'ObjectTest', 'add', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140003a80, 'std::allocator<char>', 'allocate', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140003ab0, 'std::allocator<struct std::_Container_proxy>', 'allocate', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140003b50, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', 'data', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140003bc0, 'std::allocator<char>', 'deallocate', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140003d60, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', 'max_size', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140003e30, 'ObjectTest', 'print', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140003ec0, 'std::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >', 'size', method, none, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x140003ee0, 'std::exception', 'what', method, none, linked, public, virtual, '__cdecl').
+groundTruth(0x140004330, 'type_info', '~type_info', method, realDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140004350, 'type_info', 'vector_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140004350, 'type_info', 'scalar_deleting_destructor', method, deletingDestructor, linked, public, virtual, '__cdecl').
+groundTruth(0x140004810, 'std::bad_alloc', 'bad_alloc', method, constructor, linked, public, nonvirtual, '__cdecl').
+groundTruth(0x14000d280, 'std::exception', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x14000d2b8, 'std::bad_alloc', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x14000d2d8, 'std::bad_array_new_length', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x14000d5c0, 'type_info', 'vftable', table, vftable, linked, none, none, 'none').
+groundTruth(0x14000e720, 'std::exception', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x14000e7a8, 'std::bad_alloc', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x14000e838, 'std::bad_array_new_length', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x14000e8d8, 'type_info', 'rtti', table, rtti, linked, none, none, 'none').
+groundTruth(0x140013150, 'std::basic_ostream<char, struct std::char_traits<char> >', 'flush', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x140013158, 'std::basic_ostream<char, struct std::char_traits<char> >', 'put', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x140013160, 'std::basic_ostream<char, struct std::char_traits<char> >', 'operator<<', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x140013168, 'std::basic_ostream<char, struct std::char_traits<char> >', 'operator<<', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x140013170, 'std::basic_ostream<char, struct std::char_traits<char> >', '_Osfx', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x140013178, 'std::basic_ios<char, struct std::char_traits<char> >', 'widen', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x140013180, 'std::basic_ios<char, struct std::char_traits<char> >', 'fill', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x140013188, 'std::basic_ios<char, struct std::char_traits<char> >', 'rdbuf', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x140013190, 'std::basic_ios<char, struct std::char_traits<char> >', 'tie', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x140013198, 'std::basic_ios<char, struct std::char_traits<char> >', 'setstate', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x1400131a0, 'std::basic_streambuf<char, struct std::char_traits<char> >', 'sputn', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x1400131a8, 'std::basic_streambuf<char, struct std::char_traits<char> >', 'sputc', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x1400131b0, 'std::ios_base', 'width', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x1400131b8, 'std::ios_base', 'width', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x1400131c0, 'std::ios_base', 'flags', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x1400131c8, 'std::ios_base', 'good', method, none, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x1400131e0, 'std::_Lockit', '~_Lockit', method, realDestructor, imported, public, nonvirtual, '__cdecl').
+groundTruth(0x1400131f0, 'std::_Lockit', '_Lockit', method, constructor, imported, public, nonvirtual, '__cdecl').
+% Ground truth generation was completed successfully.
+symbol(0x140000000, name, '__AbsoluteZero').
+symbol(0x140000000, name, '__enclave_config').
+symbol(0x140000000, name, '__guard_eh_cont_count').
+symbol(0x140000000, name, '__guard_eh_cont_table').
+symbol(0x140000000, name, '__guard_fids_count').
+symbol(0x140000000, name, '__guard_fids_table').
+symbol(0x140000000, name, '__guard_iat_count').
+symbol(0x140000000, name, '__guard_iat_table').
+symbol(0x140000000, name, '__guard_longjmp_count').
+symbol(0x140000000, name, '__guard_longjmp_table').
+symbol(0x140000000, name, '__volatile_metadata').
+symbol(0x140000100, name, '__guard_flags').
+symbol(0x140001005, tramp, '?set_commode@__scrt_file_policy@@SAXXZ').
+symbol(0x14000100a, tramp, '??$_Convert_size@_K_K@std@@YA_K_K@Z').
+symbol(0x14000100f, tramp, '__scrt_exe_initialize_mta').
+symbol(0x140001014, tramp, '__local_stdio_printf_options').
+symbol(0x140001019, tramp, '??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z').
+symbol(0x14000101e, tramp, '_guard_check_icall_nop').
+symbol(0x140001023, tramp, '??2@YAPEAX_K@Z').
+symbol(0x140001028, tramp, '_CRT_RTC_INITW').
+symbol(0x14000102d, tramp, '??$min@_K@std@@YAAEB_KAEB_K0@Z').
+symbol(0x140001032, tramp, '_RTC_GetErrDesc').
+symbol(0x140001037, tramp, '??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z').
+symbol(0x14000103c, tramp, '__scrt_dllmain_before_initialize_c').
+symbol(0x140001041, tramp, '__local_stdio_scanf_options').
+symbol(0x140001046, tramp, '??$_Construct@$00PEBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXQEBD_K@Z').
+symbol(0x14000104b, tramp, '__scrt_stub_for_acrt_thread_detach').
+symbol(0x140001050, tramp, '__report_gsfailure').
+symbol(0x140001055, tramp, 'ReadNoFence64').
+symbol(0x14000105a, tramp, '??0_Container_proxy@std@@QEAA@PEAU_Container_base12@1@@Z').
+symbol(0x14000105f, tramp, '_get_startup_thread_locale_mode').
+symbol(0x140001064, tramp, '?what@exception@std@@UEBAPEBDXZ').
+symbol(0x140001069, tramp, '_get_startup_new_mode').
+symbol(0x14000106e, tramp, '__scrt_stub_for_acrt_initialize').
+symbol(0x140001073, tramp, '__scrt_stub_for_is_c_termination_complete').
+symbol(0x140001078, tramp, '?_RTC_GetErrorFuncW@@YAP6AHHPEB_WH00ZZPEBX@Z').
+symbol(0x14000107d, tramp, '??0bad_alloc@std@@QEAA@AEBV01@@Z').
+symbol(0x140001082, tramp, '??$forward@AEBQEAD@std@@YAAEBQEADAEBQEAD@Z').
+symbol(0x140001087, tramp, '?bar@@YAXVObjectTest@@HH0@Z').
+symbol(0x14000108c, tramp, '??$addressof@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@AEAU10@@Z').
+symbol(0x140001091, tramp, '_RTC_UninitUse').
+symbol(0x140001096, tramp, '_guard_xfg_dispatch_icall_nop').
+symbol(0x14000109b, tramp, '??$exchange@PEAU_Iterator_base12@std@@$$T@std@@YAPEAU_Iterator_base12@0@AEAPEAU10@$$QEA$$T@Z').
+symbol(0x1400010a0, tramp, '_onexit').
+symbol(0x1400010a5, tramp, '_matherr').
+symbol(0x1400010aa, tramp, '??_Gtype_info@@UEAAPEAXI@Z').
+symbol(0x1400010af, tramp, '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z').
+symbol(0x1400010b4, tramp, '??0_Basic_container_proxy_ptr12@std@@IEAA@XZ').
+symbol(0x1400010b9, tramp, '??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ').
+symbol(0x1400010be, tramp, '?__scrt_initialize_type_info@@YAXXZ').
+symbol(0x1400010c3, tramp, '??0bad_alloc@std@@AEAA@QEBD@Z').
+symbol(0x1400010c8, tramp, '__scrt_stub_for_acrt_uninitialize').
+symbol(0x1400010cd, tramp, '__castguard_slow_path_check_nop').
+symbol(0x1400010d2, tramp, '?set_app_type@__scrt_main_policy@@SAXXZ').
+symbol(0x1400010d7, tramp, '__castguard_slow_path_check_user_handled').
+symbol(0x1400010dc, tramp, '_guard_dispatch_icall_nop').
+symbol(0x1400010e1, tramp, '__GSHandlerCheckCommon').
+symbol(0x1400010e6, tramp, '?_Adjust_manually_vector_aligned@std@@YAXAEAPEAXAEA_K@Z').
+symbol(0x1400010eb, tramp, '__scrt_stub_for_acrt_thread_attach').
+symbol(0x1400010f0, tramp, '??1exception@std@@UEAA@XZ').
+symbol(0x1400010f5, tramp, '_RTC_NumErrors').
+symbol(0x1400010fa, tramp, '??0?$allocator@D@std@@QEAA@XZ').
+symbol(0x1400010ff, tramp, '__scrt_initialize_onexit_tables').
+symbol(0x140001104, tramp, '__report_securityfailure').
+symbol(0x140001109, tramp, '??$_Construct_in_place@U_Container_proxy@std@@PEAU_Container_base12@2@@std@@YAXAEAU_Container_proxy@0@$$QEAPEAU_Container_base12@0@@Z').
+symbol(0x14000110e, tramp, '__scrt_stub_for_acrt_uninitialize_critical').
+symbol(0x140001113, tramp, '__scrt_unhandled_exception_filter').
+symbol(0x140001118, tramp, '?_Calculate_growth@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CA_K_K00@Z').
+symbol(0x14000111d, tramp, '__castguard_check_failure_user_handled').
+symbol(0x140001122, tramp, '?__scrt_throw_std_bad_alloc@@YAXXZ').
+symbol(0x140001127, tramp, '_RTC_SetErrorFuncW').
+symbol(0x14000112c, tramp, '??0ObjectTest@@QEAA@HH@Z').
+symbol(0x140001131, tramp, '?eof@?$_Narrow_char_traits@DH@std@@SAHXZ').
+symbol(0x140001136, tramp, '__scrt_exe_initialize_mta').
+symbol(0x14000113b, tramp, '?allocate@?$allocator@U_Container_proxy@std@@@std@@QEAAPEAU_Container_proxy@2@_K@Z').
+symbol(0x140001140, tramp, '_guard_icall_checks_enforced').
+symbol(0x140001145, tramp, '?_Getal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAAEAV?$allocator@D@2@XZ').
+symbol(0x14000114a, tramp, '_initialize_denormal_control').
+symbol(0x14000114f, tramp, '_RTC_SetErrorFunc').
+symbol(0x140001154, tramp, '?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z').
+symbol(0x140001159, tramp, '?__empty_global_delete@@YAXPEAX_K@Z').
+symbol(0x14000115e, tramp, '??$addressof@U_Container_base12@std@@@std@@YAPEAU_Container_base12@0@AEAU10@@Z').
+symbol(0x140001163, tramp, '__castguard_check_failure_debugbreak').
+symbol(0x140001168, tramp, '?initialize_environment@__scrt_narrow_environment_policy@@SAHXZ').
+symbol(0x14000116d, tramp, '?_Start_element_lifetimes@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAXQEAD_K@Z').
+symbol(0x140001172, tramp, '__scrt_uninitialize_crt').
+symbol(0x140001177, tramp, '??_Ebad_array_new_length@std@@UEAAPEAXI@Z').
+symbol(0x14000117c, tramp, '??0_Container_base12@std@@QEAA@XZ').
+symbol(0x140001181, tramp, '?foo@@YAXHVObjectTest@@H@Z').
+symbol(0x140001186, tramp, '__scrt_is_ucrt_dll_in_use').
+symbol(0x14000118b, tramp, '?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ').
+symbol(0x140001190, tramp, '??_Gtype_info@@UEAAPEAXI@Z').
+symbol(0x140001195, tramp, '_RTC_SetErrorType').
+symbol(0x14000119a, tramp, '__scrt_is_nonwritable_in_current_image').
+symbol(0x14000119f, tramp, '??0?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QEAA@AEAV?$allocator@U_Container_proxy@std@@@1@AEAU_Container_base12@1@@Z').
+symbol(0x1400011a4, tramp, 'atexit').
+symbol(0x1400011a9, tramp, '?max_size@?$_Default_allocator_traits@V?$allocator@D@std@@@std@@SA_KAEBV?$allocator@D@2@@Z').
+symbol(0x1400011ae, tramp, '__GSHandlerCheck').
+symbol(0x1400011b3, tramp, '??$_Allocate@$0BA@U_Default_allocate_traits@std@@$0A@@std@@YAPEAX_K@Z').
+symbol(0x1400011b8, tramp, '__scrt_stub_for_acrt_thread_detach').
+symbol(0x1400011bd, tramp, '??1?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ').
+symbol(0x1400011c2, tramp, '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ').
+symbol(0x1400011c7, tramp, '??0_Bxty@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ').
+symbol(0x1400011cc, tramp, 'ReadPointerNoFence').
+symbol(0x1400011d1, tramp, '?data@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAPEBDXZ').
+symbol(0x1400011d6, tramp, '??0bad_array_new_length@std@@QEAA@AEBV01@@Z').
+symbol(0x1400011db, tramp, '?deallocate@?$_Default_allocator_traits@V?$allocator@U_Container_proxy@std@@@std@@@std@@SAXAEAV?$allocator@U_Container_proxy@std@@@2@QEAU_Container_proxy@2@_K@Z').
+symbol(0x1400011e0, tramp, '?add@ObjectTest@@QEAAHXZ').
+symbol(0x1400011e5, tramp, '??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z').
+symbol(0x1400011ea, tramp, '__scrt_stub_for_acrt_uninitialize').
+symbol(0x1400011ef, tramp, '__scrt_stub_for_acrt_uninitialize_critical').
+symbol(0x1400011f4, tramp, '?assign@?$_Narrow_char_traits@DH@std@@SAXAEADAEBD@Z').
+symbol(0x1400011f9, tramp, '?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ').
+symbol(0x1400011fe, tramp, '_get_startup_commit_mode').
+symbol(0x140001203, tramp, '__scrt_stub_for_acrt_thread_attach').
+symbol(0x140001208, tramp, 'at_quick_exit').
+symbol(0x14000120d, tramp, '_should_initialize_environment').
+symbol(0x140001212, tramp, '?_Release@_Basic_container_proxy_ptr12@std@@QEAAXXZ').
+symbol(0x140001217, tramp, '__security_check_cookie').
+symbol(0x14000121c, tramp, '??$_Get_size_of_n@$00@std@@YA_K_K@Z').
+symbol(0x140001221, tramp, '?_RTC_Failure@@YAXPEAXH@Z').
+symbol(0x140001226, tramp, '?_Tidy_deallocate@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXXZ').
+symbol(0x14000122b, tramp, '?_Xlen_string@std@@YAXXZ').
+symbol(0x140001230, tramp, '__castguard_slow_path_check_fastfail').
+symbol(0x140001235, tramp, '??$_Destroy_in_place@PEAD@std@@YAXAEAPEAD@Z').
+symbol(0x14000123a, tramp, '??1bad_alloc@std@@UEAA@XZ').
+symbol(0x14000123f, tramp, '_get_startup_file_mode').
+symbol(0x140001244, tramp, '__scrt_stub_for_is_c_termination_complete').
+symbol(0x140001249, tramp, '_get_startup_argv_mode').
+symbol(0x14000124e, tramp, '__scrt_initialize_winrt').
+symbol(0x140001253, tramp, '__raise_securityfailure').
+symbol(0x140001258, tramp, '?_Orphan_all_locked_v3@_Container_base12@std@@AEAAXXZ').
+symbol(0x14000125d, tramp, '??$_Get_size_of_n@$0BA@@std@@YA_K_K@Z').
+symbol(0x140001262, tramp, '??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEBA_NXZ').
+symbol(0x140001267, tramp, '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ').
+symbol(0x14000126c, tramp, '_RTC_Initialize').
+symbol(0x140001271, tramp, '??$max@_K@std@@YAAEB_KAEB_K0@Z').
+symbol(0x140001276, tramp, '??1_Bxty@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ').
+symbol(0x14000127b, tramp, '??_Ebad_alloc@std@@UEAAPEAXI@Z').
+symbol(0x140001280, tramp, 'sprintf_s').
+symbol(0x140001285, tramp, '??$?0D@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z').
+symbol(0x14000128a, tramp, '_CRT_RTC_INIT').
+symbol(0x14000128f, tramp, '?configure_argv@__scrt_narrow_argv_policy@@SAHXZ').
+symbol(0x140001294, tramp, '_RTC_Terminate').
+symbol(0x140001299, tramp, '??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z').
+symbol(0x14000129e, tramp, '??$_Insert_string@DU?$char_traits@D@std@@_K@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@QEBD_K@Z').
+symbol(0x1400012a3, tramp, '??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z').
+symbol(0x1400012a8, tramp, '__scrt_is_user_matherr_present').
+symbol(0x1400012ad, tramp, '__scrt_set_unhandled_exception_filter').
+symbol(0x1400012b2, tramp, '??1bad_array_new_length@std@@UEAA@XZ').
+symbol(0x1400012b7, tramp, '__scrt_stub_for_acrt_thread_detach').
+symbol(0x1400012bc, tramp, '__scrt_stub_for_acrt_uninitialize').
+symbol(0x1400012c1, tramp, '__scrt_stub_for_acrt_thread_attach').
+symbol(0x1400012c6, tramp, '?_Orphan_all_unlocked_v3@_Container_base12@std@@AEAAXXZ').
+symbol(0x1400012cb, tramp, '_RTC_CheckStackVars2').
+symbol(0x1400012d0, tramp, '?_RTC_StackFailure@@YAXPEAXPEBD@Z').
+symbol(0x1400012d5, tramp, 'main').
+symbol(0x1400012da, tramp, '??0exception@std@@QEAA@QEBDH@Z').
+symbol(0x1400012df, tramp, '??$?0$$V@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z').
+symbol(0x1400012e4, tramp, 'mainCRTStartup').
+symbol(0x1400012e9, tramp, '__scrt_is_managed_app').
+symbol(0x1400012ee, tramp, '__castguard_set_user_handler').
+symbol(0x1400012f3, tramp, '__scrt_stub_for_acrt_uninitialize_critical').
+symbol(0x1400012f8, tramp, '__security_init_cookie').
+symbol(0x1400012fd, tramp, '__castguard_slow_path_check_os_handled').
+symbol(0x140001302, tramp, '__scrt_stub_for_acrt_initialize').
+symbol(0x140001307, tramp, '__scrt_get_dyn_tls_init_callback').
+symbol(0x14000130c, tramp, '?__scrt_uninitialize_type_info@@YAXXZ').
+symbol(0x140001311, tramp, '?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ').
+symbol(0x140001316, tramp, '__report_rangecheckfailure').
+symbol(0x14000131b, tramp, '??_Ebad_alloc@std@@UEAAPEAXI@Z').
+symbol(0x140001320, tramp, '_guard_rf_checks_enforced').
+symbol(0x140001325, tramp, '?_RTC_GetSrcLine@@YAHPEAEPEA_WKPEAH1K@Z').
+symbol(0x14000132a, tramp, '?deallocate@?$allocator@D@std@@QEAAXQEAD_K@Z').
+symbol(0x14000132f, tramp, '__scrt_dllmain_uninitialize_critical').
+symbol(0x140001334, tramp, '__scrt_dllmain_crt_thread_attach').
+symbol(0x140001339, tramp, '??$forward@PEAU_Container_base12@std@@@std@@YA$$QEAPEAU_Container_base12@0@AEAPEAU10@@Z').
+symbol(0x14000133e, tramp, '__scrt_get_dyn_tls_dtor_callback').
+symbol(0x140001343, tramp, '?_Get_first@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAAAEAV?$allocator@D@2@XZ').
+symbol(0x140001348, tramp, '__scrt_stub_for_acrt_initialize').
+symbol(0x14000134d, tramp, '?__empty_global_delete@@YAXPEAX@Z').
+symbol(0x140001352, tramp, '__scrt_initialize_default_local_stdio_options').
+symbol(0x140001357, tramp, '__crt_debugger_hook').
+symbol(0x14000135c, tramp, '__castguard_slow_path_check_debugbreak').
+symbol(0x140001361, tramp, '__castguard_check_failure_nop').
+symbol(0x140001366, tramp, '__scrt_dllmain_after_initialize_c').
+symbol(0x14000136b, tramp, '?_Throw_bad_array_new_length@std@@YAXXZ').
+symbol(0x140001370, tramp, '??2@YAPEAX_KPEAX@Z').
+symbol(0x140001375, tramp, '??3@YAXPEAX_K@Z').
+symbol(0x14000137a, tramp, '__scrt_release_startup_lock').
+symbol(0x14000137f, tramp, '_RTC_CheckStackVars').
+symbol(0x140001384, tramp, '__isa_available_init').
+symbol(0x140001389, tramp, '__scrt_fastfail').
+symbol(0x14000138e, tramp, '??0?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ').
+symbol(0x140001393, tramp, '?eq_int_type@?$_Narrow_char_traits@DH@std@@SA_NAEBH0@Z').
+symbol(0x140001398, tramp, '??_Gexception@std@@UEAAPEAXI@Z').
+symbol(0x14000139d, tramp, '??0bad_array_new_length@std@@QEAA@XZ').
+symbol(0x1400013a2, tramp, '??$addressof@PEAD@std@@YAPEAPEADAEAPEAD@Z').
+symbol(0x1400013a7, tramp, 'NtCurrentTeb').
+symbol(0x1400013ac, tramp, '?max@?$numeric_limits@_J@std@@SA_JXZ').
+symbol(0x1400013b1, tramp, '??_Ebad_array_new_length@std@@UEAAPEAXI@Z').
+symbol(0x1400013b6, tramp, '??$_Deallocate_plain@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z').
+symbol(0x1400013bb, tramp, '__scrt_acquire_startup_lock').
+symbol(0x1400013c0, tramp, '??1?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QEAA@XZ').
+symbol(0x1400013c5, tramp, '??3@YAXPEAX@Z').
+symbol(0x1400013ca, tramp, '?set_fmode@__scrt_file_policy@@SAXXZ').
+symbol(0x1400013cf, tramp, '??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z').
+symbol(0x1400013d4, tramp, '??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z').
+symbol(0x1400013d9, tramp, '_RTC_InitBase').
+symbol(0x1400013de, tramp, '??$_Unfancy@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@PEAU10@@Z').
+symbol(0x1400013e3, tramp, '?allocate@?$allocator@D@std@@QEAAPEAD_K@Z').
+symbol(0x1400013e8, tramp, '__castguard_check_failure_os_handled').
+symbol(0x1400013ed, tramp, '??$_Construct_in_place@PEADAEBQEAD@std@@YAXAEAPEADAEBQEAD@Z').
+symbol(0x1400013f2, tramp, '?_Orphan_all@_Container_base12@std@@QEAAXXZ').
+symbol(0x1400013f7, tramp, '?copy@?$_Char_traits@DH@std@@SAPEADQEADQEBD_K@Z').
+symbol(0x1400013fc, tramp, '??0exception@std@@QEAA@AEBV01@@Z').
+symbol(0x140001401, tramp, '?_Activate_SSO_buffer@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAAXXZ').
+symbol(0x140001406, tramp, '??1?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@XZ').
+symbol(0x14000140b, tramp, '_vsprintf_s_l').
+symbol(0x140001410, tramp, '?_Large_string_engaged@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBA_NXZ').
+symbol(0x140001415, tramp, '?_Allocate@_Default_allocate_traits@std@@SAPEAX_K@Z').
+symbol(0x14000141a, tramp, '?print@ObjectTest@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z').
+symbol(0x14000141f, tramp, '?_RTC_GetErrorFunc@@YAP6AHHPEBDH00ZZPEBX@Z').
+symbol(0x140001424, tramp, '?_RTC_AllocaFailure@@YAXPEAXPEAU_RTC_ALLOCA_NODE@@H@Z').
+symbol(0x140001429, tramp, '??_Gexception@std@@UEAAPEAXI@Z').
+symbol(0x14000142e, tramp, '??$_Unfancy@D@std@@YAPEADPEAD@Z').
+symbol(0x140001433, tramp, '?_Calculate_growth@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBA_K_K@Z').
+symbol(0x140001438, tramp, '_initialize_invalid_parameter_handler').
+symbol(0x14000143d, tramp, '__scrt_initialize_mta').
+symbol(0x140001442, tramp, '__scrt_dllmain_exception_filter').
+symbol(0x140001447, tramp, '__scrt_initialize_crt').
+symbol(0x14000144c, tramp, '__castguard_check_failure_fastfail').
+symbol(0x140001451, tramp, '??1type_info@@UEAA@XZ').
+symbol(0x140001456, tramp, '?__scrt_throw_std_bad_array_new_length@@YAXXZ').
+symbol(0x14000145b, tramp, '?_Get_first@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEBAAEBV?$allocator@D@2@XZ').
+symbol(0x140001460, tramp, '__scrt_get_show_window_mode').
+symbol(0x140001465, tramp, '__scrt_dllmain_crt_thread_detach').
+symbol(0x14000146a, tramp, '__report_securityfailureEx').
+symbol(0x14000146f, tramp, '?_Getal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBAAEBV?$allocator@D@2@XZ').
+symbol(0x140001474, tramp, '__scrt_dllmain_uninitialize_c').
+symbol(0x140001479, tramp, '??0bad_alloc@std@@QEAA@XZ').
+symbol(0x14000147e, tramp, '_RTC_AllocaHelper').
+symbol(0x140001483, tramp, '_RTC_Shutdown').
+symbol(0x140001910, func, '?bar@@YAXVObjectTest@@HH0@Z').
+symbol(0x140001970, func, '?foo@@YAXHVObjectTest@@H@Z').
+symbol(0x140001a10, func, 'main').
+symbol(0x140001ad0, method, '??$?0$$V@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z').
+symbol(0x140001b10, method, '??$?0D@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z').
+symbol(0x140001b30, func, '??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z').
+symbol(0x140001b90, func, '??$_Allocate@$0BA@U_Default_allocate_traits@std@@$0A@@std@@YAPEAX_K@Z').
+symbol(0x140001be0, func, '??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z').
+symbol(0x140001d30, method, '??$_Construct@$00PEBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXQEBD_K@Z').
+symbol(0x140002030, func, '??$_Construct_in_place@PEADAEBQEAD@std@@YAXAEAPEADAEBQEAD@Z').
+symbol(0x140002090, func, '??$_Construct_in_place@U_Container_proxy@std@@PEAU_Container_base12@2@@std@@YAXAEAU_Container_proxy@0@$$QEAPEAU_Container_base12@0@@Z').
+symbol(0x1400020f0, func, '??$_Convert_size@_K_K@std@@YA_K_K@Z').
+symbol(0x140002100, func, '??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z').
+symbol(0x140002150, func, '??$_Deallocate_plain@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z').
+symbol(0x140002190, func, '??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z').
+symbol(0x1400021c0, func, '??$_Destroy_in_place@PEAD@std@@YAXAEAPEAD@Z').
+symbol(0x1400021d0, func, '??$_Get_size_of_n@$00@std@@YA_K_K@Z').
+symbol(0x1400021f0, func, '??$_Get_size_of_n@$0BA@@std@@YA_K_K@Z').
+symbol(0x140002240, func, '??$_Insert_string@DU?$char_traits@D@std@@_K@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@QEBD_K@Z').
+symbol(0x1400026e0, func, '??$_Unfancy@D@std@@YAPEADPEAD@Z').
+symbol(0x1400026f0, func, '??$_Unfancy@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@PEAU10@@Z').
+symbol(0x140002700, func, '??$addressof@PEAD@std@@YAPEAPEADAEAPEAD@Z').
+symbol(0x140002710, func, '??$addressof@U_Container_base12@std@@@std@@YAPEAU_Container_base12@0@AEAU10@@Z').
+symbol(0x140002720, func, '??$addressof@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@AEAU10@@Z').
+symbol(0x140002730, func, '??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z').
+symbol(0x1400027a0, func, '??$exchange@PEAU_Iterator_base12@std@@$$T@std@@YAPEAU_Iterator_base12@0@AEAPEAU10@$$QEA$$T@Z').
+symbol(0x1400027f0, func, '??$forward@AEBQEAD@std@@YAAEBQEADAEBQEAD@Z').
+symbol(0x140002800, func, '??$forward@PEAU_Container_base12@std@@@std@@YA$$QEAPEAU_Container_base12@0@AEAPEAU10@@Z').
+symbol(0x140002810, func, '??$max@_K@std@@YAAEB_KAEB_K0@Z').
+symbol(0x140002870, func, '??$min@_K@std@@YAAEB_KAEB_K0@Z').
+symbol(0x1400028d0, method, '??0?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QEAA@AEAV?$allocator@U_Container_proxy@std@@@1@AEAU_Container_base12@1@@Z').
+symbol(0x140002980, method, '??0?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ').
+symbol(0x1400029e0, method, '??0?$allocator@D@std@@QEAA@XZ').
+symbol(0x1400029f0, method, '??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z').
+symbol(0x140002a60, method, '??0ObjectTest@@QEAA@HH@Z').
+symbol(0x140002aa0, method, '??0_Basic_container_proxy_ptr12@std@@IEAA@XZ').
+symbol(0x140002ac0, method, '??0_Bxty@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ').
+symbol(0x140002af0, method, '??0_Container_base12@std@@QEAA@XZ').
+symbol(0x140002b10, method, '??0_Container_proxy@std@@QEAA@PEAU_Container_base12@1@@Z').
+symbol(0x140002b50, method, '??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z').
+symbol(0x140002be0, method, '??0bad_alloc@std@@AEAA@QEBD@Z').
+symbol(0x140002c30, method, '??0bad_alloc@std@@QEAA@AEBV01@@Z').
+symbol(0x140002c80, method, '??0bad_array_new_length@std@@QEAA@AEBV01@@Z').
+symbol(0x140002cd0, method, '??0bad_array_new_length@std@@QEAA@XZ').
+symbol(0x140002d20, method, '??0exception@std@@QEAA@AEBV01@@Z').
+symbol(0x140002d90, method, '??0exception@std@@QEAA@QEBDH@Z').
+symbol(0x140002df0, method, '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z').
+symbol(0x140002f00, method, '??1?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@XZ').
+symbol(0x140002f30, method, '??1?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QEAA@XZ').
+symbol(0x140002f70, method, '??1?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ').
+symbol(0x140002fa0, method, '??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ').
+symbol(0x140003060, method, '??1_Bxty@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ').
+symbol(0x140003070, method, '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ').
+symbol(0x1400030f0, method, '??1bad_alloc@std@@UEAA@XZ').
+symbol(0x140003110, method, '??1bad_array_new_length@std@@UEAA@XZ').
+symbol(0x140003130, method, '??1exception@std@@UEAA@XZ').
+symbol(0x140003170, method, '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ').
+symbol(0x1400031e0, func, '??2@YAPEAX_KPEAX@Z').
+symbol(0x140003200, method, '??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEBA_NXZ').
+symbol(0x140003220, method, '??_Ebad_alloc@std@@UEAAPEAXI@Z').
+symbol(0x140003220, method, '??_Gbad_alloc@std@@UEAAPEAXI@Z').
+symbol(0x140003270, method, '??_Ebad_array_new_length@std@@UEAAPEAXI@Z').
+symbol(0x140003270, method, '??_Gbad_array_new_length@std@@UEAAPEAXI@Z').
+symbol(0x1400032c0, method, '??_Eexception@std@@UEAAPEAXI@Z').
+symbol(0x1400032c0, method, '??_Gexception@std@@UEAAPEAXI@Z').
+symbol(0x140003310, method, '?_Activate_SSO_buffer@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAAXXZ').
+symbol(0x140003320, func, '?_Adjust_manually_vector_aligned@std@@YAXAEAPEAXAEA_K@Z').
+symbol(0x140003520, staticmethod, '?_Allocate@_Default_allocate_traits@std@@SAPEAX_K@Z').
+symbol(0x140003540, method, '?_Calculate_growth@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBA_K_K@Z').
+symbol(0x140003590, staticmethod, '?_Calculate_growth@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CA_K_K00@Z').
+symbol(0x140003680, method, '?_Get_first@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAAAEAV?$allocator@D@2@XZ').
+symbol(0x140003690, method, '?_Get_first@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEBAAEBV?$allocator@D@2@XZ').
+symbol(0x1400036a0, method, '?_Getal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAAEAV?$allocator@D@2@XZ').
+symbol(0x1400036d0, method, '?_Getal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBAAEBV?$allocator@D@2@XZ').
+symbol(0x140003700, method, '?_Large_string_engaged@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBA_NXZ').
+symbol(0x140003740, method, '?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ').
+symbol(0x1400037a0, method, '?_Orphan_all@_Container_base12@std@@QEAAXXZ').
+symbol(0x1400037c0, method, '?_Orphan_all_locked_v3@_Container_base12@std@@AEAAXXZ').
+symbol(0x140003830, method, '?_Orphan_all_unlocked_v3@_Container_base12@std@@AEAAXXZ').
+symbol(0x1400038c0, method, '?_Release@_Basic_container_proxy_ptr12@std@@QEAAXXZ').
+symbol(0x1400038e0, staticmethod, '?_Start_element_lifetimes@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAXQEAD_K@Z').
+symbol(0x1400038f0, func, '?_Throw_bad_array_new_length@std@@YAXXZ').
+symbol(0x140003920, method, '?_Tidy_deallocate@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXXZ').
+symbol(0x140003a20, func, '?_Xlen_string@std@@YAXXZ').
+symbol(0x140003a40, func, '?__empty_global_delete@@YAXPEAX@Z').
+symbol(0x140003a50, func, '?__empty_global_delete@@YAXPEAX_K@Z').
+symbol(0x140003a60, method, '?add@ObjectTest@@QEAAHXZ').
+symbol(0x140003a80, method, '?allocate@?$allocator@D@std@@QEAAPEAD_K@Z').
+symbol(0x140003ab0, method, '?allocate@?$allocator@U_Container_proxy@std@@@std@@QEAAPEAU_Container_proxy@2@_K@Z').
+symbol(0x140003ae0, staticmethod, '?assign@?$_Narrow_char_traits@DH@std@@SAXAEADAEBD@Z').
+symbol(0x140003b10, staticmethod, '?copy@?$_Char_traits@DH@std@@SAPEADQEADQEBD_K@Z').
+symbol(0x140003b50, method, '?data@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAPEBDXZ').
+symbol(0x140003b80, staticmethod, '?deallocate@?$_Default_allocator_traits@V?$allocator@U_Container_proxy@std@@@std@@@std@@SAXAEAV?$allocator@U_Container_proxy@std@@@2@QEAU_Container_proxy@2@_K@Z').
+symbol(0x140003bc0, method, '?deallocate@?$allocator@D@std@@QEAAXQEAD_K@Z').
+symbol(0x140003ca0, staticmethod, '?eof@?$_Narrow_char_traits@DH@std@@SAHXZ').
+symbol(0x140003cb0, staticmethod, '?eq_int_type@?$_Narrow_char_traits@DH@std@@SA_NAEBH0@Z').
+symbol(0x140003d00, staticmethod, '?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z').
+symbol(0x140003d20, staticmethod, '?max@?$numeric_limits@_J@std@@SA_JXZ').
+symbol(0x140003d40, staticmethod, '?max_size@?$_Default_allocator_traits@V?$allocator@D@std@@@std@@SA_KAEBV?$allocator@D@2@@Z').
+symbol(0x140003d60, method, '?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ').
+symbol(0x140003e30, method, '?print@ObjectTest@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z').
+symbol(0x140003ec0, method, '?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ').
+symbol(0x140003ee0, method, '?what@exception@std@@UEBAPEBDXZ').
+symbol(0x140003f28, thunk, '??0_Lockit@std@@QEAA@H@Z').
+symbol(0x140003f2e, thunk, '??1_Lockit@std@@QEAA@XZ').
+symbol(0x140003f34, thunk, '?_Xlength_error@std@@YAXPEBD@Z').
+symbol(0x140003f3a, thunk, '?uncaught_exception@std@@YA_NXZ').
+symbol(0x140003f40, thunk, '?good@ios_base@std@@QEBA_NXZ').
+symbol(0x140003f46, thunk, '?flags@ios_base@std@@QEBAHXZ').
+symbol(0x140003f4c, thunk, '?width@ios_base@std@@QEBA_JXZ').
+symbol(0x140003f52, thunk, '?width@ios_base@std@@QEAA_J_J@Z').
+symbol(0x140003f58, thunk, '?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z').
+symbol(0x140003f5e, thunk, '?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z').
+symbol(0x140003f64, thunk, '?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z').
+symbol(0x140003f6a, thunk, '?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x140003f70, thunk, '?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x140003f76, thunk, '?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ').
+symbol(0x140003f7c, thunk, '?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z').
+symbol(0x140003f82, thunk, '?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ').
+symbol(0x140003f88, thunk, '??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z').
+symbol(0x140003f8e, thunk, '??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z').
+symbol(0x140003f94, thunk, '?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@D@Z').
+symbol(0x140003f9a, thunk, '?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ').
+symbol(0x140003fa0, func, '??2@YAPEAX_K@Z').
+symbol(0x140004010, func, '??3@YAXPEAX_K@Z').
+symbol(0x140004040, func, '_RTC_AllocaHelper').
+symbol(0x140004090, func, '_RTC_CheckStackVars').
+symbol(0x140004140, func, '_RTC_CheckStackVars2').
+symbol(0x140004290, func, '_CRT_RTC_INIT').
+symbol(0x1400042a0, func, '_CRT_RTC_INITW').
+symbol(0x1400042b0, func, '_RTC_InitBase').
+symbol(0x140004300, func, '_RTC_Shutdown').
+symbol(0x140004330, method, '??1type_info@@UEAA@XZ').
+symbol(0x140004350, method, '??_Etype_info@@UEAAPEAXI@Z').
+symbol(0x140004350, method, '??_Gtype_info@@UEAAPEAXI@Z').
+symbol(0x1400043a0, func, 'pre_c_initialization').
+symbol(0x140004480, func, 'post_pgo_initialization').
+symbol(0x1400044a0, func, 'pre_cpp_initialization').
+symbol(0x1400044c0, func, '__scrt_common_main').
+symbol(0x1400044e0, func, '__scrt_common_main_seh').
+symbol(0x1400046f0, staticmethod, '?configure_argv@__scrt_narrow_argv_policy@@SAHXZ').
+symbol(0x140004710, staticmethod, '?initialize_environment@__scrt_narrow_environment_policy@@SAHXZ').
+symbol(0x140004730, func, 'invoke_main').
+symbol(0x140004780, staticmethod, '?set_app_type@__scrt_main_policy@@SAXXZ').
+symbol(0x1400047a0, staticmethod, '?set_commode@__scrt_file_policy@@SAXXZ').
+symbol(0x1400047d0, staticmethod, '?set_fmode@__scrt_file_policy@@SAXXZ').
+symbol(0x1400047f0, func, 'mainCRTStartup').
+symbol(0x140004810, method, '??0bad_alloc@std@@QEAA@XZ').
+symbol(0x140004860, func, '?__scrt_throw_std_bad_alloc@@YAXXZ').
+symbol(0x140004890, func, '?__scrt_throw_std_bad_array_new_length@@YAXXZ').
+symbol(0x1400048c0, func, '??3@YAXPEAX@Z').
+symbol(0x1400048f0, func, 'DebuggerProbe').
+symbol(0x140004940, func, 'DebuggerRuntime').
+symbol(0x1400049a0, func, '?_RTC_AllocaFailure@@YAXPEAXPEAU_RTC_ALLOCA_NODE@@H@Z').
+symbol(0x140004b50, func, '?_RTC_Failure@@YAXPEAXH@Z').
+symbol(0x140004bc0, func, '?_RTC_StackFailure@@YAXPEAXPEBD@Z').
+symbol(0x140004cd0, func, '_getMemBlockDataString').
+symbol(0x140004db0, func, '_strlen_priv').
+symbol(0x140004dd0, func, 'failwithmessage').
+symbol(0x1400050d0, func, 'notify_debugger').
+symbol(0x140005100, func, '_RTC_UninitUse').
+symbol(0x140005200, func, '__local_stdio_printf_options').
+symbol(0x140005210, func, '_vsprintf_s_l').
+symbol(0x140005290, func, 'sprintf_s').
+symbol(0x1400052c0, func, '?_RTC_GetErrorFunc@@YAP6AHHPEBDH00ZZPEBX@Z').
+symbol(0x1400052d0, func, '?_RTC_GetErrorFuncW@@YAP6AHHPEB_WH00ZZPEBX@Z').
+symbol(0x1400052e0, func, '_RTC_GetErrDesc').
+symbol(0x140005300, func, '_RTC_NumErrors').
+symbol(0x140005310, func, '_RTC_SetErrorFunc').
+symbol(0x140005330, func, '_RTC_SetErrorFuncW').
+symbol(0x140005350, func, '_RTC_SetErrorType').
+symbol(0x140005380, func, 'find_pe_section').
+symbol(0x140005480, func, 'is_potentially_valid_image_base').
+symbol(0x140005530, func, 'NtCurrentTeb').
+symbol(0x140005540, func, '__scrt_acquire_startup_lock').
+symbol(0x1400055c0, func, '__scrt_dllmain_after_initialize_c').
+symbol(0x140005600, func, '__scrt_dllmain_before_initialize_c').
+symbol(0x140005630, func, '__scrt_dllmain_crt_thread_attach').
+symbol(0x140005670, func, '__scrt_dllmain_crt_thread_detach').
+symbol(0x140005690, func, '__scrt_dllmain_exception_filter').
+symbol(0x140005710, func, '__scrt_dllmain_uninitialize_c').
+symbol(0x140005750, func, '__scrt_dllmain_uninitialize_critical').
+symbol(0x140005770, func, '__scrt_initialize_crt').
+symbol(0x1400057d0, func, '__scrt_initialize_onexit_tables').
+symbol(0x140005920, func, '__scrt_is_nonwritable_in_current_image').
+symbol(0x1400059d0, func, '__scrt_release_startup_lock').
+symbol(0x140005a10, func, '__scrt_uninitialize_crt').
+symbol(0x140005a60, func, '_onexit').
+symbol(0x140005b00, func, 'at_quick_exit').
+symbol(0x140005b60, func, 'atexit').
+symbol(0x140005ba0, func, '__get_entropy').
+symbol(0x140005c90, func, '__security_init_cookie').
+symbol(0x140005d30, func, '_matherr').
+symbol(0x140005d40, func, '_get_startup_argv_mode').
+symbol(0x140005d50, func, '_get_startup_commit_mode').
+symbol(0x140005d60, func, '_get_startup_file_mode').
+symbol(0x140005d70, func, '_get_startup_new_mode').
+symbol(0x140005d80, func, '_get_startup_thread_locale_mode').
+symbol(0x140005d90, func, '?__scrt_initialize_type_info@@YAXXZ').
+symbol(0x140005db0, func, '?__scrt_uninitialize_type_info@@YAXXZ').
+symbol(0x140005dd0, func, '_should_initialize_environment').
+symbol(0x140005de0, func, '_initialize_invalid_parameter_handler').
+symbol(0x140005df0, func, '_initialize_denormal_control').
+symbol(0x140005e00, func, '__local_stdio_scanf_options').
+symbol(0x140005e10, func, '__scrt_initialize_default_local_stdio_options').
+symbol(0x140005e70, func, '__scrt_is_user_matherr_present').
+symbol(0x140005ea0, func, '__scrt_get_dyn_tls_init_callback').
+symbol(0x140005eb0, func, '__scrt_get_dyn_tls_dtor_callback').
+symbol(0x140005ec0, func, '__crt_debugger_hook').
+symbol(0x140005ee0, func, '__scrt_fastfail').
+symbol(0x1400060e0, func, '__scrt_get_show_window_mode').
+symbol(0x140006150, func, '__scrt_initialize_mta').
+symbol(0x140006170, func, '__scrt_initialize_winrt').
+symbol(0x140006180, func, '__scrt_is_managed_app').
+symbol(0x140006250, func, '__scrt_set_unhandled_exception_filter').
+symbol(0x140006270, func, '__scrt_exe_initialize_mta').
+symbol(0x140006270, func, '__scrt_stub_for_initialize_mta').
+symbol(0x140006280, func, '__scrt_unhandled_exception_filter').
+symbol(0x140006340, func, '_RTC_Initialize').
+symbol(0x1400063a0, func, '_RTC_Terminate').
+symbol(0x140006400, func, '_guard_check_icall_nop').
+symbol(0x140006410, func, 'ReadNoFence64').
+symbol(0x140006440, func, 'ReadPointerNoFence').
+symbol(0x140006460, func, '__castguard_check_failure_debugbreak').
+symbol(0x140006490, func, '__castguard_check_failure_fastfail').
+symbol(0x1400064c0, func, '__castguard_check_failure_nop').
+symbol(0x1400064d0, func, '__castguard_check_failure_os_handled').
+symbol(0x140006500, func, '__castguard_check_failure_os_handled_wrapper').
+symbol(0x140006540, func, '__castguard_check_failure_user_handled').
+symbol(0x140006570, func, '__castguard_check_failure_user_handled_wrapper').
+symbol(0x1400065c0, func, '__castguard_compat_check').
+symbol(0x140006650, func, '__castguard_set_user_handler').
+symbol(0x140006680, func, '__castguard_slow_path_check_debugbreak').
+symbol(0x1400066d0, func, '__castguard_slow_path_check_fastfail').
+symbol(0x140006730, func, '__castguard_slow_path_check_nop').
+symbol(0x140006750, func, '__castguard_slow_path_check_os_handled').
+symbol(0x1400067b0, func, '__castguard_slow_path_check_user_handled').
+symbol(0x140006810, func, '__castguard_slow_path_compat_check').
+symbol(0x1400068a0, func, '_guard_icall_checks_enforced').
+symbol(0x1400068f0, func, '_guard_rf_checks_enforced').
+symbol(0x140006900, func, 'GetPdbDll').
+symbol(0x140006ac0, func, 'GetPdbDllFromInstallPath').
+symbol(0x140006e20, func, 'GetPdbDllPathFromFilePath').
+symbol(0x140006f60, func, '?_RTC_GetSrcLine@@YAHPEAEPEA_WKPEAH1K@Z').
+symbol(0x140007420, func, '__GSHandlerCheck').
+symbol(0x140007470, func, '__GSHandlerCheckCommon').
+symbol(0x1400075c0, func, '__security_check_cookie').
+symbol(0x1400075f0, func, '__isa_available_init').
+symbol(0x140007a80, func, '__scrt_is_ucrt_dll_in_use').
+symbol(0x140007ab0, func, '__raise_securityfailure').
+symbol(0x140007b00, func, '__report_gsfailure').
+symbol(0x140007c10, func, '__report_rangecheckfailure').
+symbol(0x140007c30, func, '__report_securityfailure').
+symbol(0x140007d00, func, '__report_securityfailureEx').
+symbol(0x140007e60, func, 'capture_current_context').
+symbol(0x140007f20, func, 'capture_previous_context').
+symbol(0x140007ffe, thunk, 'memcpy').
+symbol(0x140008004, thunk, '__std_exception_copy').
+symbol(0x14000800a, thunk, '__std_exception_destroy').
+symbol(0x140008010, thunk, '_CxxThrowException').
+symbol(0x140008016, thunk, '__CxxFrameHandler4').
+symbol(0x14000801c, thunk, '__C_specific_handler').
+symbol(0x140008022, thunk, '__C_specific_handler_noexcept').
+symbol(0x140008028, thunk, '__std_type_info_destroy_list').
+symbol(0x14000802e, thunk, '__current_exception').
+symbol(0x140008034, thunk, '__current_exception_context').
+symbol(0x14000803a, thunk, '__vcrt_GetModuleFileNameW').
+symbol(0x140008040, thunk, '__vcrt_GetModuleHandleW').
+symbol(0x140008046, thunk, '__vcrt_LoadLibraryExW').
+symbol(0x14000804c, thunk, '_invalid_parameter').
+symbol(0x140008052, thunk, '_CrtDbgReport').
+symbol(0x140008058, thunk, 'strlen').
+symbol(0x14000805e, thunk, '_callnewh').
+symbol(0x140008064, thunk, 'malloc').
+symbol(0x14000806a, thunk, '_CrtDbgReportW').
+symbol(0x140008070, thunk, '_seh_filter_exe').
+symbol(0x140008076, thunk, '_set_app_type').
+symbol(0x14000807c, thunk, '__setusermatherr').
+symbol(0x140008082, thunk, '_configure_narrow_argv').
+symbol(0x140008088, thunk, '_initialize_narrow_environment').
+symbol(0x14000808e, thunk, '_get_initial_narrow_environment').
+symbol(0x140008094, thunk, '_initterm').
+symbol(0x14000809a, thunk, '_initterm_e').
+symbol(0x1400080a0, thunk, 'exit').
+symbol(0x1400080a6, thunk, '_exit').
+symbol(0x1400080ac, thunk, '_set_fmode').
+symbol(0x1400080b2, thunk, '__p___argc').
+symbol(0x1400080b8, thunk, '__p___argv').
+symbol(0x1400080be, thunk, '_cexit').
+symbol(0x1400080c4, thunk, '_c_exit').
+symbol(0x1400080ca, thunk, '_register_thread_local_exe_atexit_callback').
+symbol(0x1400080d0, thunk, '_configthreadlocale').
+symbol(0x1400080d6, thunk, '_set_new_mode').
+symbol(0x1400080dc, thunk, '__p__commode').
+symbol(0x1400080e2, thunk, '_free_dbg').
+symbol(0x1400080e8, thunk, 'strcpy_s').
+symbol(0x1400080ee, thunk, 'strcat_s').
+symbol(0x1400080f4, thunk, '__stdio_common_vsprintf_s').
+symbol(0x1400080fa, thunk, '_seh_filter_dll').
+symbol(0x140008100, thunk, '_initialize_onexit_table').
+symbol(0x140008106, thunk, '_register_onexit_function').
+symbol(0x14000810c, thunk, '_execute_onexit_table').
+symbol(0x140008112, thunk, '_crt_atexit').
+symbol(0x140008118, thunk, '_crt_at_quick_exit').
+symbol(0x14000811e, thunk, 'terminate').
+symbol(0x140008124, thunk, '_wmakepath_s').
+symbol(0x14000812a, thunk, '_wsplitpath_s').
+symbol(0x140008130, thunk, 'wcscpy_s').
+symbol(0x140008136, thunk, 'IsDebuggerPresent').
+symbol(0x14000813c, thunk, 'RaiseException').
+symbol(0x140008142, thunk, 'MultiByteToWideChar').
+symbol(0x140008148, thunk, 'WideCharToMultiByte').
+symbol(0x14000814e, thunk, 'QueryPerformanceCounter').
+symbol(0x140008154, thunk, 'GetCurrentProcessId').
+symbol(0x14000815a, thunk, 'GetCurrentThreadId').
+symbol(0x140008160, thunk, 'GetSystemTimeAsFileTime').
+symbol(0x140008166, thunk, 'InitializeSListHead').
+symbol(0x14000816c, thunk, 'RtlCaptureContext').
+symbol(0x140008172, thunk, 'RtlLookupFunctionEntry').
+symbol(0x140008178, thunk, 'RtlVirtualUnwind').
+symbol(0x14000817e, thunk, 'UnhandledExceptionFilter').
+symbol(0x140008184, thunk, 'SetUnhandledExceptionFilter').
+symbol(0x14000818a, thunk, 'GetStartupInfoW').
+symbol(0x140008190, thunk, 'IsProcessorFeaturePresent').
+symbol(0x140008196, thunk, 'GetModuleHandleW').
+symbol(0x14000819c, thunk, 'GetLastError').
+symbol(0x1400081a2, thunk, 'HeapAlloc').
+symbol(0x1400081a8, thunk, 'HeapFree').
+symbol(0x1400081ae, thunk, 'GetProcessHeap').
+symbol(0x1400081b4, thunk, 'VirtualQuery').
+symbol(0x1400081ba, thunk, 'FreeLibrary').
+symbol(0x1400081c0, thunk, 'GetProcAddress').
+symbol(0x1400081c6, thunk, 'GetCurrentProcess').
+symbol(0x1400081cc, thunk, 'TerminateProcess').
+symbol(0x1400081e0, func, '__acrt_initialize').
+symbol(0x1400081e0, func, '__scrt_stub_for_acrt_initialize').
+symbol(0x1400081e0, func, '__vcrt_initialize').
+symbol(0x1400081f0, func, '__acrt_thread_attach').
+symbol(0x1400081f0, func, '__scrt_stub_for_acrt_thread_attach').
+symbol(0x1400081f0, func, '__vcrt_thread_attach').
+symbol(0x140008200, func, '__acrt_thread_detach').
+symbol(0x140008200, func, '__scrt_stub_for_acrt_thread_detach').
+symbol(0x140008200, func, '__vcrt_thread_detach').
+symbol(0x140008210, func, '__acrt_uninitialize').
+symbol(0x140008210, func, '__scrt_stub_for_acrt_uninitialize').
+symbol(0x140008210, func, '__vcrt_uninitialize').
+symbol(0x140008220, func, '__acrt_uninitialize_critical').
+symbol(0x140008220, func, '__scrt_stub_for_acrt_uninitialize_critical').
+symbol(0x140008220, func, '__vcrt_uninitialize_critical').
+symbol(0x140008230, func, '__scrt_stub_for_is_c_termination_complete').
+symbol(0x140008230, func, '_is_c_termination_complete').
+symbol(0x140009720, func, '_guard_dispatch_icall_nop').
+symbol(0x140009740, func, '_guard_xfg_dispatch_icall_nop').
+symbol(0x14000c000, name, '__xc_a').
+symbol(0x14000c220, name, '__xc_z').
+symbol(0x14000c330, name, '__xi_a').
+symbol(0x14000c660, name, '__xi_z').
+symbol(0x14000c770, name, '__xp_a').
+symbol(0x14000c880, name, '__xp_z').
+symbol(0x14000c990, name, '__xt_a').
+symbol(0x14000caa0, name, '__xt_z').
+symbol(0x14000d280, table, '??_7exception@std@@6B@').
+symbol(0x14000d298, string, '??_C@_0BC@EOODALEL@Unknown?5exception@').
+symbol(0x14000d2b8, table, '??_7bad_alloc@std@@6B@').
+symbol(0x14000d2d8, table, '??_7bad_array_new_length@std@@6B@').
+symbol(0x14000d2f0, string, '??_C@_0BF@KINCDENJ@bad?5array?5new?5length@').
+symbol(0x14000d310, string, '??_C@_0BB@FCMFBGOM@invalid?5argument@').
+symbol(0x14000d324, string, '??_C@_02DKCKIIND@?$CFs@').
+symbol(0x14000d330, string, '??_C@_0GD@HDIEGMP@C?3?2Program?5Files?2Microsoft?5Visu@').
+symbol(0x14000d3b0, string, '??_C@_1MG@BCJPPKCG@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@').
+symbol(0x14000d4a0, string, '??_C@_11LOCGONAA@@').
+symbol(0x14000d4a8, string, '??_C@_1CG@JNLFBNGN@?$AA?$CC?$AAi?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAa?$AAr?$AAg?$AAu?$AAm?$AAe@').
+symbol(0x14000d4d8, string, '??_C@_0BA@JFNIOLAK@string?5too?5long@').
+symbol(0x14000d4f0, string, '??_C@_0DG@KGHKKGBC@null?5pointer?5cannot?5point?5to?5a?5@').
+symbol(0x14000d530, string, '??_C@_1HA@FACCKGGH@?$AA?$CC?$AAn?$AAu?$AAl?$AAl?$AA?5?$AAp?$AAo?$AAi?$AAn?$AAt?$AAe?$AAr?$AA?5?$AAc@').
+symbol(0x14000d5c0, table, '??_7type_info@@6B@').
+symbol(0x14000d5d0, string, '??_C@_0P@GHFPNOJB@bad?5allocation@').
+symbol(0x14000d6d0, string, '??_C@_0NN@JMPELKLB@The?5value?5of?5ESP?5was?5not?5proper@').
+symbol(0x14000d7e0, string, '??_C@_0BBN@ELNNILBE@A?5cast?5to?5a?5smaller?5data?5type?5h@').
+symbol(0x14000d938, string, '??_C@_0BN@BPOGFMJL@Stack?5memory?5was?5corrupted?$AN?6@').
+symbol(0x14000d960, string, '??_C@_0DG@DAJCDLPN@A?5local?5variable?5was?5used?5befor@').
+symbol(0x14000d9a0, string, '??_C@_0CM@JMIDGKLA@Stack?5memory?5around?5_alloca?5was@').
+symbol(0x14000d9d8, string, '??_C@_0BO@CHIONIOI@Unknown?5Runtime?5Check?5Error?$AN?6@').
+symbol(0x14000da00, string, '??_C@_1GM@CNOOJIHC@?$AAR?$AAu?$AAn?$AAt?$AAi?$AAm?$AAe?$AA?5?$AAC?$AAh?$AAe?$AAc?$AAk?$AA?5?$AAE@').
+symbol(0x14000da90, string, '??_C@_1EA@NFKNIFJP@?$AAR?$AAu?$AAn?$AA?9?$AAT?$AAi?$AAm?$AAe?$AA?5?$AAC?$AAh?$AAe?$AAc?$AAk?$AA?5@').
+symbol(0x14000dae0, string, '??_C@_0BB@PFFGGCJP@Unknown?5Filename@').
+symbol(0x14000daf8, string, '??_C@_0BE@GNBOBNCK@Unknown?5Module?5Name@').
+symbol(0x14000db10, string, '??_C@_0CA@IODNCDPG@Run?9Time?5Check?5Failure?5?$CD?$CFd?5?9?5?$CFs@').
+symbol(0x14000db38, string, '??_C@_0CG@IAFNJNEE@Stack?5corrupted?5near?5unknown?5va@').
+symbol(0x14000db68, string, '??_C@_05MKKEDADM@?$CF?42X?5@').
+symbol(0x14000db70, string, '??_C@_0EJ@LJKNEOLN@Stack?5area?5around?5_alloca?5memor@').
+symbol(0x14000dbc8, string, '??_C@_01EEMJAFIK@?6@').
+symbol(0x14000dbcc, string, '??_C@_02LLMPMKNF@?$DO?5@').
+symbol(0x14000dbd0, string, '??_C@_08OMAHNMHJ@?6Data?3?5?$DM@').
+symbol(0x14000dbe0, string, '??_C@_0CK@DKGBICFE@?6Allocation?5number?5within?5this?5@').
+symbol(0x14000dc18, string, '??_C@_07DFDJCKFN@?6Size?3?5@').
+symbol(0x14000dc28, string, '??_C@_0N@MHFFIMFG@?6Address?3?50x@').
+symbol(0x14000dc40, string, '??_C@_0EI@CLEPFNGI@Stack?5area?5around?5_alloca?5memor@').
+symbol(0x14000dc98, string, '??_C@_0BK@ODNDAGKB@?$CFs?$CFs?$CFp?$CFs?$CFzd?$CFs?$CFd?$CFs?$CFs?$CFs?$CFs?$CFs@').
+symbol(0x14000dcb8, string, '??_C@_0DE@OHJBPMBP@A?5variable?5is?5being?5used?5withou@').
+symbol(0x14000dd28, string, '??_C@_0BJ@HEGAHDFO@Stack?5pointer?5corruption@').
+symbol(0x14000dd48, string, '??_C@_0CK@FEGOIOPB@Cast?5to?5smaller?5type?5causing?5lo@').
+symbol(0x14000dd80, string, '??_C@_0BI@CIGMDCBH@Stack?5memory?5corruption@').
+symbol(0x14000dda0, string, '??_C@_0CK@CNLNOEPB@Local?5variable?5used?5before?5init@').
+symbol(0x14000ddd8, string, '??_C@_0BP@OGBCLIBO@Stack?5around?5_alloca?5corrupted@').
+symbol(0x14000de70, string, '??_C@_1EI@MLPKHBGE@?$AAa?$AAp?$AAi?$AA?9?$AAm?$AAs?$AA?9?$AAw?$AAi?$AAn?$AA?9?$AAc?$AAo?$AAr?$AAe@').
+symbol(0x14000dec8, string, '??_C@_1BK@JHLNAEJL@?$AAa?$AAd?$AAv?$AAa?$AAp?$AAi?$AA3?$AA2?$AA?4?$AAd?$AAl?$AAl@').
+symbol(0x14000dee8, string, '??_C@_0O@COHOBMLB@RegOpenKeyExW@').
+symbol(0x14000def8, string, '??_C@_0BB@GLNAEDBD@RegQueryValueExW@').
+symbol(0x14000df10, string, '??_C@_0M@HLOHPNFA@RegCloseKey@').
+symbol(0x14000df20, string, '??_C@_1HE@EBEAGLFB@?$AAS?$AAO?$AAF?$AAT?$AAW?$AAA?$AAR?$AAE?$AA?2?$AAW?$AAo?$AAw?$AA6?$AA4?$AA3@').
+symbol(0x14000dfb0, string, '??_C@_1BG@EABPBLLF@?$AAP?$AAr?$AAo?$AAd?$AAu?$AAc?$AAt?$AAD?$AAi?$AAr@').
+symbol(0x14000dff8, string, '??_C@_1BC@JINFINNJ@?$AAM?$AAS?$AAP?$AAD?$AAB?$AA1?$AA4?$AA0@').
+symbol(0x14000e010, string, '??_C@_0BB@KCIACLNC@PDBOpenValidate5@').
+symbol(0x14000e024, string, '??_C@_01KDCPPGHE@r@').
+symbol(0x14000e040, name, '_load_config_used').
+symbol(0x14000e380, name, '__CastGuardVftablesStart').
+symbol(0x14000e580, name, '__CastGuardVftablesEnd').
+symbol(0x14000e720, table, '??_R4exception@std@@6B@').
+symbol(0x14000e750, name, '??_R3exception@std@@8').
+symbol(0x14000e768, name, '??_R2exception@std@@8').
+symbol(0x14000e778, name, '??_R1A@?0A@EA@exception@std@@8').
+symbol(0x14000e7a8, table, '??_R4bad_alloc@std@@6B@').
+symbol(0x14000e7d8, name, '??_R3bad_alloc@std@@8').
+symbol(0x14000e7f0, name, '??_R2bad_alloc@std@@8').
+symbol(0x14000e808, name, '??_R1A@?0A@EA@bad_alloc@std@@8').
+symbol(0x14000e838, table, '??_R4bad_array_new_length@std@@6B@').
+symbol(0x14000e868, name, '??_R3bad_array_new_length@std@@8').
+symbol(0x14000e880, name, '??_R2bad_array_new_length@std@@8').
+symbol(0x14000e8a8, name, '??_R1A@?0A@EA@bad_array_new_length@std@@8').
+symbol(0x14000e8d8, table, '??_R4type_info@@6B@').
+symbol(0x14000e908, name, '??_R3type_info@@8').
+symbol(0x14000e920, name, '??_R2type_info@@8').
+symbol(0x14000e930, name, '??_R1A@?0A@EA@type_info@@8').
+symbol(0x14000ebe0, name, '__rtc_iaa').
+symbol(0x14000ee00, name, '__rtc_izz').
+symbol(0x14000ef10, name, '__rtc_taa').
+symbol(0x14000f130, name, '__rtc_tzz').
+symbol(0x14000ff78, name, '_TI3?AVbad_array_new_length@std@@').
+symbol(0x14000ff98, name, '_CTA3?AVbad_array_new_length@std@@').
+symbol(0x14000ffb8, name, '_CT??_R0?AVbad_array_new_length@std@@@8??0bad_array_new_length@std@@QEAA@AEBV01@@Z24').
+symbol(0x14000ffe0, name, '_CT??_R0?AVbad_alloc@std@@@8??0bad_alloc@std@@QEAA@AEBV01@@Z24').
+symbol(0x140010008, name, '_CT??_R0?AVexception@std@@@8??0exception@std@@QEAA@AEBV01@@Z24').
+symbol(0x140010030, name, '_TI2?AVbad_alloc@std@@').
+symbol(0x140010050, name, '_CTA2?AVbad_alloc@std@@').
+symbol(0x140011000, name, '?_RTC_ErrorLevels@@3PAHA').
+symbol(0x140011018, name, '__scrt_native_dllmain_reason').
+symbol(0x14001101c, name, '__scrt_default_matherr').
+symbol(0x140011020, name, '__security_cookie_complement').
+symbol(0x140011028, name, '__security_cookie').
+symbol(0x140011038, name, '__isa_available').
+symbol(0x14001103c, name, '__isa_enabled').
+symbol(0x140011040, name, '__memset_fast_string_threshold').
+symbol(0x140011048, name, '__memset_nt_threshold').
+symbol(0x140011060, name, '__scrt_ucrt_dll_is_in_use').
+symbol(0x140011170, name, '??_R0?AVbad_array_new_length@std@@@8').
+symbol(0x1400111a8, name, '??_R0?AVbad_alloc@std@@@8').
+symbol(0x1400111d8, name, '??_R0?AVexception@std@@@8').
+symbol(0x140011308, name, '??_R0?AVtype_info@@@8').
+symbol(0x140011438, name, '?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA').
+symbol(0x140011460, name, '__scrt_current_native_startup_state').
+symbol(0x140011468, name, '__scrt_native_startup_lock').
+symbol(0x1400114c0, name, '?__type_info_root_node@@3U__type_info_node@@A').
+symbol(0x1400114d8, name, '?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA').
+symbol(0x1400114e4, name, '__scrt_debugger_hook_flag').
+symbol(0x1400114e8, name, '__castguard_check_failure_user_handled_fptr').
+symbol(0x140011504, name, '__favor').
+symbol(0x140011b98, name, '__dyn_tls_dtor_callback').
+symbol(0x140011bb0, name, '__dyn_tls_init_callback').
+symbol(0x140013000, name, '__imp_GetProcAddress').
+symbol(0x140013008, name, '__imp_RaiseException').
+symbol(0x140013010, name, '__imp_MultiByteToWideChar').
+symbol(0x140013018, name, '__imp_WideCharToMultiByte').
+symbol(0x140013020, name, '__imp_QueryPerformanceCounter').
+symbol(0x140013028, name, '__imp_GetCurrentProcessId').
+symbol(0x140013030, name, '__imp_GetCurrentThreadId').
+symbol(0x140013038, name, '__imp_GetSystemTimeAsFileTime').
+symbol(0x140013040, name, '__imp_InitializeSListHead').
+symbol(0x140013048, name, '__imp_RtlCaptureContext').
+symbol(0x140013050, name, '__imp_RtlLookupFunctionEntry').
+symbol(0x140013058, name, '__imp_RtlVirtualUnwind').
+symbol(0x140013060, name, '__imp_UnhandledExceptionFilter').
+symbol(0x140013068, name, '__imp_SetUnhandledExceptionFilter').
+symbol(0x140013070, name, '__imp_GetStartupInfoW').
+symbol(0x140013078, name, '__imp_IsProcessorFeaturePresent').
+symbol(0x140013080, name, '__imp_GetModuleHandleW').
+symbol(0x140013088, name, '__imp_GetLastError').
+symbol(0x140013090, name, '__imp_HeapAlloc').
+symbol(0x140013098, name, '__imp_HeapFree').
+symbol(0x1400130a0, name, '__imp_GetProcessHeap').
+symbol(0x1400130a8, name, '__imp_TerminateProcess').
+symbol(0x1400130b0, name, '__imp_GetCurrentProcess').
+symbol(0x1400130b8, name, '__imp_IsDebuggerPresent').
+symbol(0x1400130c0, name, '__imp_FreeLibrary').
+symbol(0x1400130c8, name, '__imp_VirtualQuery').
+symbol(0x1400130d0, name, 'KERNEL32_NULL_THUNK_DATA').
+symbol(0x140013150, method, '__imp_?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ').
+symbol(0x140013158, method, '__imp_?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@D@Z').
+symbol(0x140013160, method, '__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z').
+symbol(0x140013168, method, '__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z').
+symbol(0x140013170, method, '__imp_?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ').
+symbol(0x140013178, method, '__imp_?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z').
+symbol(0x140013180, method, '__imp_?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ').
+symbol(0x140013188, method, '__imp_?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x140013190, method, '__imp_?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ').
+symbol(0x140013198, method, '__imp_?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z').
+symbol(0x1400131a0, method, '__imp_?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z').
+symbol(0x1400131a8, method, '__imp_?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z').
+symbol(0x1400131b0, method, '__imp_?width@ios_base@std@@QEAA_J_J@Z').
+symbol(0x1400131b8, method, '__imp_?width@ios_base@std@@QEBA_JXZ').
+symbol(0x1400131c0, method, '__imp_?flags@ios_base@std@@QEBAHXZ').
+symbol(0x1400131c8, method, '__imp_?good@ios_base@std@@QEBA_NXZ').
+symbol(0x1400131d0, name, '__imp_?uncaught_exception@std@@YA_NXZ').
+symbol(0x1400131d8, name, '__imp_?_Xlength_error@std@@YAXPEBD@Z').
+symbol(0x1400131e0, method, '__imp_??1_Lockit@std@@QEAA@XZ').
+symbol(0x1400131e8, name, '__imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A').
+symbol(0x1400131f0, method, '__imp_??0_Lockit@std@@QEAA@H@Z').
+symbol(0x1400131f8, name, 'MSVCP140D_NULL_THUNK_DATA').
+symbol(0x140013270, name, '__imp___std_exception_copy').
+symbol(0x140013278, name, '__imp___std_exception_destroy').
+symbol(0x140013280, name, '__imp__CxxThrowException').
+symbol(0x140013288, name, '__imp___C_specific_handler').
+symbol(0x140013290, name, '__imp___C_specific_handler_noexcept').
+symbol(0x140013298, name, '__imp___std_type_info_destroy_list').
+symbol(0x1400132a0, name, '__imp___current_exception').
+symbol(0x1400132a8, name, '__imp___current_exception_context').
+symbol(0x1400132b0, name, '__imp___vcrt_GetModuleFileNameW').
+symbol(0x1400132b8, name, '__imp___vcrt_GetModuleHandleW').
+symbol(0x1400132c0, name, '__imp___vcrt_LoadLibraryExW').
+symbol(0x1400132c8, name, '__imp_memcpy').
+symbol(0x1400132d0, name, 'VCRUNTIME140D_NULL_THUNK_DATA').
+symbol(0x140013338, name, '__imp___CxxFrameHandler4').
+symbol(0x140013340, name, 'VCRUNTIME140_1D_NULL_THUNK_DATA').
+symbol(0x140013398, name, '__imp_strcat_s').
+symbol(0x1400133a0, name, '__imp___stdio_common_vsprintf_s').
+symbol(0x1400133a8, name, '__imp__seh_filter_dll').
+symbol(0x1400133b0, name, '__imp__initialize_onexit_table').
+symbol(0x1400133b8, name, '__imp__register_onexit_function').
+symbol(0x1400133c0, name, '__imp__execute_onexit_table').
+symbol(0x1400133c8, name, '__imp__crt_atexit').
+symbol(0x1400133d0, name, '__imp__crt_at_quick_exit').
+symbol(0x1400133d8, name, '__imp_terminate').
+symbol(0x1400133e0, name, '__imp__wmakepath_s').
+symbol(0x1400133e8, name, '__imp__wsplitpath_s').
+symbol(0x1400133f0, name, '__imp__free_dbg').
+symbol(0x1400133f8, name, '__imp__exit').
+symbol(0x140013400, name, '__imp__configure_narrow_argv').
+symbol(0x140013408, name, '__imp___setusermatherr').
+symbol(0x140013410, name, '__imp__set_app_type').
+symbol(0x140013418, name, '__imp__seh_filter_exe').
+symbol(0x140013420, name, '__imp__CrtDbgReportW').
+symbol(0x140013428, name, '__imp_malloc').
+symbol(0x140013430, name, '__imp__callnewh').
+symbol(0x140013438, name, '__imp_strlen').
+symbol(0x140013440, name, '__imp__CrtDbgReport').
+symbol(0x140013448, name, '__imp__invalid_parameter').
+symbol(0x140013450, name, '__imp_strcpy_s').
+symbol(0x140013458, name, '__imp__set_new_mode').
+symbol(0x140013460, name, '__imp__configthreadlocale').
+symbol(0x140013468, name, '__imp__register_thread_local_exe_atexit_callback').
+symbol(0x140013470, name, '__imp__c_exit').
+symbol(0x140013478, name, '__imp__cexit').
+symbol(0x140013480, name, '__imp___p___argv').
+symbol(0x140013488, name, '__imp___p___argc').
+symbol(0x140013490, name, '__imp__set_fmode').
+symbol(0x140013498, name, '__imp__initialize_narrow_environment').
+symbol(0x1400134a0, name, '__imp___p__commode').
+symbol(0x1400134a8, name, '__imp_exit').
+symbol(0x1400134b0, name, '__imp__initterm_e').
+symbol(0x1400134b8, name, '__imp__initterm').
+symbol(0x1400134c0, name, '__imp_wcscpy_s').
+symbol(0x1400134c8, name, '__imp__get_initial_narrow_environment').
+symbol(0x1400134d0, name, 'ucrtbased_NULL_THUNK_DATA').
+symbol(0x140013560, name, '__IMPORT_DESCRIPTOR_MSVCP140D').
+symbol(0x140013574, name, '__IMPORT_DESCRIPTOR_VCRUNTIME140D').
+symbol(0x140013588, name, '__IMPORT_DESCRIPTOR_VCRUNTIME140_1D').
+symbol(0x14001359c, name, '__IMPORT_DESCRIPTOR_ucrtbased').
+symbol(0x1400135b0, name, '__IMPORT_DESCRIPTOR_KERNEL32').
+symbol(0x1400135c4, name, '__NULL_IMPORT_DESCRIPTOR').
+symbol(0x140015000, name, '__guard_check_icall_fptr').
+symbol(0x140015010, name, '__guard_xfg_check_icall_fptr').
+symbol(0x140015020, name, '__guard_dispatch_icall_fptr').
+symbol(0x140015030, name, '__guard_xfg_dispatch_icall_fptr').
+symbol(0x140015040, name, '__guard_xfg_table_dispatch_icall_fptr').
+symbol(0x140015050, name, '__castguard_check_failure_os_handled_fptr').
+symbol(0x140015060, name, '__guard_memcpy_fptr').
+% Gound inheritance relationships.
+embeddedGround('std::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1>', 'std::_String_val<std::_Simple_types<char> >', 0).
+inheritanceGround('std::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1>', 'std::allocator<char>', 0).
+inheritanceGround('std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >', 'std::_Basic_container_proxy_ptr12', 0).
+inheritanceGround('std::_String_val<std::_Simple_types<char> >', 'std::_Container_base12', 0).
+embeddedGround('std::_String_val<std::_Simple_types<char> >', 'std::_String_val<std::_Simple_types<char> >::_Bxty', 8).
+inheritanceGround('std::bad_alloc', 'std::exception', 0).
+inheritanceGround('std::bad_array_new_length', 'std::bad_alloc', 0).
+inheritanceGround('std::basic_ios<char,std::char_traits<char> >', 'std::ios_base', 0).
+virtualInheritanceGround('std::basic_ostream<char,std::char_traits<char> >', 'std::basic_ios<char,std::char_traits<char> >').
+inheritanceGround('std::basic_ostream<char,std::char_traits<char> >::sentry', 'std::basic_ostream<char,std::char_traits<char> >::_Sentry_base', 0).
+embeddedGround('std::basic_string<char,std::char_traits<char>,std::allocator<char> >', 'std::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1>', 0).
+% Ground inheritance completed successfully.
